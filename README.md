@@ -55,7 +55,14 @@
 ##  Contenido
 
 ### Tabla de Contenidos
-### Student Outcome *(ver Anexo A)*
+### Student Outcome
+| Criterio Especifico | Acciones Realizadas | Conclusiones |
+|---------------------|---------------------|--------------|
+|                     |                     |              |
+|                     |                     |              |
+|                     |                     |              |
+|                     |                     |              |
+
 ### Objetivos SMART
 
 ---
