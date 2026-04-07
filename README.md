@@ -22,7 +22,7 @@
 
 | Código | Apellidos y Nombres |
 |--------|---------------------|
-|        |                     |
+| U202310949       | Bautista Rivera Jose Diego                    |
 |        |                     |
 |        |                     |
 |        |                     |
