@@ -58,14 +58,6 @@
 ### [1.1. Startup Profile](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#11-startup-profile)
 #### [1.1.1. Descripción de la Startup](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#111-descripción-de-la-startup)
 #### [1.1.2. Perfiles de integrantes del equipo](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#112-perfiles-de-integrantes-del-equipo)
-| Foto | Información |
-|------|------------|
-| | **Nombre Completo:** Jose Diego Bautista Rivera <br> **Código:**  U202310949 <br> **Carrera:** Ingeniería de Software - UPC <br><br> **Perfil:** <br> Estudiante de la carrera de Ingeniería de Software, con gran interés en el desarrollo y diseño de base de datos. Trabajar soluciones a problemas reales con software limpio y eficiente. Con buenas prácticas de programación, trabajo en equipo y en constante aprendizaje. <br><br> **Habilidades Técnicas:** <br> -MySQL y gestión de base de datos <br> -Git, Git Flow <br> -DDD, Bounded Contexts <br><br> **Habilidades Sociales:** <br> -Trabajo en eqquipo y colaboración eficaz <br> -Compromiso <br> -Aprendizaje autónomo y adaptabilidad |
-| | **Nombre Completo:** <br> **Código:** <br> **Carrera:** <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br> - <br> - <br> - <br><br> **Habilidades Sociales:** <br> - <br> - <br> - |
-| | **Nombre Completo:** <br> **Código:** <br> **Carrera:** <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br> - <br> - <br> - <br><br> **Habilidades Sociales:** <br> - <br> - <br> - |
-| | **Nombre Completo:** <br> **Código:** <br> **Carrera:** <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br> - <br> - <br> - <br><br> **Habilidades Sociales:** <br> - <br> - <br> - |
-| | **Nombre Completo:** <br> **Código:** <br> **Carrera:** <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br> - <br> - <br> - <br><br> **Habilidades Sociales:** <br> - <br> - <br> - |
-
 ### [1.2. Solution Profile](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#12-solution-profile)
 #### [1.2.1. Antecedentes y problemática](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#121-antecedentes-y-problemática)
 #### [1.2.2. Lean UX Process](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#122-lean-ux-process)
