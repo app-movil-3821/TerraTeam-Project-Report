@@ -156,7 +156,7 @@ Pregunta de diseño: ¿Cómo podríamos crear una plataforma móvil, basada en g
 
 * **Hipótesis 3 (Sistema de Reseñas):** Creemos que un sistema de calificación rápida (estrellas/pulgar arriba) post-servicio generará confianza. Sabremos que esto es cierto cuando veamos que los trabajadores con más de 3 calificaciones positivas reciben un 50% más de solicitudes.
 ##### 1.2.2.4. Lean UX Canvas
-
+![Canvas Moviles.png](../assets/img/chapter-1/Canvas%20Moviles.png)
 ### 1.3. Segmentos objetivo
 Para que ChambaYA funcione y logre tracción, la plataforma es un modelo multilateral (Two-Sided Market). Por lo tanto, se definen dos segmentos objetivo principales:
 
