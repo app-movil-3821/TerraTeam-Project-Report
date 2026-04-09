@@ -6,24 +6,25 @@ Para entender la identidad y el enfoque estratégico de una empresa emergente, e
 En esta sección se detallan los elementos fundamentales que caracterizan a la startup, como su origen, las razones que motivaron su creación, el problema concreto que intenta resolver y la perspectiva innovadora que utiliza para destacarse frente a sus competidores.
 Se examinan también las metas a largo y medio plazo, así como los planes trazados para su crecimiento y consolidación en el sector. Comprender estos componentes es crucial para determinar el potencial y el impacto de la startup.
 ### 1.1.1. Descripción de la Startup
-ChambaYA es una startup tecnológica peruana enfocada en transformar y optimizar el mercado de trabajos de corta duración y oficios esporádicos (coloquialmente conocidos como "cachuelos" o mini-jobs). A través de una plataforma móvil intuitiva, la startup actúa como un puente digital ágil que conecta de manera inmediata a personas que buscan generar ingresos diarios con ciudadanos y pequeños negocios que requieren ayuda puntual para tareas específicas.
+ChambaYA es una startup tecnológica peruana enfocada en dinamizar y formalizar el mercado de trabajos por turnos cortos y mini-jobs. A través de una plataforma móvil intuitiva, la startup actúa como un puente digital ágil que conecta de manera inmediata a micro y pequeñas empresas (mypes) — como restaurantes, cafeterías y negocios locales  que enfrentan picos de demanda o urgencias de personal, con jóvenes y estudiantes universitarios que buscan generar ingresos mediante horarios completamente flexibles que se adapten a su carga académica.
 
-El principal elemento diferenciador de la startup es la eliminación de las barreras tradicionales de contratación. Conscientes de que el sector informal demanda rapidez, ChambaYA prescinde del uso de un Currículum Vitae (CV) formal y de largos procesos de selección. En su lugar, el modelo opera bajo dos pilares tecnológicos:
+El principal elemento diferenciador de la startup es la eliminación de las barreras burocráticas de contratación para trabajos eventuales. Conscientes de que un negocio necesita resolver una urgencia en horas y que un joven busca oportunidades sin el obstáculo de "falta de experiencia previa" o "experiencia minima", ChambaYA prescinde del uso de un Currículum Vitae (CV) tradicional. En su lugar, el modelo opera bajo dos pilares tecnológicos:
 
-**Perfiles basados en habilidades:** Un sistema ágil de etiquetas (tags) donde los trabajadores destacan lo que saben hacer (ej. fuerza física, carpintería, atención al cliente).
+**Perfiles basados en habilidades:** Un sistema ágil de etiquetas (tags) donde los jóvenes destacan rápidamente lo que pueden hacer (ej. atención al cliente, mozo, inventario, empaquetado).
 
-**Geolocalización en tiempo real:** Un motor de búsqueda basado en la ubicación que prioriza la inmediatez e hiperlocalidad, mostrando las oportunidades de trabajo que se encuentran a pocos minutos de distancia.
+**Geolocalización en tiempo real:** Un motor de búsqueda que prioriza la inmediatez, mostrando a los dueños de negocios la disponibilidad de jóvenes dispuestos a cubrir un turno a pocos minutos de su local.
 
-Con este modelo, la startup busca inyectar confianza y seguridad en un mercado tradicionalmente desatendido. Al transformar el smartphone en la principal herramienta de inclusión económica, ChambaYA empodera a la fuerza laboral independiente y ofrece una solución inmediata a las necesidades del día a día de los empleadores.
+Con este modelo, la startup busca inyectar eficiencia y confianza en un sector donde la rotación imprevista genera pérdidas operativas. Al transformar el smartphone en una herramienta de conexión laboral rápida, ChambaYA empodera económicamente a la juventud y ofrece a los emprendedores una solución inmediata, confiable y a demanda para mantener sus negocios funcionando sin interrupciones.
 
 **Misión**
-
-Conectar de manera rápida, segura y sin fricciones a personas que necesitan delegar tareas cortas con trabajadores dispuestos a ejecutarlas en su entorno local, utilizando la tecnología móvil para eliminar las barreras tradicionales de contratación (como el CV) y generar oportunidades de ingresos diarios accesibles para todos.
+Conectar de manera ágil, segura y sin fricciones a micro y pequeñas empresas que requieren cubrir turnos urgentes o tareas operativas con jóvenes dispuestos a trabajar de forma flexible. Utilizamos tecnología móvil y geolocalización para eliminar la burocracia del CV, brindando a los emprendedores tranquilidad operativa y a la juventud acceso rápido a ingresos económicos.
 
 **Visión**
+Ser el socio tecnológico líder en el Perú para la gestión de fuerza laboral eventual en el sector MYPE, consolidando el ecosistema digital preferido por los jóvenes para encontrar trabajos por turnos y transformando la manera en que los negocios locales resuelven su necesidad de personal a corto plazo.
 
-Ser la aplicación móvil líder en la gestión de trabajos esporádicos y mini-jobs en el Perú, transformando la informalidad laboral en un ecosistema digital confiable y dinamizando la microeconomía urbana mediante la innovación tecnológica.
+
 ### 1.1.2. Perfiles de integrantes del equipo
+
 | Foto | Información                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | | **Nombre Completo:** Jose Diego Bautista Rivera <br> **Código:**  U202310949 <br> **Carrera:** Ingeniería de Software - UPC <br><br> **Perfil:** <br> Estudiante de la carrera de Ingeniería de Software, con gran interés en el desarrollo y diseño de base de datos. Trabajar soluciones a problemas reales con software limpio y eficiente. Con buenas prácticas de programación, trabajo en equipo y en constante aprendizaje. <br><br> **Habilidades Técnicas:** <br> -MySQL y gestión de base de datos <br> -Git, Git Flow <br> -DDD, Bounded Contexts <br><br> **Habilidades Sociales:** <br> -Trabajo en eqquipo y colaboración eficaz <br> -Compromiso <br> -Aprendizaje autónomo y adaptabilidad                  |
@@ -35,143 +36,146 @@ Ser la aplicación móvil líder en la gestión de trabajos esporádicos y mini-
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
-En el Perú, la estructura del mercado laboral presenta un desafío estructural histórico: más del 27% de la población vive en situación de pobreza y aproximadamente el 72% de la Población Económicamente Activa (PEA) labora en la informalidad. Esto significa que una gran mayoría de peruanos depende de ingresos diarios, trabajos esporádicos ("cachuelos") y carece de una red de seguridad laboral.
 
-El problema principal radica en la ineficiencia e inseguridad del mercado de trabajos rápidos. Actualmente, las personas que buscan generar ingresos mediante oficios o tareas cortas (limpieza, ayudantía, reparaciones, clases particulares) dependen casi exclusivamente del "boca a boca" o de esperar en puntos físicos de la ciudad, lo cual limita su alcance y genera tiempos muertos sin ingresos. Por otro lado, las plataformas de empleo tradicionales (como LinkedIn o bolsas de trabajo convencionales) están diseñadas para empleos formales, exigiendo currículums extensos y procesos de selección largos, lo cual es inviable para alguien que necesita a un ayudante por un solo día o para un trabajador que necesita dinero inmediato. Existe una brecha tecnológica entre la oferta de mano de obra rápida y la demanda de tareas cotidianas que la aplicación "ChambaYA" busca cerrar.
+En el Perú, el ecosistema de las Micro y Pequeñas Empresas (MYPEs) representa el motor principal de la economía urbana, sin embargo, opera bajo niveles alarmantes de informalidad (alrededor del 72% a nivel nacional). Dentro de este sector, rubros como la gastronomía (restaurantes, cafeterías), el comercio minorista (bodegas, minimarkets) y los eventos, enfrentan un problema crítico y constante: la alta rotación de personal y la incapacidad de gestionar la demanda fluctuante.
 
-**Analisis 5W+2H:**
+El problema central radica en la ineficiencia, lentitud y desconfianza en el proceso de contratación para turnos eventuales o trabajos de emergencia. Cuando un restaurante se queda sin un mozo un viernes por la noche o una bodega necesita ayuda extra para un inventario de fin de mes, el dueño carece de herramientas ágiles para solucionar el problema. Recurren al ineficiente "boca a boca" o a pegar carteles en sus locales, asumiendo pérdidas por ineficiencia operativa. Por otro lado, existe un gran sector de la población joven (especialmente estudiantes universitarios y técnicos) que necesita generar ingresos urgentes, pero se topan con dos barreras: la exigencia de un Currículum Vitae (CV) con experiencia previa y la falta de trabajos con horarios lo suficientemente flexibles para no abandonar sus estudios. Existe una brecha tecnológica profunda entre la necesidad inmediata de las MYPEs y la disponibilidad intermitente de la fuerza laboral juvenil.
 
-**What? (¿Qué?):** Existe una alta ineficiencia, desconexión y falta de confianza al momento de unir la oferta y la demanda de trabajos esporádicos de corta duración (mini-jobs).
+Para estructurar y delimitar con mayor precisión esta problemática, se aplica la técnica de análisis 5W2H:
 
-**Who? (¿A quiénes?):** Afecta a dos grupos. Por un lado, a los trabajadores independientes, estudiantes o personas desempleadas que necesitan ingresos inmediatos (oferta). Por otro lado, a ciudadanos, cabezas de familia y dueños de micro y pequeñas empresas (mypes) que necesitan ayuda urgente para tareas operativas o cotidianas (demanda).
+**What? :** Existe una alta ineficiencia y desconexión al intentar cubrir turnos laborales de emergencia o trabajos de corta duración (mini-jobs). Las mypes pierden eficiencia operativa y los jóvenes pierden oportunidades de ingresos flexibles.
 
-**Where? (¿Dónde?):** Principalmente en zonas urbanas y periurbanas del Perú, donde existe una alta densidad poblacional, dinamismo comercial y un gran volumen de trabajadores informales.
+**Who? :** Afecta a dos actores clave. Por la demanda: a los dueños, administradores o gerentes de MYPEs locales (restaurantes, tiendas, eventos). Por la oferta: a jóvenes de 18 a 25 años, estudiantes o personas buscando su primera inserción económica que requieren horarios flexibles.
 
-**When? (¿Cuándo?):** Ocurre de manera diaria. Para el trabajador, sucede cuando tiene tiempos muertos y necesita generar liquidez inmediata. Para el contratante, surge ante urgencias imprevistas (ej. una mudanza, ausencia de personal, necesidad de una reparación rápida).
+**Where? :** Principalmente en zonas urbanas, corredores comerciales, zonas gastronómicas y distritos con alta densidad de negocios y polos universitarios/técnicos en el Perú.
 
-**Why? (¿Por qué ?):** Porque los canales de contratación digital actuales están diseñados exclusivamente para el sector formal (exigen CV, entrevistas, contratos a largo plazo). Mientras tanto, el sector informal ha sido ignorado tecnológicamente, obligándolos a depender de redes de contactos limitadas.
+**When? :** Ocurre ante imprevistos (faltas por enfermedad del personal titular), durante picos de demanda no planificados (fines de semana, feriados, campañas comerciales) y cuando los estudiantes tienen "tiempos muertos" entre sus clases.
 
-**How? (¿Cómo?):** Se manifiesta a través del "boca a boca". Los contratantes preguntan a conocidos si "saben de alguien" para un trabajo, perdiendo horas o días. Los trabajadores esperan en plazas públicas, paraderos o caminan buscando oportunidades locales, exponiéndose a la inseguridad y a tiempos muertos sin remuneración.
+**Why? :** Porque el mercado laboral exige procesos de selección tradicionales (entrevistas, armado de CVs, contratos a plazo fijo) que son incompatibles con la urgencia de un negocio que necesita ayuda "para hoy", y excluyen a jóvenes sin experiencia comprobada pero con disposición para tareas operativas.
 
-**How much? (¿Cuánto?)**: El impacto es masivo, afectando directamente al entorno del 72% de trabajadores informales en el país. El costo se traduce en miles de horas-hombre perdidas mensualmente (productividad no aprovechada), inestabilidad económica para las familias vulnerables, e ineficiencia operativa para los pequeños negocios que no pueden cubrir sus picos de demanda.
+**How? :** Se resuelve de manera analógica y precaria. Los negocios pegan carteles de papel ("Se necesita ayudante"), publican en grupos desorganizados de Facebook o sobrecargan a su personal actual. Los jóvenes, por su parte, se ven obligados a aceptar trabajos a tiempo completo que terminan forzándolos a abandonar sus estudios.
+
+**How much? :** El impacto económico es bidireccional. Para las MYPEs, se traduce en pérdidas de ventas directas (por mala o lenta atención al cliente en horas pico) y estrés administrativo. Para los jóvenes, la falta de ingresos flexibles perpetúa la deserción estudiantil y limita su poder adquisitivo en una etapa crucial de su desarrollo.
+
 ### 1.2.2. Lean UX Process
 
 El enfoque Lean UX nos permitirá validar rápidamente si la solución propuesta (ChambaYA) realmente resuelve el problema de nuestros usuarios, minimizando el tiempo de desarrollo mediante ciclos de aprendizaje continuo.
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-Estado actual: Los trabajadores informales y personas que buscan ingresos extra carecen de un canal digital rápido y sin fricciones para ofrecer sus servicios diarios, mientras que los ciudadanos comunes y pequeños negocios tienen dificultades para encontrar ayuda inmediata y confiable para tareas de corta duración.
-Impacto: Esto genera inestabilidad económica para el trabajador y pérdida de tiempo/productividad para quien necesita el servicio.
-Pregunta de diseño: ¿Cómo podríamos crear una plataforma móvil, basada en geolocalización y perfiles simplificados, que conecte de manera inmediata y segura a personas que necesitan realizar mini-trabajos con aquellos dispuestos a ejecutarlos en su zona?
+**Estado actual:** Las micro y pequeñas empresas (MYPEs), como restaurantes y comercios locales, carecen de herramientas ágiles para cubrir turnos de emergencia o picos de demanda imprevistos, dependiendo de canales de contratación informales, lentos o burocráticos. Simultáneamente, los jóvenes y estudiantes que buscan generar ingresos a corto plazo enfrentan altas barreras de entrada al mercado laboral debido a la exigencia de experiencia previa formal (CV) y la falta de ofertas con horarios lo suficientemente flexibles que se adapten a sus responsabilidades académicas.
+
+**Impacto:** Esta desconexión estructural genera pérdidas operativas, ineficiencia en el servicio y estrés administrativo para los dueños de los negocios. Por el lado de la oferta, limita severamente el acceso de la juventud a oportunidades económicas seguras, obligándolos a recurrir a trabajos precarios o afectando su capacidad para sostener sus estudios.
+
+**Pregunta de diseño (How Might We):**   ¿Cómo podríamos crear una plataforma móvil, basada en geolocalización en tiempo real y validación de habilidades sin necesidad de CV, que conecte de manera inmediata y confiable a las MYPEs que tienen urgencias de personal temporal con jóvenes que buscan trabajar por turnos flexibles dentro de su misma zona comercial?
 
 #### 1.2.2.2. Lean UX Assumptions
 
 **Business Assumptions**
 
-* Creencias sobre la viabilidad, el mercado y el modelo de ChambaYA.
+Creencias sobre la viabilidad, el mercado y el comportamiento del modelo.
+
+* Creemos que los dueños de MYPEs (restaurantes, minimarkets) enfrentan urgencias de personal con la suficiente frecuencia como para requerir una solución tecnológica a demanda.
 
 
-* Creemos que existe una demanda latente lo suficientemente grande en zonas urbanas de personas que necesitan contratar ayuda rápida y no saben dónde buscarla.
+* Creemos que las MYPEs estarán dispuestas a contratar jóvenes sin experiencia formal previa, siempre y cuando la plataforma les brinde un filtro de seguridad confiable (como la "Insignia de Confianza" universitaria y el sistema de reseñas).
 
 
-* Creemos que un sistema de reputación (calificaciones mutuas) mitigará el riesgo percibido y la desconfianza de contratar a un "desconocido" sin un proceso de selección formal.
+* Creemos que el modelo es monetizable porque las MYPEs valoran más evitar la pérdida de ventas (por falta de personal) que el pago de una micro-comisión por la conexión rápida.
 
 
-* Creemos que los usuarios (contratantes) estarán dispuestos a pagar una pequeña tarifa de conexión o los trabajadores aceptarán un modelo de micro-comisión si la plataforma les garantiza el trabajo rápido.
-
-
-* Creemos que la falta de un CV formal no será un impedimento para trabajos operativos o de oficios (limpieza, carga, gasfitería básica), donde prima la inmediatez y la habilidad demostrable.
+* Creemos que eliminar la fricción del currículum vitae (CV) aumentará masivamente el registro de la oferta laboral juvenil en la plataforma.
 
 **Business Outcomes**
 
-* Métricas medibles que indicarán el éxito de la plataforma en el mercado.
+Métricas medibles que indicarán el éxito de la plataforma en el mercado.
 
 
 * Alcanzar 5,000 usuarios registrados (entre chambeadores y contratantes) en los primeros 6 meses de lanzamiento.
 
 
-* Lograr que el 70% de las solicitudes de "mini-jobs" publicadas sean aceptadas por un trabajador en menos de 2 horas.
+* Lograr que el 60% de los turnos de emergencia publicados por los negocios sean aceptados por un joven en menos de 2 horas.
 
 
-* Obtener una tasa de recurrencia del 30% (contratantes que vuelven a usar la app para buscar ayuda en un periodo de 30 días).
+* Obtener una tasa de recurrencia mensual del 30% en las MYPEs (es decir, que vuelvan a usar la app al menos una vez al mes).
 
 
 * Mantener un promedio de calificación de satisfacción general en la plataforma superior a 4.0 sobre 5.0 estrellas.
 
 **User Assumptions**
 
-* Creencias sobre el comportamiento, contexto y necesidades de nuestros dos segmentos.
+Creencias sobre el comportamiento, contexto y necesidades de nuestros dos segmentos.
 
 
-* Sobre el Chambeador: Creemos que cuentan con un smartphone (Android) con plan de datos y GPS activo. Además, creemos que prefieren trabajos cerca de su ubicación para evitar gastos de transporte que mermen su ganancia diaria.
+* Creemos que valoran la hiper-flexibilidad por encima de la estabilidad laboral tradicional para no perjudicar sus estudios. Creemos que están dispuestos a validar su identidad con su correo institucional (.edu.pe) a cambio de obtener trabajos más rápido.
 
 
-* Sobre el Chambeador: Creemos que se sienten frustrados al llenar formularios largos y prefieren seleccionar sus habilidades mediante etiquetas rápidas.
+* Creemos que los dueños de negocios valoran la inmediatez y la cercanía geográfica por encima del historial académico al momento de cubrir tareas operativas (ej. lavar platos, atender mesas, hacer inventario).
 
 
-* Sobre el Contratante: Creemos que valoran la velocidad de respuesta y la cercanía del trabajador mucho más que sus antecedentes académicos al momento de resolver una urgencia.
+* Creemos que prefieren coordinar los detalles finales mediante un chat interno en la app en lugar de compartir sus números de WhatsApp personales desde el primer contacto.
 
-
-* Sobre ambos: Creemos que ambos usuarios necesitan un canal de comunicación directo (chat) sin tener que compartir sus números de teléfono personales desde el primer minuto.
-
+    
 **User Outcomes**
 
-* El valor real y el beneficio que los usuarios obtienen al usar ChambaYA.
+El valor real y el beneficio que los usuarios obtienen al usar ChambaYA.
 
 
-* Para el Chambeador: Conseguir ingresos económicos en el mismo día que lo necesitan, con total flexibilidad de horarios y trabajando en su propia zona geográfica.
+* Obtener liquidez económica en el mismo día, adaptando el trabajo a sus horarios de estudio y construyendo un perfil laboral validado por la comunidad, sin el bloqueo de la "falta de experiencia".
 
 
-* Para el Contratante: Resolver una urgencia doméstica o laboral de manera inmediata y sin estrés, delegando tareas de bajo valor estratégico a personal validado por la comunidad, ahorrando tiempo y esfuerzo.
+* Mantener la continuidad operativa de su negocio ante imprevistos, ahorrando horas de búsqueda de personal y sintiendo la tranquilidad de estar ingresando a su local a estudiantes verificados.
 
-
-* Para ambos: Sentir seguridad tecnológica al saber exactamente quién está yendo a realizar el trabajo (o a qué casa se está yendo a trabajar) gracias a los perfiles verificados básicos y las reseñas previas.
 
 **Features**
 
-* Las soluciones tecnológicas específicas que construiremos para alcanzar los Outcomes basándonos en nuestras Assumptions.
+Las soluciones tecnológicas específicas que construiremos para alcanzar los Outcomes basándonos en nuestras Assumptions.
 
 
-* Mapa de Calor y Geolocalización (Core): Un mapa interactivo en tiempo real que muestra los trabajos disponibles en un radio cercano al trabajador y permite al contratante ver qué "chambeadores" están activos cerca de su zona.
+* Sistema "Tag-Based" (Sin CV): Creación de perfil mediante selección rápida de etiquetas de habilidades (Ej: Atención al cliente, Fuerza física, Matemáticas, Reparto).
 
 
-* Perfil de Habilidades "Tag-Based" (Sin CV): Un sistema de registro de un solo clic donde el trabajador solo selecciona etiquetas de lo que sabe hacer (Ej: Fuerza física, Reparación, Cuidado de mascotas, Matemáticas).
+* Insignia de Confianza Universitaria: Sistema de verificación opcional en el onboarding que otorga un "check verde" al perfil del joven si vincula su correo institucional.
 
 
-* Sistema de Reputación Bidireccional: Funcionalidad para dejar una calificación de 1 a 5 estrellas y un comentario corto obligatorio al finalizar la "chamba", tanto para el empleador como para el empleado.
+* Motor de Geolocalización en Tiempo Real: Mapa y lista de alertas que conecta los turnos disponibles con los jóvenes que se encuentran a menor distancia del negocio.
 
 
-* Chat Interno de Coordinación: Un servicio de mensajería dentro de la app que se activa solo cuando un trabajador acepta un trabajo, para coordinar detalles exactos y precio sin exponer datos privados de contacto.
+* Sistema de Reputación Bidireccional: Obligatoriedad de dejar una calificación de 1 a 5 estrellas al finalizar el turno, construyendo el historial de confianza mutua.
 
 
-* Botón de "Pago Rápido" (Opcional a futuro): Integración con billeteras digitales (como Yape o Plin) para facilitar el pago del servicio directamente y sin necesidad de efectivo.
+* Chat Interno Temporal: Mensajería que se habilita únicamente cuando el joven acepta el turno y se desactiva una vez finalizado el trabajo.
 
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-* **Hipótesis 1 (Geolocalización):** Creemos que mostrando las oportunidades de trabajo en un mapa interactivo según la ubicación del usuario, lograremos que el tiempo de conexión entre contratante y trabajador sea menor a 2 horas. Sabremos que esto es cierto cuando el 60% de los trabajos publicados se acepten el mismo día.
+* **Hipótesis 1 (Inmediatez por Geolocalización):** Creemos que al priorizar un motor de búsqueda basado en geolocalización en tiempo real, lograremos que los dueños de MYPEs resuelvan sus emergencias de personal de manera eficiente.
+Sabremos que esto es cierto cuando observemos que el 60% de los turnos publicados en la plataforma son aceptados por un joven en un radio cercano en menos de 2 horas.
 
+* **Hipótesis 2 (Registro sin fricción / "Tag-Based"):** Creemos que al eliminar la exigencia de un Currículum Vitae (CV) tradicional y reemplazarlo por un perfil de creación rápida basado en etiquetas de habilidades, lograremos derribar la barrera de entrada al mercado laboral para los jóvenes.
+Sabremos que esto es cierto cuando el tiempo promedio para completar el registro en la aplicación sea menor a 3 minutos y la tasa de abandono (drop-off) durante el onboarding sea inferior al 15%.
 
-* **Hipótesis 2 (Sin CV / Solo Habilidades):** Creemos que eliminando la carga de un CV tradicional y usando un sistema de "selección de habilidades", aumentaremos la tasa de registro de trabajadores de sectores populares. Sabremos que esto es cierto si el tiempo promedio para completar un perfil es menor a 3 minutos.
+* **Hipótesis 3 (Insignia de Confianza Universitaria):** Creemos que al ofrecer una verificación opcional vinculando el correo institucional académico (.edu.pe), lograremos mitigar la desconfianza de las MYPEs al contratar a personas desconocidas o sin experiencia formal.
+Sabremos que esto es cierto cuando los datos muestren que los jóvenes con la "Insignia de Confianza" reciben un 50% más de aceptaciones o invitaciones a turnos que aquellos con perfiles no verificados.
 
+* **Hipótesis 4 (Sistema de Calificaciones):** Creemos que al implementar un sistema de reseñas mutuas (de 1 a 5 estrellas) obligatorio tras finalizar el turno, lograremos construir un ecosistema seguro y fomentar un buen nivel de servicio constante.
+Sabremos que esto es cierto cuando la calificación promedio general de la plataforma se mantenga por encima de 4.2 estrellas y veamos una tasa de recurrencia del 30% en MYPEs contratando nuevamente a jóvenes con altas calificaciones.
 
-* **Hipótesis 3 (Sistema de Reseñas):** Creemos que un sistema de calificación rápida (estrellas/pulgar arriba) post-servicio generará confianza. Sabremos que esto es cierto cuando veamos que los trabajadores con más de 3 calificaciones positivas reciben un 50% más de solicitudes.
 #### 1.2.2.4. Lean UX Canvas
-![Canvas Moviles.png](../assets/img/chapter-1/Canvas%20Moviles.png)
+![Last Canvas.png](../assets/img/chapter-1/Last%20Canvas.png)
 ## 1.3. Segmentos objetivo
 Para que ChambaYA funcione y logre tracción, la plataforma es un modelo multilateral (Two-Sided Market). Por lo tanto, se definen dos segmentos objetivo principales:
 
-### Segmento Objetivo 1: El "Chambeador" 
+### Segmento Objetivo 1: El joven estudiante
 
-Demografía: Hombres y mujeres de 18 a 30 años. Sectores socioeconómicos C, D y E. Estudiantes universitarios/técnicos que necesitan flexibilidad, trabajadores de oficios manuales o personas actualmente desempleadas.
+**Demografía:** Jóvenes adultos, principalmente entre 18 y 25 años. Este grupo está conformado en gran medida por estudiantes que se encuentran en plena etapa universitaria o técnica, así como jóvenes que buscan sus primeros ingresos o trabajos de medio tiempo para solventar sus gastos personales o académicos.
 
-Comportamiento tecnológico: Tienen un smartphone (Android en su gran mayoría) y usan redes sociales y WhatsApp constantemente. Pueden tener planes de datos limitados (prepago).
+**Comportamiento tecnológico:** Son nativos digitales. Su smartphone es una extensión de su día a día y están altamente familiarizados con el uso de plataformas bajo demanda (apps móviles), redes sociales y billeteras digitales para pagos rápidos (Yape, Plin).
 
-Necesidades y frustraciones: Necesitan liquidez inmediata (dinero en el día o semana). Se frustran con los procesos de contratación largos porque no tienen experiencia formal que poner en un papel. Valoran trabajar cerca de su zona para no gastar demasiado en pasajes de transporte público.
-
+**Necesidades y frustraciones:** Su principal necesidad es la flexibilidad; requieren generar liquidez rápida sin comprometer la rigidez de sus horarios de clases o estudio. Su mayor frustración en el mercado laboral actual es la barrera de la "falta de experiencia previa" y la burocracia de armar un currículum vitae para generar ingresos menores. Valoran la inmediatez y el trabajo por objetivos o turnos cortos.
 ### Segmento Objetivo 2:El Contratante 
 
-Demografía: Hombres y mujeres de 25 a 60 años. Sectores socioeconómicos A, B y C. Incluye a dueños de pequeños negocios (bodegas, ferreterías, restaurantes) y cabezas de familia.
+**Demografía:** Emprendedores, administradores o propietarios de micro y pequeñas empresas (mypes) locales. El enfoque principal está en sectores de alta rotación u operacionales: restaurantes, cafeterías, bodegas, minimarkets, ferreterías o negocios de eventos.
 
-Comportamiento tecnológico: Usuarios activos de aplicaciones de servicios (delivery, transporte privado). Buscan conveniencia desde su celular.
+**Comportamiento tecnológico:** Utilizan el celular como herramienta de gestión diaria para sus negocios (uso intensivo de WhatsApp Business, aplicaciones de proveedores, plataformas de delivery y apps bancarias). Buscan herramientas prácticas que les ahorren tiempo.
 
-Necesidades y frustraciones: Tienen poco tiempo libre. Necesitan resolver problemas puntuales de manera urgente (un reemplazo por un día, alguien para una mudanza rápida, un tutor para un examen). Su mayor frustración al contratar servicios informales es la desconfianza o no saber a quién acudir rápidamente sin tener que comprometerse a un contrato largo.
+**Necesidades y frustraciones:** Operan en entornos dinámicos donde surgen imprevistos constantemente (por ejemplo, un mozo que falta un viernes por la noche, necesidad de un lavaplatos extra para un fin de semana concurrido, o personal temporal para hacer inventario o repartir volantes). Su principal frustración es no tener tiempo, presupuesto ni energía para realizar un proceso de contratación y entrevistas formal cuando solo necesitan cubrir un turno de emergencia por uno o dos días. Necesitan una solución confiable y geolocalizada cerca a sus locales.
