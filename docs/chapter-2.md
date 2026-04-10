@@ -117,18 +117,85 @@
         <td>Amenazas: Plataformas nicho más adaptadas al mercado local.</td>
     </tr>
 </table>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
-
-## 2.2. Entrevistas
-### 2.2.1. Diseño de entrevistas
-Luego de haber realizado el análisis de nuestra solución con respecto a soluciones ya existentes, nuestro equipo procederá a plantear estrategias y tácticas que debemos poner en marcha para sobresalir de las otras soluciones.
-
-**Matriz CAME para el desarrollo de estrategias en base al análisis FODA**
 
 | **Análisis FODA cruzado** | **Oportunidades** | **Amenazas** |
 |---|---|---|
 | **Fortalezas (F)**<br>1. Especialización en contratación inmediata para MYPEs.<br>2. Matching geolocalizado en tiempo real.<br>3. Registro simplificado sin CV mediante sistema tag-based. | **Estrategia (FO) — Estrategias Ofensivas**<br>1. Posicionar a ChambaYA como la primera plataforma especializada en contratación urgente para MYPEs en Perú.<br>2. Implementar campañas de adquisición en zonas comerciales con alta concentración de negocios pequeños.<br>3. Generar alianzas con universidades e institutos para captar oferta laboral juvenil verificada.<br>4. Incentivar primeras contrataciones mediante promociones de lanzamiento y créditos gratuitos para MYPEs. | **Estrategia (FA) — Estrategias Defensivas**<br>1. Reforzar el posicionamiento de nicho especializado frente a plataformas generalistas como Computrabajo/Indeed.<br>2. Priorizar velocidad de matching como principal diferenciador competitivo.<br>3. Construir barreras de salida mediante reputación acumulativa de usuarios.<br>4. Mejorar constantemente UX/UI para reducir fricción frente a competidores más grandes.<br5. Comunicar fuertemente beneficios de inmediatez y cercanía geográfica. |
 | **Debilidades (D)**<br>1. Bajo reconocimiento de marca al ser startup nueva.<br>2. Necesidad de masa crítica en ambos lados del marketplace.<br>3. Recursos limitados frente a competidores consolidados.<br>4. Dependencia inicial de adopción en mercados locales específicos.| **Estrategia (DO) — Reorientación**<br>1. Validar el modelo en una zona piloto antes de expansión masiva.<br>2. Ejecutar campañas hiperlocales para alcanzar densidad de usuarios por distrito/zona comercial.<br>3. Implementar programas de referidos para crecimiento orgánico de ambas partes del marketplace.<br>4. Generar contenido educativo para MYPEs sobre beneficios de contratación flexible digital.<br>5. Buscar incubadoras, fondos semilla y alianzas estratégicas para acelerar crecimiento. | **Estrategia (DA) — Supervivencia**<br>1. Priorizar construcción de confianza mediante validación de identidad y sistema reputacional robusto.<br>2. Mantener costos operativos lean para competir durante etapa temprana.<br>3. Enfocar recursos en verticales/rubros donde el pain point sea más fuerte.<br>4. Diseñar estrategia de retención temprana para evitar churn en ambos lados del marketplace.<br>5. Iterar rápidamente el producto con base en feedback continuo del mercado piloto. |
+
+## 2.2. Entrevistas
+### 2.2.1. Diseño de entrevistas
+<h4 id="Segment" >Segmento objetivo: Contratantes (MYPEs)</h4> 
+<h4 id="PreguntPersonal">Preguntas Personales:</h4> 
+
+¿Cuál es su nombre?
+
+¿Cuál es su edad?
+
+¿Cuál es su cargo dentro del negocio?
+
+¿Qué tipo de negocio administra?
+
+¿Cuántos años lleva operando el negocio?
+
+¿Cuántos trabajadores tiene actualmente?
+
+
+<h4 id="PreguntEspe">Preguntas específicas:</h4> 
+
+¿Con qué frecuencia enfrenta faltas de personal o necesidad de apoyo temporal en su negocio?
+
+¿Cuando necesita cubrir un turno urgente, ¿cómo busca personal actualmente?
+
+¿Cuánto tiempo suele tardar en encontrar a alguien disponible?
+
+¿Qué problemas o frustraciones enfrenta con ese proceso?
+
+¿Qué factores considera más importantes al momento de contratar personal temporal? (confianza, cercanía, experiencia, rapidez, costo, etc.)
+
+¿Ha contratado anteriormente personas sin experiencia formal? ¿Cómo fue esa experiencia?
+
+¿Qué nivel de confianza le generaría contratar mediante una aplicación móvil?
+
+¿Qué funcionalidades consideraría indispensables en una plataforma de contratación inmediata?
+
+¿Estaría dispuesto a pagar una comisión por una contratación rápida y confiable? ¿Bajo qué condiciones?
+
+<h4 id="Segment" >Segmento objetivo: Jóvenes / Trabajadores Temporales </h4> 
+<h4 id="PreguntPersonal">Preguntas Personales:</h4> 
+
+¿Cuál es su nombre?
+
+¿Cuál es su edad?
+
+¿Actualmente estudia, trabaja o ambos?
+
+¿Cuál es su ocupación?
+
+¿Dónde reside actualmente?
+
+¿Cuenta con experiencia laboral previa? ¿En qué rubros?
+
+
+<h4 id="PreguntESP">Preguntas específicas :</h4> 
+
+¿Ha buscado trabajos temporales o de medio tiempo anteriormente?
+
+¿Qué dificultades ha encontrado al buscar este tipo de empleo?
+
+¿Qué tan importante es para usted la flexibilidad horaria al momento de trabajar?
+
+¿Qué tan dispuesto estaría a aceptar trabajos de corta duración por turnos o días?
+
+¿Qué tipo de trabajos operativos estaría dispuesto a realizar? (atención, reparto, inventario, limpieza, etc.)
+
+¿Qué factores considera más importantes al aceptar un trabajo temporal? (pago, cercanía, horario, seguridad, reputación del negocio, etc.)
+
+¿Qué tan cómodo se sentiría usando una app para postular a trabajos rápidos sin CV?
+
+<div style="page-break-after: always;"></div>
 
 ### 2.2.2. Registro de entrevistas
 
