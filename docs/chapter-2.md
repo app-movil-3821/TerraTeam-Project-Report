@@ -18,19 +18,19 @@
     <tr>
         <td colspan="3"></td>
         <td style="text-align:center;">
-            <strong>Veyra</strong><br>
+            <strong>chambaYA</strong><br>
             <img src="" alt="chambaYA" style="width:100px;">
         </td>
         <td style="text-align:center;">
-            <strong>StoriiCare</strong><br>
+            <strong>Computrabajo</strong><br>
             <img src="" alt="Computrabajo" style="width:100px;">
         </td>
         <td style="text-align:center;">
-            <strong>SeniorSoft</strong><br>
+            <strong>Time Jobs</strong><br>
             <img src="" alt="Time Jobs" style="width:100px;">
         </td>
         <td style="text-align:center;">
-            <strong>CareCloud</strong><br>
+            <strong>Indeed</strong><br>
             <img src="" alt="Indeed" style="width:100px;">
         </td>
     </tr>
