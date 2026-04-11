@@ -297,6 +297,26 @@ Resumen:
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
 ### 2.3.5. Ubiquitous Language
+En el presente proyecto, orientado a optimizar la conexión entre micro y pequeñas empresas (MYPEs) y jóvenes que buscan oportunidades laborales temporales mediante una plataforma digital, se ha definido un lenguaje ubicuo que permite establecer una comprensión común entre todos los actores involucrados, incluyendo usuarios, desarrolladores y stakeholders.
+
+La adopción de este lenguaje compartido resulta fundamental para describir de manera clara y consistente los conceptos clave del dominio, reduciendo posibles ambigüedades y facilitando la comunicación a lo largo de todo el proceso de desarrollo del sistema.
+
+A continuación, se presentan los principales términos definidos:
+
+| Término | Descripción |
+|--------|------------|
+| Chambeador | Usuario joven o estudiante que se registra en la plataforma para encontrar trabajos temporales o turnos cortos. |
+| Contratante | Dueño, administrador o representante de una MYPE que publica turnos de trabajo en la plataforma. |
+| Turno | Trabajo temporal o tarea específica que debe ser cubierta en un periodo corto de tiempo. |
+| Mini-job | Trabajo de corta duración, generalmente por horas o por un día, enfocado en tareas operativas. |
+| Match | Proceso mediante el cual la plataforma conecta un turno publicado con un chambeador disponible. |
+| Tags de habilidades | Etiquetas que representan las habilidades del chambeador (ej. atención al cliente, inventario, reparto). |
+| Insignia de confianza | Verificación del perfil del usuario mediante correo institucional u otro mecanismo de validación. |
+| Geolocalización | Funcionalidad que permite ubicar a los usuarios en tiempo real para conectar ofertas y demandas cercanas. |
+| Sistema de reputación | Mecanismo de calificación basado en estrellas que permite evaluar la experiencia entre usuarios. |
+| Chat interno | Canal de comunicación dentro de la plataforma que permite coordinar detalles del turno sin compartir datos personales. |
+| Publicación de turno | Acción realizada por el contratante para registrar un nuevo trabajo disponible en la plataforma. |
+| Aceptación de turno | Acción mediante la cual un chambeador selecciona y confirma su participación en un turno. |
 
 ## 2.4. Requirements Specification
 ### 2.4.1. User Stories
