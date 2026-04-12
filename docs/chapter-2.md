@@ -18,20 +18,20 @@
     <tr>
         <td colspan="3"></td>
         <td style="text-align:center;">
-            <strong>chambaYA</strong><br>
-            <img src="" alt="chambaYA" style="width:100px;">
+            <strong>ChambaYA</strong><br>
+            <img src="../assets/img/Chapter-2/CompetitiveAnalysis-Images/ChambaYa-logo.png" alt="ChambaYA" style="width:100px;">
         </td>
         <td style="text-align:center;">
             <strong>Computrabajo</strong><br>
-            <img src="" alt="Computrabajo" style="width:100px;">
+            <img src="../assets/img/Chapter-2/CompetitiveAnalysis-Images/Computrabajo-logo.png" alt="Computrabajo" style="width:100px;">
         </td>
         <td style="text-align:center;">
             <strong>Time Jobs</strong><br>
-            <img src="" alt="Time Jobs" style="width:100px;">
+            <img src="../assets/img/Chapter-2/CompetitiveAnalysis-Images/TimeJobs-logo.png" alt="Time Jobs" style="width:100px;">
         </td>
         <td style="text-align:center;">
             <strong>Indeed</strong><br>
-            <img src="" alt="Indeed" style="width:100px;">
+            <img src="../assets/img/Chapter-2/CompetitiveAnalysis-Images/Indeed-logo.png" alt="Indeed" style="width:100px;">
         </td>
     </tr>
     <tr>
