@@ -237,26 +237,53 @@ Resumen:
 
 
 #### Segmento 2:
-* Entrevista 1:
 
-| Campo                          | Información                                      |
-|--------------------------------|--------------------------------------------------|
-| Nombre                         | jimena                                           |
-| Apellido                       | Bartolo                                         |
-| Edad                           | 25 años                                         |
-| Distrito                       | La Molina, Lima, Perú                           |
-| Evidencia                      | Entrevista grabada (audio/transcripción)        |
-| URL                            | *(agregar enlace)*                              |
-| Inicio de Entrevista           | ----                                            |
-| Fin de entrevista              | ----                                            |
-| Estado Civil                   | Soltero                                         |
-| Ocupacion                      | Administradora de Mypes                         |
-| Dispositivo de preferencia     | Smartphone / Laptop                             |
-| Canales de interaccion digital | whatsap                                         |     
-
-Resumen:
-Jimena, dueña de un pequeño negocio, mencionó que enfrenta dificultades cuando necesita cubrir turnos de manera urgente, ya que actualmente busca personal a través de conocidos o WhatsApp, lo que le toma entre uno y dos días. Señala que uno de los principales problemas es la falta de confianza y referencias de los trabajadores, además de la pérdida de tiempo en el proceso. Considera importante contar con una solución que le permita encontrar personal disponible de forma rápida, cercana y con buenas calificaciones, y estaría dispuesta a pagar por este servicio si realmente le garantiza eficiencia y confiabilidad
-
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Jimena</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Bartolo </td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>25 años</td>
+  </tr>
+  <tr>
+    <td>Rol</td>
+    <td>Administradora de Mypes</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div align="center"><img src="../assets/img/Chapter-2/CompetitiveAnalysis-Images/entrevista.png" alt="Entrevista"></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td><p><a target="_blank"  href="" title="Title"></p></td>
+  </tr>
+    <td>Timing donde inicia la entrevista<br></td>
+    <td>00:00 min</td>
+  </tr>
+  <tr>
+    <td>Duración de la entrevista<br></td>
+    <td>00:00 min</td>
+  <tr>
+    <td>Resumen</td>
+    <td> - Jimena, dueña de un pequeño negocio, mencionó que enfrenta dificultades cuando necesita cubrir turnos de manera urgente, ya que actualmente busca personal a través de conocidos o WhatsApp, lo que le toma entre uno y dos días. Señala que uno de los principales problemas es la falta de confianza y referencias de los trabajadores, además de la pérdida de tiempo en el proceso. Considera importante contar con una solución que le permita encontrar personal disponible de forma rápida, cercana y con buenas calificaciones, y estaría dispuesta a pagar por este servicio si realmente le garantiza eficiencia y confiabilidad
+</td>
+  </tr>
+</tbody>
+</table>
 
 * Entrevista 2:
 
