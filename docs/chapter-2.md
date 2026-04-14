@@ -239,21 +239,23 @@ Resumen:
 #### Segmento 2:
 * Entrevista 1:
 
-| Nombre                         |     |      
-|--------------------------------|-----|
-| Apellido                       |     |      
-| Edad                           |     |      
-| Distrito                       |     |      
-| Evidencia                      |     |      
-| URL                            |     |      
-| Inicio de Entrevista           |     |      
-| Fin de entrevista              |     |      
-| Estado Civil                   |     |      
-| Ocupacion                      |     |      
-| Dispositivo de preferencia     |     |      
-| Canales de interaccion digital |     |     
+| Campo                          | Información                                      |
+|--------------------------------|--------------------------------------------------|
+| Nombre                         | jimena                                           |
+| Apellido                       | Bartolo                                         |
+| Edad                           | 25 años                                         |
+| Distrito                       | La Molina, Lima, Perú                           |
+| Evidencia                      | Entrevista grabada (audio/transcripción)        |
+| URL                            | *(agregar enlace)*                              |
+| Inicio de Entrevista           | ----                                            |
+| Fin de entrevista              | ----                                            |
+| Estado Civil                   | Soltero                                         |
+| Ocupacion                      | Administradora de Mypes                         |
+| Dispositivo de preferencia     | Smartphone / Laptop                             |
+| Canales de interaccion digital | whatsap                                         |     
 
 Resumen:
+Jimena, dueña de un pequeño negocio, mencionó que enfrenta dificultades cuando necesita cubrir turnos de manera urgente, ya que actualmente busca personal a través de conocidos o WhatsApp, lo que le toma entre uno y dos días. Señala que uno de los principales problemas es la falta de confianza y referencias de los trabajadores, además de la pérdida de tiempo en el proceso. Considera importante contar con una solución que le permita encontrar personal disponible de forma rápida, cercana y con buenas calificaciones, y estaría dispuesta a pagar por este servicio si realmente le garantiza eficiencia y confiabilidad
 
 
 * Entrevista 2:
