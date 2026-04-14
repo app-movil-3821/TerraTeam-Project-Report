@@ -221,21 +221,23 @@ Resumen:
 
 * Entrevista 2:
 
-| Nombre                         |     |      
-|--------------------------------|-----|
-| Apellido                       |     |      
-| Edad                           |     |      
-| Distrito                       |     |      
-| Evidencia                      |     |      
-| URL                            |     |      
-| Inicio de Entrevista           |     |      
-| Fin de entrevista              |     |      
-| Estado Civil                   |     |      
-| Ocupacion                      |     |      
-| Dispositivo de preferencia     |     |      
-| Canales de interaccion digital |     |     
+| Campo                          | Información                                      |
+|--------------------------------|--------------------------------------------------|
+| Nombre                         | Josué                                           |
+| Apellido                       | Arunategui                                      |
+| Edad                           | 22 años                                         |
+| Distrito                       | Chorrillos, Lima, Perú                          |
+| Evidencia                      | Entrevista grabada (audio/transcripción)        |
+| URL                            | *(agregar enlace)*                              |
+| Inicio de Entrevista           | 00:01                                           |
+| Fin de entrevista              | 04:07                                           |
+| Estado Civil                   | Soltero                                         |
+| Ocupacion                      | Administrador de Base de Datos                  |
+| Dispositivo de preferencia     | Smartphone / Laptop                             |
+| Canales de interaccion digital | Discord                                         |    
 
-Resumen:
+Resumen: 
+El entrevistado, Josué Arunategui, de 22 años y residente en Chorrillos, trabaja como administrador de base de datos con experiencia en ciencia de datos y retail. Ha buscado trabajos temporales, pero encontró dificultades como falta de confianza en las ofertas, poca claridad en pagos y procesos largos. Valora la flexibilidad horaria y está dispuesto a realizar trabajos cortos si las condiciones son claras y bien remuneradas, prefiriendo actividades relacionadas a TI. Considera importantes la cercanía, seguridad, horario flexible y reputación del empleador. Además, se sentiría cómodo usando una app para postular, siempre que sea confiable y transparente.
 
 #### Segmento 2:
 * Entrevista 1:
