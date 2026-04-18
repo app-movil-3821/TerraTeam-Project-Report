@@ -246,7 +246,7 @@
     <td>00:00 min</td>
   <tr>
     <td>Resumen</td>
-    <td> - Jimena, dueña de un pequeño negocio, mencionó que enfrenta dificultades cuando necesita cubrir turnos de manera urgente, ya que actualmente busca personal a través de conocidos o WhatsApp, lo que le toma entre uno y dos días. Señala que uno de los principales problemas es la falta de confianza y referencias de los trabajadores, además de la pérdida de tiempo en el proceso. Considera importante contar con una solución que le permita encontrar personal disponible de forma rápida, cercana y con buenas calificaciones, y estaría dispuesta a pagar por este servicio si realmente le garantiza eficiencia y confiabilidad
+    <td> - Jimena, dueña de un pequeño negocio, mencionó que enfrenta dificultades cuando necesita cubrir turnos de manera urgente, ya que actualmente busca personal a través de conocidos o WhatsApp, lo que le toma entre uno y dos días. Señala que uno de los principales problemas es la falta de confianza y referencias de los trabajadores, además de la pérdida de tiempo en el proceso. Considera importante contar con una solución que le permita encontrar personal disponible de forma rápida, cercana y con buenas calificaciones, y estaría dispuesta a pagar por este servicio si realmente le garantiza eficiencia y confiabilidad.
 </td>
   </tr>
 </tbody>
@@ -545,6 +545,15 @@ Al comparar ambos segmentos, se observa que empleadores y trabajadores coinciden
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
+Para desarrollar la propuesta de solución, se creará un User Persona por cada segmento objetivo. Este tendrá información relacionada a una persona que pertenezca al segmento objetivo respectivo ya sea información personal, gustos, usos tecnológicos u objetivos. De esta forma, se podrá dar una idea más clara de a qué publico nos estamos acercando con la idea de solución. Además, se realiza una conclusión del análisis de cada User Persona.
+
+**User Persona 1: Contratantes (MYPEs)**
+<div align="center"><img src="../assets/img/Chapter-2/Needfinding/UserPersonas/Jimena_Torres_UP.png" alt="User Persona 1" width="80%"></div>
+
+**User Persona 2: Trabajadores Temporales**
+<div align="center"><img src="../assets/img/Chapter-2/Needfinding/UserPersonas/Victor_Rivera_UP.png" alt="User Persona 2" width="80%"></div>
+
+
 ### 2.3.2. User Task Matrix
 |                  |                    |                    |
 |------------------|--------------------|--------------------|
