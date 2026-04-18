@@ -264,23 +264,23 @@
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td></td>
+    <td>Fabricio</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td> </td>
+    <td>Sanchez</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td></td>
+    <td>26</td>
   </tr>
   <tr>
     <td>Rol</td>
-    <td></td>
+    <td>Administrador de Mype</td>
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="" alt="Entrevista2"></td>
+    <td><div align="center"><img src="assets/img/Chapter-2/Entrevistas/Segmento1/entrevista2.png" alt="Entrevista2"></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -291,14 +291,18 @@
     </td>
   </tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td>00:00 min</td>
+    <td>03:33 min</td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td>00:00 min</td>
+    <td>08:52 min</td>
   <tr>
     <td>Resumen</td>
-    <td> 
+    <td> Fabricio confirmo que la rotación imprevista de personal es un problema crítico, especialmente los fines de semana. Sus métodos de reclutamiento actuales (carteles, redes sociales) son lentos, ineficientes y generan desconfianza, tardando hasta tres días en cubrir urgencias.
+
+Para turnos de emergencia, Fabricio prioriza la inmediatez, cercanía y buena actitud por encima de la experiencia formal o el CV. La propuesta de la aplicación fue recibida con entusiasmo. Destacó que el mapa de geolocalización es indispensable para actuar rápido. Además, la "Insignia de Confianza" (verificación con correo universitario) fue el factor decisivo que disipó sus miedos de seguridad al contratar desconocidos, prefiriendo estudiantes validados.
+
+Finalmente, validó el modelo de negocio al confirmar su total disposición a pagar una comisión por contacto efectivo, ya que el costo es mínimo comparado con las pérdidas por falta de personal.
 </td>
   </tr>
 </tbody>
