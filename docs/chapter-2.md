@@ -547,6 +547,8 @@ Al comparar ambos segmentos, se observa que empleadores y trabajadores coinciden
 <div align="center"><img src="../assets/img/Chapter-2/Entrevistas/Analisis/analisi-terra3.png" alt="Gráfico Comparativo Segmentos" width="80%"></div>
 <br>
 
+---
+
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 Para desarrollar la propuesta de solución, se creará un User Persona por cada segmento objetivo. Este tendrá información relacionada a una persona que pertenezca al segmento objetivo respectivo ya sea información personal, gustos, usos tecnológicos u objetivos. De esta forma, se podrá dar una idea más clara de a qué publico nos estamos acercando con la idea de solución. Además, se realiza una conclusión del análisis de cada User Persona.
@@ -561,21 +563,119 @@ Para desarrollar la propuesta de solución, se creará un User Persona por cada 
 **User Persona 2: Trabajadores Temporales**
 <div align="center"><img src="../assets/img/Chapter-2/Needfinding/UserPersonas/Victor_Rivera_UP.png" alt="User Persona 2" width="80%"></div>
 
+---
 
 ### 2.3.2. User Task Matrix
-|                  |                    |                    |
-|------------------|--------------------|--------------------|
-|                  |                    |                    |
-|                  |                    |                    |
-|                  |                    |                    |
-|                  |                    |                    |
-|                  |                    |                    |
-|                  |                    |                    |
-|                  |                    |                    |
-|                  |                    |                    |
-|                  |                    |                    |
-|                  |                    |                    |
-|                  |                    |                    |
+
+El User Task Matrix de cada User Persona incluye las actividades que realizan que más destacan en una situación cotidiana. A cada actividad se le asigna un puntaje en cuanto a qué tan frecuente es realizada por el User Persona y otro puntaje en cuanto a qué tanta importancia posee dicha actividad. Gracias a esta herramienta se puede identificar las actividades que necesitan realizar los usuarios y cómo las realizan para hallar formas de mejora que serán parte del producto a diseñar.
+
+Se consideran los dos usuarios previamente definidos que constituyen a los segmentos objetivos de dueños de licorerías y proveedores de productos de licorería, en cada tabla se colocarán las actividades que realizan los User Persona para cumplir sus objetivos. Además, para los niveles de frecuencia e importancia se usan cuatro niveles, siendo estos: Muy Alta, Alta, Media y Baja.
+
+
+<table>
+    <tr>
+        <th rowspan="2">ACTIVIDAD </th>
+        <th colspan="2">JIMENA TORRES</th>
+        <th colspan="2">VICTOR RIVERA</th>
+    </tr>
+    <tr>
+        <td> Frecuencia </td>
+        <td> Importancia </td>
+        <td> Frecuencia </td>
+        <td> Importancia </td>
+    </tr>
+    <tr>
+        <td>Buscar oportunidades laborales</td>
+        <td>Media</td>
+        <td>Alta</td>
+        <td>Muy Alta</td>  
+        <td>Muy Alta</td>
+    </tr>
+    <tr>
+        <td>Publicar ofertas de trabajo</td>
+        <td>Muy Alta</td>
+        <td>Muy Alta</td>
+        <td>Baja</td>  
+        <td>Media</td>
+    </tr>
+    <tr>
+        <td>Revisar información de trabajos / candidatos</td>
+        <td>Muy Alta</td>
+        <td>Muy Alta</td>
+        <td>Alta</td>  
+        <td>Muy Alta</td>
+    </tr>
+    <tr>
+        <td>Evaluar reputación (empleador / trabajador)</td>
+        <td>Muy Alta</td>
+        <td>Muy Alta</td>
+        <td>Alta</td>  
+        <td>Muy Alta</td>
+    </tr>
+    <tr>
+        <td>Postular / seleccionar candidato</td>
+        <td>Alta</td>
+        <td>Muy Alta</td>
+        <td>Alta</td>  
+        <td>Muy Alta</td>
+    </tr>
+    <tr>
+        <td>Coordinar detalles del trabajo</td>
+        <td>Alta</td>
+        <td>Muy Alta</td>
+        <td>Media</td>  
+        <td>Alta</td>
+    </tr>
+    <tr>
+        <td>Gestionar tiempos / disponibilidad</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Muy Alta</td>  
+        <td>Muy Alta</td>
+    </tr>
+    <tr>
+        <td>Ejecutar trabajo / supervisar cumplimiento</td>
+        <td>Alta</td>
+        <td>Muy Alta</td>
+        <td>Media</td>  
+        <td>Alta</td>
+    </tr>
+    <tr>
+        <td>Realizar / recibir pagos</td>
+        <td>Media</td>
+        <td>Muy Alta</td>
+        <td>Media</td>  
+        <td>Muy Alta</td>
+    </tr>
+    <tr>
+        <td>Calificar experiencia</td>
+        <td>Media</td>
+        <td>Alta</td>
+        <td>Baja</td>  
+        <td>Media</td>
+    </tr>
+    <tr>
+        <td>Guardar contactos o favoritos</td>
+        <td>Media</td>
+        <td>Alta</td>
+        <td>Baja</td>  
+        <td>Media</td>
+    </tr>
+    
+</table>
+
+Como se observa en la matriz, ambos User Persona presentan actividades críticas con niveles de alta frecuencia e importancia, especialmente en las etapas de búsqueda, evaluación y selección.
+
+En el caso de **Víctor Rivera**, destacan actividades como la búsqueda de empleo, la evaluación de ofertas y la gestión de su disponibilidad, ya que necesita compatibilizar el trabajo con sus estudios. La importancia de la claridad en la información y la rapidez del proceso es clave para su experiencia.
+
+Por otro lado, **Jimena Torres** presenta mayor intensidad en actividades relacionadas con la publicación de ofertas, evaluación de candidatos y supervisión del trabajo. Su principal necesidad radica en la rapidez y confiabilidad, ya que busca cubrir turnos urgentes sin afectar la operación de su negocio.
+
+Ambos coinciden en la importancia de la confianza (reputación) y la claridad en las condiciones, lo que evidencia la necesidad de implementar sistemas de validación y calificación dentro de la solución.
+
+Finalmente, la mayor oportunidad del sistema se encuentra en optimizar el proceso de matching rápido y confiable, reduciendo el tiempo de contratación y mejorando la experiencia para ambos usuarios.
+
+---
+
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
 ### 2.3.5. Ubiquitous Language
