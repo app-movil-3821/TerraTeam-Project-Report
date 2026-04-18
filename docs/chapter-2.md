@@ -586,27 +586,75 @@ A continuación, se presentan los principales términos definidos:
 ## 2.4. Requirements Specification
 ### 2.4.1. User Stories
 
-En esta sección se presentan las historias de usuario que permiten describir las principales funcionalidades del sistema desde la perspectiva de sus usuarios. Estas historias se construyen a partir del análisis del problema, los segmentos objetivo y las necesidades identificadas en el contexto de la plataforma.
+En esta sección se presentan las historias de usuario que describen las principales funcionalidades del sistema desde la perspectiva de los usuarios finales. Estas historias han sido definidas considerando el análisis del problema, los segmentos objetivo y las necesidades identificadas en el desarrollo de la plataforma.
 
-Las historias de usuario han sido organizadas en épicas para facilitar la comprensión de los distintos componentes funcionales del sistema. De esta manera, se agrupan funcionalidades relacionadas con la gestión de los chambeadores, los contratantes y los mecanismos de interacción y confianza dentro de la plataforma. Cada historia refleja situaciones reales que buscan resolverse, como la necesidad de cubrir turnos de manera inmediata, acceder a oportunidades laborales cercanas y garantizar una experiencia segura para ambas partes.
+Con el fin de organizar de manera clara los requerimientos, las historias de usuario han sido agrupadas en épicas, lo que permite estructurar los distintos componentes funcionales del sistema. De esta forma, se abordan aspectos clave como la gestión de los chambeadores, la administración por parte de los contratantes y los mecanismos de interacción y confianza dentro de la plataforma. Cada historia representa situaciones reales que el sistema busca resolver, como la cobertura rápida de turnos, el acceso a oportunidades laborales cercanas y la generación de un entorno confiable para ambas partes.
 
-| Story ID | Título | Descripción | Criterios de Aceptación (Gherkin) |
+
+### EP01: Gestión de Chambeadores
+
+Descripción: Permite a los jóvenes registrarse, crear su perfil basado en habilidades y acceder a oportunidades laborales temporales sin necesidad de un CV.
+
+| Story ID | Título | Descripción | Criterios de Aceptación |
 |----------|--------|------------|-----------------------------------|
-| **EP01** | **Título:** Gestión de Chambeadores | **Descripción:** Permite a los jóvenes registrarse, crear su perfil basado en habilidades y acceder a oportunidades laborales temporales cercanas de manera rápida y sin necesidad de un CV. | |
-| US01 | Registro ágil de chambeador | Como chambeador, quiero registrarme de forma rápida en la plataforma, para acceder inmediatamente a oportunidades laborales sin procesos complejos. | Escenario 1: Registro exitoso  Dado que el usuario ingresa sus datos correctamente  Cuando confirma el registro  Entonces su cuenta se crea exitosamente  Escenario 2: Error en datos  Dado que el usuario ingresa datos incompletos  Cuando intenta registrarse  Entonces el sistema muestra un mensaje de error |
-| US02 | Perfil sin CV basado en habilidades | Como chambeador, quiero crear un perfil mediante etiquetas de habilidades sin necesidad de un CV, para acceder a trabajos sin barreras de experiencia formal. | Escenario 1: Creación de perfil  Dado que el usuario selecciona sus habilidades  Cuando guarda su perfil  Entonces el sistema registra correctamente las etiquetas |
-| US03 | Visualización de turnos cercanos en tiempo real | Como chambeador, quiero visualizar turnos disponibles en un radio cercano a mi ubicación en tiempo real, para reducir el tiempo de traslado y acceder a oportunidades inmediatas. | Escenario 1: Turnos disponibles  Dado que existen turnos cercanos  Cuando el usuario accede a la plataforma  Entonces visualiza las opciones en su zona |
-| US04 | Aceptación inmediata de turnos | Como chambeador, quiero aceptar turnos disponibles de forma inmediata, para generar ingresos el mismo día de manera flexible. | Escenario 1: Aceptación exitosa  Dado que el turno está disponible  Cuando el usuario lo acepta  Entonces queda asignado al turno |
-| US05 | Evaluación del contratante | Como chambeador, quiero visualizar la reputación del contratante antes de aceptar un turno, para asegurar una experiencia laboral confiable. | Escenario 1: Visualización de reputación  Dado que el contratante tiene calificaciones  Cuando el usuario revisa el perfil  Entonces puede ver su puntuación |
-| **EP02** | **Título:** Gestión de Contratantes (MYPEs) | **Descripción:** Permite a las micro y pequeñas empresas registrarse, publicar turnos de trabajo de manera ágil y encontrar trabajadores disponibles cercanos para cubrir necesidades urgentes. | |
-| US06 | Registro de contratante | Como contratante, quiero registrarme en la plataforma, para poder gestionar la contratación de personal temporal. | Escenario 1: Registro exitoso  Dado que el usuario completa sus datos  Cuando confirma el registro  Entonces su cuenta es creada correctamente |
-| US07 | Publicación rápida de turnos | Como contratante, quiero publicar turnos en pocos pasos, para cubrir ausencias inesperadas sin afectar la operación del negocio. | Escenario 1: Publicación exitosa  Dado que el usuario ingresa los datos del turno  Cuando lo publica  Entonces el turno es visible en la plataforma |
-| US08 | Búsqueda de trabajadores cercanos | Como contratante, quiero visualizar trabajadores disponibles cercanos en tiempo real, para contratar a alguien que pueda llegar rápidamente. | Escenario 1: Trabajadores disponibles  Dado que existen trabajadores cercanos  Cuando accede a la plataforma  Entonces puede ver perfiles disponibles |
-| US09 | Selección basada en confianza | Como contratante, quiero seleccionar trabajadores basándome en su reputación y habilidades, para asegurar un servicio confiable. | Escenario 1: Selección exitosa  Dado que el trabajador tiene calificaciones visibles  Cuando el contratante lo selecciona  Entonces queda asignado al turno |
-| US10 | Reducción del tiempo de contratación | Como contratante, quiero cubrir un turno en el menor tiempo posible, para evitar pérdidas operativas durante picos de demanda. | Escenario 1: Cobertura rápida  Dado que el turno es urgente  Cuando se publica  Entonces es aceptado en corto tiempo |
-| **EP03** | **Título:** Comunicación y Confianza | **Descripción:** Permite la interacción entre usuarios mediante herramientas de comunicación y un sistema de reputación que garantiza confianza y seguridad en la plataforma. | |
-| US11 | Comunicación mediante chat interno | Como usuario, quiero comunicarme mediante un chat interno, para coordinar detalles del turno sin compartir información personal. | Escenario 1: Chat habilitado  Dado que el turno fue aceptado  Cuando los usuarios acceden  Entonces pueden intercambiar mensajes |
-| US12 | Sistema de reputación bidireccional | Como usuario, quiero calificar al otro usuario después de finalizar el turno, para contribuir a un sistema de confianza dentro de la plataforma. | Escenario 1: Calificación registrada  Dado que el turno ha finalizado  Cuando el usuario califica  Entonces la puntuación se guarda correctamente |
+| US01 | Registro ágil de chambeador | Como chambeador, quiero registrarme rápidamente, para acceder a oportunidades laborales. | Escenario 1: Registro exitoso.<br>Dado que ingresa datos correctos<br>Cuando confirma<br>Entonces se crea la cuenta.<br><br>Escenario 2: Error de registro.<br>Dado datos incompletos<br>Cuando intenta registrarse<br>Entonces el sistema muestra error. |
+| US02 | Perfil basado en habilidades | Como chambeador, quiero crear un perfil sin CV, para acceder a trabajos fácilmente. | Escenario 1: Perfil creado.<br>Dado que selecciona habilidades<br>Cuando guarda<br>Entonces se registra.<br><br>Escenario 2: Perfil incompleto.<br>Dado que no selecciona habilidades<br>Cuando guarda<br>Entonces solicita completar datos. |
+| US03 | Ver turnos cercanos | Como chambeador, quiero ver turnos cercanos, para reducir desplazamiento. | Escenario 1: Turnos disponibles.<br>Dado que existen turnos cercanos<br>Cuando accede<br>Entonces los visualiza.<br><br>Escenario 2: Sin turnos.<br>Dado que no hay turnos cercanos<br>Cuando accede<br>Entonces muestra mensaje. |
+| US04 | Aceptar turnos | Como chambeador, quiero aceptar turnos, para trabajar de inmediato. | Escenario 1: Aceptación exitosa.<br>Dado turno disponible<br>Cuando acepta<br>Entonces se asigna.<br><br>Escenario 2: Turno ocupado.<br>Dado turno ya tomado<br>Cuando intenta aceptar<br>Entonces muestra error. |
+| US05 | Ver reputación del contratante | Como chambeador, quiero ver la reputación del contratante, para decidir. | Escenario 1: Reputación visible.<br>Dado que tiene calificaciones<br>Cuando revisa<br>Entonces las visualiza.<br><br>Escenario 2: Sin calificaciones.<br>Dado que no tiene historial<br>Cuando revisa<br>Entonces muestra mensaje. |
+
+### EP02: Gestión de Contratantes (MYPEs)
+
+Descripción: Permite a las micro y pequeñas empresas publicar turnos y gestionar la contratación de personal temporal de forma ágil.
+
+| Story ID | Título | Descripción | Criterios de Aceptación |
+|----------|--------|------------|-----------------------------------|
+| US06 | Registro de contratante | Como contratante, quiero registrarme, para gestionar personal. | Escenario 1: Registro exitoso.<br>Dado datos correctos<br>Cuando confirma<br>Entonces se crea la cuenta.<br><br>Escenario 2: Error en registro.<br>Dado datos inválidos<br>Cuando intenta<br>Entonces muestra error. |
+| US07 | Publicar turnos | Como contratante, quiero publicar turnos, para cubrir necesidades. | Escenario 1: Publicación exitosa.<br>Dado datos completos<br>Cuando publica<br>Entonces es visible.<br><br>Escenario 2: Datos incompletos.<br>Dado falta de datos<br>Cuando publica<br>Entonces muestra error. |
+| US08 | Ver trabajadores cercanos | Como contratante, quiero ver trabajadores cercanos, para contratar rápido. | Escenario 1: Trabajadores disponibles.<br>Dado que existen<br>Cuando accede<br>Entonces los ve.<br><br>Escenario 2: Sin trabajadores.<br>Dado que no hay disponibles<br>Cuando accede<br>Entonces muestra mensaje. |
+| US09 | Seleccionar trabajador | Como contratante, quiero elegir trabajadores por reputación. | Escenario 1: Selección exitosa.<br>Dado trabajador disponible<br>Cuando selecciona<br>Entonces se asigna.<br><br>Escenario 2: No disponible.<br>Dado trabajador ocupado<br>Cuando selecciona<br>Entonces muestra error. |
+| US10 | Cubrir turno rápido | Como contratante, quiero cubrir turnos rápido, para evitar pérdidas. | Escenario 1: Cobertura exitosa.<br>Dado turno publicado<br>Cuando recibe postulante<br>Entonces se cubre.<br><br>Escenario 2: Sin postulantes.<br>Dado tiempo límite<br>Cuando no hay postulantes<br>Entonces notifica. |
+
+### EP03: Comunicación y Confianza
+
+Descripción: Permite la interacción entre usuarios mediante herramientas de comunicación y un sistema de reputación que fortalece la confianza dentro de la plataforma.
+
+| Story ID | Título | Descripción | Criterios de Aceptación |
+|----------|--------|------------|-----------------------------------|
+| US11 | Chat interno | Como usuario, quiero comunicarme por chat, para coordinar. | Escenario 1: Chat activo.<br>Dado turno aceptado<br>Cuando acceden<br>Entonces pueden escribir.<br><br>Escenario 2: Chat no disponible.<br>Dado turno no aceptado<br>Cuando accede<br>Entonces no puede usar chat. |
+| US12 | Calificación de usuarios | Como usuario, quiero calificar, para generar confianza. | Escenario 1: Calificación registrada.<br>Dado turno finalizado<br>Cuando califica<br>Entonces se guarda.<br><br>Escenario 2: Calificación inválida.<br>Dado intento fuera de tiempo<br>Cuando califica<br>Entonces se rechaza. |
+
+### EP04: Búsqueda y Exploración de Trabajos
+
+Descripción: Permite a los chambeadores explorar oportunidades laborales mediante herramientas como mapa, filtros y listas, facilitando la identificación de trabajos cercanos y adecuados.
+
+| Story ID | Título | Descripción | Criterios de Aceptación |
+|----------|--------|------------|-----------------------------------|
+| US13 | Ver trabajos en mapa | Como chambeador, quiero ver trabajos en mapa. | Escenario 1: Mapa con resultados.<br>Dado trabajos disponibles<br>Cuando accede<br>Entonces se muestran.<br><br>Escenario 2: Mapa vacío.<br>Dado sin trabajos<br>Cuando accede<br>Entonces muestra mensaje. |
+| US14 | Filtrar por distancia | Como chambeador, quiero filtrar por distancia. | Escenario 1: Filtro aplicado.<br>Dado rango<br>Cuando filtra<br>Entonces muestra resultados.<br><br>Escenario 2: Sin resultados.<br>Dado sin coincidencias<br>Cuando filtra<br>Entonces muestra mensaje. |
+| US15 | Filtrar por tipo | Como chambeador, quiero filtrar por tipo de trabajo. | Escenario 1: Filtro exitoso.<br>Dado tipo seleccionado<br>Cuando aplica<br>Entonces muestra resultados.<br><br>Escenario 2: Sin coincidencias.<br>Dado tipo inexistente<br>Cuando filtra<br>Entonces muestra mensaje. |
+| US16 | Lista de trabajos | Como chambeador, quiero ver lista de trabajos. | Escenario 1: Lista visible.<br>Dado trabajos disponibles<br>Cuando accede<br>Entonces los ve.<br><br>Escenario 2: Lista vacía.<br>Dado sin trabajos<br>Cuando accede<br>Entonces muestra mensaje. |
+| US17 | Guardar favoritos | Como chambeador, quiero guardar trabajos. | Escenario 1: Guardado exitoso.<br>Dado selección<br>Cuando guarda<br>Entonces se registra.<br><br>Escenario 2: Duplicado.<br>Dado ya guardado<br>Cuando intenta<br>Entonces notifica. |
+| US18 | Ver detalle de trabajo | Como chambeador, quiero ver detalles del turno. | Escenario 1: Detalle visible.<br>Dado turno seleccionado<br>Cuando accede<br>Entonces muestra info.<br><br>Escenario 2: Error de carga.<br>Dado fallo<br>Cuando accede<br>Entonces muestra error. |
+
+### EP05: Gestión de Postulaciones y Turnos
+
+Descripción: Permite gestionar el ciclo de vida del turno, desde la postulación hasta la finalización del trabajo.
+
+| Story ID | Título | Descripción | Criterios de Aceptación |
+|----------|--------|------------|-----------------------------------|
+| US19 | Postular a turno | Como chambeador, quiero postular, para trabajar. | Escenario 1: Postulación exitosa.<br>Dado turno disponible<br>Cuando postula<br>Entonces se registra.<br><br>Escenario 2: Ya postulado.<br>Dado duplicado<br>Cuando intenta<br>Entonces rechaza. |
+| US20 | Ver postulantes | Como contratante, quiero ver postulantes. | Escenario 1: Lista visible.<br>Dado postulaciones<br>Cuando accede<br>Entonces visualiza.<br><br>Escenario 2: Sin postulantes.<br>Dado ninguno<br>Cuando accede<br>Entonces muestra mensaje. |
+| US21 | Aceptar postulante | Como contratante, quiero aceptar postulantes. | Escenario 1: Aceptación exitosa.<br>Dado candidato<br>Cuando acepta<br>Entonces asigna.<br><br>Escenario 2: Error.<br>Dado turno cerrado<br>Cuando acepta<br>Entonces falla. |
+| US22 | Rechazar postulante | Como contratante, quiero rechazar postulantes. | Escenario 1: Rechazo exitoso.<br>Dado postulante<br>Cuando rechaza<br>Entonces actualiza estado.<br><br>Escenario 2: Error.<br>Dado cambio previo<br>Cuando rechaza<br>Entonces notifica. |
+| US23 | Cerrar turno | Como contratante, quiero cerrar turno. | Escenario 1: Cierre exitoso.<br>Dado turno activo<br>Cuando cierra<br>Entonces bloquea.<br><br>Escenario 2: Error.<br>Dado ya cerrado<br>Cuando intenta<br>Entonces muestra mensaje. |
+| US24 | Reabrir turno | Como contratante, quiero reabrir turno. | Escenario 1: Reapertura.<br>Dado cancelado<br>Cuando reactiva<br>Entonces publica.<br><br>Escenario 2: Error.<br>Dado activo<br>Cuando intenta<br>Entonces rechaza. |
+| US25 | Notificación de postulaciones | Como contratante, quiero notificaciones. | Escenario 1: Notificación enviada.<br>Dado nueva postulación<br>Cuando ocurre<br>Entonces notifica.<br><br>Escenario 2: Error.<br>Dado fallo<br>Cuando ocurre<br>Entonces registra error. |
+| US26 | Estado de postulación | Como chambeador, quiero ver estado. | Escenario 1: Estado actualizado.<br>Dado decisión<br>Cuando cambia<br>Entonces se muestra.<br><br>Escenario 2: Error.<br>Dado fallo<br>Cuando consulta<br>Entonces muestra error. |
+| US27 | Recordatorio de turno | Como usuario, quiero recordatorios. | Escenario 1: Recordatorio enviado.<br>Dado turno próximo<br>Cuando se acerca<br>Entonces notifica.<br><br>Escenario 2: Desactivado.<br>Dado configuración<br>Cuando aplica<br>Entonces no envía. |
+| US28 | Confirmar llegada | Como chambeador, quiero confirmar llegada. | Escenario 1: Confirmación exitosa.<br>Dado inicio<br>Cuando confirma<br>Entonces registra.<br><br>Escenario 2: Fuera de tiempo.<br>Dado retraso<br>Cuando intenta<br>Entonces alerta. |
+| US29 | Reportar problema | Como usuario, quiero reportar incidencias. | Escenario 1: Reporte enviado.<br>Dado problema<br>Cuando reporta<br>Entonces guarda.<br><br>Escenario 2: Error.<br>Dado falta de datos<br>Cuando envía<br>Entonces rechaza. |
+| US30 | Finalizar turno | Como usuario, quiero finalizar turno. | Escenario 1: Finalización exitosa.<br>Dado terminado<br>Cuando confirma<br>Entonces cierra.<br><br>Escenario 2: Error.<br>Dado no iniciado<br>Cuando intenta<br>Entonces rechaza. |
 
 ### 2.4.2. Impact Mapping
 ### 2.4.3. Product Backlog
