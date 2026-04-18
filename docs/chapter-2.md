@@ -280,7 +280,7 @@
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="assets/img/Chapter-2/Entrevistas/Segmento1/entrevista2.png" alt="Entrevista2"></td>
+    <td><div align="center"><img src="../assets/img/Chapter-2/Entrevistas/Segmento1/entrevista2.png" alt="Entrevista2"></td>
   </tr>
   <tr>
     <td>Link</td>
