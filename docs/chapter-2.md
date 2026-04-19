@@ -774,6 +774,21 @@ Descripción: Permite gestionar el ciclo de vida del turno, desde la postulació
 | US30 | Finalizar turno | Como usuario, quiero finalizar turno. | Escenario 1: Finalización exitosa.<br>Dado terminado<br>Cuando confirma<br>Entonces cierra.<br><br>Escenario 2: Error.<br>Dado no iniciado<br>Cuando intenta<br>Entonces rechaza. |
 
 ### 2.4.2. Impact Mapping
+
+En esta sección se presentan los mapas de impacto para cada segmento objetivo del proyecto. Su propósito es relacionar el problema de negocio con el comportamiento esperado de los usuarios y las funcionalidades necesarias para la solución, permitiendo visualizar cómo se generan los resultados planteados.
+
+## Segmento 1 – MYPEs
+
+El mapa de impacto de las MYPEs permite identificar la necesidad de cubrir turnos de manera rápida y confiable. Se destacan comportamientos como la búsqueda inmediata de personal, la publicación ágil de turnos y la validación de la confianza en los trabajadores. A partir de ello, se proponen soluciones enfocadas en la rapidez, la cercanía y la seguridad en la contratación.
+
+![Impact-Map1](../assets/img/Chapter-2/Product-Artifacts/Impact-Map1.png)
+
+## Segmento 2 – Trabajadores Temporales
+
+El mapa de impacto del segmento de jóvenes trabajadores evidencia la necesidad de acceder a empleos temporales de forma rápida y flexible. Se identifican comportamientos como la búsqueda de trabajos cercanos, la postulación sin procesos complejos y la evaluación de condiciones antes de aceptar un turno. Las soluciones se orientan a simplificar el acceso y brindar mayor claridad y confianza.
+
+![Impact-Map2](../assets/img/Chapter-2/Product-Artifacts/Impact-Map2.png)
+
 ### 2.4.3. Product Backlog
 
 ## 2.5. Strategic-Level Domain-Driven Design
