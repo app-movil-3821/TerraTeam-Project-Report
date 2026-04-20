@@ -554,15 +554,15 @@ Al comparar ambos segmentos, se observa que empleadores y trabajadores coinciden
 Para desarrollar la propuesta de solución, se creará un User Persona por cada segmento objetivo. Este tendrá información relacionada a una persona que pertenezca al segmento objetivo respectivo ya sea información personal, gustos, usos tecnológicos u objetivos. De esta forma, se podrá dar una idea más clara de a qué publico nos estamos acercando con la idea de solución. Además, se realiza una conclusión del análisis de cada User Persona.
 
 **User Persona 1: Contratantes (MYPEs)**
-<div align="center"><img src="../assets/img/Chapter-2/Needfinding/UserPersonas/Jimena_Torres_UP.png" alt="User Persona 1" width="80%"></div>
 
+![Jimena_Torres_UP.png](../assets/img/Chapter-2/Needfinding/UserPersonas/Jimena_Torres_UP.png)
 
 <br>
 
 
 **User Persona 2: Trabajadores Temporales**
-<div align="center"><img src="../assets/img/Chapter-2/Needfinding/UserPersonas/Victor_Rivera_UP.png" alt="User Persona 2" width="80%"></div>
 
+![Victor_Rivera_UP.png](../assets/img/Chapter-2/Needfinding/UserPersonas/Victor_Rivera_UP.png)
 ---
 
 ### 2.3.2. User Task Matrix
@@ -848,11 +848,28 @@ Las primeras historias de usuario corresponden a un Sprint 1 propuesto, el cual 
 
 
 ## 2.5. Strategic-Level Domain-Driven Design
+
+Para entender el dominio y sus límites, utilizamos la técnica de Event Storming. Esta técnica nos permite descubrir los eventos clave del dominio, identificar los actores involucrados y definir los contextos delimitados (bounded contexts) que conforman el sistema.
+
 ### 2.5.1. EventStorming
+
+El equipo uso la herramienta Miro para llevar a cabo sesiones de Event Storming. A continuación, se presentan los pasos seguidos y los resultados obtenidos en cada fase del proceso:
+
+### Paso1: Collect Domain Events
+
+---
+
+Hemos identificado los eventos de dominio clave que representan cambios significativos en el estado del sistema.
+
+![Parte1.png](../assets/img/Chapter-2/EventStorming/Parte1.png)
+
+A partir de estos eventos, hemos comenzado a construir una comprensión compartida del dominio y sus procesos.
+
 ##### 2.5.1.1. Candidate Context Discovery
 ##### 2.5.1.2. Domain Message Flows Modeling
 ##### 2.5.1.3. Bounded Context Canvases
 ### 2.5.2. Context Mapping
+
 ### 2.5.3. Software Architecture
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
