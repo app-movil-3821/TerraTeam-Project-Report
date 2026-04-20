@@ -872,6 +872,18 @@ Luego de identificar los eventos, los organizamos en líneas de tiempo para visu
 
 ![Step2.png](../assets/img/Chapter-2/EventStorming/Step2.png)
 
+### Paso 3: Pain Points
+
+---
+
+Identificamos los puntos de dolor y las áreas problemáticas dentro del dominio que requieren atención especial.
+
+![Paintpoints.jpg](../assets/img/Chapter-2/EventStorming/Paintpoints.jpg)
+
+
+Estos puntos de dolor nos ayudaron a priorizar las áreas que necesitan mejoras y a enfocar nuestros esfuerzos en soluciones efectivas.
+
+
 ##### 2.5.1.1. Candidate Context Discovery
 ##### 2.5.1.2. Domain Message Flows Modeling
 ##### 2.5.1.3. Bounded Context Canvases
