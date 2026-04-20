@@ -883,6 +883,24 @@ Identificamos los puntos de dolor y las áreas problemáticas dentro del dominio
 
 Estos puntos de dolor nos ayudaron a priorizar las áreas que necesitan mejoras y a enfocar nuestros esfuerzos en soluciones efectivas.
 
+### Paso 4: Pivotal Events
+
+---
+
+Luego, destacamos los eventos pivote que tienen un impacto significativo en el flujo del dominio.
+
+![Step4.jpg](../assets/img/Chapter-2/EventStorming/Step4.jpg)
+
+### Paso 5: Commands
+
+---
+
+Identificamos los comandos que representan las acciones que los usuarios o sistemas pueden realizar para desencadenar eventos de dominio.
+
+![Step5.jpg](../assets/img/Chapter-2/EventStorming/Step5.jpg)
+
+Estos comandos nos ayudaron a definir las interacciones clave dentro del sistema y a comprender cómo los usuarios pueden influir en el flujo del dominio.
+
 
 ##### 2.5.1.1. Candidate Context Discovery
 ##### 2.5.1.2. Domain Message Flows Modeling
