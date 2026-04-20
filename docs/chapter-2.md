@@ -791,6 +791,63 @@ El mapa de impacto del segmento de jóvenes trabajadores evidencia la necesidad 
 
 ### 2.4.3. Product Backlog
 
+En esta sección se presenta el Product Backlog del proyecto, el cual reúne la totalidad de historias de usuario identificadas a partir del análisis del problema, los segmentos objetivo y los requerimientos del sistema. Estas historias han sido organizadas y priorizadas según su valor para el usuario y su relevancia dentro del flujo principal de la aplicación.
+
+Asimismo, se ha aplicado la técnica de estimación mediante Story Points utilizando la secuencia de Fibonacci (1, 2, 3, 5, 8), lo que permite evaluar de manera relativa la complejidad y esfuerzo requerido para el desarrollo de cada funcionalidad. Esta aproximación facilita la planificación ágil y la definición de iteraciones de desarrollo más realistas.
+
+A continuación, se presenta la lista priorizada de historias de usuario que conforman el Product Backlog del sistema:
+
+---
+
+| Orden | ID   | Título                         | Descripción                                                                 | Story Points |
+|------|------|--------------------------------|-----------------------------------------------------------------------------|-------------|
+| 1    | US01 | Registro chambeador            | Como chambeador, quiero registrarme rápidamente, para acceder a trabajos.  | 3 |
+| 2    | US06 | Registro contratante           | Como contratante, quiero registrarme, para gestionar personal.             | 3 |
+| 3    | US02 | Perfil por habilidades         | Como chambeador, quiero crear un perfil sin CV, para acceder a trabajos.   | 5 |
+| 4    | US07 | Publicar turnos                | Como contratante, quiero publicar turnos, para cubrir necesidades.         | 5 |
+| 5    | US03 | Ver turnos cercanos            | Como chambeador, quiero ver turnos cercanos, para reducir desplazamiento.  | 5 |
+| 6    | US08 | Ver trabajadores cercanos      | Como contratante, quiero ver trabajadores cercanos, para contratar rápido. | 5 |
+| 7    | US19 | Postular a turno               | Como chambeador, quiero postular, para trabajar.                           | 3 |
+| 8    | US21 | Aceptar postulante             | Como contratante, quiero aceptar postulantes, para asignar turnos.         | 3 |
+| 9    | US05 | Ver reputación del contratante | Como chambeador, quiero ver reputación, para decidir.                      | 3 |
+| 10   | US09 | Seleccionar trabajador         | Como contratante, quiero elegir por reputación, para asegurar calidad.     | 3 |
+| 11   | US20 | Ver postulantes                | Como contratante, quiero ver postulantes, para elegir candidatos.          | 3 |
+| 12   | US25 | Notificaciones                 | Como usuario, quiero recibir notificaciones, para estar informado.         | 5 |
+| 13   | US26 | Estado de postulación          | Como chambeador, quiero ver el estado, para saber mi situación.            | 3 |
+| 14   | US18 | Ver detalle del turno          | Como chambeador, quiero ver detalles del turno, para decidir.              | 5 |
+| 15   | US13 | Ver trabajos en mapa           | Como chambeador, quiero ver trabajos en mapa, para encontrar opciones.     | 8 |
+| 16   | US11 | Chat interno                   | Como usuario, quiero comunicarme por chat, para coordinar detalles.        | 8 |
+| 17   | US12 | Calificación                   | Como usuario, quiero calificar, para generar confianza.                    | 5 |
+| 18   | US14 | Filtro por distancia           | Como chambeador, quiero filtrar por distancia.                             | 3 |
+| 19   | US15 | Filtro por tipo                | Como chambeador, quiero filtrar por tipo de trabajo.                       | 3 |
+| 20   | US16 | Lista de trabajos              | Como chambeador, quiero ver lista de trabajos.                             | 3 |
+| 21   | US17 | Guardar favoritos              | Como chambeador, quiero guardar trabajos.                                  | 2 |
+| 22   | US22 | Rechazar postulante            | Como contratante, quiero rechazar postulantes.                             | 2 |
+| 23   | US23 | Cerrar turno                   | Como contratante, quiero cerrar turno.                                     | 3 |
+| 24   | US24 | Reabrir turno                  | Como contratante, quiero reabrir turno.                                    | 3 |
+| 25   | US27 | Recordatorio de turno          | Como usuario, quiero recibir recordatorios.                                | 2 |
+| 26   | US28 | Confirmar llegada              | Como chambeador, quiero confirmar llegada.                                 | 2 |
+| 27   | US29 | Reportar problema              | Como usuario, quiero reportar incidencias.                                 | 3 |
+| 28   | US30 | Finalizar turno                | Como usuario, quiero finalizar turno.                                      | 3 |
+
+---
+
+### 2.4.2. Gestión del Product Backlog en Trello
+
+Para la gestión del Product Backlog y la planificación del Sprint 1, se utilizó la herramienta Trello, la cual permitió organizar las historias de usuario de manera visual, priorizarlas y asignar Story Points basados en la secuencia de Fibonacci.
+
+A través de esta herramienta, se definió un Sprint inicial que contiene las funcionalidades principales del sistema, correspondientes al flujo básico de la aplicación.
+
+**Enlace al tablero de Trello:**  
+<[TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)>
+
+**Evidencia:**  
+![Product Backlog en Trello](../assets/img/Chapter-2/Product-Artifacts/PB.png)
+---
+
+Las primeras historias de usuario corresponden a un Sprint 1 propuesto, el cual prioriza funcionalidades esenciales del flujo principal de la aplicación.
+
+
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
 ##### 2.5.1.1. Candidate Context Discovery
