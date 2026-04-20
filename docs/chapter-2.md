@@ -855,15 +855,22 @@ Para entender el dominio y sus límites, utilizamos la técnica de Event Stormin
 
 El equipo uso la herramienta Miro para llevar a cabo sesiones de Event Storming. A continuación, se presentan los pasos seguidos y los resultados obtenidos en cada fase del proceso:
 
-### Paso1: Collect Domain Events
+### Paso 1: Collect Domain Events
 
 ---
-
 Hemos identificado los eventos de dominio clave que representan cambios significativos en el estado del sistema.
 
 ![Parte1.png](../assets/img/Chapter-2/EventStorming/Parte1.png)
 
 A partir de estos eventos, hemos comenzado a construir una comprensión compartida del dominio y sus procesos.
+
+### Paso 2: Timelines
+
+---
+
+Luego de identificar los eventos, los organizamos en líneas de tiempo para visualizar la secuencia y las relaciones entre ellos.
+
+![Step2.png](../assets/img/Chapter-2/EventStorming/Step2.png)
 
 ##### 2.5.1.1. Candidate Context Discovery
 ##### 2.5.1.2. Domain Message Flows Modeling
