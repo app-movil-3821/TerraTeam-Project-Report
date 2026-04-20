@@ -834,12 +834,11 @@ A continuación, se presenta la lista priorizada de historias de usuario que con
 
 ### 2.4.2. Gestión del Product Backlog en Trello
 
-Para la gestión del Product Backlog y la planificación del Sprint 1, se utilizó la herramienta Trello, la cual permitió organizar las historias de usuario de manera visual, priorizarlas y asignar Story Points basados en la secuencia de Fibonacci.
+Para la gestión del Product Backlog, se utilizó la herramienta Trello, la cual permitió organizar las historias de usuario de manera visual, priorizarlas y asignar Story Points basados en la secuencia de Fibonacci.
 
-A través de esta herramienta, se definió un Sprint inicial que contiene las funcionalidades principales del sistema, correspondientes al flujo básico de la aplicación.
+A través de esta herramienta, se definió una priorización inicial de historias de usuario que representan las funcionalidades principales del sistema, correspondientes al flujo básico de la aplicación.
 
-**Enlace al tablero de Trello:**  
-<[TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)>
+Enlace al tablero de Trello: [Link de TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)
 
 **Evidencia:**  
 ![Product Backlog en Trello](../assets/img/Chapter-2/Product-Artifacts/PB.png)
