@@ -688,7 +688,22 @@ En esta imagen se presenta el journey map del segundo user persona, Jimena Torre
 En esta imagen se visualiza el journey map del primer user persona, Víctor Rivera. En esta misma, se desea detallar el proceso por el que pasa este estudiante al verse en la necesidad de generar ingresos extra sin descuidar sus estudios. El proceso describe desde el momento en que identifica un tiempo libre en su horario académico y decide buscar una oportunidad laboral inmediata a través de la aplicación ChambaYa, logrando postular de forma simplificada, completar la tarea asignada y finalmente recibir su pago, validando así su desempeño en la plataforma para futuras oportunidades.
 
 ![Journey Map Victor Rivera](../assets/img/Chapter-2/Needfinding/UserJourneyMapping/JourneyMap_VictorRivera.png)
+
 ### 2.3.4. Empathy Mapping
+El Empathy Mapping ayuda a entender de manera más profunda a nuestro User Persona. Con esta herramienta, capturamos lo que el usuario siente, dice, piensa y hace desde la perspectiva del propio usuario. Además, nos ayuda a identificar dolores y metas qué desea cumplir que nos serán útiles para formar ideas de diseño útiles para el producto que servirá como solución. Finalmente, cada mapa de empatía se diseñó en la aplicación UXPressia.
+
+**User Persona 1:** Jimena Torres (Dueña de Negocio - MYPE)
+
+En esta primera imagen que se muestra a continuación, se visualiza el empathy map del primer user persona. En esta misma, se desea detallar lo que el usuario siente, dice, piensa y hace al momento de enfrentar la necesidad de cubrir un turno de manera urgente. Además, se identifican los dolores que experimenta al buscar personal de forma tradicional y las metas que busca cumplir al utilizar una solución digital eficiente.
+
+![Empathy Map Jimena Torres](../assets/img/Chapter-2/Needfinding/EmpathyMapping/EmpathyMap_JimenaTorres.png)
+
+**User Persona 2:** Víctor Rivera (Estudiante Universitario)
+
+En esta segunda imagen que se muestra a continuación, se visualiza el empathy map del segundo user persona. En esta misma, se desea detallar lo que el usuario siente, dice, piensa y hace al momento de buscar oportunidades laborales temporales. Además, se identifican los dolores relacionados con la falta de claridad en los procesos de aplicación y las metas que busca cumplir al acceder a trabajos flexibles y bien remunerados a través de una plataforma digital.
+
+![Empathy Map Victor Rivera](../assets/img/Chapter-2/Needfinding/EmpathyMapping/EmpathyMap_VictorRivera.png)
+
 ### 2.3.5. Ubiquitous Language
 En el presente proyecto, orientado a optimizar la conexión entre micro y pequeñas empresas (MYPEs) y jóvenes que buscan oportunidades laborales temporales mediante una plataforma digital, se ha definido un lenguaje ubicuo que permite establecer una comprensión común entre todos los actores involucrados, incluyendo usuarios, desarrolladores y stakeholders.
 
