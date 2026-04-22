@@ -677,6 +677,17 @@ Finalmente, la mayor oportunidad del sistema se encuentra en optimizar el proces
 ---
 
 ### 2.3.3. User Journey Mapping
+**User Persona 1:** Jimena Torres (Dueña de Negocio - MYPE)
+
+En esta imagen se presenta el journey map del segundo user persona, Jimena Torres. En esta misma, se detalla el flujo de experiencia de una dueña de negocio que enfrenta la urgencia de cubrir una vacante operativa debido a un imprevisto o alta demanda. El mapa describe cómo Jimena acude a la aplicación para publicar un requerimiento rápido, selecciona a un trabajador basándose en su reputación y cercanía, y logra mantener la continuidad de su negocio, finalizando con una gestión de pago ágil que reduce su estrés operativo y optimiza su tiempo.
+
+![Journey Map Jimena Torres](../assets/img/Chapter-2/Needfinding/UserJourneyMapping/JourneyMap_JimenaTorres.png)
+
+**User Persona 2:** Víctor Rivera (Estudiante Universitario)
+
+En esta imagen se visualiza el journey map del primer user persona, Víctor Rivera. En esta misma, se desea detallar el proceso por el que pasa este estudiante al verse en la necesidad de generar ingresos extra sin descuidar sus estudios. El proceso describe desde el momento en que identifica un tiempo libre en su horario académico y decide buscar una oportunidad laboral inmediata a través de la aplicación ChambaYa, logrando postular de forma simplificada, completar la tarea asignada y finalmente recibir su pago, validando así su desempeño en la plataforma para futuras oportunidades.
+
+![Journey Map Victor Rivera](../assets/img/Chapter-2/Needfinding/UserJourneyMapping/JourneyMap_VictorRivera.png)
 ### 2.3.4. Empathy Mapping
 ### 2.3.5. Ubiquitous Language
 En el presente proyecto, orientado a optimizar la conexión entre micro y pequeñas empresas (MYPEs) y jóvenes que buscan oportunidades laborales temporales mediante una plataforma digital, se ha definido un lenguaje ubicuo que permite establecer una comprensión común entre todos los actores involucrados, incluyendo usuarios, desarrolladores y stakeholders.
