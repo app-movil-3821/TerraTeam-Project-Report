@@ -1026,6 +1026,37 @@ Se ubica al final del timeline. Su lógica de promedios y reseñas no debe afect
 
 
 ##### 2.5.1.2. Domain Message Flows Modeling
+
+En esta sección, se modelaron los flujos de colaboración entre los Bounded Contexts, con el objetivo de visualizar cómo interactúan los diferentes módulos del sistema para resolver los escenarios críticos de negocio identificados durante el Event Storming.
+
+Se definieron tres escenarios principales para evidenciar los flujos de mensajes:
+
+##### 2.5.1.2.1. Escenario de Publicación y Postulación
+Este flujo abarca desde la creación del turno hasta que los chambeadores envían sus postulaciones.
+- El Contratante define las características del mini-job dentro del Job Context.
+- El Job Context publica la oferta para que sea visible y gestionable.
+- El Chambeador envía su postulación al Application Context.
+
+![flujo1.png](../assets/img/Chapter-2/Bounded-Contexts/flujo1.png)
+
+
+##### 2.5.1.2.2. Escenario de Finalización, Pago y Calificación
+Este flujo describe el cierre exitoso de la labor, el intercambio de dinero y el feedback de ambas partes.
+- El Chambeador reporta la finalización de la tarea dentro del Job Context.
+- El Contratante confirma la recepción del servicio y realiza el pago mediante el Payment Context (Yape/Plin).
+- El Job Context habilita el proceso de calificación en el Reputation Context tras confirmarse el pago.
+- El Contratante y Chambeador intercambian reseñas para actualizar su reputación en el sistema.
+
+![flujo2.png](../assets/img/Chapter-2/Bounded-Contexts/flujo2.png)
+
+##### 2.5.1.2.3. Escenario de Inasistencia y Reapertura de Vacante
+- El Contratante reporta la inasistencia del trabajador en el Application Context
+- El Application Context cancela la postulación actual y aplica la penalidad correspondiente.
+- El Application Context solicita al Communication Context el cierre del canal de chat temporal.
+- El Application Context notifica al Job Context para reabrir la oferta y permitir nuevas postulaciones.
+
+![flujo3.png](../assets/img/Chapter-2/Bounded-Contexts/flujo3.png)
+
 ##### 2.5.1.3. Bounded Context Canvases
 ### 2.5.2. Context Mapping
 
