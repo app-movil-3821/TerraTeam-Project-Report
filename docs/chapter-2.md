@@ -1113,6 +1113,49 @@ El Reputation context permite recopilar y visualizar feedback y promedios de cal
 
 ### 2.5.2. Context Mapping
 
+Tras identificar los Bounded Contexts candidatos, el equipo procedió a definir las relaciones estructurales y los patrones de comunicación entre ellos. El objetivo fue minimizar el acoplamiento y asegurar que los cambios en contextos genéricos no afecten la lógica del Core Domain.
+
+Análisis de Bounded Contexts
+
+- IAM Context ↔ Job / Application / Payment Contexts
+    - Relación: Upstream (IAM) / Downstream (Job/App/Pay)
+
+    - Patrón: ACL (El sistema traduce los datos de identidad y roles del IAM a los modelos específicos de "Postulante" o "Contratante" de cada         contexto).
+
+
+- Job Context ↔ Application Context
+    - Relación: Upstream (Job) / Downstream (Application)
+
+    - Patrón: Customer/Supplier (El Job Context actúa como proveedor de vacantes. Cualquier cambio en la estructura del turno debe ser coordinado       para no romper el flujo de postulaciones.
+      
+ 
+- Application Context ↔ Communication Context
+
+    - Relación: Upstream (Application) / Downstream (Communication)
+
+    - Patrón: PL (Published Language) (Application emite eventos como MatchConfirmed que Communication consume tal cual para habilitar canales de       chat).
+ 
+
+- Application Context ↔ Payment Context
+
+    - Relación: Upstream (Application) / Downstream (Payment)
+
+    - Patrón: ACL (Payment traduce los datos de la postulación aceptada a su propio modelo de "Transacción" y "Reserva de Fondos" para Yape/Plin).
+      
+
+- Job Context ↔ Reputation Context
+
+    - Relación: Upstream (Job) / Downstream (Reputation)
+
+    - Patrón: ACL (Reputation protege su lógica de promedios y reseñas de los cambios constantes de estado en el ciclo de vida del turno).
+
+
+- Communication / Reputation Contexts ↔ Usuarios
+
+    - Relación: Upstream (Contexts) / Downstream (Users)
+
+    - Patrón: OHS + PL (Estos contextos exponen sus capacidades como servicios abiertos para ser consumidos por las interfaces finales de               usuario).
+
 ### 2.5.3. Software Architecture
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
