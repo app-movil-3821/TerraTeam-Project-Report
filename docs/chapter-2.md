@@ -935,8 +935,31 @@ Estos comandos nos ayudaron a definir las interacciones clave dentro del sistema
 
 ### 2.5.3. Software Architecture
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
+---
+El siguiente diagrama de contexto presenta una visión general de la aplicación móvil ChambaYA, identificando a los principales actores que interactúan con el sistema y los servicios externos involucrados.
+
+Se observa cómo los usuarios, tanto contratantes como chambeadores, utilizan la aplicación para gestionar turnos y postulaciones. Asimismo, se muestran las integraciones con servicios externos como geolocalización, notificaciones y verificación de identidad, los cuales complementan el funcionamiento de la aplicación.
+
+![Context_Diagram.jpg](../assets/img/Chapter-2/Product-Artifacts/Context_Diagram.png)
+
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
+---
+El diagrama de contenedores describe la estructura interna de la aplicación móvil ChambaYA, mostrando los principales componentes que conforman el sistema y sus interacciones.
+
+Se identifican las aplicaciones móviles para cada segmento, el backend que centraliza la lógica de negocio y la base de datos MongoDB para la persistencia de la información. Además, se evidencian las integraciones con servicios externos como mapas, notificaciones y validación de identidad.
+
+Cabe resaltar que la lógica del negocio se encuentra encapsulada en el backend, el cual integra los distintos bounded contexts definidos en el diseño del dominio.
+
+![Container_Diagram.jpg](../assets/img/Chapter-2/Product-Artifacts/Container_Diagram.png)
+
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
+---
+El diagrama de despliegue muestra la distribución de los componentes de la aplicación móvil ChambaYA en la infraestructura tecnológica.
+
+Se representan los dispositivos móviles desde los cuales los usuarios acceden a la aplicación, el servidor backend desplegado en la nube, la base de datos MongoDB y los servicios externos utilizados por el sistema. Este diagrama permite visualizar cómo los diferentes elementos se comunican entre sí en un entorno de ejecución real.
+
+![Deployment_Diagram.jpg](../assets/img/Chapter-2/Product-Artifacts/Deployment_Diagram.png)
+
 
 ## 2.6. Tactical-Level Domain-Driven Design
 ### 2.6.x. Bounded Context: `<Nombre del Contexto>`
