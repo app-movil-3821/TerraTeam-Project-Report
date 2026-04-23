@@ -1058,6 +1058,23 @@ Este flujo describe el cierre exitoso de la labor, el intercambio de dinero y el
 ![flujo3.png](../assets/img/Chapter-2/Bounded-Contexts/flujo3.png)
 
 ##### 2.5.1.3. Bounded Context Canvases
+
+En esta sección, el equipo detalla cómo utilizó el Bounded Context Canvas, una herramienta visual del enfoque Domain-Driven Design (DDD) que permite definir y comprender los límites de cada contexto dentro de un sistema complejo. Su objetivo es lograr que todos los integrantes compartan una misma visión sobre qué representa cada contexto y cuál es su función. Para cada uno, se muestra su respectivo Canvas, acompañado de una breve descripción de su propósito y un resumen que sustenta su clasificación estratégica dentro del dominio de ChambaYA.
+
+##### 2.5.1.3.1. IAM Context Canvas
+
+##### 2.5.1.3.2. Job Context Canvas
+Este contexto representa el núcleo de la oferta de valor de la plataforma. Su propósito es definir y gestionar todo el ciclo de vida del "Mini-job" (turno), desde su creación y publicación hasta su finalización o eventual reapertura.
+
+
+
+El Job Context es crucial para la existencia misma de la plataforma y por ello ha sido clasificado como un Core Domain. Este contexto permite a los Contratantes visualizar, definir y gestionar sus ofertas de turnos de forma organizada, lo que constituye la base de la actividad comercial de ChambaYA. Al controlar la disponibilidad y el estado operativo de los mini-jobs, este contexto es el motor principal para generar ingresos, sustentando la ventaja competitiva de la plataforma en el mercado de micro-empleos.
+
+##### 2.5.1.3.3. IAM Context Canvas
+
+##### 2.5.1.3.4. IAM Context Canvas
+
+
 ### 2.5.2. Context Mapping
 
 ### 2.5.3. Software Architecture
