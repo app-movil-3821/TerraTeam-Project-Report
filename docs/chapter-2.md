@@ -927,6 +927,46 @@ Identificamos los comandos que representan las acciones que los usuarios o siste
 
 Estos comandos nos ayudaron a definir las interacciones clave dentro del sistema y a comprender cómo los usuarios pueden influir en el flujo del dominio.
 
+### Paso 6: Policies
+
+---
+
+Se identificaron las políticas que gobiernan el comportamiento del sistema, juntamente con las reglas de negocio que se deben cumplir.
+
+![paso6.png](../assets/img/Chapter-2/EventStorming/paso6.png)
+
+Estas políticas ayudaron a definir las restricciones y las condiciones bajo las cuales los comandos y eventos pueden ocurrir.
+
+### Paso 7: Read Models
+
+---
+
+Se identificaron los modelos de lectura que representan las vistas y las proyecciones de los datos dentro del sistema.
+
+![paso7.png](../assets/img/Chapter-2/EventStorming/paso7.png)
+
+Los modelos de lectura nos permitieron establecer la forma en que la información se muestra a los usuarios y cómo puede ser consultada de manera eficiente.
+
+
+### Paso 8: External Systems
+
+---
+
+Determinamos qué sistemas externos se relacionan con nuestro dominio y cuáles son los puntos necesarios para integrarlos.
+
+![paso8.png](../assets/img/Chapter-2/EventStorming/paso8.png)
+
+Estos sistemas externos nos permitieron entender mejor las dependencias y las interacciones que ocurren fuera de nuestro control directo.
+
+### Paso 9: Aggregates
+
+---
+
+Por último, determinamos los agregados que representan tanto las entidades como los objetos de valor dentro del dominio.
+
+![paso9.png](../assets/img/Chapter-2/EventStorming/paso9.png)
+
+Estos agregados nos permitieron establecer las estructuras de datos y las relaciones fundamentales dentro del sistema.
 
 ##### 2.5.1.1. Candidate Context Discovery
 ##### 2.5.1.2. Domain Message Flows Modeling
