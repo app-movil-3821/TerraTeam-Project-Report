@@ -969,6 +969,60 @@ Por último, determinamos los agregados que representan tanto las entidades como
 Estos agregados nos permitieron establecer las estructuras de datos y las relaciones fundamentales dentro del sistema.
 
 ##### 2.5.1.1. Candidate Context Discovery
+
+Para la identificación de los Bounded Contexts de ChambaYA, aplicamos la técnica de Look-for-Pivotal-Events. Esta técnica nos permitió identificar eventos críticos en el timeline que marcan un cambio de fase en el proceso de negocio o un cambio de responsabilidad entre diferentes "expertos de dominio".
+
+Complementariamente, usamos Start-with-Value para priorizar los contextos de Job y Application, que representan el Core Domain de nuestra plataforma de micro-empleos.
+
+##### 2.5.1.1.1. IAM Context
+
+Para el bounded context de IAM, definimos los siguientes elementos:
+
+![iam.png](../assets/img/Chapter-2/Bounded-Contexts/iam.png)
+
+Se identificó a partir de los eventos de registro y validación. Su propósito es aislar la gestión de identidad y seguridad del resto de la lógica operativa.
+
+##### 2.5.1.1.2. Job Context
+
+Para el bounded context de Job, definimos los siguientes elementos:
+
+![job.png](../assets/img/Chapter-2/Bounded-Contexts/job.png)
+
+Es el punto de partida del valor del negocio. Se encarga de la existencia y estado del "Mini-job".
+
+##### 2.5.1.1.3. Application Context
+
+Para el bounded context de Application, definimos los siguientes elementos:
+
+![application.png](../assets/img/Chapter-2/Bounded-Contexts/application.png)
+
+Se separó del Job Context porque el proceso de postulación y selección tiene reglas de negocio muy distintas (manejo de candidatos vs. manejo de locales). Aquí es donde ocurre el "Match".
+
+##### 2.5.1.1.4. Communication Context
+
+Para el bounded context de Communication, definimos los siguientes elementos:
+
+![communication.png](../assets/img/Chapter-2/Bounded-Contexts/communication.png)
+
+Se definió al notar que la mensajería es un servicio de soporte que solo se activa tras un evento específico de éxito en la postulación.
+
+
+##### 2.5.1.1.5. Payment Context
+
+Para el bounded context de Payment, definimos los siguientes elementos:
+
+Se aisló para manejar la complejidad de las transacciones con billeteras digitales (Yape/Plin) y asegurar que el flujo de dinero sea independiente de la gestión de tareas.
+
+
+##### 2.5.1.1.6. Reputation Context
+
+Para el bounded context de Reputation, definimos los siguientes elementos:
+
+![reputation.png](../assets/img/Chapter-2/Bounded-Contexts/reputation.png)
+
+Se ubica al final del timeline. Su lógica de promedios y reseñas no debe afectar el desempeño de los otros módulos.
+
+
 ##### 2.5.1.2. Domain Message Flows Modeling
 ##### 2.5.1.3. Bounded Context Canvases
 ### 2.5.2. Context Mapping
