@@ -980,6 +980,7 @@ Se encarga de garantizar reglas como:
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | **`User`** | Aggregate Root que representa a un usuario del sistema; encapsula identidad, credenciales, relación con cuenta y rol de usuario, y operaciones invariantes sobre el usuario. | `Id: int` <br>`Name: string` <br>`Email: Email`    <br>`Password: string`  <br>`CreatedAt: DateTime`  <br>`UpdatedAt: DateTime`  <br>`AccountId: AccountId`  <br>`UserRole: Role`  <br>`UserRoleId: string` | `ChangePassword(string newPassword): void`  <br>`UpdateProfile(Profile profile): void`  <br>`ChangeRole(UserRole role): void` |
 
+---
 
 ## Entities
 
@@ -987,6 +988,7 @@ Se encarga de garantizar reglas como:
 | ---------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------ | 
 | **`Profile`** | Entidad que representa la información extendida del usuario. | `UserId: string`  <br> `Skills: string[]` <br> `Experience: string` <br> `PhotoURL: string` | 
 
+---
 
 ## Value Objects
 
@@ -995,6 +997,7 @@ Se encarga de garantizar reglas como:
 | **`EUserRoles`**                | Define el tipo de usuario dentro del sistema.              | `JOB_SEEKER`, `EMPLOYER`                    |
 | **`Email`**                | Representa un correo electrónico válido.              | `string validado (formato email)`                   |
 
+---
 
 ## Services
 
@@ -1003,13 +1006,51 @@ Se encarga de garantizar reglas como:
 | **`IUserCommandService`** | Define operaciones que modifican el estado del usuario. | `CreateUser(CreateUserCommand)`  <br>`TUpdateUser(UpdateUserCommand)`  <br>`ChangePassword(ChangePasswordCommand)`  <br>`DeleteUser(DeleteUserCommand)`  <br>`DeleteUser(DeleteUserCommand)` |
 | **`IUserQueryService`** | Interfaz que expone consultas sobre usuarios. | `GetUserById(GetUserByIdQuery)`  <br>`GetUserByEmail(GetUserByEmailQuery)`  <br>`GetUsersByRole(GetUsersByRoleQuery)`  <br>`GetAllUsersQuery(GetAllUsersQuery)` |
 
+---
+
 ## Repositories
 
 | Nombre                | Descripción                                             | 
 | --------------------- | ------------------------------------------------------- | 
 | **`IUserRepository`** | Define la persistencia para la entidad `User`. | 
 
+---
+
 ##### 2.6.1.2. Interface Layer
+En esta capa se publican los controladores de la API que permiten a clientes externos (aplicaciones web, móviles o sistemas integrados) interactuar con el dominio de IAM (Identity & Access Management). Los controladores actúan como orquestadores entre los Services y el Domain Layer: reciben solicitudes HTTP, validan y normalizan la entrada, mapean los payloads a Commands o Queries (CreateUserCommand, GetUserByIdQuery, ChangePasswordCommand) y delegan la ejecución a los IUserCommandService e IUserQueryService. Finalmente transforman los resultados del dominio en respuestas HTTP adecuadas (DTOs, códigos de estado, errores de validación), manteniendo la lógica de negocio fuera del controlador y asegurando que la capa permanezca delgada y enfocada en la traducción entre protocolo y modelo de dominio.
+
+---
+
+## Controllers
+
+| Nombre                                | Descripción                                                                                                                                                                                                                                                                       | Endpoints (ejemplos)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **UsersController**                   | Gestiona operaciones sobre usuarios. (`CreateUserCommand`, `UpdateUserCommand`, `ChangePasswordCommand`, `ChangeRoleCommand`, `GetUserByIdQuery`, etc.).    | `POST /api/users (CreateUserCommand)`<br>`PUT /api/users/{id} (UpdateUserCommand)` <br>`DELETE /api/users/{id} (DeleteUserCommand)` <br>`GET /api/users/{id} (GetUserByIdQuery)` <br>`GET /api/users/by-email/{email} (GetUserByEmailQuery)` <br>`GET /api/users/by-role/{role} (GetUsersByRoleQuery)` <br>`GET /api/users?page={page}&size={size} (GetAllUsersQuery)` <br>`POST /api/users/{id}/change-password (ChangePasswordCommand)`<br>`POST /api/users/{id}/role (ChangeRoleCommand) `|
+
+---
+
+## Resources
+
+Los Resources representan los contratos que la API expone o acepta. No deben exponer información sensible en respuestas.
+
+| Resource                   | Esquema (ejemplos)                                                                                                                                                    |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **CreateUserResource**     | `json { "name": "Juan Perez", "email": "juan@gmail.com", "password": "123456", "role": "JOB_SEEKER" } `                          |
+| **UserResource**           | `json { "id": 1, "name": "Juan Perez", "email": "juan@gmail.com", "role": "JOB_SEEKER", "createdAt": "2026-04-22T12:00:00Z" } ` |
+| **RoleResource**           | `json { "Id": "role-uuid", "Name": "Admin" } `                                                                                                                        |
+| **ChangePasswordResource** | `json { "CurrentPassword": "alP@ss", "NewPassword": "NewP@ssw0rd#!" } `                                                                                               |
+
+---
+
+## Assemblers
+
+Los Assemblers encapsulan la transformación entre Resources, Commands/Queries y Entities/DTOs. La capa de presentación (controllers) utiliza los assemblers para mantener la lógica de dominio fuera del controlador.
+
+- `CreateUserResourceToCommandAssembler` convierte un `CreateUserResource` en un `CreateUserCommand`
+- `UserEntityToUserResourceAssembler` convierte un `User` en un `UserResource`
+- `RoleEntityToRoleResourceAssembler` convierte un `Role` en un `RoleResource`
+- `ChangePasswordResourceToCommandAssembler` convierte un `ChangePasswordResource` en un `ChangePasswordCommand`
+
 ##### 2.6.1.3. Application Layer
 ##### 2.6.1.4. Infrastructure Layer
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
