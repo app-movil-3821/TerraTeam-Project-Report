@@ -25,8 +25,8 @@
 | u202310949 | Bautista Rivera Jose Diego    |
 | u202323319 | Janampa Gutierrez Jhoan D.    |
 | u202313458 | Taipe Sangama Jorge Francisco |
-|            |                               |
-|            |                               |
+| u202111041 | Cordova Valdivia Sebastian    |
+| u202221383 | Moises Espinoza Chavez        |
 |            |                               |
 |            |                               | 
 
