@@ -974,7 +974,10 @@ Estos agregados nos permitieron establecer las estructuras de datos y las relaci
 ### 2.5.2. Context Mapping
 
 ### 2.5.3. Software Architecture
+
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
+
+
 ---
 El siguiente diagrama de contexto presenta una visión general de la aplicación móvil ChambaYA, identificando a los principales actores que interactúan con el sistema y los servicios externos involucrados.
 
@@ -983,6 +986,8 @@ Se observa cómo los usuarios, tanto contratantes como chambeadores, utilizan la
 ![Context_Diagram.jpg](../assets/img/Chapter-2/Product-Artifacts/Context_Diagram.png)
 
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
+
+
 ---
 El diagrama de contenedores describe la estructura interna de la aplicación móvil ChambaYA, mostrando los principales componentes que conforman el sistema y sus interacciones.
 
@@ -1160,15 +1165,118 @@ Además, encapsula detalles técnicos como:
 
 ### 2.6.2. Bounded Context: Application Context
 ##### 2.6.2.1. Domain Layer
+La capa Application Context (Enrollment) constituye el motor transaccional del sistema, centralizando toda la lógica de negocio relacionada con las postulaciones de los jóvenes (Chambeadores) a los turnos de emergencia publicados por las MYPEs (Contratantes).
+En esta capa se definen las reglas y comportamientos propios del emparejamiento: la creación de la postulación, las transiciones de estado (aceptado, rechazado, cancelado) y las políticas que detonan el "Match" definitivo.
+
+**Aggregates**
+
+| Nombre     | Descripcion                                                                                                                                                                          | Atributos                                                                                                                                                                     | Metodos                                                                                 |
+|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Enrollment | Aggregate Root que representa la postulación de un usuario a un turno; encapsula la identidad, los estados del proceso y las operaciones invariantes que determinan si hay un Match  | Id: UUID  <br/> <br/> TurnoId: UUID <br/> <br/> Chambeador: UUID  <br/> <br/> Status: EnrollmentStatus <br/> <br/> CreatedAt: Datetime <br/> <br/> UpdatedAt: DateTime <br/>  | Accept(): void <br/> <br/> Reject(): void <br/> <br/> CancelByChambeador: void   <br/>  | 
+
+**Value Objects**
+
+| Nombre           | Descripcion                                                                                           | Atributos/ Valores                             |
+|------------------|-------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| EnrollmentStatus | Enumeración que modela los estados posibles por los que puede transitar una postulación en el sistema | Pending, Accepted, Rejected, Cancelled         |
+| Location         |  Objeto de valor inmutable que representa las coordenadas geográficas, utilizado para validar cercanía antes de la postulación                                                                                                     | Latitud : double <br/> <br/> Longitude: double |
+
+**Services**
+
+| Nombre                    | Descripcion | Metodos                                                                                                                                                                                                                               |
+|---------------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| IEnrollmentCommandService |  Interfaz que define las operaciones de negocio (comandos) para gestionar los cambios de estado en las postulaciones          | Task<Enrollment> Handle(SubmitEnrollmentCommand command) <br/> <br/> Task Handle(AcceptEnrollmentCommand command) <br/> <br/>  Task Handle(RejectEnrollmentCommand command) <br/> <br/> Task Handle(CancelEnrollmentCommand command)  |
+| IEnrollmentQueryService   | Interfaz que expone consultas (lecturas) sobre las postulaciones para las vistas de la MYPE y el Chambeador            | Task<EnrollmentDto?> Handle(GetEnrollmentByIdQuery query) <br/> <br/> Task<IEnumerable<EnrollmentDto>> Handle(GetActiveEnrollmentsQuery query)<br/> <br/>  Task<IEnumerable<EnrollmentDto>> Handle(GetPostulantesByTurnoQuery query)  |
+
+**Repositories**
+
+| Nombre                | Descripcion |
+|-----------------------|-------------|
+| IEnrollmentRepository |  Define la persistencia (contrato de base de datos) para la entidad (Aggregate Root) Enrollment           |
+
 ##### 2.6.2.2. Interface Layer
+
+En esta capa se publican los controladores de la API REST que permiten a las aplicaciones móviles de los usuarios (Dueños de MYPEs y Jóvenes Chambeadores) interactuar con el dominio de postulaciones (Enrollment). Los controladores actúan como orquestadores entre los recursos web y el Domain Layer: reciben solicitudes HTTP, validan la entrada de datos (como el ID del turno y las coordenadas GPS), mapean los payloads a Commands o Queries (ej. SubmitEnrollmentCommand, GetPostulantesByTurnoQuery) y delegan la ejecución a IEnrollmentCommandService e IEnrollmentQueryService. Finalmente, transforman los resultados del dominio en respuestas HTTP adecuadas, asegurando que la lógica de negocio permanezca protegida y la capa solo se encargue de la traducción del protocolo web.
+
+**Controllers**
+
+| Nombre                 | Descripcion                                                                                                                                         | Endpoints(Ejemplo)                                                                                                                                                                                                                                                                                                                                                                                                               |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| EnrollmentsController  | Expone las operaciones para gestionar el ciclo de vida de las postulaciones: envío por parte del joven, y aceptación/rechazo por parte de la MYPE.  | PUT /api/v1/enrollments{id}/accept (AcceptEnrollmentCommand)<br/> <br/> PUT /api/v1/enrollments{id}/reject (RejectEnrollmentCommand)<br/> <br/> PUT /api/v1/enrollments{id}/cancel (CancelEnrollmentCommand)<br/> <br/>  GET /api/v1/enrollment/{id} (GetEnrollmentCommand) <br/> <br/>  GET /api/v1/enrollments/{id} (GetEnrollmentByIdQuery) <br/> <br/> GET /api/v1/turnos/{turnoId}/enrollments (GetPostulantesByTurnoQuery) |
+
+**Resources**
+
+| Resource                 | Esquema(ejemplos)                                                                                                                                          |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| SubmitEnrollmentResource | { "TurnoId": "550e8400-e29b-41d4...", "ChambeadorId": "123e4567-e89b-12d3...", "Latitude": -12.0463, "Longitude": -77.0427 }                               |
+| EnrollmentResource       | { "Id": "990e8400-a29b-41d4...", "TurnoId": "550e8400-e29b...", "ChambeadorId": "123e4567...", "Status": "ACCEPTED", "CreatedAt": "2026-04-20T18:30:00Z" } |
+| StatusUpdateResource     | { "Reason": "Perfil encaja perfectamente con la urgencia." }                                                                                               |
+
 ##### 2.6.2.3. Application Layer
+La capa de Aplicación (Application Layer) actúa como el orquestador principal de los casos de uso (Use Cases) del Bounded Context de postulaciones (Application Context). Esta capa no contiene reglas de negocio core —estas pertenecen exclusivamente al Domain Layer— sino que coordina el flujo de trabajo: recibe las intenciones del usuario a través de Commands o Queries, interactúa con los repositorios para recuperar el Aggregate Root (Enrollment), invoca sus comportamientos de dominio y persiste los cambios.
+
+Además, esta capa es responsable de gestionar la publicación de los Eventos de Dominio (Domain Events) hacia el exterior, como notificar al sistema de Chat cuando una MYPE acepta a un joven (Match).
+
+**Command Services**
+
+Estos manejadores implementan la lógica de orquestación transaccional. Reciben el comando, buscan las entidades involucradas, ejecutan la acción y guardan el nuevo estado.
+
+| Nombre                          | Descripcion                                                                                                                                                                        | Commans manejados       |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| SubmitEnrollmentCommandHandler  | Orquesta la creación de una nueva postulación. Verifica mediante servicios externos la ubicación (si es necesario), instancia un nuevo Enrollment y lo persiste en el repositorio. | SubmitEnrollmentCommand |
+| AcceptEnrollmentCommandHandler  | Recupera la postulación por su ID, invoca el método Accept() del Aggregate Root (generando el Match) y persiste el cambio. Dispara el evento de dominio EnrollmentAccepted.        | AcceptEnrollmentCommand |
+| RejectEnrollmentCommandHandler  | Recupera la postulación, invoca el método Reject() para declinar al chambeador y libera el estado en la base de datos.                                                             | RejectEnrollmentCommand |
+| CancelEnrollmentCommandHandler  | Permite al chambeador retirar su postulación antes de ser aceptado. Invoca CancelByChambeador() en la entidad y actualiza el repositorio.                                          | CancelEnrollmentCommand |
+
+**Query Services**
+
+Encargados de procesar las consultas de manera óptima y directa, devolviendo objetos de transferencia (DTOs) sin cargar la lógica pesada del Aggregate Root.
+
+| Nombre                            | Descripcion                                                                                                              | Queries Manejdas           |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| GetEnrollmentByIdQueryHandler     | Busca y devuelve el detalle completo de una postulación específica utilizando su ID.                                     | `GetEnrollmentByIdQuery`    |
+| GetPostulantesByTurnoQueryHandler | Obtiene la lista completa de chambeadores (postulantes) que han aplicado a un turno específico publicado por la MYPE.    | `GetPostulantesByTurnoQuery` |
+| GetActiveEnrollmentsQueryHandler  | Devuelve todas las postulaciones que un joven específico mantiene activas (en estado Pending o Accepted) en el sistema.  | `GetActiveEnrollmentsQuery`  |
+
+**Data Transfer Objects (DTOs)**
+
+Objetos inmutables generados por la Application Layer para transferir datos hacia la Interface Layer, asegurando que las entidades de dominio puras no se expongan directamente a los controladores web.
+
+| Nombre                | Descripcion                                                                                                                               |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| EnrollmentDto         | Representación plana y de solo lectura de una postulación, que incluye el Id, TurnoId, ChambeadorId, y el Status actual.                  |
+| PostulanteSummaryDto  | Versión resumida de la postulación optimizada para la vista de lista de la MYPE, mostrando el estado actual y el momento de postulación.  |
+
+
 ##### 2.6.2.4. Infrastructure Layer
+La Infrastructure Layer se encarga de la persistencia de datos, de las integraciones externas y de proporcionar los adaptadores y utilidades necesarios para que la Application Layer y la Domain Layer funcionen. En el contexto del bounded context de Application (Enrollment), esta capa implementa los repositories para guardar las postulaciones, los adaptadores de geolocalización (Google Maps API), los publicadores de eventos para la comunicación asíncrona (Message Broker) y cualquier componente dependiente de tecnología concreta.
+
+**Repositories**
+
+| Nombre                | Descripcion                                                                                                                                                                                                                                                                                                          | Implementación (ejemplos de métodos)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| EnrollmentRepository  | Responsable de la persistencia y recuperación de los agregados Enrollment. Traduce entre la representación de persistencia (tablas relacionales) y los objetos del dominio. También se encarga de búsquedas optimizadas para listar las postulaciones de un turno o de un joven. (implementa IEnrollmentRepository)  | - Task<Enrollment?> GetByIdAsync(UUID id) → Obtener la postulación por su identificador único. <br/> <br/> - Task<IEnumerable<Enrollment>> GetByTurnoIdAsync(UUID turnoId) → Obtener todas las postulaciones recibidas para un turno específico publicado por la MYPE. <br/> <br/> - Task<IEnumerable<Enrollment>> GetActiveByChambeadorIdAsync(UUID chambeadorId) → Obtener las postulaciones pendientes o aceptadas de un joven <br/> <br/> - Task AddAsync(Enrollment enrollment) → Insertar una nueva postulación en la base de datos. <br/> <br/> - Task UpdateAsync(Enrollment enrollment) → Actualizar el estado de la postulación (ej. transición de PENDING a ACCEPTED).  |
+
+**External Services & Event Publishing**
+
+| Nombre                    | Descripcion                                                                                                                                                                                                                                            | Implementación (ejemplos de métodos)                                                                                                                                                                                                                                                                                                                                                                     |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| GoogleMapsAdapter         | Adaptador responsable de la integración con la API de Google Maps (Distance Matrix / Geocoding). Se encarga de validar las coordenadas enviadas por el dispositivo móvil y calcular la distancia real entre el joven postulante y el local de la MYPE. | - Task<double> CalculateDistanceAsync(Location origin, Location destination) → Llama a la API para obtener la distancia real de viaje (en km o metros) entre dos coordenadas. <br/> <br/> - Task<bool> ValidateLocationWithinRadiusAsync(Location applicantLoc, Location turnoLoc, double maxRadius) → Verifica si el joven se encuentra dentro de la zona permitida para postular al turno de urgencia. |
+| EnrollmentEventPublisher  | Componente encargado de publicar los eventos de dominio (Domain Events) hacia un bus de mensajes (ej. RabbitMQ, Apache Kafka, o eventos en memoria). Es vital para notificar a otros Bounded Contexts sin acoplarlos directamente.                     | - Task PublishEnrollmentAcceptedAsync(EnrollmentAcceptedEvent domainEvent) → Serializa y envía el evento indicando que hubo un "Match", para que el contexto de Colaboración habilite el chat entre la MYPE y el joven. <br/> <br/> - Task PublishEnrollmentCancelledAsync(EnrollmentCancelledEvent domainEvent) → Envía un evento si el joven cancela, para que el sistema libere el cupo en el turno.  |
+
 ##### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
-##### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+![ApplicationContext_Component_Diagram.png](../assets/img/Chapter-2/Product-Artifacts/ApplicationContext_Component_Diagram.png)
+
+### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+
 ###### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+![applicationbounded.png](../assets/img/Chapter-2/Product-Artifacts/applicationbounded.png)
+
 ###### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-
+![xd.png](../assets/img/Chapter-2/Product-Artifacts/xd.png)
 
 ### 2.6.3. Bounded Context: Job Context
 ##### 2.6.3.1. Domain Layer
