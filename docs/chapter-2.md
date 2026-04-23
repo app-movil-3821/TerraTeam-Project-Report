@@ -1717,6 +1717,43 @@ En esta capa se definen las reglas y comportamientos propios del dominio de pago
 | **SubscriptionRepository** | Persistencia y consulta de suscripciones.                | `AddAsync(Subscription subscription), UpdateAsync(Subscription subscription), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetByAccountAsync(AccountId accountId), GetActiveAsync()` |
 | 
 ##### 2.6.6.2. Interface Layer
+
+
+La **Interface Layer** expone los servicios del bounded context hacia el exterior mediante **APIs REST**, permitiendo que clientes externos (web o móvil) interactúen con las cuentas, suscripciones, planes y negocios.  
+Se definen los **Controllers**, **Resources** y **Assemblers/Transformers**, encargados de mapear entre las entidades de dominio y los formatos de entrada/salida utilizados por los consumidores.
+
+---
+
+## Controllers
+
+| Nombre                      | Descripción                                              | Endpoints (ejemplos)                                                                                                                                                  |
+|-----------------------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 
+| **PlansController**         | Gestiona los planes de suscripción.                      | `POST /plans (CreatePlan)`<br>`PUT /plans/{id} (UpdatePlan)`<br>`GET /plans/{id}`<br>`GET /plans`
+---
+
+## Resources
+
+Los **Resources** definen la estructura de datos que los clientes externos envían o reciben, evitando exponer directamente las entidades del dominio.
+
+- **CreateAccountResource**: `{ BusinessId: string, OwnerUserId: string, Role: string }`
+- **AccountResource**: `{ Id: string, BusinessName: string, Email: string, Status: string, Role: string }`
+- **CreateSubscriptionResource**: `{ AccountId: string, PlanId: string }`
+- **SubscriptionResource**: `{ Id: string, AccountId: string, PlanId: string, Status: string, ExpirationDate: DateTime }`
+- **CreatePlanResource**: `{ PlanType: string, Description: string, PaymentFrequency: string, Price: decimal, MaxWarehouses: int, MaxProducts: int }`
+- **PlanResource**: `{ Id: string, PlanType: string, Description: string, PaymentFrequency: string, Price: decimal, MaxWarehouses: int, MaxProducts: int }`
+- **CreateBusinessResource**: `{ BusinessName: string, Email: string, Ruc: string }`
+- **BusinessResource**: `{ Id: string, BusinessName: string, Email: string, Ruc: string }`
+
+## Assemblers / Transformers
+
+Se implementan componentes que transforman los **Resources** ↔ **Entities/Aggregates**, asegurando que la capa de interfaces no contenga lógica de negocio.
+
+- `SubscriptionFromResourceAssembler` → Convierte un `CreateSubscriptionResource` en `CreateSubscriptionCommand`.
+- `SubscriptionResourceFromEntityAssembler` → Convierte un `Subscription` en `SubscriptionResource`.
+- `BusinessFromResourceAssembler` → Convierte un `CreateBusinessResource` en `CreateBusinessCommand`.
+- `BusinessResourceFromEntityAssembler` → Convierte un `Business` en `BusinessResource`.
+
 ##### 2.6.6.3. Application Layer
 ##### 2.6.6.4. Infrastructure Layer
 ##### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
