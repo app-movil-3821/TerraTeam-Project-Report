@@ -964,6 +964,51 @@ Se representan los dispositivos móviles desde los cuales los usuarios acceden a
 ## 2.6. Tactical-Level Domain-Driven Design
 ### 2.6.1. Bounded Context: IAM Context
 ##### 2.6.1.1. Domain Layer
+La Domain Layer del IAM Context encapsula toda la lógica de negocio relacionada con la gestión de identidad y acceso dentro de la plataforma ChambaYA. Este contexto maneja tanto a los jóvenes en búsqueda de empleo como a las MYPES contratantes, diferenciándolos mediante roles.
+
+Se encarga de garantizar reglas como:
+
+- Validación de datos (email, contraseña)
+- Gestión de perfiles
+- Asignación de roles
+- Actualización de información del usuario
+
+
+## Aggregates
+
+| Nombre     | Descripción                                                                                                                                                                  | Atributos                                                                                                                                                                                                       | Métodos                                                                                                                            |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **`User`** | Aggregate Root que representa a un usuario del sistema; encapsula identidad, credenciales, relación con cuenta y rol de usuario, y operaciones invariantes sobre el usuario. | `Id: int` <br>`Name: string` <br>`Email: Email`    <br>`Password: string`  <br>`CreatedAt: DateTime`  <br>`UpdatedAt: DateTime`  <br>`AccountId: AccountId`  <br>`UserRole: Role`  <br>`UserRoleId: string` | `ChangePassword(string newPassword): void`  <br>`UpdateProfile(Profile profile): void`  <br>`ChangeRole(UserRole role): void` |
+
+
+## Entities
+
+| Nombre     | Descripción                                                                                               | Atributos                            | 
+| ---------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------ | 
+| **`Profile`** | Entidad que representa la información extendida del usuario. | `UserId: string`  <br> `Skills: string[]` <br> `Experience: string` <br> `PhotoURL: string` | 
+
+
+## Value Objects
+
+| Nombre                          | Descripción                                                                                      | Atributos / Valores                                                |
+| ------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| **`EUserRoles`**                | Define el tipo de usuario dentro del sistema.              | `JOB_SEEKER`, `EMPLOYER`                    |
+| **`Email`**                | Representa un correo electrónico válido.              | `string validado (formato email)`                   |
+
+
+## Services
+
+| Nombre                    | Descripción                                                                        | Métodos                                                                                                                                                                                                                                          |
+| ------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`IUserCommandService`** | Define operaciones que modifican el estado del usuario. | `CreateUser(CreateUserCommand)`  <br>`TUpdateUser(UpdateUserCommand)`  <br>`ChangePassword(ChangePasswordCommand)`  <br>`DeleteUser(DeleteUserCommand)`  <br>`DeleteUser(DeleteUserCommand)` |
+| **`IUserQueryService`** | Interfaz que expone consultas sobre usuarios. | `GetUserById(GetUserByIdQuery)`  <br>`GetUserByEmail(GetUserByEmailQuery)`  <br>`GetUsersByRole(GetUsersByRoleQuery)`  <br>`GetAllUsersQuery(GetAllUsersQuery)` |
+
+## Repositories
+
+| Nombre                | Descripción                                             | 
+| --------------------- | ------------------------------------------------------- | 
+| **`IUserRepository`** | Define la persistencia para la entidad `User`. | 
+
 ##### 2.6.1.2. Interface Layer
 ##### 2.6.1.3. Application Layer
 ##### 2.6.1.4. Infrastructure Layer
