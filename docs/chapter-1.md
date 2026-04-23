@@ -174,7 +174,7 @@ Para que ChambaYA funcione y logre tracción, la plataforma es un modelo multila
 **Necesidades y frustraciones:** Su principal necesidad es la flexibilidad; requieren generar liquidez rápida sin comprometer la rigidez de sus horarios de clases o estudio. Su mayor frustración en el mercado laboral actual es la barrera de la "falta de experiencia previa" y la burocracia de armar un currículum vitae para generar ingresos menores. Valoran la inmediatez y el trabajo por objetivos o turnos cortos.
 ### Segmento Objetivo 2:El Contratante 
 
-**Demografía:** Emprendedores, administradores o propietarios de micro y pequeñas empresas (mypes) locales. El enfoque principal está en sectores de alta rotación u operacionales: restaurantes, cafeterías, bodegas, minimarkets, ferreterías o negocios de eventos.
+**Demografia:** Emprendedores, administradores o propietarios de micro y pequeñas empresas (mypes) locales. El enfoque principal está en sectores de alta rotación u operacionales: restaurantes, cafeterías, bodegas, minimarkets, ferreterías o negocios de eventos.
 
 **Comportamiento tecnológico:** Utilizan el celular como herramienta de gestión diaria para sus negocios (uso intensivo de WhatsApp Business, aplicaciones de proveedores, plataformas de delivery y apps bancarias). Buscan herramientas prácticas que les ahorren tiempo.
 
