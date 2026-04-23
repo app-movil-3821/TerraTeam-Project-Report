@@ -1090,7 +1090,7 @@ Este contexto tiene como propósito facilitar el intercambio económico entre Co
 
 ![application-canvas.png](../assets/img/Chapter-2/Bounded-Contexts/application-canvas.png)
 
-Este contexto permite validar y registrar las transacciones vía Yape/Plin de forma organizada, lo que contribuye directamente a la confianza y sostenibilidad económica de la plataforma. También apoya las actividades clave proporcionando una capa de validación financiera esencial para la gestión de pagos.
+El Payment context permite validar y registrar las transacciones vía Yape/Plin de forma organizada, lo que contribuye directamente a la confianza y sostenibilidad económica de la plataforma. También apoya las actividades clave proporcionando una capa de validación financiera esencial para la gestión de pagos.
 
 
 ##### 2.5.1.3.5. Communication Context Canvas
@@ -1099,7 +1099,7 @@ Este contexto provee las herramientas de coordinación necesarias para que Contr
 
 ![communication-canvas.png](../assets/img/Chapter-2/Bounded-Contexts/communication-canvas.png)
 
-Este contexto permite a los usuarios coordinar detalles tras un "Match" de forma organizada, lo que contribuye directamente a la eficiencia operativa y a la experiencia del usuario. Además, actúa como un servicio de soporte necesario para las actividades clave del dominio.
+El Communication context permite a los usuarios coordinar detalles tras un "Match" de forma organizada, lo que contribuye directamente a la eficiencia operativa y a la experiencia del usuario. Además, actúa como un servicio de soporte necesario para las actividades clave del dominio.
 
 
 ##### 2.5.1.3.6. Reputation Context Canvas
@@ -1108,7 +1108,7 @@ Este contexto tiene como propósito construir y mantener la confianza dentro del
 
 ![reputation-canvas.png](../assets/img/Chapter-2/Bounded-Contexts/reputation-canvas.png)
 
-Este contexto permite recopilar y visualizar feedback y promedios de calificación de forma organizada, lo que contribuye directamente a la confianza en la red y a la calidad del servicio. No constituye el núcleo principal, sino que apoya las actividades clave proporcionando información valiosa para la toma de decisiones por parte de los usuarios.
+El Reputation context permite recopilar y visualizar feedback y promedios de calificación de forma organizada, lo que contribuye directamente a la confianza en la red y a la calidad del servicio. No constituye el núcleo principal, sino que apoya las actividades clave proporcionando información valiosa para la toma de decisiones por parte de los usuarios.
 
 
 ### 2.5.2. Context Mapping
