@@ -16,19 +16,17 @@
 
 **Nombre del Startup:** TerraTeam
 
-**Nombre del Producto:** Chamba
+**Nombre del Producto:** ChambaYa
 
 **Integrantes:**
 
-| Código | Apellidos y Nombres |
-|--------|---------------------|
-| U202310949       | Bautista Rivera Jose Diego                    |
-|        |                     |
-|        |                     |
-|        |                     |
-|        |                     |
-|        |                     |
-|        |                     | 
+| Código | Apellidos y Nombres                 |
+|--------|-------------------------------------|
+| U202310949  | Bautista Rivera Jose Diego          |
+| u202313458 | Taipe Sangama Jorge Francisco |
+| u202111041 | Cordova Valdivia Sebastian    |
+| u202221383 | Moises Espinoza Chavez        |
+| u202323319 | Janampa Gutierrez Jhoan D.    |                                  | 
 
 ### Abril, 2026
 
@@ -41,14 +39,44 @@
 
 ---
 
+
+| Version   | Fecha    | Autor       | Descripcion de los cambios |
+|-----------|----------|-------------|----------------------------|
+| 1.0       | 23/04/25 | Jorge Taipe | Avance Entrega AV1         |
+
 ##  Project Report Collaboration Insights
 
 ---
 
+Link para acceder a la organización ChambaYA: https://github.com/app-movil-3821
+
+Repositorio del Project Report: https://github.com/app-movil-3821/TerraTeam-Project-Report
+
+TB1 (Fecha de entrega): Reporte de la colaboración del proyecto
+
+Respecto del primer avance del informe del proyecto, cada miembro del equipo realizó un aporte en el desarrollo de las actividades para completar este informe. Algunas actividades incluyen reuniones colaborativas entre los 5 integrantes para llegar a un acuerdo mutuo sobre secciones como el diseño de Event Storming (flujos de matching e incidencias), identificación de Bounded Contexts (Diseño Estratégico y Táctico), diagrama de arquitectura C4, diagrama de clases, diagrama de base de datos, entre otros. A continuación, se describen resumidamente los aportes realizados por cada integrante:
+
+El integrante Jorge Taipeparticipó activamente en el proceso de Event Storming para la identificación y diseño de los Bounded Contexts (como el Application y Job Context). Además, se encargó del diseño de la arquitectura de software a nivel táctico usando Domain-Driven Design (DDD), definiendo las capas (Domain, Application, Infrastructure), y elaborando los diagramas a nivel de código (Clases y Base de Datos en PlantUML).
+
+El integrante Diego Bautista formó parte del proceso Lean UX al redactar el Problem Statement en el informe y los Hypotheses Statements. Además, realizó la descripción de los User Persona por cada segmento objetivo (Dueños de MYPEs y Jóvenes Estudiantes); la redacción de historias de usuario con criterios de aceptación; el diseño de mapas de impacto y ayudó en el proceso de diseño para el Event Storming.
+
+El integrante Sebastian Cordova realizó el Lean UX Canvas; analizó a la competencia directa/indirecta y describió estrategias. Además, ayudó a describir historias de usuario enfocadas en la urgencia de contratación. También, participó en las reuniones colaborativas para validar el Event Storming y el flujo de estados de las postulaciones.
+
+El integrante Jhoan Janampa se encargó del proceso de Needfinding para hallar las necesidades reales de nuestros segmentos objetivos respecto a los turnos de emergencia. Además, ayudó con la descripción de historias de usuario; formó parte de la reunión para diseñar la arquitectura del software (C4 Model) y definió las integraciones de infraestructura como Google Maps y Firebase.
+
+El integrante Moises ayudó en la toma de decisiones para la creación de las historias de usuario y flujos alternativos (Sad Paths). Además, formó parte del proceso de diseño de arquitectura del software, colaborando activamente en la revisión del diagrama de clases, los DTOs, y la estructura de las tablas del diagrama de base de datos relacional.
+![Commits.png](assets/img/chapter-1/Commits.png)
+
 ##  Contenido
 
 ### Tabla de Contenidos
-### Student Outcome *(ver Anexo A)*
+### Student Outcome 
+
+| Criterio Especifico | Acciones Realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Conclusiones | 
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+|    Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.                 | **Jorge Taipe**<br/> <br/> **AV1:** Participó activamente en el proceso de Event Storming para la identificación y diseño de los Bounded Contexts (como el Application y Job Context). Además, se encargó del diseño de la arquitectura de software a nivel táctico usando Domain-Driven Design (DDD), definiendo las capas (Domain, Application, Infrastructure), y elaborando los diagramas a nivel de código (Clases y Base de Datos en PlantUML).  <br/> <br/> **Diego Bautista** <br/> <br/> **AV1:** Formó parte del proceso Lean UX al redactar el Problem Statement en el informe y los Hypotheses Statements. Además, realizó la descripción de los User Persona por cada segmento objetivo (Dueños de MYPEs y Jóvenes Estudiantes); la redacción de historias de usuario con criterios de aceptación; el diseño de mapas de impacto y ayudó en el proceso de diseño para el Event Storming. <br/> <br/> **Jhoan Janampa** <br/> <br/> AV1: Realizó el Lean UX Canvas; analizó a la competencia directa/indirecta y describió estrategias. Además, ayudó a describir historias de usuario enfocadas en la urgencia de contratación. También, participó en las reuniones colaborativas para validar el Event Storming y el flujo de estados de las postulaciones.  <br/> <br/> **Sebastian Cordova** <br/> <br/> **AV1:** Se encargó del proceso de Needfinding para hallar las necesidades reales de nuestros segmentos objetivos respecto a los turnos de emergencia. Además, ayudó con la descripción de historias de usuario; formó parte de la reunión para diseñar la arquitectura del software (C4 Model) y definió las integraciones de infraestructura como Google Maps y Firebase. <br/> <br/> **Moises Espinoza** <br/> <br/>  **AV1:** Ayudó en la toma de decisiones para la creación de las historias de usuario y flujos alternativos (Sad Paths). Además, formó parte del proceso de diseño de arquitectura del software, colaborando activamente en la revisión del diagrama de clases, los DTOs, y la estructura de las tablas del diagrama de base de datos relacional.  |   Se concluye que la actualización constante en patrones de diseño y arquitecturas modernas es fundamental para construir un sistema escalable y resiliente. La adopción de estándares de la industria (como DDD y Clean Architecture) ha permitido aislar la complejidad del negocio de emparejamiento, demostrando que aplicar estos conceptos teóricos a la práctica mejora drásticamente la calidad técnica del entregable y eleva la competitividad del estudiante frente a los estándares actuales del mercado laboral.           |
+|     Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |       Se concluye que el aprendizaje permanente es un pilar innegociable en la ingeniería de software. Las exigencias del proyecto demostraron que las tecnologías y metodologías de desarrollo están en constante evolución. Solo mediante la proactividad, la investigación continua y la disposición para adoptar nuevos paradigmas (como el modelado de Bounded Contexts), el profesional puede resolver problemas reales de negocio y ofrecer soluciones tecnológicas que sean innovadoras, seguras y perdurables en el tiempo.       |
+
 ### Objetivos SMART
 
 ---
@@ -58,13 +86,6 @@
 ### [1.1. Startup Profile](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#11-startup-profile)
 #### [1.1.1. Descripción de la Startup](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#111-descripción-de-la-startup)
 #### [1.1.2. Perfiles de integrantes del equipo](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#112-perfiles-de-integrantes-del-equipo)
-| Foto | Información |
-|------|------------|
-| | **Nombre Completo:** Jose Diego Bautista Rivera <br> **Código:**  U202310949 <br> **Carrera:** Ingeniería de Software - UPC <br><br> **Perfil:** <br> Estudiante de la carrera de Ingeniería de Software, con gran interés en el desarrollo y diseño de base de datos. Trabajar soluciones a problemas reales con software limpio y eficiente. Con buenas prácticas de programación, trabajo en equipo y en constante aprendizaje. <br><br> **Habilidades Técnicas:** <br> -MySQL y gestión de base de datos <br> -Git, Git Flow <br> -DDD, Bounded Contexts <br><br> **Habilidades Sociales:** <br> -Trabajo en eqquipo y colaboración eficaz <br> -Compromiso <br> -Aprendizaje autónomo y adaptabilidad |
-| | **Nombre Completo:** <br> **Código:** <br> **Carrera:** <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br> - <br> - <br> - <br><br> **Habilidades Sociales:** <br> - <br> - <br> - |
-| | **Nombre Completo:** <br> **Código:** <br> **Carrera:** <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br> - <br> - <br> - <br><br> **Habilidades Sociales:** <br> - <br> - <br> - |
-| | **Nombre Completo:** <br> **Código:** <br> **Carrera:** <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br> - <br> - <br> - <br><br> **Habilidades Sociales:** <br> - <br> - <br> - |
-| | **Nombre Completo:** <br> **Código:** <br> **Carrera:** <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br> - <br> - <br> - <br><br> **Habilidades Sociales:** <br> - <br> - <br> - |
 
 ### [1.2. Solution Profile](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#12-solution-profile)
 #### [1.2.1. Antecedentes y problemática](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterI.md#121-antecedentes-y-problemática)
@@ -177,17 +198,9 @@
 
 ##  Conclusiones
 
-### [Conclusiones y recomendaciones](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#conclusiones-y-recomendaciones)
-### [ Video App Validation](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#video-app-validation)
-### [ Video About the Product](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#video-about-the-product)
-### [ Video About the Team](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#video-about-the-team)
+### [Conclusiones y recomendaciones](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/conclusiones)
 
----
 
-## [ Glosario](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#glosario)
-
----
-
-## [ Bibliografía](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#bibliografía)
+## [ Bibliografía](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/bibliografía)
 
 ---
