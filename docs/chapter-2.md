@@ -1051,7 +1051,36 @@ Los Assemblers encapsulan la transformación entre Resources, Commands/Queries y
 - `RoleEntityToRoleResourceAssembler` convierte un `Role` en un `RoleResource`
 - `ChangePasswordResourceToCommandAssembler` convierte un `ChangePasswordResource` en un `ChangePasswordCommand`
 
+---
+
 ##### 2.6.1.3. Application Layer
+La Application Layer coordina la ejecución de comandos y consultas, actuando como intermediario entre la Interface Layer y la Domain Layer. 
+
+---
+
+## Command Services
+
+Los **Command Services** se encargan de **procesar acciones que modifican el estado del dominio** (creación, actualización, borrado o cambios de estado), relativas al agregado `User` y a la gestión de roles y credenciales. Su responsabilidad incluye validar los Commands, orquestar llamadas a los **Domain Services** y a los **Repositories**.
+
+|                 Nombre | Descripción                                               | Commands manejados                                                                                  |
+| ---------------------: | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| **UserCommandService** | Gestiona operaciones que modifican el estado del usuario (`User`).    | `CreateUserCommand, UpdateUserCommand, ChangePasswordCommand, ChangeRoleCommand, DeleteUserCommand` |
+| **RoleCommandService** | Gestiona operaciones sobre la entidad `Role` (si aplica). | `CreateRoleCommand, UpdateRoleCommand, DeleteRoleCommand`                                           |
+| **AuthCommandService** | Orquesta flujos relacionados con credenciales y sesiones. | `LoginCommand, LogoutCommand, RefreshTokenCommand, ForgotPasswordCommand, ResetPasswordCommand`     |
+
+---
+
+## Query Services
+Los **Query Services** están orientados a **recuperar datos del dominio sin producir efectos colaterales**. Reciben **Queries**, consultan los **Repositories** o vistas optimizadas, y devuelven **Resources** listos para la capa de presentación. Mantienen la capa de aplicación ligera y evitan que los **Controller** conozcan detalles de persistencia o modelado del dominio.
+
+|               Nombre | Descripción                                         | Queries manejadas                                                              |
+| -------------------: | --------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **UserQueryService** | Gestiona y exponeconsultas sobre usuarios.                    | `GetUserByIdQuery, GetUserByEmailQuery, GetUsersByRoleQuery, GetAllUsersQuery` |
+| **RoleQueryService** | Expone consultas sobre roles.                       | `GetRoleByIdQuery, GetAllRolesQuery`                                           |
+| **AuthQueryService** | Consultas relacionadas con estado de sesión/tokens. | `ValidateTokenQuery, GetAuthMetadataQuery`                                     |
+
+---
+
 ##### 2.6.1.4. Infrastructure Layer
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
