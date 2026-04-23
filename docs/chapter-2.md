@@ -1659,6 +1659,63 @@ El siguiente diagrama muestra el diseño de persistencia del bounded context **C
 
 ### 2.6.6. Bounded Context: Payment Context
 ##### 2.6.6.1. Domain Layer
+
+La capa Payment And Subscriptions constituye el núcleo del bounded context encargado de la administración de cuentas y suscripciones de usuarios y negocios, centralizando la lógica relacionada con la gestión de planes de pago y su ciclo de vida.
+
+En esta capa se definen las reglas y comportamientos propios del dominio de pagos y suscripciones: creación y mantenimiento de cuentas (Account), afiliación de usuarios o negocios a planes de pago mediante suscripciones (Subscription), gestión de estados de vigencia y control de renovaciones o cancelaciones.
+
+## Aggregates
+
+| Nombre           | Descripción                                                                          | Atributos                                                                                                                                          | Métodos                                                                                            |
+|------------------|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| **Account**      | Representa la cuenta de un usuario o negocio dentro del sistema.                     | `Id: string, Business: Business, AccountRole: EAccountRole, Status: EAccountStatus, OwnerUserId: string`                                           | `ActivateAccount(), GetCreationDate(), GetBusinessName(), GetBusinessEmail()`                      |
+| **Subscription** | Representa la suscripción de una cuenta a un plan, controlando su estado y vigencia. | `Id: string, SubscribedAccountId: string, SubscribedAccount: Account, AssociatedPlanId: string, AssociatedPlan: Plan, Status: ESubscriptionStatus` | `ActivateSubscription(), ActivateWithPlan(Plan newPlan), CalculateExpirationDate(), UpgradePlan()` |
+
+---
+
+## Entities
+
+| Nombre       | Descripción                                                         | Atributos                                                                                                                                           | Métodos                                                                                   |
+|--------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| **Plan**     | Define los planes de suscripción disponibles y sus características. | `Id: string, PlanType: EPlanType, Description: string, PaymentFrequency: EPaymentFrequency, PlanPrice: Money, MaxWarehouses: int, MaxProducts: int` | `CreateFreePlan(), CreatePremiumMonthlyPlan(), CreatePremiumAnnualPlan(), ValidatePlan()` |
+| **Business** | Representa un negocio asociado a una cuenta.                        | `Id: string, BusinessName: BusinessName, BusinessEmail: BusinessEmail, Ruc: string`                                                                 | ``                                                                                        |
+
+---
+
+## Value Objects
+
+| Nombre                  | Descripción                                                     | Atributos / Métodos                           |
+|-------------------------|-----------------------------------------------------------------|-----------------------------------------------|
+|          | |    |
+| **EPaymentFrequency**   | Define la frecuencia de pago de un plan.                        | `Valores: Monthly, Annual`                    |
+| **EPlanType**           | Define el tipo de plan de suscripción.                          | `Valores: Free, Premium`                      |
+| **BusinessName**        | Valor que representa el nombre del negocio.                     | `Atributos: { Name: string }`                 |
+| **BusinessEmail**       | Valor que representa el correo electrónico del negocio.         | `Atributos: { Email: string }`                |
+| **Ruc**                 | Valor que representa el número de RUC del negocio.              | `Atributos: { Ruc: string }`                
+| **ESubscriptionStatus** | Define los posibles estados de una suscripción.                 | `Valores: Active, Expired, Canceled, Pending` |
+| **EAccountStatus**      | Define los posibles estados de una cuenta.                      | `Valores: Active, Inactive, Suspended`  
+
+---
+
+## Services
+
+| Nombre                          | Descripción                                                        | Métodos (Commands / Queries)                                                                                    |
+|---------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **ISubscriptionCommandService** | Gestiona la creación, activación y actualización de suscripciones. | `CreateSubscriptionCommand, ActivateSubscriptionCommand, UpgradeSubscriptionCommand, CancelSubscriptionCommand` |
+| **IAccountCommandService**      | Gestiona operaciones sobre cuentas de usuario o negocio.           | `CreateAccountCommand, ActivateAccountCommand, SuspendAccountCommand`                                           |
+| **IPlanCommandService**         | Gestiona la creación y actualización de planes de suscripción.     | `CreatePlanCommand, UpdatePlanCommand, DeletePlanCommand`                     |
+
+
+---
+
+## Repositories
+
+| Nombre                     | Descripción                                              | Métodos                                                                                                                                                                              |
+|----------------------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **AccountRepository**      | Persistencia y consulta de cuentas en la base de datos.  | `AddAsync(Account account), UpdateAsync(Account account), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetByStatusAsync(EAccountStatus status), GetByRoleAsync(EAccountRole role)`   |
+| **PlanRepository**         | Persistencia y consulta de planes de suscripción.        | `AddAsync(Plan plan), UpdateAsync(Plan plan), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetAllAsync(), GetByTypeAsync(EPlanType type)`                                            |
+| **SubscriptionRepository** | Persistencia y consulta de suscripciones.                | `AddAsync(Subscription subscription), UpdateAsync(Subscription subscription), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetByAccountAsync(AccountId accountId), GetActiveAsync()` |
+| 
 ##### 2.6.6.2. Interface Layer
 ##### 2.6.6.3. Application Layer
 ##### 2.6.6.4. Infrastructure Layer
