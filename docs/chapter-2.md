@@ -1292,14 +1292,164 @@ La Infrastructure Layer se encarga de la persistencia de datos, de las integraci
 
 ### 2.6.4. Bounded Context: Communication Context
 ##### 2.6.4.1. Domain Layer
+El Domain Layer del bounded context **Communication** agrupa la lógica de negocio relacionada con la interacción entre contratante y chambeador durante un turno activo. En esta capa se definen los elementos del dominio que permiten gestionar conversaciones, mensajes, incidencias, solicitudes de horas extra y confirmaciones de llegada, manteniendo la comunicación dentro de un entorno controlado por la aplicación.
+
+#### **Aggregates**
+
+| Nombre | Descripción | Atributos | Métodos |
+|---|---|---|---|
+| Conversation | Aggregate Root que representa el canal de comunicación activo entre contratante y chambeador dentro de un turno. Encapsula mensajes, incidencias y eventos operativos asociados a la coordinación del servicio | Id: string, ShiftId: string, ContractorId: string, WorkerId: string, Status: CommunicationStatus, CreatedAt: DateTime, UpdatedAt: DateTime | Open(): void, Close(): void, AddMessage(Message message): void, RegisterIncident(IncidentReport incident): void, ConfirmArrival(ArrivalConfirmation arrival): void, RequestOvertime(OvertimeRequest request): void |
+|
+---
+#### **Entities**
+
+| Nombre | Descripción | Atributos |
+|---|---|---|
+| Message | Entidad que representa un mensaje enviado dentro de una conversación activa | Id: string, ConversationId: string, SenderId: string, Content: MessageContent, SentAt: DateTime |
+| IncidentReport | Entidad que representa una incidencia o imprevisto reportado durante la ejecución del turno | Id: string, ConversationId: string, ReportedBy: string, Description: string, CreatedAt: DateTime, Status: string |
+| OvertimeRequest | Entidad que representa una solicitud de horas extra generada durante el turno y evaluada por el contratante | Id: string, ConversationId: string, RequestedBy: string, ExtraHours: int, Status: string, RequestedAt: DateTime |
+| ArrivalConfirmation | Entidad que representa la confirmación de llegada del chambeador al lugar del turno | Id: string, ConversationId: string, WorkerId: string, ConfirmedAt: DateTime |
+|
+---
+#### **Value Objects**
+
+| Nombre | Descripción | Atributos / Valores |
+|---|---|---|
+| MessageContent | Objeto de valor que representa el contenido textual de un mensaje | Text: string |
+| CommunicationStatus | Objeto de valor que modela el estado actual de la conversación | Active, Closed |
+| NotificationType | Objeto de valor que representa el tipo de notificación generada dentro del contexto | Message, Incident, Arrival, OvertimeRequest, Reminder |
+| IncidentType | Objeto de valor que clasifica el tipo de incidencia reportada | Delay, Absence, OperationalIssue, Other |
+|
+
+#### **Services**
+
+| Nombre | Descripción | Métodos |
+|---|---|---|
+| ICommunicationCommandService | Interfaz que define las operaciones de negocio que modifican el estado de la conversación y sus entidades relacionadas | Handle(SendMessageCommand command), Handle(ReportIncidentCommand command), Handle(ConfirmArrivalCommand command), Handle(RequestOvertimeCommand command), Handle(CloseConversationCommand command) |
+| ICommunicationQueryService | Interfaz que expone consultas sobre conversaciones, mensajes e incidencias | Handle(GetConversationByIdQuery query), Handle(GetMessagesByConversationQuery query), Handle(GetIncidentsByConversationQuery query), Handle(GetOvertimeRequestsByConversationQuery query) |
+
+
+#### **Repositories**
+
+| Nombre | Descripción |
+|---|---|
+| IConversationRepository | Define la persistencia del aggregate Conversation y de sus entidades relacionadas |
+
+---
+
 ##### 2.6.4.2. Interface Layer
+
+En esta capa se exponen los controladores y recursos que permiten a las aplicaciones móviles interactuar con el bounded context **Communication**. Los controladores reciben solicitudes externas, validan la entrada, transforman los datos en comandos o consultas y delegan la ejecución a los servicios de aplicación correspondientes. De esta manera, la lógica de negocio permanece aislada en las capas internas del dominio.
+
+#### **Controllers**
+
+| Nombre | Descripción | Endpoints (ejemplos) |
+|---|---|---|
+| ConversationsController | Expone operaciones relacionadas con la gestión de conversaciones activas entre contratante y chambeador durante un turno. Permite consultar conversaciones, listar mensajes, registrar nuevas interacciones y cerrar la comunicación cuando el turno concluye | `GET /api/conversations/{id}` (GetConversationByIdQuery) <br> `GET /api/conversations/{id}/messages` (GetMessagesByConversationQuery) <br> `POST /api/conversations/{id}/messages` (SendMessageCommand) <br> `POST /api/conversations/{id}/close` (CloseConversationCommand) |
+| IncidentsController | Expone operaciones para registrar y consultar incidencias reportadas durante la ejecución del turno | `POST /api/conversations/{id}/incidents` (ReportIncidentCommand) <br> `GET /api/conversations/{id}/incidents` (GetIncidentsByConversationQuery) |
+| ArrivalsController | Expone la operación de confirmación de llegada del chambeador al lugar del turno. | `POST /api/conversations/{id}/arrival-confirmation` (ConfirmArrivalCommand) |
+| OvertimeRequestsController | Expone operaciones para registrar y consultar solicitudes de horas extra generadas durante un turno activo | `POST /api/conversations/{id}/overtime-requests` (RequestOvertimeCommand) <br> `GET /api/conversations/{id}/overtime-requests` (GetOvertimeRequestsByConversationQuery) |
+
+#### **Resources**
+
+| Resource | Esquema (ejemplos) |
+|---|---|
+| SendMessageResource | `json { "senderId": "worker-123", "content": "Ya llegué al local." }` |
+| MessageResource | `json { "id": "msg-001", "conversationId": "conv-123", "senderId": "worker-123", "content": "Ya llegué al local.", "sentAt": "2026-10-01T18:30:00Z" }` |
+| ReportIncidentResource | `json { "reportedBy": "worker-123", "description": "El local está cerrado.", "type": "OperationalIssue" }` |
+| IncidentResource | `json { "id": "inc-001", "conversationId": "conv-123", "reportedBy": "worker-123", "description": "El local está cerrado.", "status": "Open", "createdAt": "2026-10-01T18:35:00Z" }` |
+| ConfirmArrivalResource | `json { "workerId": "worker-123", "confirmedAt": "2026-10-01T18:28:00Z" }` |
+| OvertimeRequestResource | `json { "requestedBy": "worker-123", "extraHours": 2 }` |
+| ConversationResource | `json { "id": "conv-123", "shiftId": "shift-001", "contractorId": "contractor-001", "workerId": "worker-123", "status": "Active", "createdAt": "2026-10-01T18:00:00Z", "updatedAt": "2026-10-01T18:30:00Z" }` |
+
+
+#### **Assemblers**
+
+Los Assemblers encapsulan la transformación entre los Resources expuestos por la API y los Commands/Queries utilizados por la capa de aplicación. Esto permite mantener a los controladores ligeros y enfocados únicamente en la interacción con el protocolo HTTP.
+
+- **SendMessageResourceToCommandAssembler** convierte un `SendMessageResource` en un `SendMessageCommand`
+- **MessageEntityToMessageResourceAssembler** convierte una entidad `Message` en un `MessageResource`.
+- **ReportIncidentResourceToCommandAssembler** convierte un `ReportIncidentResource` en un `ReportIncidentCommand`
+- **IncidentEntityToIncidentResourceAssembler** convierte una entidad `IncidentReport` en un `IncidentResource`
+- **ConfirmArrivalResourceToCommandAssembler** convierte un `ConfirmArrivalResource` en un `ConfirmArrivalCommand`
+- **OvertimeRequestResourceToCommandAssembler** convierte un `OvertimeRequestResource` en un `RequestOvertimeCommand`
+- **ConversationEntityToConversationResourceAssembler** convierte una entidad `Conversation` en un `ConversationResource`
+
+
 ##### 2.6.4.3. Application Layer
+
+La Application Layer del bounded context **Communication** se encarga de orquestar la ejecución de las operaciones relacionadas con la interacción entre contratante y chambeador durante un turno activo. Esta capa recibe comandos y consultas desde la Interface Layer, valida la información de entrada y delega la lógica de negocio al Domain Layer.
+
+Asimismo, coordina el uso de repositorios para la persistencia de datos y prepara la información que será devuelta a la capa de presentación, manteniendo una separación clara entre la lógica del dominio y los detalles de infraestructura.
+
+#### **Command Services**
+
+| Nombre | Descripción | Commands manejados |
+|---|---|---|
+| CommunicationCommandService | Gestiona las operaciones que modifican el estado de la conversación y sus entidades asociadas | SendMessageCommand, ReportIncidentCommand, ConfirmArrivalCommand, RequestOvertimeCommand, CloseConversationCommand | 
+
+
+#### **Query Services**
+
+| Nombre | Descripción | Queries manejadas |
+|---|---|---|
+| CommunicationQueryService | Expone consultas relacionadas con conversaciones, mensajes, incidencias y solicitudes de horas extra | GetConversationByIdQuery, GetMessagesByConversationQuery, GetIncidentsByConversationQuery, GetOvertimeRequestsByConversationQuery |
+
+
 ##### 2.6.4.4. Infrastructure Layer
+
+La Infrastructure Layer del bounded context **Communication** se encarga de la persistencia de datos y de la integración con servicios externos necesarios para el funcionamiento del sistema. Esta capa proporciona las implementaciones concretas de los repositorios definidos en el Domain Layer, así como los adaptadores para servicios de mensajería y notificaciones.
+
+Asimismo, permite desacoplar la lógica de negocio de los detalles tecnológicos, facilitando la evolución del sistema y el cambio de tecnologías sin afectar las capas internas.
+
+#### **Repositories**
+
+| Nombre | Descripción | Implementación (ejemplos de métodos) |
+|---|---|---|
+| ConversationRepository | Implementación concreta del repositorio encargado de la persistencia del aggregate Conversation y sus entidades relacionadas | - GetByIdAsync(id) <br> - GetMessagesByConversationId(conversationId) <br> - AddMessageAsync(message) <br> - AddIncidentAsync(incident) <br> - AddOvertimeRequestAsync(request) <br> - UpdateConversationStatus(status) |
+|
+
+
+#### **Persistence**
+
+| Componente | Descripción |
+|---|---|
+| MongoDB | Base de datos no relacional utilizada para almacenar conversaciones, mensajes, incidencias y solicitudes de horas extra, permitiendo flexibilidad en la estructura de los datos |
+|
+
+#### **External Services Integration**
+
+| Nombre | Descripción | Implementación (ejemplos) |
+|---|---|---|
+| NotificationAdapter (FCM) | Adaptador encargado de la integración con Firebase Cloud Messaging para el envío de notificaciones en tiempo real | - SendMessageNotification(userId, message) <br> - SendIncidentNotification(conversationId) <br> - SendArrivalConfirmationNotification(conversationId) <br> - SendOvertimeRequestNotification(conversationId) |
+
+
 ##### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+El siguiente diagrama de componentes representa la estructura interna del bounded context **Communication**, mostrando la organización de sus elementos en capas y la interacción entre ellas.
+
+![Deployment_Diagram.jpg](../assets/img/Chapter-2/Product-Artifacts/Communication_Diagram.png)
+
+Se identifican los controladores en la capa de interfaz, los servicios de aplicación encargados de orquestar las operaciones, los elementos del dominio que contienen la lógica de negocio y los componentes de infraestructura responsables de la persistencia y la integración con servicios externos.
+
+Este enfoque permite mantener una separación clara de responsabilidades, facilitando la escalabilidad y mantenibilidad del sistema.
+
+
 ##### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+En esta sección se presentan los diagramas de nivel de código correspondientes al bounded context **Communication**. Estos diagramas permiten representar con mayor detalle la estructura interna del contexto, tanto desde la perspectiva del modelo de dominio como desde la persistencia de la información.
+
 ###### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+A continuación, se presenta el diagrama de clases del Domain Layer del bounded context **Communication**. En este diagrama, **Conversation** se identifica como la clase principal, ya que concentra la interacción entre contratante y chambeador durante un turno activo.
+
+![Class_Diagram.jpg](../assets/img/Chapter-2/Product-Artifacts/Class_Diagram.png)
+
+Además, se relaciona con entidades como **Message**, **IncidentReport**, **OvertimeRequest** y **ArrivalConfirmation**, así como con value objects que complementan la consistencia del modelo del dominio.
+
 ###### 2.6.4.6.2. Bounded Context Database Design Diagram
 
+El siguiente diagrama muestra el diseño de persistencia del bounded context **Communication** en MongoDB. La colección **conversations** concentra la información principal de la conversación y los datos relacionados con mensajes, incidencias, solicitudes de horas extra y confirmaciones de llegada.
+
+![Data-Base_Diagram.jpg](../assets/img/Chapter-2/Product-Artifacts/Data-Base_Diagram.png)
 
 
 ### 2.6.5. Bounded Context: Reputation Context
