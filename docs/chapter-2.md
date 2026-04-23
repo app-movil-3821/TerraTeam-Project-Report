@@ -927,50 +927,6 @@ Identificamos los comandos que representan las acciones que los usuarios o siste
 
 Estos comandos nos ayudaron a definir las interacciones clave dentro del sistema y a comprender cómo los usuarios pueden influir en el flujo del dominio.
 
-### Paso 6: Policies
-
----
-
-Se identificaron las políticas que gobiernan el comportamiento del sistema, juntamente con las reglas de negocio que se deben cumplir.
-
-![paso6.png](../assets/img/Chapter-2/EventStorming/paso6.png)
-
-Estas políticas ayudaron a definir las restricciones y las condiciones bajo las cuales los comandos y eventos pueden ocurrir.
-
-### Paso 7: Read Models
-
----
-
-Se identificaron los modelos de lectura que representan las vistas y las proyecciones de los datos dentro del sistema.
-
-![paso7.png](../assets/img/Chapter-2/EventStorming/paso7.png)
-
-Los modelos de lectura nos permitieron establecer la forma en que la información se muestra a los usuarios y cómo puede ser consultada de manera eficiente.
-
-
-### Paso 8: External Systems
-
----
-
-Determinamos qué sistemas externos se relacionan con nuestro dominio y cuáles son los puntos necesarios para integrarlos.
-
-![paso8.png](../assets/img/Chapter-2/EventStorming/paso8.png)
-
-Estos sistemas externos nos permitieron entender mejor las dependencias y las interacciones que ocurren fuera de nuestro control directo.
-
-### Paso 9: Aggregates
-
----
-
-Por último, determinamos los agregados que representan tanto las entidades como los objetos de valor dentro del dominio.
-
-![paso9.png](../assets/img/Chapter-2/EventStorming/paso9.png)
-
-Estos agregados nos permitieron establecer las estructuras de datos y las relaciones fundamentales dentro del sistema.
-
-
-
-
 
 ##### 2.5.1.1. Candidate Context Discovery
 ##### 2.5.1.2. Domain Message Flows Modeling
@@ -1126,6 +1082,35 @@ Los **Query Services** están orientados a **recuperar datos del dominio sin pro
 ---
 
 ##### 2.6.1.4. Infrastructure Layer
+
+La Infrastructure Layer se encarga de la persistencia de datos, así como de la integración con servicios externos necesarios para el funcionamiento del User Context. Esta capa implementa las interfaces definidas en el dominio (como IUserRepository) y adapta el modelo de dominio a tecnologías concretas como bases de datos, servicios de autenticación y almacenamiento de archivos.
+
+Además, encapsula detalles técnicos como:
+
+- ORM (por ejemplo, Entity Framework, Hibernate, etc.)
+- Integraciones externas (Firebase, Cloudinary)
+- Transformaciones entre entidades de dominio y modelos de persistencia
+
+---
+
+## Repositories
+
+| Nombre                                            | Descripción                                                                                                                                                                                                                                                                                                | Implementación (ejemplos de métodos)                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **UserRepository**  | Responsable de la persistencia y recuperación del agregado `User`. Traduce entre el modelo de dominio y la base de datos. Implementa la interfaz `IUserRepository`.  | - `Task<User?> GetByIdAsync(int id)` → Obtiene un usuario por ID. <br>- `Task<IEnumerable<User>> GetAllAsync()` → Retorna todos los usuarios. <br>- `Task<User?> GetByEmailAsync(string email)` → Busca usuario por correo. <br>- `Task AddAsync(User user)` → Inserta un nuevo usuario. <br>- `Task UpdateAsync(User user)` → Actualizar usuario (estado, rol, credenciales hashed).<br>- `Task DeleteAsync(int id)` → Eliminar o marcar como inactivo.|
+
+---
+
+## External Authentication with Google Intregation
+
+| Nombre                | Descripción                                                                                                                                                                                                                                    | Implementación (ejemplos)                                                                                                                                                                                                                                                        |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **GoogleAuthAdapter** | Adaptador responsable de la integración con Google Identity (OAuth2 / OpenID Connect). Se encarga de iniciar flujos de autenticación, validar ID tokens, obtener la dirección de correo verificada y gestionar el enlace/provisión de cuentas. | - `string GetAuthorizationUrl(string state, string redirectUri, string[] scopes, bool promptConsent = false)` → Construye la URL de autorización para redirigir al cliente (incluye `state`, `nonce`, scopes `openid profile email`).<br>- `Task<ExternalAuthResult> HandleCallbackAsync(string code, string redirectUri)` → Intercambia el `code` por tokens (access\_token, id\_token, refresh\_token), valida el `id_token` (firma, aud, exp, nonce) y devuelve información básica del usuario (email verificado, name, picture, sub).<br>- `Task<bool> VerifyIdTokenAsync(string idToken)` → Verifica la firma y reclamaciones del `id_token` usando las claves públicas de Google (JWKS).<br>- `Task<UserProvisionResult> ProvisionOrLinkUserAsync(ExternalAuthResult externalUser)` → Crea o enlaza un usuario local en IAM usando el email/federated id provisto. Maneja conflictos (email ya en uso) y devuelve el usuario local y el estado de provisión (creado/enlazado).<br>- `Task RevokeRefreshTokenAsync(string refreshToken)` → Revoca credenciales cuando el usuario desconecta la cuenta.|
+| **CloudinaryAdapter** | Servicio para almacenamiento de imágenes de perfil. | - `Task<bool> VerifyTokenAsync(string token)` → Verifica validez del token. <br>- `Task<string> UploadImageAsync(Stream image)` → Sube imagen y retorna URL. <br>- `Task DeleteImageAsync(string imageUrl)` → Elimina imagen del storage.
+|
+
+
+
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
