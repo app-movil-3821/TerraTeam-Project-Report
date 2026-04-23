@@ -1349,10 +1349,11 @@ En esta sección, se muestran y explican los diagramas de clases y de base de da
 A continuación, se muestra el diagrama de clases del contexto presente donde se resalta la clase de usuario que es la más importante de este contexto.
 
 **Clase principal: User**
+![Domain Layer Class Diagram](../assets/img/Chapter-2/Product-Artifacts/IAMContext/Domain_Layer_Class_Diagram.png)
 
+En la imagen se puede visualizar a la clase de usuario que contiene atributos como nombre de usuario, contraseña y correo electrónico; atributos relacionados a la auditoría como fecha de creación y de modificación. Además, se visualiza el atributo de identificador de cuenta que hace referencia a la cuenta general de la que forma parte este usuario.
 
 ###### 2.6.1.6.2. Bounded Context Database Design Diagram
-
 
 
 ### 2.6.2. Bounded Context: Application Context
