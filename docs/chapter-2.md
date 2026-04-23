@@ -1062,99 +1062,20 @@ Este flujo describe el cierre exitoso de la labor, el intercambio de dinero y el
 En esta sección, el equipo detalla cómo utilizó el Bounded Context Canvas, una herramienta visual del enfoque Domain-Driven Design (DDD) que permite definir y comprender los límites de cada contexto dentro de un sistema complejo. Su objetivo es lograr que todos los integrantes compartan una misma visión sobre qué representa cada contexto y cuál es su función. Para cada uno, se muestra su respectivo Canvas, acompañado de una breve descripción de su propósito y un resumen que sustenta su clasificación estratégica dentro del dominio de ChambaYA.
 
 ##### 2.5.1.3.1. IAM Context Canvas
-El IAM Context tiene como propósito centralizar la gestión de identidades y el control de accesos de la plataforma ChambaYA. Se encarga de autenticar a los usuarios y proveer las credenciales y roles necesarios para asegurar que la interacción dentro del ecosistema sea segura y confiable.
-
-![iam-canvas.png](../assets/img/Chapter-2/Bounded-Contexts/iam-canvas.png)
-
-La función del IAM contextes permitir que tanto Chambeadores como Contratantes accedan al sistema de forma segura y organizada, lo cual es fundamental para la integridad de los datos. Al ser una funcionalidad de infraestructura necesaria para cualquier sistema moderno, este contexto apoya a los Core Domains (Job y Application) asegurando que solo usuarios verificados puedan participar en el flujo de valor.
-
 
 ##### 2.5.1.3.2. Job Context Canvas
 Este contexto representa el núcleo de la oferta de valor de la plataforma. Su propósito es definir y gestionar todo el ciclo de vida del "Mini-job" (turno), desde su creación y publicación hasta su finalización o eventual reapertura.
 
-![job-canvas.png](../assets/img/Chapter-2/Bounded-Contexts/job-canvas.png)
+
 
 El Job Context es crucial para la existencia misma de la plataforma y por ello ha sido clasificado como un Core Domain. Este contexto permite a los Contratantes visualizar, definir y gestionar sus ofertas de turnos de forma organizada, lo que constituye la base de la actividad comercial de ChambaYA. Al controlar la disponibilidad y el estado operativo de los mini-jobs, este contexto es el motor principal para generar ingresos, sustentando la ventaja competitiva de la plataforma en el mercado de micro-empleos.
 
-##### 2.5.1.3.3. Application Context Canvas
+##### 2.5.1.3.3. IAM Context Canvas
 
-Este contexto actúa como el orquestador operativo del flujo de valor. Su propósito es gestionar la interacción entre Chambeadores y ofertas, manejando todo el proceso de postulación, la validación del "Match" y la gestión de incidencias de asistencia.
-
-![application-canvas.png](../assets/img/Chapter-2/Bounded-Contexts/application-canvas.png)
-
-Consideramos al Application Context como el segundo pilar de nuestro Core Domain, ya que es fundamental para concretar el intercambio de valor entre las partes. Este contexto permite procesar postulaciones y asegurar el cumplimiento de asistencia mediante reglas de negocio específicas y penalidades organizadas, lo que contribuye directamente al éxito operativo y a la satisfacción de los usuarios. Representa la lógica de negocio única que orquesta el "Match", diferenciándonos de otras plataformas de empleo genéricas.
-
-##### 2.5.1.3.4. Payment Context Canvas
-
-Este contexto tiene como propósito facilitar el intercambio económico entre Contratantes y Chambeadores, gestionando la validación y el registro de las transacciones económicas realizadas vía billeteras digitales externas.
-
-![application-canvas.png](../assets/img/Chapter-2/Bounded-Contexts/application-canvas.png)
-
-El Payment context permite validar y registrar las transacciones vía Yape/Plin de forma organizada, lo que contribuye directamente a la confianza y sostenibilidad económica de la plataforma. También apoya las actividades clave proporcionando una capa de validación financiera esencial para la gestión de pagos.
-
-
-##### 2.5.1.3.5. Communication Context Canvas
-
-Este contexto provee las herramientas de coordinación necesarias para que Contratantes y Chambeadores puedan comunicarse efectivamente tras un "Match", gestionando la mensajería temporal y las notificaciones push.
-
-![communication-canvas.png](../assets/img/Chapter-2/Bounded-Contexts/communication-canvas.png)
-
-El Communication context permite a los usuarios coordinar detalles tras un "Match" de forma organizada, lo que contribuye directamente a la eficiencia operativa y a la experiencia del usuario. Además, actúa como un servicio de soporte necesario para las actividades clave del dominio.
-
-
-##### 2.5.1.3.6. Reputation Context Canvas
-
-Este contexto tiene como propósito construir y mantener la confianza dentro del ecosistema de ChambaYA, gestionando el sistema de reseñas y puntuaciones para cada usuario.
-
-![reputation-canvas.png](../assets/img/Chapter-2/Bounded-Contexts/reputation-canvas.png)
-
-El Reputation context permite recopilar y visualizar feedback y promedios de calificación de forma organizada, lo que contribuye directamente a la confianza en la red y a la calidad del servicio. No constituye el núcleo principal, sino que apoya las actividades clave proporcionando información valiosa para la toma de decisiones por parte de los usuarios.
+##### 2.5.1.3.4. IAM Context Canvas
 
 
 ### 2.5.2. Context Mapping
-
-Tras identificar los Bounded Contexts candidatos, el equipo procedió a definir las relaciones estructurales y los patrones de comunicación entre ellos. El objetivo fue minimizar el acoplamiento y asegurar que los cambios en contextos genéricos no afecten la lógica del Core Domain.
-
-Análisis de Bounded Contexts
-
-- IAM Context ↔ Job / Application / Payment Contexts
-    - Relación: Upstream (IAM) / Downstream (Job/App/Pay)
-
-    - Patrón: ACL (El sistema traduce los datos de identidad y roles del IAM a los modelos específicos de "Postulante" o "Contratante" de cada         contexto).
-
-
-- Job Context ↔ Application Context
-    - Relación: Upstream (Job) / Downstream (Application)
-
-    - Patrón: Customer/Supplier (El Job Context actúa como proveedor de vacantes. Cualquier cambio en la estructura del turno debe ser coordinado       para no romper el flujo de postulaciones.
-      
- 
-- Application Context ↔ Communication Context
-
-    - Relación: Upstream (Application) / Downstream (Communication)
-
-    - Patrón: PL (Published Language) (Application emite eventos como MatchConfirmed que Communication consume tal cual para habilitar canales de       chat).
- 
-
-- Application Context ↔ Payment Context
-
-    - Relación: Upstream (Application) / Downstream (Payment)
-
-    - Patrón: ACL (Payment traduce los datos de la postulación aceptada a su propio modelo de "Transacción" y "Reserva de Fondos" para Yape/Plin).
-      
-
-- Job Context ↔ Reputation Context
-
-    - Relación: Upstream (Job) / Downstream (Reputation)
-
-    - Patrón: ACL (Reputation protege su lógica de promedios y reseñas de los cambios constantes de estado en el ciclo de vida del turno).
-
-
-- Communication / Reputation Contexts ↔ Usuarios
-
-    - Relación: Upstream (Contexts) / Downstream (Users)
-
-    - Patrón: OHS + PL (Estos contextos exponen sus capacidades como servicios abiertos para ser consumidos por las interfaces finales de               usuario).
 
 ### 2.5.3. Software Architecture
 
@@ -1340,6 +1261,12 @@ Además, encapsula detalles técnicos como:
 
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+**Diagrama de componentes: Autenticación**
+
+![Diagrama Componente Autenticación](../assets/img/Chapter-2/Product-Artifacts/IAMContext/Diagram_Component_Auth.png)
+
+En la imagen se aprecia el diagrama de componentes para el contexto de autenticación. En este diagrama, se muestra la relación para almacenar la información de los usuarios en la base de datos con el uso de un repositorio para dicha entidad. Además, se evidencia el uso del servicio externo de Google Services para la recuperación de contraseñas y creación sencilla con una cuenta existente de Google.
+
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 ###### 2.6.1.6.2. Bounded Context Database Design Diagram
@@ -1795,75 +1722,8 @@ En esta capa se definen las reglas y comportamientos propios del dominio de pago
 | **PlanRepository**         | Persistencia y consulta de planes de suscripción.        | `AddAsync(Plan plan), UpdateAsync(Plan plan), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetAllAsync(), GetByTypeAsync(EPlanType type)`                                            |
 | **SubscriptionRepository** | Persistencia y consulta de suscripciones.                | `AddAsync(Subscription subscription), UpdateAsync(Subscription subscription), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetByAccountAsync(AccountId accountId), GetActiveAsync()` |
 | 
-##### 2.6.6.2. Interface Layer
-
-
-La **Interface Layer** expone los servicios del bounded context hacia el exterior mediante **APIs REST**, permitiendo que clientes externos (web o móvil) interactúen con las cuentas, suscripciones, planes y negocios.  
-Se definen los **Controllers**, **Resources** y **Assemblers/Transformers**, encargados de mapear entre las entidades de dominio y los formatos de entrada/salida utilizados por los consumidores.
-
----
-
-## Controllers
-
-| Nombre                      | Descripción                                              | Endpoints (ejemplos)                                                                                                                                                  |
-|-----------------------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 
-| **PlansController**         | Gestiona los planes de suscripción.                      | `POST /plans (CreatePlan)`<br>`PUT /plans/{id} (UpdatePlan)`<br>`GET /plans/{id}`<br>`GET /plans`
----
-
-## Resources
-
-Los **Resources** definen la estructura de datos que los clientes externos envían o reciben, evitando exponer directamente las entidades del dominio.
-
-- **CreateAccountResource**: `{ BusinessId: string, OwnerUserId: string, Role: string }`
-- **AccountResource**: `{ Id: string, BusinessName: string, Email: string, Status: string, Role: string }`
-- **CreateSubscriptionResource**: `{ AccountId: string, PlanId: string }`
-- **SubscriptionResource**: `{ Id: string, AccountId: string, PlanId: string, Status: string, ExpirationDate: DateTime }`
-- **CreatePlanResource**: `{ PlanType: string, Description: string, PaymentFrequency: string, Price: decimal, MaxWarehouses: int, MaxProducts: int }`
-- **PlanResource**: `{ Id: string, PlanType: string, Description: string, PaymentFrequency: string, Price: decimal, MaxWarehouses: int, MaxProducts: int }`
-- **CreateBusinessResource**: `{ BusinessName: string, Email: string, Ruc: string }`
-- **BusinessResource**: `{ Id: string, BusinessName: string, Email: string, Ruc: string }`
-
-## Assemblers / Transformers
-
-Se implementan componentes que transforman los **Resources** ↔ **Entities/Aggregates**, asegurando que la capa de interfaces no contenga lógica de negocio.
-
-- `SubscriptionFromResourceAssembler` → Convierte un `CreateSubscriptionResource` en `CreateSubscriptionCommand`.
-- `SubscriptionResourceFromEntityAssembler` → Convierte un `Subscription` en `SubscriptionResource`.
-- `BusinessFromResourceAssembler` → Convierte un `CreateBusinessResource` en `CreateBusinessCommand`.
-- `BusinessResourceFromEntityAssembler` → Convierte un `Business` en `BusinessResource`.
-
+ ##### 2.6.6.2. Interface Layer
 ##### 2.6.6.3. Application Layer
-
-La **Application Layer** orquesta la ejecución de **comandos** y **consultas** para los agregados `Account`, `Subscription` y `Business`.  
-Se encarga de delegar la lógica de negocio a la **Domain Layer** mediante los **CommandServices** y **QueryServices**, y de coordinar eventos si aplica.
-
----
-
-## Command Services
-
-Los **Command Services** procesan acciones que **modifican el estado del dominio**, como crear, actualizar o eliminar entidades.  
-Reciben **Commands**, los validan y delegan la ejecución a los **Domain Services** y **Repositories** correspondientes.
-
-| Nombre                         | Descripción                                 | Commands manejados                                                                                      |
-|--------------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **AccountCommandService**      | Gestiona operaciones sobre cuentas.         | `CreateAccountCommand, UpdateAccountCommand, ActivateAccountCommand, DeactivateAccountCommand`          |
-| **SubscriptionCommandService** | Gestiona el ciclo de vida de suscripciones. | `CreateSubscriptionCommand, UpdateSubscriptionCommand, ActivateSubscriptionCommand, UpgradePlanCommand`                                        |
-| **BusinessCommandService**     | Gestiona negocios asociados a cuentas.      | `CreateBusinessCommand, UpdateBusinessCommand`                                                          |
-
----
-
-## Query Services
-
-Los **Query Services** se encargan de **consultar datos del dominio** sin modificar su estado.  
-Reciben **Queries**, consultan los **Repositories** y devuelven resultados al **Controller** o consumidor de la API.
-
-| Nombre                       | Descripción                            | Queries manejadas                                                                                |
-|------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------|
-| **AccountQueryService**      | Consultas sobre cuentas.               | `GetAccountByIdQuery, GetAccountsByStatusQuery, GetAccountsByBusinessQuery, GetAllAccountsQuery` |
-| **SubscriptionQueryService** | Consultas sobre suscripciones.         | `GetSubscriptionByIdQuery, GetSubscriptionsByAccountQuery, GetActiveSubscriptionsQuery`                                        |
-| **BusinessQueryService**     | Consultas sobre negocios.              | `GetBusinessByIdQuery, GetAllBusinessesQuery`                                                    |
-
 ##### 2.6.6.4. Infrastructure Layer
 ##### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
 ##### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
