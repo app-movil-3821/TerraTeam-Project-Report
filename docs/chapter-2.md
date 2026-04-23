@@ -1085,7 +1085,7 @@ Cabe resaltar que la lógica del negocio se encuentra encapsulada en el backend,
 ![Container_Diagram.jpg](../assets/img/Chapter-2/Product-Artifacts/Container_Diagram.png)
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
----
+
 El diagrama de despliegue muestra la distribución de los componentes de la aplicación móvil ChambaYA en la infraestructura tecnológica.
 
 Se representan los dispositivos móviles desde los cuales los usuarios acceden a la aplicación, el servidor backend desplegado en la nube, la base de datos MongoDB y los servicios externos utilizados por el sistema. Este diagrama permite visualizar cómo los diferentes elementos se comunican entre sí en un entorno de ejecución real.
@@ -1363,19 +1363,108 @@ La Infrastructure Layer se encarga de la persistencia de datos, de las integraci
 
 ###### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-![xd.png](../assets/img/Chapter-2/Product-Artifacts/xd.png)
+![xd.png](../assets/img/Chapter-2/Product-Artifacts/diagramas.png)
 
 ### 2.6.3. Bounded Context: Job Context
 ##### 2.6.3.1. Domain Layer
+
+La capa Job Context constituye el núcleo encargado de la fase de ejecución del trabajo. A diferencia del Application Context (que maneja el proceso de selección), este contexto asume el control una vez que existe un "Match" confirmado. Centraliza la lógica de negocio relacionada con la coordinación en tiempo real (habilitación de canales de chat), el seguimiento de asistencia, el reporte de incidencias (inasistencias) y las reglas de reapertura de turnos de emergencia.
+
+**Aggregates**
+| Nombre | Descripcion                                                                                                                                                                                                | Atributos                                                                                                                                                                    | Metodos                                                                                                  |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Shift  | Aggregate Root principal que representa el turno de trabajo en su fase de ejecución. Encapsula los participantes, el estado en vivo de la jornada, el canal de comunicación y las incidencias reportadas.  | `Id: UUID` <br/> <br/> `ContratanteId: UUID` <br/> <br/> `ChambeadorId: UUID `<br/> <br/> `ChatChannelId: string` <br/> <br/> `Status: ShiftExecutionStatus ` <br/> <br/> `ScheduledTime: DateTime` | `EnableChatChannel(string channelId): void`<br/> <br/> `ReportAbsence(string reason): void` <br/> <br/> `Reopen(): void` |
+
+**Value Object**
+
+| Nombre               | Descripcion                                                                                                                                 | Atributos/Valores                                                                                                 |
+|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| ShiftExecutionStatus | Enumeración que modela los estados físicos del turno durante el Job Context.                                                                | `Scheduled`, `InProgress`, `Completed`, `CancelledDueToAbsence`, `Reopened`                                       |
+| Incident             | Objeto de valor que encapsula los detalles de un problema reportado (ej. Inasistencia), usado para disparar las políticas de penalización.  | `ReportedBy: UUID` <br/> <br/> `Type: String`<br/> <br/> `Description: string`<br/> <br/> `ReportedAt: DateTime ` |
+
+**Services**
+
+| Nombre               | Descripcion                                                                                                                       | Metodos                                                                                                                                                                                                      |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| IShiftCommandService | Interfaz que define las operaciones de negocio (comandos azules en tu diagrama) para alterar el estado de la ejecución del turno. | `Task Handle(EnableChatCommand command) `<br/> <br/>`Task Handle(SendReminderCommand command) `<br/> <br/>`Task Handle(ReportAbsenceCommand command) `<br/> <br/> `Task Handle(ReopenShiftCommand command) ` |
+| IShiftQueryService   | Interfaz que expone consultas sobre la ejecución de los turnos para alimentar los Read Models (post-its verdes).                  | `Task<MatchScreenDto> Handle(GetMatchDetailsQuery query)` <br/> <br/>`Task<AttendanceReportDto> Handle(GetAttendanceReportQuery query)` <br/><br/>                                                           |
+
+**Repositories**
+
+| Nombre            | Descripcion                                                                                    |
+|-------------------|------------------------------------------------------------------------------------------------|
+| IShiftRepository  | Define la persistencia para la entidad (Aggregate Root) `Shift`  durante la fase de ejecución. |
+
+**Domain Policies**
+
+- Política de Penalidad Automática: "Siempre que se reporta una incidencia por inasistencia (No-Show), entonces emitir un evento de dominio para aplicar una penalidad automática en el Sistema de Reputación del Chambeador."
+
+
 ##### 2.6.3.2. Interface Layer
+
+En esta capa se exponen los controladores y manejadores que permiten a los clientes externos (la aplicación móvil de ChambaYA) interactuar con la fase de ejecución de los turnos. Aquí se gestionan peticiones que requieren baja latencia, como la habilitación del chat y el reporte urgente de asistencia o incidencias. Estos controladores no contienen lógica de negocio; su única función es recibir el JSON de la app, mapearlo a Commands o Queries y delegar la responsabilidad a la capa de Aplicación.
+
+**Controllers**
+
+| Nombre                    | Descripcion                                                                                                                                | Endpoints                                                                                                                                                                                                                                                                                 |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ShiftExecutionController  | Expone las operaciones para gestionar la ejecución de un turno que ya ha hecho "Match", incluyendo canales de comunicación e incidencias.  | `POST /api/v1/shifts/{id}/chat/enable` (EnableChatCommand) <br/> <br/> `POST /api/v1/shifts/{id}/reminders`(SendReminderCommand) <br/> <br/>  `POST /api/v1/shifts/{id}/absences ` (ReportAbsenceCommand) <br/> <br/> `POST /api/v1/shifts/{id}/reopen` (ReopenShiftCommand) <br/> <br/> `GET /api/v1/shifts/{id}/match-details`(GetMatchDetailsQuery) |
+
+
+**Resources (DTO)**
+
+| Resource              | Esquema                                                                                                                         |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| EnableChatResource    | `{ "TurnoId": "550e8400-e29b...", "ContratanteId": "123e4567...", "ChambeadorId": "987e6543..." } `                             |
+| ReportAbsenceResource | `{ "ReportedBy": "123e4567...", "Reason": "El chambeador no se presentó a la hora acordada y no responde el teléfono." } `      |
+| MatchDetailsResource  | `{ "ShiftId": "550e8400...", "Status": "InProgress", "ChatChannelId": "chan_98765", "ScheduledTime": "2026-04-20T18:30:00Z" } ` |
+
+
 ##### 2.6.3.3. Application Layer
+
+La capa de Aplicación orquesta el flujo de trabajo para la ejecución del turno. Recibe las intenciones del usuario (Commands) o las peticiones de datos (Queries) desde la Interface Layer, carga el Aggregate Root Shift desde la base de datos (usando repositorios de infraestructura), invoca las reglas de negocio del dominio y, si es necesario, publica eventos para notificar a otros Bounded Contexts (como el sistema de Reputación para aplicar penalidades).
+
+**Commands**
+
+| Nombre                      | Descripcion                                                                                                                                                                                                                                | Commands               |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+| EnableChatCommandHandler    | Orquesta la creación del canal de chat. Recupera el turno, invoca la API externa (Firebase FCM) para aprovisionar el canal, actualiza el estado en el agregado Shift y guarda los cambios.                                                 | `EnableChatCommand`    |
+| SendReminderCommandHandler  | Busca el turno y orquesta el envío de notificaciones push tanto al MYPE como al joven, recordando la cercanía de la hora del turno.                                                                                                        | `SendReminderCommand ` |
+| ReportAbsenceCommandHandler | Gestiona el "No-Show". Recupera el turno, registra la inasistencia en el agregado y lo persiste. Crucialmente, publica el evento de dominio AbsenceReportedEvent que será escuchado por el contexto de Reputación para penalizar al joven. | `ReportAbsenceCommand` |
+| ReopenShiftCommandHandler   | En caso de inasistencia, este manejador orquesta la cancelación del turno actual para el joven ausente y emite un evento o comando cruzado para que el Application Context vuelva a publicar el turno de urgencia en el mapa.              | `ReopenShiftCommand`   |
+
+**Queries**
+
+| Nombre                                | Descripcion                                                                                                                                                       | Query                       |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| GetMatchDetailsQueryHandler           | Busca y devuelve la información necesaria para pintar la "Pantalla de Match", incluyendo datos de contacto de ambas partes y el enlace al canal de chat temporal. | `GetMatchDetailsQuery`      |
+| GetAttendanceReportQueryHandler       | Devuelve la lista de chambeadores confirmados (o ausentes) para una MYPE, optimizada para la vista de control de personal del restaurante.                        | `GetAttendanceReportQuery`  |
+
 ##### 2.6.3.4. Infrastructure Layer
+
+La `Infrastructure Layer` del Job Context se encarga de materializar las comunicaciones y la persistencia necesarias para la fase de ejecución. En esta capa se implementa el acceso a la base de datos para los turnos en curso, la integración crítica con Firebase (FCM) para la mensajería y notificaciones push, y la publicación de eventos de inasistencia que afectan la reputación del usuario.
+
+**Repositories**
+
+| Nombre           | Descripcion                                                                                                                                                                                    | Implementation                                                                                                                                                                                                                                                                                                                                                                    | 
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ShiftRepository  | Responsable de la persistencia de los agregados `Shift ` durante su ejecución. Gestiona el ciclo de vida desde que se hace el Match hasta que el turno se cierra o se reabre por inasistencia. | - `Task<Shift?> GetByIdAsync(UUID id) `→ Recuperar el turno activo. <br/> <br/> - ` Task AddAsync(Shift shift)` → Registrar el inicio de la fase de ejecución. <br/> <br/> - `Task UpdateAsync(Shift shift)` → Actualizar el canal de chat o el estado de asistencia.<br/> <br/> - `Task<IEnumerable<Shift>> GetByUserAsync(UUID userId)` → Listar turnos activos para un usuario | 
+
+**External Services & Firebase Integration**
+
+| Nombre              | Descripcion                                                                                                                                                      | Implementation                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| FirebaseChatAdapter | Adaptador encargado de la integración con Firebase Cloud Messaging (FCM) y Realtime Database/Firestore para habilitar el chat temporal entre la MYPE y el joven. | - `- Task<string> CreateTemporaryChannelAsync(UUID shiftId, UUID mypeId, UUID chambeadorId) `→ Crea el nodo de chat en Firebase y devuelve el ID del canal. <br/> <br/> - `Task SendPushNotificationAsync(NotificationTarget target, string message)` → Envía recordatorios de turno o alertas de inasistencia.<br/> <br/> - ` Task CloseChannelAsync(string channelId)`Deshabilita el acceso al chat una vez finalizado el trabajo. |  
+| JobEventPublisher   | Publicador de eventos encargado de enviar alertas al sistema de reputación cuando ocurre una incidencia.                                                         | - `Task PublishAbsenceDetectedAsync(AbsenceEvent event)`    → Envía la señal para aplicar la penalidad automática si el joven no se presentó al local.                                                                                                                                                                                                                                                                               |   
+
 ##### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+![JobContext_Component_Diagram.png](../assets/img/Chapter-2/Product-Artifacts/JobContext_Component_Diagram.png)
 ##### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 ###### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+![xdd.png](../assets/img/Chapter-2/Product-Artifacts/database.png)
 ###### 2.6.3.6.2. Bounded Context Database Design Diagram
 
-
+![DiagramJob.png](../assets/img/Chapter-2/Product-Artifacts/DiagramJob.png)
 
 ### 2.6.4. Bounded Context: Communication Context
 ##### 2.6.4.1. Domain Layer
