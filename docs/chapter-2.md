@@ -1755,6 +1755,36 @@ Se implementan componentes que transforman los **Resources** ↔ **Entities/Aggr
 - `BusinessResourceFromEntityAssembler` → Convierte un `Business` en `BusinessResource`.
 
 ##### 2.6.6.3. Application Layer
+
+La **Application Layer** orquesta la ejecución de **comandos** y **consultas** para los agregados `Account`, `Subscription` y `Business`.  
+Se encarga de delegar la lógica de negocio a la **Domain Layer** mediante los **CommandServices** y **QueryServices**, y de coordinar eventos si aplica.
+
+---
+
+## Command Services
+
+Los **Command Services** procesan acciones que **modifican el estado del dominio**, como crear, actualizar o eliminar entidades.  
+Reciben **Commands**, los validan y delegan la ejecución a los **Domain Services** y **Repositories** correspondientes.
+
+| Nombre                         | Descripción                                 | Commands manejados                                                                                      |
+|--------------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **AccountCommandService**      | Gestiona operaciones sobre cuentas.         | `CreateAccountCommand, UpdateAccountCommand, ActivateAccountCommand, DeactivateAccountCommand`          |
+| **SubscriptionCommandService** | Gestiona el ciclo de vida de suscripciones. | `CreateSubscriptionCommand, UpdateSubscriptionCommand, ActivateSubscriptionCommand, UpgradePlanCommand`                                        |
+| **BusinessCommandService**     | Gestiona negocios asociados a cuentas.      | `CreateBusinessCommand, UpdateBusinessCommand`                                                          |
+
+---
+
+## Query Services
+
+Los **Query Services** se encargan de **consultar datos del dominio** sin modificar su estado.  
+Reciben **Queries**, consultan los **Repositories** y devuelven resultados al **Controller** o consumidor de la API.
+
+| Nombre                       | Descripción                            | Queries manejadas                                                                                |
+|------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| **AccountQueryService**      | Consultas sobre cuentas.               | `GetAccountByIdQuery, GetAccountsByStatusQuery, GetAccountsByBusinessQuery, GetAllAccountsQuery` |
+| **SubscriptionQueryService** | Consultas sobre suscripciones.         | `GetSubscriptionByIdQuery, GetSubscriptionsByAccountQuery, GetActiveSubscriptionsQuery`                                        |
+| **BusinessQueryService**     | Consultas sobre negocios.              | `GetBusinessByIdQuery, GetAllBusinessesQuery`                                                    |
+
 ##### 2.6.6.4. Infrastructure Layer
 ##### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
 ##### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
