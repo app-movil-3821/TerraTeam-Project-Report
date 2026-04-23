@@ -1,4 +1,4 @@
-## Capítulo I: Presentación
+    ## Capítulo I: Presentación
 
 ### 1.1. Startup Profile
 #### 1.1.2. Perfiles de integrantes del equipo
