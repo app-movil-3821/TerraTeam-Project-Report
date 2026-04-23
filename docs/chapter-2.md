@@ -1804,10 +1804,111 @@ En esta capa se definen las reglas y comportamientos propios del dominio de pago
 | **PlanRepository**         | Persistencia y consulta de planes de suscripción.        | `AddAsync(Plan plan), UpdateAsync(Plan plan), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetAllAsync(), GetByTypeAsync(EPlanType type)`                                            |
 | **SubscriptionRepository** | Persistencia y consulta de suscripciones.                | `AddAsync(Subscription subscription), UpdateAsync(Subscription subscription), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetByAccountAsync(AccountId accountId), GetActiveAsync()` |
 | 
- ##### 2.6.6.2. Interface Layer
+##### 2.6.6.2. Interface Layer
+
+
+La **Interface Layer** expone los servicios del bounded context hacia el exterior mediante **APIs REST**, permitiendo que clientes externos (web o móvil) interactúen con las cuentas, suscripciones, planes y negocios.  
+Se definen los **Controllers**, **Resources** y **Assemblers/Transformers**, encargados de mapear entre las entidades de dominio y los formatos de entrada/salida utilizados por los consumidores.
+
+---
+
+## Controllers
+
+| Nombre                      | Descripción                                              | Endpoints (ejemplos)                                                                                                                                                  |
+|-----------------------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 
+| **PlansController**         | Gestiona los planes de suscripción.                      | `POST /plans (CreatePlan)`<br>`PUT /plans/{id} (UpdatePlan)`<br>`GET /plans/{id}`<br>`GET /plans`
+---
+
+## Resources
+
+Los **Resources** definen la estructura de datos que los clientes externos envían o reciben, evitando exponer directamente las entidades del dominio.
+
+- **CreateAccountResource**: `{ BusinessId: string, OwnerUserId: string, Role: string }`
+- **AccountResource**: `{ Id: string, BusinessName: string, Email: string, Status: string, Role: string }`
+- **CreateSubscriptionResource**: `{ AccountId: string, PlanId: string }`
+- **SubscriptionResource**: `{ Id: string, AccountId: string, PlanId: string, Status: string, ExpirationDate: DateTime }`
+- **CreatePlanResource**: `{ PlanType: string, Description: string, PaymentFrequency: string, Price: decimal, MaxWarehouses: int, MaxProducts: int }`
+- **PlanResource**: `{ Id: string, PlanType: string, Description: string, PaymentFrequency: string, Price: decimal, MaxWarehouses: int, MaxProducts: int }`
+- **CreateBusinessResource**: `{ BusinessName: string, Email: string, Ruc: string }`
+- **BusinessResource**: `{ Id: string, BusinessName: string, Email: string, Ruc: string }`
+
+## Assemblers / Transformers
+
+Se implementan componentes que transforman los **Resources** ↔ **Entities/Aggregates**, asegurando que la capa de interfaces no contenga lógica de negocio.
+
+- `SubscriptionFromResourceAssembler` → Convierte un `CreateSubscriptionResource` en `CreateSubscriptionCommand`.
+- `SubscriptionResourceFromEntityAssembler` → Convierte un `Subscription` en `SubscriptionResource`.
+- `BusinessFromResourceAssembler` → Convierte un `CreateBusinessResource` en `CreateBusinessCommand`.
+- `BusinessResourceFromEntityAssembler` → Convierte un `Business` en `BusinessResource`.
+
 ##### 2.6.6.3. Application Layer
+
+La **Application Layer** orquesta la ejecución de **comandos** y **consultas** para los agregados `Account`, `Subscription` y `Business`.  
+Se encarga de delegar la lógica de negocio a la **Domain Layer** mediante los **CommandServices** y **QueryServices**, y de coordinar eventos si aplica.
+
+---
+
+## Command Services
+
+Los **Command Services** procesan acciones que **modifican el estado del dominio**, como crear, actualizar o eliminar entidades.  
+Reciben **Commands**, los validan y delegan la ejecución a los **Domain Services** y **Repositories** correspondientes.
+
+| Nombre                         | Descripción                                 | Commands manejados                                                                                      |
+|--------------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **AccountCommandService**      | Gestiona operaciones sobre cuentas.         | `CreateAccountCommand, UpdateAccountCommand, ActivateAccountCommand, DeactivateAccountCommand`          |
+| **SubscriptionCommandService** | Gestiona el ciclo de vida de suscripciones. | `CreateSubscriptionCommand, UpdateSubscriptionCommand, ActivateSubscriptionCommand, UpgradePlanCommand`                                        |
+| **BusinessCommandService**     | Gestiona negocios asociados a cuentas.      | `CreateBusinessCommand, UpdateBusinessCommand`                                                          |
+
+---
+
+## Query Services
+
+Los **Query Services** se encargan de **consultar datos del dominio** sin modificar su estado.  
+Reciben **Queries**, consultan los **Repositories** y devuelven resultados al **Controller** o consumidor de la API.
+
+| Nombre                       | Descripción                            | Queries manejadas                                                                                |
+|------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| **AccountQueryService**      | Consultas sobre cuentas.               | `GetAccountByIdQuery, GetAccountsByStatusQuery, GetAccountsByBusinessQuery, GetAllAccountsQuery` |
+| **SubscriptionQueryService** | Consultas sobre suscripciones.         | `GetSubscriptionByIdQuery, GetSubscriptionsByAccountQuery, GetActiveSubscriptionsQuery`                                        |
+| **BusinessQueryService**     | Consultas sobre negocios.              | `GetBusinessByIdQuery, GetAllBusinessesQuery`                                                    |
+
 ##### 2.6.6.4. Infrastructure Layer
+
+La **Infrastructure Layer** proporciona las implementaciones técnicas necesarias para que la **Application Layer** y la **Domain Layer** funcionen correctamente.  
+Incluye la **persistencia de datos** y , y cualquier dependencia tecnológica concreta.
+
+---
+
+## Repositories
+
+Los **Repositories** implementan la persistencia de los agregados definidos en el dominio y actúan como puente entre las **Entities/Aggregates** y la base de datos o servicios externos.
+
+| Nombre                     | Descripción                                        | Implementación típica                                                                                                                                                                                                                                                                                                                                                                              |
+|----------------------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **AccountRepository**      | Gestiona la persistencia de cuentas.               | - `AddAsync(Account account)` → Insertar nueva cuenta.<br>- `UpdateAsync(Account account)` → Actualizar cuenta.<br>- `DeleteAsync(string id)` → Eliminar cuenta.<br>- `GetByIdAsync(string id)` → Obtener cuenta por Id.<br>- `GetByStatusAsync(EAccountStatus status)` → Filtrar cuentas por estado.<br>- `GetAllAsync()` → Obtener todas las cuentas.                                            |
+| **SubscriptionRepository** | Gestiona la persistencia de suscripciones.         | - `AddAsync(Subscription subscription)` → Crear suscripción.<br>- `UpdateAsync(Subscription subscription)` → Actualizar suscripción.<br>- `DeleteAsync(string id)` → Eliminar suscripción.<br>- `GetByIdAsync(string id)` → Obtener suscripción por Id.<br>- `GetByAccountAsync(string accountId)` → Obtener suscripciones de una cuenta.<br>- `GetActiveAsync()` → Obtener suscripciones activas.                                                                                |
+
+
+
+## External Payment Integration
+
+| Nombre                 | Descripción                                                     | Implementación típica                                                                                                                                                                                                                                                                                                                       |
+|------------------------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **PAYPAL** | Gestiona la comunicación con la API de PayPal. | - `CreatePayment(PaymentRequest request)` → Crear un pago en PayPal.<br>- `GetPaymentStatus(string paymentId)` → Consultar el estado de un pago.<br>- `CancelPayment(string paymentId)` → Cancelar un pago.<br>- `WebhookHandler(EventPayload payload)` → Procesar eventos de PayPal (pagos aprobados, rechazados, pendientes). |
+
 ##### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### Diagrama de componentes: Suscripciones y cuentas ####
+
+<p align="center">
+  <img src="../assets/img/Chapter-2/Product-Artifacts/componentes-pay.png" 
+  alt="Arquitectura de componentes del contexto de suscripciones y cuentas" style="width: 800px;"/>
+</p>
+
+En la imagen se aprecia el diagrama de componentes para el contexto de cuentas y suscripciones. En este diagrama, se muestra que la información de las suscripciones y cuentas se almacenan en la base de datos gracias al uso de repositorios para cada una de dichas entidades. Además, se evidencia la relación con el sistema externo de MercadoPago para la compra de suscripciones por parte de los usuarios de la aplicación.
+
 ##### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
+
 ###### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
 ###### 2.6.6.6.2. Bounded Context Database Design Diagram
