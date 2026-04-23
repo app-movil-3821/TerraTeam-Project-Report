@@ -1354,7 +1354,11 @@ A continuación, se muestra el diagrama de clases del contexto presente donde se
 En la imagen se puede visualizar a la clase de usuario que contiene atributos como nombre de usuario, contraseña y correo electrónico; atributos relacionados a la auditoría como fecha de creación y de modificación. Además, se visualiza el atributo de identificador de cuenta que hace referencia a la cuenta general de la que forma parte este usuario.
 
 ###### 2.6.1.6.2. Bounded Context Database Design Diagram
+A continuación, se muestra y explica el diagrama de documentos relacionado a la base de datos no relacional que se usará. Este diagrama de documentos refleja como la información del contexto presente persiste.
 
+![Database Design Diagram](../assets/img/Chapter-2/Product-Artifacts/IAMContext/Database_Design_Diagram.png)
+
+En esta imagen se visualiza que una base de datos no relacional para el contexto de autenticación persisitiría con la información de la entidad principal que son los usuarios y otra entidad relacionada a los roles de los cuales cada cuenta solo puede tener uno al mismo tiempo.
 
 ### 2.6.2. Bounded Context: Application Context
 ##### 2.6.2.1. Domain Layer
