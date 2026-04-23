@@ -1915,5 +1915,36 @@ En la imagen se aprecia el diagrama de componentes para el contexto de cuentas y
 
 ##### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
 
-###### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
+En esta sección, se muestran y explican los diagramas de clases y de base de datos relacionados al contexto delimitado sobre la creación de cuentas y suscripciones.
+
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams #####
+
+A continuación, se muestra el diagrama de clases del contexto presente 
+
+#### Clase principal: 'Account' ####
+
+<p align="center">
+  <img src="../assets/img/Chapter-2/Product-Artifacts/class.png" 
+  alt="Clases de tipo 'aggregate' del contexto de cuentas y subscripciones" style="width: 700px;"/>
+</p>
+
+En este diagrama se visualiza tanto a la clase llamada 'Account' como la clase 'Subscription'. Ambas clases se encuentran relacionadas. Mientras que una hace referencia a una cuenta general que utiliza una empresa, la otra hace referencia al tipo de suscripción que pagó dicha cuenta.
+
+
+#### Value Objects ####
+
+<p align="center">
+  <img src= "../assets/img/Chapter-2/Product-Artifacts/class2.png"
+  alt="Objetos de valor del contexto de cuentas y subscripciones" style="width: 800px;"/>
+</p>
+
+Finalmente, en este diagrama se muestran los 'value objecs' del contexto de suscripciones. Estas clases contienen información relacionada a valores enumerados para algunos atributos como, por ejemplo, 'ESubscriptionStatus' que forma parte de la clase 'Subscription' que sirve para indicar el estado actual de la suscripción de una cuenta.
+
 ###### 2.6.6.6.2. Bounded Context Database Design Diagram
+
+A continuación, se muestra y explica el diagrama de documentos relacionado a la base de datos no relacional que se usará. Este diagrama de documentos refleja como la información del contexto presente persiste en una base de datos en MongoDB.
+
+<p align="center">
+  <img src="../assets/img/Chapter-2/Product-Artifacts/class3.png" 
+  alt="Representación de la persistencia del contexto de suscripciones en una base de datos no relacional" style="width: 800px;"/>
+</p>
