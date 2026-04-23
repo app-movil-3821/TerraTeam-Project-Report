@@ -1011,6 +1011,8 @@ Se definió al notar que la mensajería es un servicio de soporte que solo se ac
 
 Para el bounded context de Payment, definimos los siguientes elementos:
 
+![payment.png](../assets/img/Chapter-2/Bounded-Contexts/payment.png)
+
 Se aisló para manejar la complejidad de las transacciones con billeteras digitales (Yape/Plin) y asegurar que el flujo de dinero sea independiente de la gestión de tareas.
 
 
