@@ -31,7 +31,30 @@ En esta sección, el equipo establece un repositorio organizado y central de ele
  
    ![colors](/assets/img/introduction/colors.png)
 
+##### Spacing
+- Sistema de espaciado consistente:
+  - Padding interno de tarjetas: 16px - 24px
+  - Separación entre elementos: 12px - 16px
+  - Márgenes laterales: 16px - 20px
+  - Espacios que mantienen sensación de **orden y claridad visual**
+
+##### Communication Tone
+- Tono de comunicación:
+  - **Claro y directo** en instrucciones
+  - **Amigable pero profesional** en mensajes
+  - **Conciso** en labels y descripciones
+  - Uso de lenguaje **accesible** para usuarios urbanos
+
+##### Dimension Guidelines
+- Componentes de UI con dimensiones estándar:
+  - **Botones principales**: Altura 48px - 56px (óptimo para touch)
+  - **Íconos**: 24px - 32px
+  - **Inputs de texto**: Altura 48px - 56px
+  - **Tarjetas de información**: Width: full screen con padding lateral
+  - **Bottom Navigation Bar**: Altura 56px - 64px
+  
 ##### 3.1.2.1. Organization Systems
+
 ##### 3.1.2.2. Labelling Systems
 ##### 3.1.2.3. SEO Tags and Meta Tags
 ##### 3.1.2.4. Searching Systems
