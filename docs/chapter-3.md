@@ -10,9 +10,6 @@ En esta sección, el equipo establece un repositorio organizado y central de ele
 ##### Branding
 - Identidad visual moderna y profesional que transmite **confiabilidad**, **rapidez** y **energia juvenil**.
 - Iconografía clara e intuitiva: íconos simples y reconocibles para acciones principales.
-
-#### 3.1.2. Information Architecture
-
  ##### Typography
  - Tipografías Inter de alta legibilidad optimizadas para dispositivos móviles.
 - Sistema de jerarquía tipográfica:
@@ -52,8 +49,37 @@ En esta sección, el equipo establece un repositorio organizado y central de ele
   - **Inputs de texto**: Altura 48px - 56px
   - **Tarjetas de información**: Width: full screen con padding lateral
   - **Bottom Navigation Bar**: Altura 56px - 64px
-  
+
+#### 3.1.2. Information Architecture
 ##### 3.1.2.1. Organization Systems
+
+
+**Jerárquico (Visual Hierarchy):**
+
+Se prioriza la información crítica para la toma rápida de decisiones. En la pantalla principal (Home), los elementos más destacados son:
+
+- Turnos disponibles cercanos
+- Pago por turno
+- Distancia
+- Estado (Disponible / Urgente)
+
+**Secuencial (Step-by-Step):**
+Implementado en:
+- Registro de chambeador o contratante
+- Creación de perfil basado en habilidades
+- Publicación de turnos (MYPEs)
+- Confirmación de llegada y finalización
+
+**Por Tópicos:**
+La información se agrupa en secciones claras:
+- **Home**: Turnos disponibles y recomendaciones
+- **Map**: Visualización geolocalizada de trabajos
+- **Chat**: Comunicación entre usuario y contratante
+- **Profile**: Configuración y reputación del usuario
+
+**Según Audiencia:**
+- **Chambeadores**: Acceso a visualización de mapa, turnos y Chat
+- **Contratantes**: Acceso a creacion de turnos, búsqueda y Gestionar turnos
 
 ##### 3.1.2.2. Labelling Systems
 ##### 3.1.2.3. SEO Tags and Meta Tags
