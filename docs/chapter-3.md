@@ -104,9 +104,43 @@ Etiquetas diseñadas para ser claras y autoexplicativas:
 
 ##### 3.1.2.4. Searching Systems
 
+Sistema de búsqueda implementado en:
+
+**Búsqueda por Filtros:**
+- Distancia 
+- Tipo de trabajo
+- Horarios disponibles
+- Estado
+
+**Resultados de Búsqueda:**
+Mostrados en tarjetas con información clave:
+- Tipo de trabajo
+- Pago
+- Ubicación y distancia
+- Estado
+
+**Navegación por Mapa:**
+Visualización de rutas y paradas en mapa interactivo (visible en las pantallas de mapas del Figma)
 
 ##### 3.1.2.5. Navigation Systems
+
+Sistema de navegación diseñado para acceso rápido y uso intuitivo.
+
+**Navegacion principal:**
+- **Home**
+- **Mapa**
+- **Turnos**
+- **Perfil**
+
+**Navegacion contextual:**
+- Desde Home
+- Desde Detalle
+- Desde turno activo
+- Desde notificación
+
 #### 3.1.3. Landing Page UI Design
+
+
 ##### 3.1.3.1. Landing Page Wireframe
 ##### 3.1.3.2. Landing Page Mock-up
 #### 3.1.4. Mobile Applications UX/UI Design
