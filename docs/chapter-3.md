@@ -21,6 +21,16 @@ En esta sección, el equipo establece un repositorio organizado y central de ele
   - **Texto general**: Regular para contenido de lectura
   - **Labels**: Regular para etiquetas de formularios
 
+  ##### Colors
+- Paleta de colores basada en tonos azules como color principal:
+  - **Primario**: azul (#2563EB aproximadamente) - botones principales, elementos activos
+  - **Secundarios**: Verde dinámico(#22C55E aproximadamente) tonos claros de verde para turno disponible, aceptado
+  - **Neutros**: Negro suave (#0F172A), Gris oscuro(#334155), Gris claro(#E2E8F0) y Blanco (#FFFFFF)
+  - **Accentos**: HEX (#F97316 aproximadamente) para turnos urgentes, alertas, “Se necesita YA”
+  - Los colores transmiten **profesionalismo, confianza y rapidez**
+ 
+   ![colors](/assets/img/introduction/colors.png)
+
 ##### 3.1.2.1. Organization Systems
 ##### 3.1.2.2. Labelling Systems
 ##### 3.1.2.3. SEO Tags and Meta Tags
