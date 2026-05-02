@@ -82,8 +82,29 @@ La información se agrupa en secciones claras:
 - **Contratantes**: Acceso a creacion de turnos, búsqueda y Gestionar turnos
 
 ##### 3.1.2.2. Labelling Systems
+
+Etiquetas diseñadas para ser claras y autoexplicativas:
+
+**Ejemplos de Etiquetas:**
+- "Welcome" / "Create your account" (pantallas de autenticación)
+- "Edit Profile" (acciones de edición)
+- "Name" / "Email" / "Password" / "National ID" (campos de formulario)
+
 ##### 3.1.2.3. SEO Tags and Meta Tags
+
+**Landing Page:**
+- **Title:** ""ChambeaYa""
+- **Meta Description:** "Conecta con trabajos temporales cerca de ti. Encuentra turnos flexibles o cubre necesidades de personal en minutos."
+- **Keywords:** trabajos temporales, empleo por horas, trabajos cerca, MYPEs, empleo juvenil, turnos flexibles, trabajo rápido
+- **Author:** Equipo ChambeaYa
+
+**Aplicación Móvil:**
+- **Title (Routes):** "ChambeaYa"
+- **Meta Description:** "Explora turnos cercanos, postula y trabaja en minutos"
+
 ##### 3.1.2.4. Searching Systems
+
+
 ##### 3.1.2.5. Navigation Systems
 #### 3.1.3. Landing Page UI Design
 ##### 3.1.3.1. Landing Page Wireframe
