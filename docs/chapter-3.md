@@ -139,10 +139,15 @@ Sistema de navegación diseñado para acceso rápido y uso intuitivo.
 - Desde notificación
 
 #### 3.1.3. Landing Page UI Design
-
-
 ##### 3.1.3.1. Landing Page Wireframe
+Para el desarrollo del Landing Page de ChambaYa, se realizaron diversos bosquejos de baja fidelidad en la aplicación de diseño de interfaz Figma para crear la estructura de las pantallas del Landing Page de la solución.
+
+![Wireframe Landing Page](/assets/img/Chapter-3/LandingPageUIDesign/Wireframe-LandingPage.png)
 ##### 3.1.3.2. Landing Page Mock-up
+Para el desarrollo del Landing Page de ChambaYa, se realizaron bosquejos de alta fidelidad en la aplicación Figma. Para el desarrollo de estas pantallas, se tomó como base los Wireframes previamente diseñados, sin embargo, estas pantallas poseen colores adecuados y la tipografía definida para las distintas secciones del Landing Page.
+
+![Mock-up Landing Page](/assets/img/Chapter-3/LandingPageUIDesign/Mockup-LandingPage.png)
+
 #### 3.1.4. Mobile Applications UX/UI Design
 ##### 3.1.4.1. Mobile Applications Wireframes
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams
