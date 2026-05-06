@@ -170,6 +170,12 @@ Sección Chat
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera muestra la pantalla Home con un mapa y una barra de búsqueda en la parte superior, también muestra una lista de trabajos disponibles, al seleccionar "Imbox" en la barra de navegación te muestra la lista de chats. La segunda pantalla es la pantalla de chat, donde el usuario puede comunicarse con el contratante o chambeador para coordinar detalles del trabajo.
 
+Sección Perfil View
+
+![Wireframe Mobile App - Perfil View](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-ProfileView.png)
+
+Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de Perfil, te dirige a dicha sección. La segunda pantalla es la vista de perfil del usuario, que incluye información personal, habilidades y experiencia laboral, además de la edición del perfil, donde el usuario puede actualizar su información personal, habilidades y experiencia laboral.
+
 
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams
 ##### 3.1.4.3. Mobile Applications Mock-ups
