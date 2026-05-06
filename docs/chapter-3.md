@@ -154,7 +154,7 @@ En esta sección se presentarán los wireframes de la aplicación, los cuales so
 
 Sección registro e inicio de sesión
 
-![Wireframe Mobile App - Registro e Inicio de Sesión](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframes-RegistroeIniciodeSesión.png)
+![Wireframe Mobile App - Registro e Inicio de Sesión](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-RegistroeIniciodeSesión.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando seis pantallas consecutivas. La primera pantalla muestra un formulario de inicio de sesión con campos para email y contraseña,junto con un botón de "Login" y un enlace para crear una cuenta. La segunda pantalla es el formulario de registro, que incluye campos para nombre completo, email, contraseña y número de teléfono, junto con un botón de "Sing Up". La tercera pantalla es la verificación de número de teléfono. La cuarta pantalla es el Login en caso de que ya se tenga una cuenta, te redirige a Iniciar Sesión. La quinta pantalla es personalizar tu perfil con descripción. Finalmente, la sexta pantalla sigues con la personalización de tus habilidades.
 
@@ -163,7 +163,6 @@ Sección Aplicacion de trabajos
 ![Wireframe Mobile App - Aplicación de Trabajos](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-AplicacionTrabajo.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando cuatro pantallas consecutivas. La primera pantalla muestra la pantalla de inicio con un mapa y una barra de búsqueda en la parte superior también muestra una lista de trabajos disponibles. La segunda pantalla es el detalle del trabajo, que proporciona información más detallada sobre el trabajo seleccionado. La tercera pantalla es la aplicación al trabajo, donde el usuario puede postularse para el trabajo. Finalmente, la cuarta pantalla es la confirmación de aplicación, que muestra un mensaje de éxito después de postularse. 
-
 
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams
 ##### 3.1.4.3. Mobile Applications Mock-ups
