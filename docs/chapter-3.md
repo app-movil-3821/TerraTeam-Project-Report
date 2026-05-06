@@ -177,9 +177,17 @@ Sección Perfil View
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de Perfil, te dirige a dicha sección. La segunda pantalla es la vista de perfil del usuario, que incluye información personal, habilidades y experiencia laboral, además de la edición del perfil, donde el usuario puede actualizar su información personal, habilidades y experiencia laboral.
 
 Sección Gestión de Turnos
+
 ![Wireframe Mobile App - Gestión de Turnos](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-MyShifts.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de "Turnos" en la barra de navegación, te dirige a dicha sección. La segunda pantalla es la vista de gestión de turnos, donde el usuario puede ver los turnos activos, pasados y futuros, además de la opción para cancelar un turno activo.
+
+Sección Notificaciones
+
+![Wireframe Mobile App - Notificaciones](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-Notifications.png)
+
+Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de "Notificaciones" con la campanita, te dirige a dicha sección. La segunda pantalla es la vista de notificaciones, donde el usuario puede ver las notificaciones relacionadas con sus turnos, aplicaciones y mensajes.
+
 
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams
 ##### 3.1.4.3. Mobile Applications Mock-ups
