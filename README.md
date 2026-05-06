@@ -1,18 +1,20 @@
-# Universidad Peruana de Ciencias Aplicadas
 
 ![UPC Logo](assets/img/introduction/UPC.png)
 
-**Facultad de Ingeniería**
+# Universidad Peruana de Ciencias Aplicadas
+
 
 **Carrera de Ingeniería de Software**
 
 **Periodo:** 202610
 
+**Nombre del Curso:** Aplicaciones de Dispositivos Moviles 
+
 **NRC:** 3821
 
-**Nombre del profesor:** Jorge Luis Mayta Guillermo
+**Nombre del docente:** Jorge Luis Mayta Guillermo
 
-### "Informe de Trabajo Final"
+## "Informe de Trabajo Final"
 
 **Nombre del Startup:** TerraTeam
 
@@ -33,13 +35,18 @@
 ### Abril, 2026
 
 
-#  Project Report
-
----
 
 ##  Registro de Versiones del Informe
 
----
+| Version | Fecha | Autor | Descripcion |
+|---------|-------|-------|-------------|
+|         |       |       |             |
+|         |       |       |             |
+|         |       |       |             |
+|         |       |       |             |
+|         |       |       |             |
+|         |       |       |             |
+|         |       |       |             |
 
 ##  Project Report Collaboration Insights
 
@@ -48,7 +55,14 @@
 ##  Contenido
 
 ### Tabla de Contenidos
-### Student Outcome *(ver Anexo A)*
+### Student Outcome
+| Criterio Especifico | Acciones Realizadas | Conclusiones |
+|---------------------|---------------------|--------------|
+|                     |                     |              |
+|                     |                     |              |
+|                     |                     |              |
+|                     |                     |              |
+
 ### Objetivos SMART
 
 ---
