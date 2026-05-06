@@ -158,6 +158,7 @@ Sección registro e inicio de sesión
 ![Wireframe Mobile App - Registro e Inicio de Sesión](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-RegistroeIniciodeSesión.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando seis pantallas consecutivas. La primera pantalla muestra un formulario de inicio de sesión con campos para email y contraseña, junto con un botón de "Login" y un enlace para crear una cuenta. La segunda pantalla es el formulario de registro, que incluye campos para nombre completo, email, contraseña y número de teléfono, junto con un botón de "Sing Up". La tercera pantalla es la verificación de número de teléfono. La cuarta pantalla es el Login en caso de que ya se tenga una cuenta, te redirige a Iniciar Sesión. La quinta pantalla es personalizar tu perfil con descripción. Finalmente, la sexta pantalla sigues con la personalización de tus habilidades.
+
 ---
 
 Sección Aplicacion de trabajos
@@ -165,6 +166,7 @@ Sección Aplicacion de trabajos
 ![Wireframe Mobile App - Aplicación de Trabajos](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-AplicacionTrabajo.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando cuatro pantallas consecutivas. La primera pantalla muestra la pantalla de inicio con un mapa y una barra de búsqueda en la parte superior también muestra una lista de trabajos disponibles. La segunda pantalla es el detalle del trabajo, que proporciona información más detallada sobre el trabajo seleccionado. La tercera pantalla es la aplicación al trabajo, donde el usuario puede postularse para el trabajo. Finalmente, la cuarta pantalla es la confirmación de aplicación, que muestra un mensaje de éxito después de postularse. 
+
 ---
 
 Sección Chat
@@ -172,6 +174,7 @@ Sección Chat
 ![Wireframe Mobile App - Chat](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-Chat.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera muestra la pantalla Home con un mapa y una barra de búsqueda en la parte superior, también muestra una lista de trabajos disponibles, al seleccionar "Imbox" en la barra de navegación te muestra la lista de chats. La segunda pantalla es la pantalla de chat, donde el usuario puede comunicarse con el contratante o chambeador para coordinar detalles del trabajo.
+
 ---
 
 Sección Perfil View
@@ -179,6 +182,7 @@ Sección Perfil View
 ![Wireframe Mobile App - Perfil View](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-ProfileView.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de Perfil, te dirige a dicha sección. La segunda pantalla es la vista de perfil del usuario, que incluye información personal, habilidades y experiencia laboral, además de la edición del perfil, donde el usuario puede actualizar su información personal, habilidades y experiencia laboral.
+
 ---
 
 Sección Gestión de Turnos
@@ -186,6 +190,7 @@ Sección Gestión de Turnos
 ![Wireframe Mobile App - Gestión de Turnos](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-MyShifts.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de "Turnos" en la barra de navegación, te dirige a dicha sección. La segunda pantalla es la vista de gestión de turnos, donde el usuario puede ver los turnos activos, pasados y futuros, además de la opción para cancelar un turno activo.
+
 ---
 
 Sección Notificaciones
@@ -193,6 +198,7 @@ Sección Notificaciones
 ![Wireframe Mobile App - Notificaciones](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-Notifications.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de "Notificaciones" con la campanita, te dirige a dicha sección. La segunda pantalla es la vista de notificaciones, donde el usuario puede ver las notificaciones relacionadas con sus turnos, aplicaciones y mensajes.
+
 ---
 
 Sección Resumen de turno
@@ -200,6 +206,7 @@ Sección Resumen de turno
 ![Wireframe Mobile App - Resumen de Turno](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-SummaryShift.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando una pantalla. La pantalla muestra el resumen de un turno específico, incluyendo detalles como el tipo de trabajo, ubicación, horario, pago y estado del turno. Además, se incluyen opciones para calificar el servicio y un cajón de comentarios.
+
 ---
 
 Sección Ayuda
