@@ -188,6 +188,10 @@ Sección Notificaciones
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de "Notificaciones" con la campanita, te dirige a dicha sección. La segunda pantalla es la vista de notificaciones, donde el usuario puede ver las notificaciones relacionadas con sus turnos, aplicaciones y mensajes.
 
+Sección Resumen de turno
+![Wireframe Mobile App - Resumen de Turno](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-SummaryShift.png)
+
+Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando una pantalla. La pantalla muestra el resumen de un turno específico, incluyendo detalles como el tipo de trabajo, ubicación, horario, pago y estado del turno. Además, se incluyen opciones para calificar el servicio y un cajón de comentarios.
 
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams
 ##### 3.1.4.3. Mobile Applications Mock-ups
