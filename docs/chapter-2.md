@@ -319,24 +319,24 @@ Finalmente, validó el modelo de negocio al confirmar su total disposición a pa
 </thead>
 <tbody>
   <tr>
-    <td>Nombre</td>
+    <td>Eirthon</td>
     <td></td>
   </tr>
   <tr>
-    <td>Apellidos</td>
+    <td>Reyes</td>
     <td> </td>
   </tr>
   <tr>
-    <td>Edad</td>
+    <td>25</td>
     <td></td>
   </tr>
   <tr>
-    <td>Rol</td>
+    <td>Subgerente</td>
     <td></td>
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="" alt="Entrevista3"></td>
+    <td><div align="center"><img src="../assets/img/Chapter-2/Entrevistas/Segmento1/entrevista3.png" alt="Entrevista3"></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -354,7 +354,9 @@ Finalmente, validó el modelo de negocio al confirmar su total disposición a pa
     <td>05:18 min</td>
   <tr>
     <td>Resumen</td>
-    <td> 
+    <td> El entrevistado menciona que lleva un tiempo en la empresa y se desempeña como subgerente, donde tambien hay entre 10 a 15 trabajadores.
+Menciona que normalmente cuando necesita conseguir a un trabajador, primero busca a familiares, amigos, y cuando no lo encuentra, lo hace el mismo. Indica que enfrenta problemas de tiempo al tratar de cubrir otros trabajos cuando no encuentra a alguien disponible con esas caracteristicas, ya que le quita tiempo para desempeñarse en sus responsabilidades. Valora la cercania, el costo y el desempeño de los trabajadores, es por eso que mayormente busca primero a personas conocidas que le generen confianza.
+Finalmente menciona que si estaria dispuesto a pagar una comision por una mejor contratación rapida y confiable, porque eso le ayudaria a estar mas tranquilo y porder enfocarse en lo que se desempeña.
 </td>
   </tr>
 </tbody>
