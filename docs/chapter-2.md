@@ -246,7 +246,7 @@
     <td>03:26 min</td>
   <tr>
     <td>Resumen</td>
-    <td> - Jimena, dueña de un pequeño negocio, mencionó que enfrenta dificultades cuando necesita cubrir turnos de manera urgente, ya que actualmente busca personal a través de conocidos o WhatsApp, lo que le toma entre uno y dos días. Señala que uno de los principales problemas es la falta de confianza y referencias de los trabajadores, además de la pérdida de tiempo en el proceso. Considera importante contar con una solución que le permita encontrar personal disponible de forma rápida, cercana y con buenas calificaciones, y estaría dispuesta a pagar por este servicio si realmente le garantiza eficiencia y confiabilidad.
+    <td> Jimena, dueña de un pequeño negocio, mencionó que enfrenta dificultades cuando necesita cubrir turnos de manera urgente, ya que actualmente busca personal a través de conocidos o WhatsApp, lo que le toma entre uno y dos días. Señala que uno de los principales problemas es la falta de confianza y referencias de los trabajadores, además de la pérdida de tiempo en el proceso. Considera importante contar con una solución que le permita encontrar personal disponible de forma rápida, cercana y con buenas calificaciones, y estaría dispuesta a pagar por este servicio si realmente le garantiza eficiencia y confiabilidad.
 </td>
   </tr>
 </tbody>
@@ -319,18 +319,22 @@ Finalmente, validó el modelo de negocio al confirmar su total disposición a pa
 </thead>
 <tbody>
   <tr>
+    <td>Nombre</td>
     <td>Eirthon</td>
     <td></td>
   </tr>
   <tr>
+    <td>Apellidos</td>
     <td>Reyes</td>
     <td> </td>
   </tr>
   <tr>
+    <td>Edad</td>
     <td>25</td>
     <td></td>
   </tr>
   <tr>
+    <td>Rol</td>
     <td>Subgerente</td>
     <td></td>
   </tr>
