@@ -120,15 +120,15 @@
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-| **Análisis FODA cruzado** | **Oportunidades** | **Amenazas** |
-|---|---|---|
+| **Análisis FODA cruzado** | **Oportunidades** | **Amenazas**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|---|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Fortalezas (F)**<br>1. Especialización en contratación inmediata para MYPEs.<br>2. Matching geolocalizado en tiempo real.<br>3. Registro simplificado sin CV mediante sistema tag-based. | **Estrategia (FO) — Estrategias Ofensivas**<br>1. Posicionar a ChambaYA como la primera plataforma especializada en contratación urgente para MYPEs en Perú.<br>2. Implementar campañas de adquisición en zonas comerciales con alta concentración de negocios pequeños.<br>3. Generar alianzas con universidades e institutos para captar oferta laboral juvenil verificada.<br>4. Incentivar primeras contrataciones mediante promociones de lanzamiento y créditos gratuitos para MYPEs. | **Estrategia (FA) — Estrategias Defensivas**<br>1. Reforzar el posicionamiento de nicho especializado frente a plataformas generalistas como Computrabajo/Indeed.<br>2. Priorizar velocidad de matching como principal diferenciador competitivo.<br>3. Construir barreras de salida mediante reputación acumulativa de usuarios.<br>4. Mejorar constantemente UX/UI para reducir fricción frente a competidores más grandes.<br5. Comunicar fuertemente beneficios de inmediatez y cercanía geográfica. |
-| **Debilidades (D)**<br>1. Bajo reconocimiento de marca al ser startup nueva.<br>2. Necesidad de masa crítica en ambos lados del marketplace.<br>3. Recursos limitados frente a competidores consolidados.<br>4. Dependencia inicial de adopción en mercados locales específicos.| **Estrategia (DO) — Reorientación**<br>1. Validar el modelo en una zona piloto antes de expansión masiva.<br>2. Ejecutar campañas hiperlocales para alcanzar densidad de usuarios por distrito/zona comercial.<br>3. Implementar programas de referidos para crecimiento orgánico de ambas partes del marketplace.<br>4. Generar contenido educativo para MYPEs sobre beneficios de contratación flexible digital.<br>5. Buscar incubadoras, fondos semilla y alianzas estratégicas para acelerar crecimiento. | **Estrategia (DA) — Supervivencia**<br>1. Priorizar construcción de confianza mediante validación de identidad y sistema reputacional robusto.<br>2. Mantener costos operativos lean para competir durante etapa temprana.<br>3. Enfocar recursos en verticales/rubros donde el pain point sea más fuerte.<br>4. Diseñar estrategia de retención temprana para evitar churn en ambos lados del marketplace.<br>5. Iterar rápidamente el producto con base en feedback continuo del mercado piloto. |
+| **Debilidades (D)**<br>1. Bajo reconocimiento de marca al ser startup nueva.<br>2. Necesidad de masa crítica en ambos lados del marketplace.<br>3. Recursos limitados frente a competidores consolidados.<br>4. Dependencia inicial de adopción en mercados locales específicos.| **Estrategia (DO) — Reorientación**<br>1. Validar el modelo en una zona piloto antes de expansión masiva.<br>2. Ejecutar campañas hiperlocales para alcanzar densidad de usuarios por distrito/zona comercial.<br>3. Implementar programas de referidos para crecimiento orgánico de ambas partes del marketplace.<br>4. Generar contenido educativo para MYPEs sobre beneficios de contratación flexible digital.<br>5. Buscar incubadoras, fondos semilla y alianzas estratégicas para acelerar crecimiento. | **Estrategia (DA) — Supervivencia**<br>1. Priorizar construcción de confianza mediante validación de identidad y sistema reputacional robusto.<br>2. Mantener costos operativos lean para competir durante etapa temprana.<br>3. Enfocar recursos en verticales/rubros donde el pain point sea más fuerte.<br>4. Diseñar estrategia de retención temprana para evitar churn en ambos lados del marketplace.<br>5. Iterar rápidamente el producto con base en feedback continuo del mercado piloto.       |
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
-<h4 id="Segment" >Segmento objetivo: Contratantes (MYPEs)</h4> 
-<h4 id="PreguntPersonal">Preguntas Personales:</h4> 
+<h4 id="Segment" >Segmento objetivo: Contratantes (MYPEs)</h4>
+<h4 id="PreguntPersonal">Preguntas Personales:</h4>
 
 ¿Cuál es su nombre?
 
@@ -143,7 +143,7 @@
 ¿Cuántos trabajadores tiene actualmente?
 
 
-<h4 id="PreguntEspe">Preguntas específicas:</h4> 
+<h4 id="PreguntEspe">Preguntas específicas:</h4>
 
 ¿Con qué frecuencia enfrenta faltas de personal o necesidad de apoyo temporal en su negocio?
 
@@ -163,8 +163,8 @@
 
 ¿Estaría dispuesto a pagar una comisión por una contratación rápida y confiable? ¿Bajo qué condiciones?
 
-<h4 id="Segment" >Segmento objetivo: Jóvenes / Trabajadores Temporales </h4> 
-<h4 id="PreguntPersonal">Preguntas Personales:</h4> 
+<h4 id="Segment" >Segmento objetivo: Jóvenes / Trabajadores Temporales </h4>
+<h4 id="PreguntPersonal">Preguntas Personales:</h4>
 
 ¿Cuál es su nombre?
 
@@ -179,7 +179,7 @@
 ¿Cuenta con experiencia laboral previa? ¿En qué rubros?
 
 
-<h4 id="PreguntESP">Preguntas específicas :</h4> 
+<h4 id="PreguntESP">Preguntas específicas :</h4>
 
 ¿Ha buscado trabajos temporales o de medio tiempo anteriormente?
 
@@ -199,7 +199,7 @@
 
 ### 2.2.2. Registro de entrevistas
 
-#### Segmento 1: 
+#### Segmento 1:
 
 <table>
 <colgroup>
@@ -661,7 +661,7 @@ Se consideran los dos usuarios previamente definidos que constituyen a los segme
         <td>Baja</td>  
         <td>Media</td>
     </tr>
-    
+
 </table>
 
 Como se observa en la matriz, ambos User Persona presentan actividades críticas con niveles de alta frecuencia e importancia, especialmente en las etapas de búsqueda, evaluación y selección.
@@ -1124,21 +1124,21 @@ Análisis de Bounded Contexts
     - Relación: Upstream (Job) / Downstream (Application)
 
     - Patrón: Customer/Supplier (El Job Context actúa como proveedor de vacantes. Cualquier cambio en la estructura del turno debe ser coordinado       para no romper el flujo de postulaciones.
-      
- 
+
+
 - Application Context ↔ Communication Context
 
     - Relación: Upstream (Application) / Downstream (Communication)
 
     - Patrón: PL (Published Language) (Application emite eventos como MatchConfirmed que Communication consume tal cual para habilitar canales de       chat).
- 
+
 
 - Application Context ↔ Payment Context
 
     - Relación: Upstream (Application) / Downstream (Payment)
 
     - Patrón: ACL (Payment traduce los datos de la postulación aceptada a su propio modelo de "Transacción" y "Reserva de Fondos" para Yape/Plin).
-      
+
 
 - Job Context ↔ Reputation Context
 
@@ -1187,7 +1187,7 @@ Se representan los dispositivos móviles desde los cuales los usuarios acceden a
 
 
 ## 2.6. Tactical-Level Domain-Driven Design
-### 2.6.1. Bounded Context: IAM Context
+#### 2.6.1. Bounded Context: IAM Context
 ##### 2.6.1.1. Domain Layer
 La Domain Layer del IAM Context encapsula toda la lógica de negocio relacionada con la gestión de identidad y acceso dentro de la plataforma ChambaYA. Este contexto maneja tanto a los jóvenes en búsqueda de empleo como a las MYPES contratantes, diferenciándolos mediante roles.
 
@@ -1279,7 +1279,7 @@ Los Assemblers encapsulan la transformación entre Resources, Commands/Queries y
 ---
 
 ##### 2.6.1.3. Application Layer
-La Application Layer coordina la ejecución de comandos y consultas, actuando como intermediario entre la Interface Layer y la Domain Layer. 
+La Application Layer coordina la ejecución de comandos y consultas, actuando como intermediario entre la Interface Layer y la Domain Layer.
 
 ---
 
@@ -1360,7 +1360,7 @@ A continuación, se muestra y explica el diagrama de documentos relacionado a la
 
 En esta imagen se visualiza que una base de datos no relacional para el contexto de autenticación persisitiría con la información de la entidad principal que son los usuarios y otra entidad relacionada a los roles de los cuales cada cuenta solo puede tener uno al mismo tiempo.
 
-### 2.6.2. Bounded Context: Application Context
+#### 2.6.2. Bounded Context: Application Context
 ##### 2.6.2.1. Domain Layer
 La capa Application Context (Enrollment) constituye el motor transaccional del sistema, centralizando toda la lógica de negocio relacionada con las postulaciones de los jóvenes (Chambeadores) a los turnos de emergencia publicados por las MYPEs (Contratantes).
 En esta capa se definen las reglas y comportamientos propios del emparejamiento: la creación de la postulación, las transiciones de estado (aceptado, rechazado, cancelado) y las políticas que detonan el "Match" definitivo.
@@ -1465,7 +1465,7 @@ La Infrastructure Layer se encarga de la persistencia de datos, de las integraci
 
 ![ApplicationContext_Component_Diagram.png](../assets/img/Chapter-2/Product-Artifacts/ApplicationContext_Component_Diagram.png)
 
-### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+##### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
@@ -1475,15 +1475,16 @@ La Infrastructure Layer se encarga de la persistencia de datos, de las integraci
 
 ![xd.png](../assets/img/Chapter-2/Product-Artifacts/diagramas.png)
 
-### 2.6.3. Bounded Context: Job Context
+#### 2.6.3. Bounded Context: Job Context
 ##### 2.6.3.1. Domain Layer
 
 La capa Job Context constituye el núcleo encargado de la fase de ejecución del trabajo. A diferencia del Application Context (que maneja el proceso de selección), este contexto asume el control una vez que existe un "Match" confirmado. Centraliza la lógica de negocio relacionada con la coordinación en tiempo real (habilitación de canales de chat), el seguimiento de asistencia, el reporte de incidencias (inasistencias) y las reglas de reapertura de turnos de emergencia.
 
 **Aggregates**
-| Nombre | Descripcion                                                                                                                                                                                                | Atributos                                                                                                                                                                    | Metodos                                                                                                  |
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Shift  | Aggregate Root principal que representa el turno de trabajo en su fase de ejecución. Encapsula los participantes, el estado en vivo de la jornada, el canal de comunicación y las incidencias reportadas.  | `Id: UUID` <br/> <br/> `ContratanteId: UUID` <br/> <br/> `ChambeadorId: UUID `<br/> <br/> `ChatChannelId: string` <br/> <br/> `Status: ShiftExecutionStatus ` <br/> <br/> `ScheduledTime: DateTime` | `EnableChatChannel(string channelId): void`<br/> <br/> `ReportAbsence(string reason): void` <br/> <br/> `Reopen(): void` |
+
+| Nombre | Descripcion                                                                                                                                                                                                | Atributos                                                                                                                                                                    | Metodos                                                                                                   |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| Shift  | Aggregate Root principal que representa el turno de trabajo en su fase de ejecución. Encapsula los participantes, el estado en vivo de la jornada, el canal de comunicación y las incidencias reportadas.  | `Id: UUID` <br/> <br/> `ContratanteId: UUID` <br/> <br/> `ChambeadorId: UUID `<br/> <br/> `ChatChannelId: string` <br/> <br/> `Status: ShiftExecutionStatus ` <br/> <br/> `ScheduledTime: DateTime` | `EnableChatChannel(string channelId): void`<br/> <br/> `ReportAbsence(string reason): void` <br/> <br/> `Reopen(): void`   |
 
 **Value Object**
 
@@ -1576,7 +1577,7 @@ La `Infrastructure Layer` del Job Context se encarga de materializar las comunic
 
 ![DiagramJob.png](../assets/img/Chapter-2/Product-Artifacts/DiagramJob.png)
 
-### 2.6.4. Bounded Context: Communication Context
+#### 2.6.4. Bounded Context: Communication Context
 ##### 2.6.4.1. Domain Layer
 El Domain Layer del bounded context **Communication** agrupa la lógica de negocio relacionada con la interacción entre contratante y chambeador durante un turno activo. En esta capa se definen los elementos del dominio que permiten gestionar conversaciones, mensajes, incidencias, solicitudes de horas extra y confirmaciones de llegada, manteniendo la comunicación dentro de un entorno controlado por la aplicación.
 
@@ -1738,8 +1739,8 @@ El siguiente diagrama muestra el diseño de persistencia del bounded context **C
 ![Data-Base_Diagram.jpg](../assets/img/Chapter-2/Product-Artifacts/Data-Base_Diagram.png)
 
 
-### 2.6.6. Bounded Context: Payment Context
-##### 2.6.6.1. Domain Layer
+#### 2.6.5. Bounded Context: Payment Context
+##### 2.6.5.1. Domain Layer
 
 La capa Payment And Subscriptions constituye el núcleo del bounded context encargado de la administración de cuentas y suscripciones de usuarios y negocios, centralizando la lógica relacionada con la gestión de planes de pago y su ciclo de vida.
 
@@ -1796,8 +1797,8 @@ En esta capa se definen las reglas y comportamientos propios del dominio de pago
 | **AccountRepository**      | Persistencia y consulta de cuentas en la base de datos.  | `AddAsync(Account account), UpdateAsync(Account account), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetByStatusAsync(EAccountStatus status), GetByRoleAsync(EAccountRole role)`   |
 | **PlanRepository**         | Persistencia y consulta de planes de suscripción.        | `AddAsync(Plan plan), UpdateAsync(Plan plan), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetAllAsync(), GetByTypeAsync(EPlanType type)`                                            |
 | **SubscriptionRepository** | Persistencia y consulta de suscripciones.                | `AddAsync(Subscription subscription), UpdateAsync(Subscription subscription), DeleteAsync(Guid id), GetByIdAsync(Guid id), GetByAccountAsync(AccountId accountId), GetActiveAsync()` |
-| 
-##### 2.6.6.2. Interface Layer
+|
+##### 2.6.5.2. Interface Layer
 
 
 La **Interface Layer** expone los servicios del bounded context hacia el exterior mediante **APIs REST**, permitiendo que clientes externos (web o móvil) interactúen con las cuentas, suscripciones, planes y negocios.  
@@ -1809,7 +1810,6 @@ Se definen los **Controllers**, **Resources** y **Assemblers/Transformers**, enc
 
 | Nombre                      | Descripción                                              | Endpoints (ejemplos)                                                                                                                                                  |
 |-----------------------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 
 | **PlansController**         | Gestiona los planes de suscripción.                      | `POST /plans (CreatePlan)`<br>`PUT /plans/{id} (UpdatePlan)`<br>`GET /plans/{id}`<br>`GET /plans`
 ---
 
@@ -1835,7 +1835,7 @@ Se implementan componentes que transforman los **Resources** ↔ **Entities/Aggr
 - `BusinessFromResourceAssembler` → Convierte un `CreateBusinessResource` en `CreateBusinessCommand`.
 - `BusinessResourceFromEntityAssembler` → Convierte un `Business` en `BusinessResource`.
 
-##### 2.6.6.3. Application Layer
+##### 2.6.5.3. Application Layer
 
 La **Application Layer** orquesta la ejecución de **comandos** y **consultas** para los agregados `Account`, `Subscription` y `Business`.  
 Se encarga de delegar la lógica de negocio a la **Domain Layer** mediante los **CommandServices** y **QueryServices**, y de coordinar eventos si aplica.
@@ -1866,7 +1866,7 @@ Reciben **Queries**, consultan los **Repositories** y devuelven resultados al **
 | **SubscriptionQueryService** | Consultas sobre suscripciones.         | `GetSubscriptionByIdQuery, GetSubscriptionsByAccountQuery, GetActiveSubscriptionsQuery`                                        |
 | **BusinessQueryService**     | Consultas sobre negocios.              | `GetBusinessByIdQuery, GetAllBusinessesQuery`                                                    |
 
-##### 2.6.6.4. Infrastructure Layer
+##### 2.6.5.4. Infrastructure Layer
 
 La **Infrastructure Layer** proporciona las implementaciones técnicas necesarias para que la **Application Layer** y la **Domain Layer** funcionen correctamente.  
 Incluye la **persistencia de datos** y , y cualquier dependencia tecnológica concreta.
@@ -1890,7 +1890,7 @@ Los **Repositories** implementan la persistencia de los agregados definidos en e
 |------------------------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **PAYPAL** | Gestiona la comunicación con la API de PayPal. | - `CreatePayment(PaymentRequest request)` → Crear un pago en PayPal.<br>- `GetPaymentStatus(string paymentId)` → Consultar el estado de un pago.<br>- `CancelPayment(string paymentId)` → Cancelar un pago.<br>- `WebhookHandler(EventPayload payload)` → Procesar eventos de PayPal (pagos aprobados, rechazados, pendientes). |
 
-##### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
+##### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 #### Diagrama de componentes: Suscripciones y cuentas ####
 
@@ -1901,13 +1901,13 @@ Los **Repositories** implementan la persistencia de los agregados definidos en e
 
 En la imagen se aprecia el diagrama de componentes para el contexto de cuentas y suscripciones. En este diagrama, se muestra que la información de las suscripciones y cuentas se almacenan en la base de datos gracias al uso de repositorios para cada una de dichas entidades. Además, se evidencia la relación con el sistema externo de MercadoPago para la compra de suscripciones por parte de los usuarios de la aplicación.
 
-##### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
+##### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección, se muestran y explican los diagramas de clases y de base de datos relacionados al contexto delimitado sobre la creación de cuentas y suscripciones.
 
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams #####
 
-A continuación, se muestra el diagrama de clases del contexto presente 
+A continuación, se muestra el diagrama de clases del contexto presente
 
 #### Clase principal: 'Account' ####
 
@@ -1928,7 +1928,7 @@ En este diagrama se visualiza tanto a la clase llamada 'Account' como la clase '
 
 Finalmente, en este diagrama se muestran los 'value objecs' del contexto de suscripciones. Estas clases contienen información relacionada a valores enumerados para algunos atributos como, por ejemplo, 'ESubscriptionStatus' que forma parte de la clase 'Subscription' que sirve para indicar el estado actual de la suscripción de una cuenta.
 
-###### 2.6.6.6.2. Bounded Context Database Design Diagram
+###### 2.6.5.6.2. Bounded Context Database Design Diagram
 
 A continuación, se muestra y explica el diagrama de documentos relacionado a la base de datos no relacional que se usará. Este diagrama de documentos refleja como la información del contexto presente persiste en una base de datos en MongoDB.
 
