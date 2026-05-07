@@ -215,5 +215,35 @@ En esta sección, se especifica la configuración para realizar el despliegue de
 
 ### 4.3. Validation Interviews
 #### 4.3.1. Diseño de Entrevistas
+
+En esta sección se definen los elementos y procesos que serán evaluados por los usuarios de ambos segmentos objetivos (Jóvenes y Contratantes) durante las sesiones de validación. El objetivo es medir la claridad de la propuesta de valor y la usabilidad del prototipo.
+
+Elementos a incluir en la validación
+
+- Landing Page: Se presentará para validar si el mensaje de "solución de urgencias laborales" y el modelo "sin CV" se entiende correctamente en los primeros segundos.
+
+- Aplicación Móvil (Prototipo ChambaYA): Se evaluará el prototipo de alta fidelidad, permitiendo al usuario interactuar con las interfaces diseñadas para ambos roles (Trabajador y Contratante).
+
+Flujos a validar:
+
+- User Flow 1: Registro e Inicio de Sesión <br>
+Validación de la creación de cuenta, verificación telefónica y, especialmente, la personalización del perfil basada en habilidades (tags) en lugar de carga de archivos.
+
+- User Flow 2: Publicación de Trabajos: <br>
+Uso del mapa con geolocalización, búsqueda de vacantes y proceso de postulación rápida.
+
+- User Flow 3: Comunicación (chat) <br>
+Interacción en tiempo real entre ambos segmentos para coordinar detalles del turno una vez aceptada la aplicación.
+
+- User Flow 4: Gestión de Perfil <br>
+Visualización y edición de información personal, habilidades y experiencia acumulada dentro de la app.
+
+- User Flow 5: Gestión de Turnos <br>
+Control de turnos activos, historial de trabajos pasados y visualización de compromisos futuros.
+
+- User Flow 6: Notificaciones y Soporte <br>
+Recepción de alertas críticas (nuevas vacantes o aplicaciones) y acceso al centro de ayuda para resolución de problemas o contacto con soporte.
+
+
 #### 4.3.2. Registro de Entrevistas
 #### 4.3.3. Evaluaciones según Heurísticas
