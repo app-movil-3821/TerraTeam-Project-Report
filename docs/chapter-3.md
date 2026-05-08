@@ -217,6 +217,18 @@ Sección Ayuda
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando una pantalla. La pantalla es la vista de ayuda, donde el usuario puede seleccionar un tipo de problema presentado, una descripción, subir evidencia y puede acceder a preguntas frecuentes, contacto de soporte y guías de uso.
 
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+Un wireflow o flujo de pantalla es un diagrama donde se reúnen distintos wireframes realizados cuya finalidad es contar las metas del usuario con la aplicación y cómo las consiguen. Luego, los pasos para la creación de cada diagrama empiezan por la definición de un objetivo del usuario que desea cumplir. Luego, se define el flujo de tareas que se deben ser realizadas por el usuario en la aplicación para conseguir dicho objetivo. Y, finalmente, se traducen dichas tareas por pantallas y, también, se trazan decisiones en botones del wireframe.
+
+- *User Goal 1:* Usuario desea registrarse en la aplicación
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo:
+
+![Wireflow Mobile App - User Goal 1](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams//User-Goal1.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para registrar una cuenta en la aplicación que empieza en el momento en el que el usuario accede a la aplicación y continúa con el mismo usuario colocando inforamción requerida para crear una cuenta.
+
+![Wireflow Mobile App - User Goal 1 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Registro.png)
+
 ##### 3.1.4.3. Mobile Applications Mock-ups
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
