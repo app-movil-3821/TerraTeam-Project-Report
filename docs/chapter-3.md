@@ -221,6 +221,7 @@ Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, most
 Un wireflow o flujo de pantalla es un diagrama donde se reúnen distintos wireframes realizados cuya finalidad es contar las metas del usuario con la aplicación y cómo las consiguen. Luego, los pasos para la creación de cada diagrama empiezan por la definición de un objetivo del usuario que desea cumplir. Luego, se define el flujo de tareas que se deben ser realizadas por el usuario en la aplicación para conseguir dicho objetivo. Y, finalmente, se traducen dichas tareas por pantallas y, también, se trazan decisiones en botones del wireframe.
 
 - *User Goal 1:* Usuario desea registrarse en la aplicación
+
 Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo:
 
 ![Wireflow Mobile App - User Goal 1](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams//User-Goal1.png)
@@ -231,6 +232,7 @@ Luego, se muestra el resultado de la traducción de acción a pantallas. A conti
 
 
 - *User Goal 2:* Usuario desea iniciar sesión con su cuenta en la aplicación
+
 Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo:
 
 ![Wireflow Mobile App - User Goal 2](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal2.png)
@@ -240,6 +242,7 @@ Luego, se muestra el resultado de la traducción de acción a pantallas. A conti
 ![Wireflow Mobile App - User Goal 2 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Inicio.png)
 
 - *User Goal 3:* Usuario desea postular a un turno disponible
+
 Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
 
 ![Wireflow Mobile App - User Goal 3](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal3.png)
@@ -248,6 +251,15 @@ Luego, se muestra el resultado de la traducción de acción a pantallas. A conti
 
 ![Wireflow Mobile App - User Goal 3 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-AplicaciónTrabajo.png)
 
+- *User Goal 4:* Usuario desea comunicarse con el contratante o chambeador para coordinar detalles del trabajo
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 4](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal4.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para comunicarse con el contratante o chambeador para coordinar detalles del trabajo que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Inbox" en la barra de navegación, luego, accediendo a la lista de chats y, finalmente, accediendo a un chat específico para comunicarse.
+
+![Wireflow Mobile App - User Goal 4 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Chat.png)
 
 ##### 3.1.4.3. Mobile Applications Mock-ups
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
