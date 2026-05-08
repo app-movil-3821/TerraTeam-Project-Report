@@ -178,7 +178,7 @@ Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, most
 
 ---
 
-Sección Perfil View
+Sección Ver Perfil
 
 ![Wireframe Mobile App - Perfil View](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-ProfileView.png)
 
@@ -260,6 +260,17 @@ Primero, se definen las tareas típicas que realizaría un usuario para completa
 Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para comunicarse con el contratante o chambeador para coordinar detalles del trabajo que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Inbox" en la barra de navegación, luego, accediendo a la lista de chats y, finalmente, accediendo a un chat específico para comunicarse.
 
 ![Wireflow Mobile App - User Goal 4 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Chat.png)
+
+
+- *User Goal 5:* Usuario desea modificar su perfil
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 5](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal5.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para modificar su perfil que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Perfil" en la barra de navegación, luego, accediendo a la pantalla de edición de perfil y, finalmente, guardando los cambios.
+
+![Wireflow Mobile App - User Goal 5 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-VerPerfil.png)
 
 ##### 3.1.4.3. Mobile Applications Mock-ups
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
