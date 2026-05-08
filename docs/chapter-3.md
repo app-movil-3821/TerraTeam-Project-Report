@@ -293,6 +293,15 @@ Luego, se muestra el resultado de la traducción de acción a pantallas. A conti
 
 ![Wireflow Mobile App - User Goal 7 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Notificaciones.png)
 
+- *User Goal 8:* Usuario desea visualizar el resumen de un turno
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 8](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal8.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para visualizar el resumen de un turno que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando un turno específico, luego, accediendo al detalle del turno y, finalmente, visualizando el resumen del turno.
+
+![Wireflow Mobile App - User Goal 8 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Resumen.png)
 
 ##### 3.1.4.3. Mobile Applications Mock-ups
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
