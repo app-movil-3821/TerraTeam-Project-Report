@@ -303,6 +303,16 @@ Luego, se muestra el resultado de la traducción de acción a pantallas. A conti
 
 ![Wireflow Mobile App - User Goal 8 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Resumen.png)
 
+- *User Goal 9:* Usuario desea acceder a la sección de ayuda para resolver un problema
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 9](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal9.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para acceder a la sección de ayuda para resolver un problema que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Perfil" en la barra de navegación, luego, accediendo a la sección de ayuda y, finalmente, visualizando las opciones de ayuda disponibles.
+
+![Wireflow Mobile App - User Goal 9 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Ayuda.png)
+
 ##### 3.1.4.3. Mobile Applications Mock-ups
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
