@@ -156,7 +156,7 @@ En esta sección se presentarán los wireframes de la aplicación, los cuales so
 
 Sección registro e inicio de sesión
 
-![Wireframe Mobile App - Registro e Inicio de Sesión](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-RegistroeIniciodeSesión.png)
+![Wireframe Mobile App - Registro e Inicio de Sesión](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-RegistroeIniciodeSesión.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando seis pantallas consecutivas. La primera pantalla muestra un formulario de inicio de sesión con campos para email y contraseña, junto con un botón de "Login" y un enlace para crear una cuenta. La segunda pantalla es el formulario de registro, que incluye campos para nombre completo, email, contraseña y número de teléfono, junto con un botón de "Sing Up". La tercera pantalla es la verificación de número de teléfono. La cuarta pantalla es el Login en caso de que ya se tenga una cuenta, te redirige a Iniciar Sesión. La quinta pantalla es personalizar tu perfil con descripción. Finalmente, la sexta pantalla sigues con la personalización de tus habilidades.
 
