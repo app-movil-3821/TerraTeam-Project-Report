@@ -239,6 +239,15 @@ Luego, se muestra el resultado de la traducción de acción a pantallas. A conti
 
 ![Wireflow Mobile App - User Goal 2 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Inicio.png)
 
+- *User Goal 3:* Usuario desea postular a un turno disponible
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 3](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal3.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para postular a un turno disponible que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando un turno disponible, luego, accediendo al detalle del turno y, finalmente, postular al turno.
+
+![Wireflow Mobile App - User Goal 3 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-AplicaciónTrabajo.png)
+
 
 ##### 3.1.4.3. Mobile Applications Mock-ups
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
