@@ -282,6 +282,18 @@ Luego, se muestra el resultado de la traducción de acción a pantallas. A conti
 
 ![Wireflow Mobile App - User Goal 6 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-MisTurnos.png)
 
+
+- *User Goal 7:* Usuario desea visualizar sus notificaciones relacionadas con sus turnos, aplicaciones y mensajes
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 7](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal7.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para visualizar sus notificaciones relacionadas con sus turnos, aplicaciones y mensajes que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Notificaciones" con la campanita en la barra de navegación, luego, accediendo a la pantalla de notificaciones y, finalmente, visualizando sus notificaciones.
+
+![Wireflow Mobile App - User Goal 7 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Notificaciones.png)
+
+
 ##### 3.1.4.3. Mobile Applications Mock-ups
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
