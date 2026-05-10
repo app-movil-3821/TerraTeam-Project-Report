@@ -367,4 +367,12 @@ En esta sección se presentan los mockups de la sección de ayuda, que incluyen 
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 Un user flow o trayectoria del usuario es un diagrama que consiste en mostrar el trayecto del usuario representado por un diagrama de flujo e indica el camino que debe seguir el usuario para cumplir con un objetivo en específico en la aplicación. Además, el user flow debe determinar estos pasos para completar una experiencia digital satisfactoria para el usuario.
 
+- **User Goal 1:** Usuario desea registrarse en la aplicación
+
+Happy Path: 
+
+En esta ruta esperada, el flujo concentra el proceso de registro de cuenta y configuración inicial en la aplicación. El usuario es recibido por la pantalla principal de bienvenida, elige registrarse y completa exitosamente toda la información solicitada, incluyendo la validación por SMS y la configuración de sus habilidades. Finalmente, al crearse la cuenta y el perfil, el usuario puede continuar con el uso de la aplicación para buscar turnos.
+
+![Goal 1 - Happy Path](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsUserFlowDiagrams/Goal1-HappyPath.png)
+
 ##### 3.1.4.5. Mobile Applications Prototyping
