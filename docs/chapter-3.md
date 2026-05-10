@@ -352,6 +352,12 @@ En esta sección se presentan los mockups de la sección de gestión de turnos, 
 
 En esta sección se presentan los mockups de la sección de notificaciones, que incluyen las pantallas de lista de notificaciones. Estas pantallas están diseñadas para mostrar las notificaciones relacionadas con los turnos, aplicaciones y mensajes del usuario de manera clara y organizada, permitiendo a los usuarios mantenerse informados sobre sus actividades en la aplicación.
 
+**Sección Resumen de turno**
+
+![Sección Resumen de turno](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Summary-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de resumen de turno, que incluyen las pantallas de resumen de un turno específico. Estas pantallas están diseñadas para mostrar los detalles del turno, como el tipo de trabajo, ubicación, horario, pago y estado del turno, con opciones para calificar el servicio y dejar comentarios.
+
 
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
