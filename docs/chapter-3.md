@@ -358,6 +358,11 @@ En esta sección se presentan los mockups de la sección de notificaciones, que 
 
 En esta sección se presentan los mockups de la sección de resumen de turno, que incluyen las pantallas de resumen de un turno específico. Estas pantallas están diseñadas para mostrar los detalles del turno, como el tipo de trabajo, ubicación, horario, pago y estado del turno, con opciones para calificar el servicio y dejar comentarios.
 
+**Sección Ayuda**
+
+![Sección Ayuda](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Help-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de ayuda, que incluyen las pantallas de selección de tipo de problema, descripción del problema, subida de evidencia y acceso a preguntas frecuentes, contacto de soporte y guías de uso. Estas pantallas están diseñadas para facilitar a los usuarios la resolución de problemas y el acceso a recursos de ayuda de manera eficiente.
 
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
