@@ -365,4 +365,6 @@ En esta sección se presentan los mockups de la sección de resumen de turno, qu
 En esta sección se presentan los mockups de la sección de ayuda, que incluyen las pantallas de selección de tipo de problema, descripción del problema, subida de evidencia y acceso a preguntas frecuentes, contacto de soporte y guías de uso. Estas pantallas están diseñadas para facilitar a los usuarios la resolución de problemas y el acceso a recursos de ayuda de manera eficiente.
 
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
+Un user flow o trayectoria del usuario es un diagrama que consiste en mostrar el trayecto del usuario representado por un diagrama de flujo e indica el camino que debe seguir el usuario para cumplir con un objetivo en específico en la aplicación. Además, el user flow debe determinar estos pasos para completar una experiencia digital satisfactoria para el usuario.
+
 ##### 3.1.4.5. Mobile Applications Prototyping
