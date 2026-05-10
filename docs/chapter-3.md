@@ -314,5 +314,13 @@ Luego, se muestra el resultado de la traducción de acción a pantallas. A conti
 ![Wireflow Mobile App - User Goal 9 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Ayuda.png)
 
 ##### 3.1.4.3. Mobile Applications Mock-ups
+En esta sección se presentarán los mockups de la aplicación móvil, los cuales son bosquejos de media o alta fidelidad sobre las funcionalidades principales de nuestra solución. Para el diseño de los mockups, se partió de los wireframes realizados previamente.
+
+*Sección autenticación*
+
+![Sección autenticación](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Autentificacion-Mockup.png)
+
+En esta sección se presentan los mockups de la autenticación, que incluyen las pantallas de inicio de sesión, registro, verificación de número de teléfono, personalización de perfil y habilidades. Estas pantallas están diseñadas con la paleta de colores y tipografía definida en las guías de estilo para mantener una apariencia visual consistente.
+
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
