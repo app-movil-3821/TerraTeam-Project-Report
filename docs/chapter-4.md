@@ -171,4 +171,207 @@ Recepción de alertas críticas (nuevas vacantes o aplicaciones) y acceso al cen
 
 
 #### 4.3.2. Registro de Entrevistas
+
+En esta sección se muestran los registros de las entrevistas de validación. Cada una de ellas contiene informacion correspondiente a los elementos incluidos, como información acerca del entrevistador, entrevistado, duración y resumen.
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rol</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div align="center"><img src="../assets/img/Chapter-2/Entrevistas/Segmento1/entrevista1.png" alt="Entrevista1"></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310949_upc_edu_pe/IQDBy6PhE1SASLRnUXdWusLzAcy9htEhP8k0nfKs5mYJeno?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=miCP8i" target="_blank">
+    Videos entrevistas
+  </a>
+</td>
+  </tr>
+    <td>Timing donde inicia la entrevista<br></td>
+    <td>00:09 min</td>
+  </tr>
+  <tr>
+    <td>Duración de la entrevista<br></td>
+    <td>03:26 min</td>
+  <tr>
+    <td>Resumen</td>
+    <td> 
+</td>
+  </tr>
+</tbody>
+</table>
+
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rol</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div align="center"><img src="../assets/img/Chapter-2/Entrevistas/Segmento1/entrevista2.png" alt="Entrevista2"></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310949_upc_edu_pe/IQDBy6PhE1SASLRnUXdWusLzAcy9htEhP8k0nfKs5mYJeno?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=miCP8i" target="_blank">
+    Videos entrevistas
+     </a>
+    </td>
+  </tr>
+    <td>Timing donde inicia la entrevista<br></td>
+    <td>03:32 min</td>
+  </tr>
+  <tr>
+    <td>Duración de la entrevista<br></td>
+    <td>05:37 min</td>
+  <tr>
+    <td>Resumen</td>
+    <td> 
+</td>
+  </tr>
+</tbody>
+</table>
+
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Eirthon</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Reyes</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>25</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rol</td>
+    <td>Subgerente</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div align="center"><img src="../assets/img/Chapter-2/Entrevistas/Segmento1/entrevista3.png" alt="Entrevista3"></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310949_upc_edu_pe/IQDBy6PhE1SASLRnUXdWusLzAcy9htEhP8k0nfKs5mYJeno?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=miCP8i" target="_blank">
+    Videos entrevistas
+     </a>
+    </td>
+  </tr>
+    <td>Timing donde inicia la entrevista<br></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Duración de la entrevista<br></td>
+    <td></td>
+  <tr>
+    <td>Resumen</td>
+    <td> 
+</td>
+  </tr>
+</tbody>
+</table>
+
 #### 4.3.3. Evaluaciones según Heurísticas
+
+**SITE o APP A EVALUAR:**
+ChambaYa
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+Registro de usuario nuevo basado en etiquetas de habilidades.
+
+Personalización del perfil (descripción y experiencia).
+
+1. Búsqueda de ofertas de trabajo mediante mapa con geolocalización.
+2. Postulación a un turno laboral de emergencia.
+3. Publicación de una vacante urgente (flujo del contratante).
+4. Uso del chat interno para coordinación.
+5. Visualización y gestión de turnos activos/pasados.
+6. Envío de reporte de problemas en la sección de ayuda.
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1. Pasarela de pagos y facturación electrónica.
+2. Sistema de referidos o bonos por cumplimiento.
+3. Verificación de antecedentes penales automatizada.
+4. Configuración avanzada de privacidad y datos.
+
+**ESCALA DE SEVERIDAD:**
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
+| Nivel | Descripción |
+|-----|-----------|
+| 1 | Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+| # | Problema | Escala de severidad | Heurística/Principio violado(a) |
+|--|-------|-------------------|-------------------------------|
+| 1 | |  |  |
+| 2 | |  | |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 | |  | |
+
+
+**DESCRIPCIÓN DE PROBLEMAS:**
