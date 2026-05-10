@@ -340,5 +340,12 @@ En esta sección se presentan los mockups de la sección de chat, que incluyen l
 
 En esta sección se presentan los mockups de la sección de perfil, que incluyen las pantallas de vista de perfil y edición de perfil. Estas pantallas están diseñadas para mostrar la información personal, habilidades y experiencia laboral del usuario de manera clara y organizada, con opciones para editar y actualizar esta información fácilmente.
 
+**Sección Gestión de Turnos**
+
+![Sección Gestión de Turnos](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Shifts-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de gestión de turnos, que incluyen las pantallas de vista de turnos activos, pasados y futuros. Estas pantallas están diseñadas para permitir a los usuarios gestionar sus turnos de manera eficiente, con opciones para cancelar turnos activos y visualizar detalles de cada turno.
+
+
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
