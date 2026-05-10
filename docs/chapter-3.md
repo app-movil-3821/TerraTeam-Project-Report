@@ -322,5 +322,12 @@ En esta sección se presentarán los mockups de la aplicación móvil, los cuale
 
 En esta sección se presentan los mockups de la autenticación, que incluyen las pantallas de inicio de sesión, registro, verificación de número de teléfono, personalización de perfil y habilidades. Estas pantallas están diseñadas con la paleta de colores y tipografía definida en las guías de estilo para mantener una apariencia visual consistente.
 
+*Sección aplicación de trabajos*
+
+![Sección Aplicación de trabajos](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Apply-Mockup.png)
+
+En esta sección se presentan los mockups de la aplicación de trabajos, que incluyen las pantallas de inicio con mapa y lista de trabajos disponibles, detalle del trabajo, aplicación al trabajo y confirmación de aplicación. Estas pantallas están diseñadas para ser intuitivas y fáciles de usar, con un enfoque en la claridad de la información y la facilidad de navegación.
+
+
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
