@@ -334,5 +334,11 @@ En esta sección se presentan los mockups de la aplicación de trabajos, que inc
 
 En esta sección se presentan los mockups de la sección de chat, que incluyen las pantallas de lista de chats y pantalla de chat individual. Estas pantallas están diseñadas para facilitar la comunicación entre usuarios, con un diseño limpio y funcional que permite a los usuarios enviar mensajes y coordinar detalles del trabajo de manera eficiente.
 
+**Sección Ver Perfil**
+
+![Sección Ver Perfil](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/VerPerfil-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de perfil, que incluyen las pantallas de vista de perfil y edición de perfil. Estas pantallas están diseñadas para mostrar la información personal, habilidades y experiencia laboral del usuario de manera clara y organizada, con opciones para editar y actualizar esta información fácilmente.
+
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
