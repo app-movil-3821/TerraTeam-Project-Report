@@ -346,6 +346,12 @@ En esta sección se presentan los mockups de la sección de perfil, que incluyen
 
 En esta sección se presentan los mockups de la sección de gestión de turnos, que incluyen las pantallas de vista de turnos activos, pasados y futuros. Estas pantallas están diseñadas para permitir a los usuarios gestionar sus turnos de manera eficiente, con opciones para cancelar turnos activos y visualizar detalles de cada turno.
 
+**Sección Notificaciones**
+
+![Sección Notificaciones](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Notification-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de notificaciones, que incluyen las pantallas de lista de notificaciones. Estas pantallas están diseñadas para mostrar las notificaciones relacionadas con los turnos, aplicaciones y mensajes del usuario de manera clara y organizada, permitiendo a los usuarios mantenerse informados sobre sus actividades en la aplicación.
+
 
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 ##### 3.1.4.5. Mobile Applications Prototyping
