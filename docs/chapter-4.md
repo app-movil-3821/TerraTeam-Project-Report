@@ -335,8 +335,10 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
 
 #### 4.3.3. Evaluaciones según Heurísticas
 
+
 **SITE o APP A EVALUAR:**
 ChambaYa
+
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
 Registro de usuario nuevo basado en etiquetas de habilidades.
 
@@ -355,6 +357,8 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 3. Verificación de antecedentes penales automatizada.
 4. Configuración avanzada de privacidad y datos.
 
+
+
 **ESCALA DE SEVERIDAD:**
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | Nivel | Descripción |
@@ -364,14 +368,50 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
 | 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
+
+
 **TABLA RESUMEN:**
 | # | Problema | Escala de severidad | Heurística/Principio violado(a) |
 |--|-------|-------------------|-------------------------------|
-| 1 | |  |  |
-| 2 | |  | |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 | |  | |
+| 1 | Sobrecarga de información y falta de jerarquía visual  | 2 | Usabilidad - Diseño estético y minimalista. |
+| 2 | Ausencia de controles de navegación de retorno (Back button) | 3 | Usabilidad - Libertad y control del usuario |
+| 3 | Iconografía ambigua y falta de estándares en la barra de navegación  | 2 | Usabilidad - Consistencia y estándares. |
+
 
 
 **DESCRIPCIÓN DE PROBLEMAS:**
+
+PROBLEMA 1: Sobrecarga de información y falta de jerarquía visual
+
+Severidad: 2
+
+Heurística violada: Usabilidad - Diseño estético y minimalista.
+
+Problema: Al interactuar con la pantalla, el usuario manifestó sentirse abrumado por la cantidad de elementos que aparecen de golpe al entrar al apartado. Indicó que la información no está categorizada, lo que dificulta una lectura rápida y genera confusión visual.
+
+Recomendación: Aplicar una mejor arquitectura de información separando el contenido en áreas o secciones claramente diferenciadas. Utilizar el principio de "progresividad" para no mostrar todo el contenido en una sola vista.
+
+---
+
+
+PROBLEMA 2: Ausencia de controles de navegación de retorno (Back button)
+
+Severidad: 3
+
+Heurística violada: Usabilidad - Libertad y control del usuario.
+
+Problema: En el flujo evaluado, el usuario notó que no existe una flecha de retroceso ni una opción clara para "ir hacia atrás". Esto genera una sensación de encierro en la pantalla actual, obligando al usuario a reiniciar la app o usar botones externos del sistema que podrían romper el flujo.
+
+Recomendación: Incluir una flecha de retorno visible en la esquina superior izquierda (TopAppBar) que permita al usuario regresar a la pantalla anterior de forma intuitiva.
+
+---
+
+PROBLEMA 3: Iconografía ambigua y falta de estándares en la barra de navegación
+
+Severidad: 2
+
+Heurística violada: Usabilidad - Consistencia y estándares.
+
+Problema: El usuario identificó correctamente los iconos de Home, Chat y Perfil, pero reportó que el icono de "Shifts" (Turnos) en la barra inferior es demasiado complejo y no se entiende por sí solo. Mencionó que el icono intenta abarcar demasiadas funciones, lo que genera incertidumbre sobre qué se encontrará al hacer clic.
+
+Recomendación: Rediseñar el icono de "Shifts" utilizando una metáfora visual más simple y estándar (como un calendario o reloj de turno). Alternativamente, separar las funciones en iconos más específicos para evitar la ambigüedad.
