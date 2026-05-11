@@ -185,41 +185,38 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td></td>
+    <td>Jeremy</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td> </td>
+    <td>Parra </td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td></td>
+    <td>23</td>
   </tr>
-  <tr>
-    <td>Rol</td>
-    <td></td>
-  </tr>
+ 
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="../assets/img/Chapter-2/Entrevistas/Segmento1/entrevista1.png" alt="Entrevista1"></td>
+    <td><div align="center"><img src="../assets/img/chapter-4/entrevista1.png" alt="Entrevista1"></td>
   </tr>
   <tr>
     <td>Link</td>
     <td>
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310949_upc_edu_pe/IQDBy6PhE1SASLRnUXdWusLzAcy9htEhP8k0nfKs5mYJeno?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=miCP8i" target="_blank">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221383_upc_edu_pe/IQDksrENwL3wTLRQoxOlBtDFAYArj3d1noK5p6hLne6LxSo?e=Smw6ML&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7fX0%3D" target="_blank">
     Videos entrevistas
   </a>
 </td>
   </tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td>00:09 min</td>
+    <td>00:00 min</td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td>03:26 min</td>
+    <td>11:11 min</td>
   <tr>
     <td>Resumen</td>
-    <td> 
+    <td> La entrevista se realizó a Jeremy Parra (23 años), para validar y dar a conocer los flujos de nuestra propuesta, flujos como el registro, el de la aplicacion al trabajo, chat, gestión de turnos y notificaciones. El entrevistado mencionó que la información mostrada en el flujo de la aplicacion a un trabajo es suficiente para elegir postular, destacó la funcionalidad de la ubicación, que era útil para dirigirnos al lugar y ubcarnos de manera rápida. También destacó el apartado de chat, ya que la comunicación era directa con el empleador. También mencionó, que es muy necesario que la aplicación te notifique acerca de turnos nuevos cercanos a tu ubicación. Asimismo, destacó el apartado de turnos, que era información importante que se debería mostrar para que se lleve un registro o control de los trabajos completados.
 </td>
   </tr>
 </tbody>
@@ -237,41 +234,37 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td></td>
+    <td>Eirthon</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td></td>
+    <td>Reyes</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Rol</td>
-    <td></td>
+    <td>25</td>
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="../assets/img/Chapter-2/Entrevistas/Segmento1/entrevista2.png" alt="Entrevista2"></td>
+    <td><div align="center"><img src="../assets/img/chapter-4/entrevista2.png" alt="Entrevista2"></td>
   </tr>
   <tr>
     <td>Link</td>
     <td>
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310949_upc_edu_pe/IQDBy6PhE1SASLRnUXdWusLzAcy9htEhP8k0nfKs5mYJeno?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=miCP8i" target="_blank">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221383_upc_edu_pe/IQDksrENwL3wTLRQoxOlBtDFAYArj3d1noK5p6hLne6LxSo?e=NwmZUg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6NjcyLjc3fX0%3D" target="_blank">
     Videos entrevistas
      </a>
     </td>
   </tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td>03:32 min</td>
+    <td>11:12 min</td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td>05:37 min</td>
+    <td>08:26 min</td>
   <tr>
     <td>Resumen</td>
-    <td> 
+    <td> Se realizó la entrevista de validacion a Eirthon Reyes (25 años), con el objetivo de presentar y validar los flujos de gestion de turnos, perfil de trabajador, chat y notificaciones. Mencionó que al ingresar al apartado de gestión de turnos se sintió un poco abrumado por la cantidad de elementos que aparecen. lo que le dificultaba una lectura rápida, por lo que sería útil ajustar el contenido para mejorar la visualización. Destacó que le generaba confianza el perfil del trabajador sin necesidad de cv, ya que ha tenido que estar registrado para poder postular y trabajar en la app, además de la visualización de sus habilidades.También notó que no existe una flecha de retroceso ni una opción clara para "ir hacia atrás" en el apartado de mis turnos, por lo que sería recomendable una flecha de retorno visible en la esquina, que permita regresar a la pantalla anterior de forma intuitiva. Asimismo, identificó que los iconos de Home, Chat y Perfil eran intuitivos, pero que el icono de "Shifts" (Turnos) en la barra inferior no se entendía tan bien por sí solo, ya que intentaba abarcar demasiadas funciones, lo que genera incertidumbre sobre qué se encontrará al hacer clic, a lo que recomendó separar las funciones en iconos más específicos para evitar la ambigüedad.
 </td>
   </tr>
 </tbody>
@@ -289,42 +282,33 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td>Eirthon</td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td>Reyes</td>
+    <td></td>
     <td> </td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td>25</td>
     <td></td>
-  </tr>
-  <tr>
-    <td>Rol</td>
-    <td>Subgerente</td>
     <td></td>
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="../assets/img/Chapter-2/Entrevistas/Segmento1/entrevista3.png" alt="Entrevista3"></td>
+    <td><div align="center"><img src="../assets/img/chapter-2/entrevista3.png" alt="Entrevista3"></td>
   </tr>
   <tr>
     <td>Link</td>
-    <td>
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310949_upc_edu_pe/IQDBy6PhE1SASLRnUXdWusLzAcy9htEhP8k0nfKs5mYJeno?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=miCP8i" target="_blank">
-    Videos entrevistas
-     </a>
-    </td>
+  
   </tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td></td>
+    <td> </td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td></td>
+    <td> </td>
   <tr>
     <td>Resumen</td>
     <td> 
