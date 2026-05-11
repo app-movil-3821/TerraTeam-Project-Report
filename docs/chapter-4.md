@@ -217,6 +217,75 @@ A continuación, se muestran las capturas de pantalla y enlaces de acceso a cada
 
 Se adjuntan los enlaces para acceder al sitio web estático desplegado y al vídeo de demostración. El vídeo muestra el funcionamiento de cada sección del sitio web y su visualización en navegador web.
 
+Sitio web estático desplegado: https://app-movil-3821.github.io/LandingPageChambaYa/
+Vídeo de ejecución: StockSip Landing Page - Sprint 1
+
+
+Home:
+
+![homelanding.png](../assets/img/chapter-4/LandingPageUIDesign/homelanding.png)
+
+Services:
+
+![serviceslanding.png](../assets/img/chapter-4/LandingPageUIDesign/serviceslanding.png)
+
+How it Works:
+
+![howitworkslanding.png](../assets/img/chapter-4/LandingPageUIDesign/howitworkslanding.png)
+
+Pricing:
+
+![pricinglanding.png](../assets/img/chapter-4/LandingPageUIDesign/pricinglanding.png)
+
+About us:
+
+![aboutuslanding.png](../assets/img/chapter-4/LandingPageUIDesign/aboutuslanding.png)
+
+Contact us:
+
+![contactlanding.png](../assets/img/chapter-4/LandingPageUIDesign/contactlanding.png)
+
+Footer:
+
+![footerlanding.png](../assets/img/chapter-4/LandingPageUIDesign/footerlanding.png)
+
+
+### Aplicación Android
+
+---
+
+Se adjuntan los enlaces para acceder a la aplicación móvil nativa desplegada y al vídeo de demostración. El vídeo muestra el funcionamiento de cada sección de la aplicación y su visualización en un dispositivo Android.
+
+![Active Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Active%20Shift.png)
+![Apply.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Apply.png)
+![Home Feed.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Home%20Feed.png)
+![Chat.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Chat.png)
+![Job Details.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Job%20Details.png)
+![login.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/login.png)
+![My Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/My%20Shift.png)
+![Profile View.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Profile%20View.png)
+![Register.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Register.png)
+![Shift Summary.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Shift%20Summary.png)
+![Skills.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Skills.png)
+![Start.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Start.png)
+
+### Backend Application
+
+Se adjuntan los enlaces para acceder a la API desplegada y al vídeo de demostración. El vídeo muestra el funcionamiento de los endpoints implementados y cómo interactúan con la aplicación móvil y la base de datos.
+
+Aplicación Backend desplegada: https://backend-chambaya-production.up.railway.app/swagger-ui/index.html#/
+Vídeo de ejecución de la Aplicación Backend: StockSip Backend - Sprint 1: 
+
+
+User Controller:
+
+![usercontrollerapi.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/usercontrollerapi.png)
+Job Controller:
+![jobcontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/jobcontroller.png)
+Enrollment Controller:
+![enrollmentscontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/enrollmentscontroller.png)
+Reviews Controller:
+![reviewcontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/reviewcontroller.png)
 
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
