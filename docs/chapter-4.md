@@ -129,12 +129,99 @@ En esta sección, se especifica la configuración realizada para el despliegue d
   ![DeployVerification.jpeg](../assets/img/chapter-4/DeployVerification.jpeg)
 
 #### 4.2.1. Sprint `1`
+
+En esta seccion se explican los procesos para el desarrollo de la solucion de software en el primer sprint. Se incluyen secciones de planeamiento, desarrollo, prueba y despliegue de las aplicaciones backend y movil para android nativo asi como para el sitio web de negocio.
+
+
 ##### 4.2.1.1. Sprint Planning `1`
+
+A continuación, se detalla, en la tabla siguiente, información sobre el planeamiento del primer sprint. En general, el objetivo de este sprint se centra en el desarrollo y despliegue de la primera versión del sitio web estático de StockSip, las primeras secciones funcionales de la aplicacion movil nativa y un gran avance en la plataforma API.
+
+
+| Sprint #                   | Sprint 1                                                                                                                                   |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------| 
+| Sprint planning Background | --                                                                                                                                         | 
+| Date                       | 2026/05/11                                                                                                                                 | 
+| Time                       | 5:00 pm                                                                                                                                    | 
+| Location                   | Reunion en meet                                                                                                                            | 
+| Prepared By                | Taipe Sangama Jorge Francisco                                                                                                              | 
+| Attendes                   | Taipe Sangama Jorge Francisco / Cordova Valdivia Sebastian / 	Janampa Gutierrez Jhoan D.  / Bautista, Jose Diego /  Espinoza Chavez Moises | 
+| Sprint Goal & User Stories |                                                                                                                                            | 
+| Sprint 1 Goal              |                                                                                                                                            | 
+| Sprint 1 Velocity          |                                                                                                                                            | 
+| Sums of Story Points       |                                                                                                                                            | 
+
+
+**Aspect Liders and Colaborators**
+
+En esta sección, se incluye la matriz de liderazgo y colaboración desarrollada para este sprint. Los principales aspectos que se toman en cuenta en este sprint se centran en cada las principales secciones que presenta la aplicacion. Para esto, hemos definido la siguiente tabla y se asigno un aspecto a cada miembro del equipo.
+
+| Team Member                    | GitHub Usernames | |
+|--------------------------------|------------------|-|
+| Cordova Valdivia Sebastian     | Sevas04          | |
+| Bautista Rivera Jose Diego     | Gogotes17        | |
+| Janampa Gutierrez Jhoan D.     | orraiAKBDFSK     | |
+| Taipe Sangama Jorge Francisco  | CamotinFurious   | |
+| Espinoza Chavez Moises         | MoisesECh        | |
+
+La letra "L" significa que la persona es lider de dicho aspecto y se encarga tanto de avanzar lo relacionado al aspecto como de revisar el avance de los colaboradores que pertenezcan a dicho aspecto y la letra "C" significa que la persona es colaboradora del aspecto y solo se encarga de dar avances a las funcionalidades relacionadas.
+
+
+
 ##### 4.2.1.2. Sprint Backlog `1`
+
+
+Proyecto en Enlace al tablero de Trello: [Link de TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)
+
+![Trello Sprint1.png](../assets/img/chapter-4/Trello%20Sprint1.png)
+
+A continuación, se presenta la tabla con las tareas necesarias para completar satisfactoriamente este primer sprint. Además, se asignó un miembro del equipo a cada tarea a desarrollar y el estado de cada tarea.
+
+
+
 ##### 4.2.1.3. Development Evidence for Sprint Review
+
+En esta sección, se describen los principales avances de implementación realizados en este primer sprint. Se tienen como principales avances la implementación del Backend, el desarrollo de la aplicación nativa para Android, y la creación del Landing Page.
+
+Cada miembro del equipo avanzó progresivamente en las diferentes áreas del proyecto: en el Backend se implementaron los endpoints principales y la lógica de negocio usando C# y ASP.NET Core; en la aplicación Android se desarrollaron las pantallas principales y la navegación entre secciones usando Kotlin y Jetpack Compose; y en el Landing Page se implementaron todas las secciones informativas respecto a los mockups en Figma.
+
+A continuación, se muestra una tabla que contiene la información sobre los commits realizados que contienen las funcionalidades implementadas para completar el primer sprint.
+
+| Repository | Branch | Commit Id | Commit Message | Commited on |
+|------------|--------|-----------|----------------|-------------|
+|            |        |           |                |             |
+|            |        |           |                |             |
+|            |        |           |                |             |
+|            |        |           |                |             |
+
+
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review
+
+En esta sección se explica y presenta el conjunto de Unit Tests, Integration Tests y Acceptance Tests automatizados implementados para los Web Services relacionados con los User Stories especificados en el Sprint.
+
+Para los Unit Tests se utilizó xUnit, verificando el comportamiento de las clases principales del backend y la lógica de negocio implementada en C#. Para los Acceptance Tests bajo el enfoque BDD, se elaboraron archivos .feature utilizando el lenguaje Gherkin, los cuales se relacionan directamente con los User Stories implementados.
+
+A continuación, se muestran tablas que incluyen la relación de tests diseñados, junto con los id de commits relacionados con los avances en Testing para este Sprint. Los Unit Tests y los .feature de Gherkin están ubicados en el repositorio del backend.
+
+Repositorio de Testing BDD: [Chamba Backend](https://github.com/app-movil-3821/Backend-ChambaYa)
+
 ##### 4.2.1.5. Execution Evidence for Sprint Review
+
+En esta sección, se presenta la evidencia de ejecución de los productos implementados en este sprint. Los logros incluyen el desarrollo y despliegue del Landing Page, la aplicación nativa para Android y la aplicación Backend, cada uno con funcionalidades clave relacionadas con la gestión de almacenes, productos, inventarios, alertas y guías de cuidado para licorerías.
+
+A continuación, se muestran las capturas de pantalla y enlaces de acceso a cada producto implementado. Estas evidencias reflejan el progreso realizado en el sprint y sirven como comprobante del trabajo completado.
+
+### Landing Page
+
+---
+
+Se adjuntan los enlaces para acceder al sitio web estático desplegado y al vídeo de demostración. El vídeo muestra el funcionamiento de cada sección del sitio web y su visualización en navegador web.
+
+
+
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
+
+
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review
 ##### 4.2.1.8. Team Collaboration Insights during Sprint
 
