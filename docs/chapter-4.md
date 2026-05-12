@@ -246,90 +246,211 @@ Repositorio de Testing: [Backend-ChambaYa](https://github.com/app-movil-3821/Bac
 |---|---|---|---|---|
 | Backend-ChambaYa | develop | 75b4d04 | chore: initialize Spring Boot backend project | 2026/05/06 |
 
-
 ##### 4.2.1.5. Execution Evidence for Sprint Review
 
 En esta sección se presenta la evidencia de ejecución de los productos implementados en este sprint. Los logros incluyen el desarrollo y despliegue del Landing Page, las pantallas principales de la aplicación Android y los endpoints del backend API desplegado en Railway.
 
 A continuación, se muestran las capturas de pantalla y enlaces de acceso a cada producto implementado. Estas evidencias reflejan el progreso realizado en el sprint y sirven como comprobante del trabajo completado.
+ 
+---
 
 ### Landing Page
 
----
-
-Se adjuntan los enlaces para acceder al sitio web estático desplegado y al vídeo de demostración. El vídeo muestra el funcionamiento de cada sección del sitio web y su visualización en navegador web.
-
 Sitio web estático desplegado: https://app-movil-3821.github.io/LandingPageChambaYa/
-Vídeo de ejecución: StockSip Landing Page - Sprint 1
 
+La Landing Page de ChambaYA presenta todas las secciones informativas del producto, incluyendo la propuesta de valor, servicios, cómo funciona, planes de precios, información del equipo y formulario de contacto.
 
-Home:
+**Home:**
+
+La sección principal presenta el hero de la landing page con el mensaje principal de ChambaYA y las llamadas a la acción para los dos segmentos objetivo: chambeadores y contratantes.
 
 ![homelanding.png](../assets/img/chapter-4/LandingPageUIDesign/homelanding.png)
+ 
+---
 
-Services:
+**Services:**
+
+Esta sección describe los servicios principales que ofrece la plataforma, destacando la conexión inmediata entre MYPEs y jóvenes trabajadores mediante geolocalización.
 
 ![serviceslanding.png](../assets/img/chapter-4/LandingPageUIDesign/serviceslanding.png)
+ 
+---
 
-How it Works:
+**How it Works:**
+
+Esta sección explica de forma visual y paso a paso el proceso de uso de ChambaYA, tanto para chambeadores como para contratantes.
 
 ![howitworkslanding.png](../assets/img/chapter-4/LandingPageUIDesign/howitworkslanding.png)
+ 
+---
 
-Pricing:
+**Pricing:**
+
+Esta sección presenta los planes de suscripción disponibles para los contratantes, con sus características y precios diferenciados.
 
 ![pricinglanding.png](../assets/img/chapter-4/LandingPageUIDesign/pricinglanding.png)
+ 
+---
 
-About us:
+**About Us:**
+
+Esta sección presenta al equipo detrás de ChambaYA, incluyendo la misión, visión y los integrantes del startup.
 
 ![aboutuslanding.png](../assets/img/chapter-4/LandingPageUIDesign/aboutuslanding.png)
+ 
+---
 
-Contact us:
+**Contact Us:**
+
+Esta sección incluye un formulario de contacto para que los usuarios interesados puedan comunicarse con el equipo de ChambaYA.
 
 ![contactlanding.png](../assets/img/chapter-4/LandingPageUIDesign/contactlanding.png)
+ 
+---
 
-Footer:
+**Footer:**
+
+El pie de página incluye los enlaces de navegación, redes sociales y la información legal del sitio web.
 
 ![footerlanding.png](../assets/img/chapter-4/LandingPageUIDesign/footerlanding.png)
-
+ 
+---
 
 ### Aplicación Android
 
+La aplicación móvil nativa para Android fue desarrollada con Kotlin y Jetpack Compose. A continuación se presentan las pantallas implementadas durante este sprint, organizadas según el flujo de usuario.
+
+**Start (Splash Screen):**
+
+Pantalla inicial de la aplicación que muestra el logo de ChambaYA al abrir la app, antes de redirigir al usuario a la pantalla de login o registro.
+
+![Start.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Start.png)
+ 
 ---
 
-Se adjuntan los enlaces para acceder a la aplicación móvil nativa desplegada y al vídeo de demostración. El vídeo muestra el funcionamiento de cada sección de la aplicación y su visualización en un dispositivo Android.
+**Login:**
+
+Pantalla de inicio de sesión donde el usuario ingresa su correo y contraseña para acceder a la plataforma. Incluye opción de registro para nuevos usuarios.
+
+![login.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/login.png)
+ 
+---
+
+**Register:**
+
+Pantalla de registro donde el nuevo usuario ingresa sus datos personales para crear una cuenta en ChambaYA, seleccionando si es chambeador o contratante.
+
+![Register.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Register.png)
+ 
+---
+
+**Skills:**
+
+Pantalla de configuración del perfil basado en habilidades. El chambeador selecciona mediante etiquetas (tags) las habilidades que puede ofrecer, eliminando la necesidad de un CV tradicional.
+
+![Skills.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Skills.png)
+ 
+---
+
+**Home Feed:**
+
+Pantalla principal del chambeador que muestra el listado de turnos disponibles cercanos a su ubicación, con información de pago, horario y distancia.
+
+![Home Feed.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Home%20Feed.png)
+ 
+---
+
+**Job Details:**
+
+Pantalla de detalle de un turno específico, mostrando la descripción completa del trabajo, ubicación en mapa, pago por hora y botón para aceptar el turno.
+
+![Job Details.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Job%20Details.png)
+ 
+---
+
+**Active Shift:**
+
+Pantalla que muestra el turno activo en progreso, con el tiempo transcurrido, información del negocio contratante y opciones para confirmar llegada o pedir ayuda.
 
 ![Active Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Active%20Shift.png)
+ 
+---
+
+**Apply:**
+
+Pantalla de confirmación de postulación a un turno, donde el chambeador revisa los detalles finales antes de confirmar su aplicación al trabajo.
+
 ![Apply.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Apply.png)
-![Home Feed.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Home%20Feed.png)
-![Chat.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Chat.png)
-![Job Details.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Job%20Details.png)
-![login.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/login.png)
-![My Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/My%20Shift.png)
-![Profile View.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Profile%20View.png)
-![Register.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Register.png)
+ 
+---
+
+**Shift Summary:**
+
+Pantalla de resumen al finalizar un turno, mostrando las ganancias del día y el formulario de calificación para el contratante mediante el sistema de reputación bidireccional.
+
 ![Shift Summary.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Shift%20Summary.png)
-![Skills.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Skills.png)
-![Start.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Start.png)
+ 
+---
 
-### Backend Application
+**My Shifts:**
 
-Se adjuntan los enlaces para acceder a la API desplegada y al vídeo de demostración. El vídeo muestra el funcionamiento de los endpoints implementados y cómo interactúan con la aplicación móvil y la base de datos.
+Pantalla con el historial de turnos del chambeador, mostrando los trabajos completados, pagos recibidos y el estado de cada turno.
+
+![My Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/My%20Shift.png)
+ 
+---
+
+**Chat:**
+
+Pantalla del chat interno temporal entre el chambeador y el contratante, habilitado únicamente cuando el turno ha sido aceptado para coordinar los detalles del trabajo.
+
+![Chat.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Chat.png)
+ 
+---
+
+**Profile View:**
+
+Pantalla de perfil del chambeador que muestra su reputación, habilidades registradas, historial de turnos completados y opciones de configuración de la cuenta.
+
+![Profile View.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Profile%20View.png)
+ 
+---
+
+### Backend API
 
 Aplicación Backend desplegada: https://backend-chambaya-production.up.railway.app/swagger-ui/index.html#/
-Vídeo de ejecución de la Aplicación Backend: StockSip Backend - Sprint 1: 
 
+El backend de ChambaYA fue desarrollado con Java y Spring Boot, desplegado en Railway con MongoDB Atlas como base de datos. A continuación se presentan los controllers implementados y documentados mediante Swagger UI.
 
-User Controller:
+**User Controller:**
+
+Controller que gestiona el registro, autenticación y consulta de usuarios de la plataforma, tanto chambeadores como contratantes.
 
 ![usercontrollerapi.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/usercontrollerapi.png)
-Job Controller:
+ 
+---
+
+**Job Controller:**
+
+Controller que gestiona la publicación, consulta y búsqueda de turnos disponibles, incluyendo el endpoint de trabajos cercanos por geolocalización.
+
 ![jobcontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/jobcontroller.png)
-Enrollment Controller:
+ 
+---
+
+**Enrollment Controller:**
+
+Controller que gestiona las postulaciones de los chambeadores a los turnos publicados, incluyendo la aceptación y rechazo de postulantes.
+
 ![enrollmentscontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/enrollmentscontroller.png)
-Reviews Controller:
+ 
+---
+
+**Reviews Controller:**
+
+Controller que gestiona el sistema de calificaciones y reseñas mutuas entre chambeadores y contratantes al finalizar cada turno.
+
 ![reviewcontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/reviewcontroller.png)
-
-
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
 
 En esta sección se presenta la documentación de los endpoints implementados en el backend de **ChambaYa** durante el Sprint Review. La evidencia permite identificar los servicios disponibles, el módulo al que pertenecen, el verbo HTTP utilizado, la sintaxis de consumo, los parámetros principales y el enlace de acceso a Swagger para su validación.
