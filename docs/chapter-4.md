@@ -206,40 +206,47 @@ A continuación, se presenta la tabla con las User Stories y tareas del Sprint 1
 
 ##### 4.2.1.3. Development Evidence for Sprint Review
 
-En esta sección, se describen los principales avances de implementación realizados en este primer sprint. Se tienen como principales avances la implementación del Backend, el desarrollo de la aplicación nativa para Android, y la creación del Landing Page.
+En esta sección se describen los principales avances de implementación realizados en este primer sprint. Se tienen como principales avances la implementación del Backend API con Spring Boot y MongoDB, el desarrollo de las pantallas principales de la aplicación móvil Android nativa con Kotlin y Jetpack Compose, y la creación y despliegue del Landing Page.
 
-Cada miembro del equipo avanzó progresivamente en las diferentes áreas del proyecto: en el Backend se implementaron los endpoints principales y la lógica de negocio usando C# y ASP.NET Core; en la aplicación Android se desarrollaron las pantallas principales y la navegación entre secciones usando Kotlin y Jetpack Compose; y en el Landing Page se implementaron todas las secciones informativas respecto a los mockups en Figma.
+Cada miembro del equipo avanzó en las diferentes áreas del proyecto: en el Backend se implementaron los endpoints principales usando Java y Spring Boot; en la aplicación Android se desarrollaron las pantallas principales y la navegación usando Kotlin y Jetpack Compose; y en el Landing Page se implementaron todas las secciones informativas.
 
-A continuación, se muestra una tabla que contiene la información sobre los commits realizados que contienen las funcionalidades implementadas para completar el primer sprint.
-
-|  Repository         | Branch | Commit Id | Commit Message                                                | Committed On |
-|---------------------|--------|-----------|---------------------------------------------------------------|---|
-| Backend-ChambaYa    | main   | -         | chore: initialize Spring Boot backend project                 | 2026/05/06 |
-| Backend-ChambaYa    | main   | -         | feat(iam): add user registration and authentication endpoints | 2026/05/07 |
-| Backend-ChambaYa    | main   | -         | feat(jobs): add job posting and listing endpoints             | 2026/05/07 |
-| Backend-ChambaYa    | main   | -         | feat(enrollments): add enrollment management endpoints        | 2026/05/08 |
-| Backend-ChambaYa    | main   | -         | feat(reviews): add reviews endpoints                          | 2026/05/08 |
-| ChambaPe-kotlin     | main   | -         | feat(auth): add login and register screens                    | 2026/05/07 |
-| ChambaPe-kotlin     | main   | -         | feat(home): add home feed and job listing screens             | 2026/05/08 |
-| ChambaPe-kotlin     | main   | -         | feat(profile): add skills and profile view screens            | 2026/05/08 |
-| ChambaPe-kotlin     | main   | -         | feat(shifts): add active shift and shift summary screens      | 2026/05/09 |
-| ChambaPe-kotlin     | main   | -         | feat(chat): add chat screen                                   | 2026/05/09 |
-| LandingPageChambaYa | main   | -         | feat: add complete landing page sections                      | 2026/05/10 |
-
+| Repository            | Branch          | Commit Id | Commit Message                                                           | Committed On |
+|-----------------------|-----------------|-----------|--------------------------------------------------------------------------|--------------|
+| LandingPageChambaYa   |  main           | b1b0664   |  Initial commit : Landing Page                                           | 2026/05/03   |
+| LandingPageChambaYa   | main            | afbb924   | Fix: deploy.yml                                                          | 2026/05/03   |
+| LandingPageChambaYa   | main            | 308dd34   | Second Deploy                                                            | 2026/05/07   |
+| ChambaYa-Kotlin       | feature/shift   | a66642e   | Merge remote-tracking branch 'origin/develop' into develop               | 2026/05/06   |
+| ChambaYa-Kotlin       | feature/shift   | f67f6a4   | feat: implement core auth and home feed screens with detailed UI layouts | 2026/05/06   |
+| ChambaYa-Kotlin       | feature/shift   | 749dd93   | feat: implement job details screen                                       | 2026/05/08   |
+| ChambaYa-Kotlin       | feature/shift   | 097865c   | feat: implement job details screen                                       | 2026/05/08   |
+| ChambaYa-Kotlin       | feature/shift   | 6592332   | feat: implement active shift screen                                      | 2026/05/08   |
+| ChambaYa-Kotlin       | feature/shift   | 3ecae78   | feat: connect active shift flow                                          | 2026/05/08   |
+| ChambaYa-Kotlin       | feature/shift   | d43abbb   | feat: implement core shift with detailed UI layouts                      | 2026/05/08   |
+| ChambaYa-Kotlin       | feature/chat    | 3dd6c9d   | feat: implement chat screen UI components                                | 2026/05/09   |
+| ChambaYa-Kotlin       | feature/profile | caa20d3   | feat: implement profile screen UI layout                                 | 2026/05/09   |
+| Backend-ChambaYa      | develop         | 75b4d04   | chore: redirect root path to Swagger UI                                  | 2026/05/08   |
+| Backend-ChambaYa      | develop         | aaf673e   | fix: use relative server URL for Swagger request                         | 2026/05/08   |
+| Backend-ChambaYa      | develop         | 8d6470f   | chore: configure environment variables for deployment                    | 2026/05/08   |
+| Backend-ChambaYa      | develop         | a78f4fd   | docs: add backend setup and API usage guide                              | 2026/05/08   |
+| Backend-ChambaYa      | develop         | acd11e8   | feat: add nearby jobs endpoint                                           | 2026/05/08   |
+| Backend-ChambaYa      | develop         | b811003   | feat: validate review creation rules                                     | 2026/05/08   |
+| Backend-ChambaYa      | develop         | 4c228a5   | feat: validate enrollment creation rules                                 | 2026/05/08   |
 
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review
 
-En esta sección se presenta el conjunto de pruebas implementadas para los Web Services relacionados con las User Stories del Sprint 1. Se utilizó **JUnit 5** con la anotación `@SpringBootTest` para las pruebas de integración del backend, verificando el comportamiento de los endpoints implementados.
+En esta sección se presenta el conjunto de pruebas implementadas durante el Sprint 1 para los Web Services del backend de ChambaYA. Para este primer sprint, se configuró la estructura base de pruebas utilizando **JUnit 5** (JUnit Jupiter) junto con la anotación `@SpringBootTest`, la cual permite verificar que el contexto de la aplicación Spring Boot se carga correctamente.
 
-Para los Acceptance Tests bajo el enfoque BDD, se elaboraron archivos `.feature` usando el lenguaje **Gherkin**, relacionados directamente con las User Stories implementadas en este sprint.
+El archivo `BackendApplicationTests.java` fue generado como parte de la inicialización del proyecto en Spring Initializr y contiene el test de integración base `contextLoads()`, que verifica que todos los beans y configuraciones del contexto de la aplicación se inicializan sin errores. Este test fue ejecutado exitosamente, confirmando que la configuración del proyecto, la conexión con MongoDB Atlas y las dependencias declaradas en el `pom.xml` son correctas.
+
+Para los siguientes sprints, se tiene planificado ampliar la suite de pruebas con Unit Tests para los servicios de cada Bounded Context (IAM, Jobs, Enrollments, Reviews) y Acceptance Tests bajo el enfoque BDD con archivos `.feature` en lenguaje Gherkin.
 
 Repositorio de Testing: [Backend-ChambaYa](https://github.com/app-movil-3821/Backend-ChambaYa)
 
 | Repository | Branch | Commit Id | Commit Message | Committed On |
 |---|---|---|---|---|
-| Backend-ChambaYa | main | - | test(iam): add unit tests for user registration | 2026/05/08 |
-| Backend-ChambaYa | main | - | test(jobs): add acceptance tests for job listing | 2026/05/09 |
-| Backend-ChambaYa | main | - | test(enrollments): add BDD feature files for enrollment | 2026/05/09 |
+| Backend-ChambaYa | develop | 75b4d04 | chore: initialize Spring Boot backend project | 2026/05/06 |
+
+
 ##### 4.2.1.5. Execution Evidence for Sprint Review
 
 En esta sección se presenta la evidencia de ejecución de los productos implementados en este sprint. Los logros incluyen el desarrollo y despliegue del Landing Page, las pantallas principales de la aplicación Android y los endpoints del backend API desplegado en Railway.
@@ -842,11 +849,11 @@ El proyecto se gestionó utilizando una organización en GitHub llamada **app-mo
 
 A continuación, se adjunta el gráfico con la cantidad de commits realizados por cada integrante durante este sprint para el desarrollo del Landing Page. Cada barra indica la cantidad de commits realizados, reflejando el progreso del equipo en el desarrollo de las diferentes secciones del sitio web.
 
-![landing-commits.png](../assets/img/chapter-4/TeamCollaboration/landing-commits.png)
+![toplanding.png](../assets/img/chapter-4/toplanding.png)
 
 También, se adjunta el gráfico del avance realizado por cada rama de funcionalidades en el Landing Page. En este gráfico se puede observar el flujo de desarrollo del sitio web estático, donde cada rama representa una sección específica implementada durante el sprint.
 
-![landing-network.png](../assets/img/chapter-4/TeamCollaboration/landing-network.png)
+![network-commit.png](../assets/img/chapter-4/network-commit.png)
 
 ---
 
@@ -856,11 +863,12 @@ También, se adjunta el gráfico del avance realizado por cada rama de funcional
 
 A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para el backend. El gráfico refleja el aporte de cada integrante en el avance de la primera versión del Backend API.
 
-![backend-commits.png](../assets/img/chapter-4/TeamCollaboration/backend-commits.png)
+![top-backend.png](../assets/img/chapter-4/top-backend.png)
 
 También, se adjunta el gráfico del avance por ramas en el repositorio del backend, donde cada rama representa una funcionalidad específica implementada durante el sprint, incluyendo los bounded contexts de IAM, Jobs, Enrollments y Reviews.
 
-![backend-network.png](../assets/img/chapter-4/TeamCollaboration/backend-network.png)
+![backend-network.png](../assets/img/chapter-4/backend-network.png)
+
 
 ---
 
@@ -874,11 +882,11 @@ También, se adjunta el gráfico del avance por ramas en el repositorio del back
 
 A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para la aplicación móvil Android. El gráfico refleja el aporte de cada integrante en el avance de la primera versión de la aplicación.
 
-![android-commits.png](../assets/img/chapter-4/TeamCollaboration/android-commits.png)
+![top-movil.png](../assets/img/chapter-4/top-movil.png)
 
 También, se adjunta el gráfico del avance por ramas en el repositorio de la aplicación Android, donde cada rama representa las pantallas y funcionalidades implementadas durante el sprint.
 
-![android-network.png](../assets/img/chapter-4/TeamCollaboration/android-network.png)
+![android-network.png](../assets/img/chapter-4/android-network.png)
 
 ---
 
