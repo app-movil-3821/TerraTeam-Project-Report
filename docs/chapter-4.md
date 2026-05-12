@@ -1084,7 +1084,7 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
   <tr>
     <td>Link</td>
     <td>
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221383_upc_edu_pe/IQDksrENwL3wTLRQoxOlBtDFAYArj3d1noK5p6hLne6LxSo?e=Smw6ML&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7fX0%3D" target="_blank">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221383_upc_edu_pe/IQDPU7cZ_kcfSZ4cIvH0LPlfAYKnvJRUfUfIfkdLbLjTaKM?e=2xxAAI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7fX0%3D" target="_blank">
     Videos entrevistas
   </a>
 </td>
@@ -1132,7 +1132,7 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
   <tr>
     <td>Link</td>
     <td>
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221383_upc_edu_pe/IQDksrENwL3wTLRQoxOlBtDFAYArj3d1noK5p6hLne6LxSo?e=NwmZUg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6NjcyLjc3fX0%3D" target="_blank">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221383_upc_edu_pe/IQDPU7cZ_kcfSZ4cIvH0LPlfAYKnvJRUfUfIfkdLbLjTaKM?e=VAqTcm&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6NjcyLjUxfX0%3D" target="_blank">
     Videos entrevistas
      </a>
     </td>
@@ -1163,36 +1163,37 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td></td>
-    <td></td>
+    <td>Italo</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td></td>
-    <td> </td>
+    <td>Sobrado</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td></td>
-    <td></td>
+    <td>21</td>
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="../assets/img/chapter-2/entrevista3.png" alt="Entrevista3"></td>
+    <td><div align="center"><img src="../assets/img/chapter-4/entrevista3.png" alt="Entrevista3"></td>
   </tr>
   <tr>
     <td>Link</td>
-  
+   <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221383_upc_edu_pe/IQDPU7cZ_kcfSZ4cIvH0LPlfAYKnvJRUfUfIfkdLbLjTaKM?e=7PJMnC&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MTE3OC43M319" target="_blank">
+    Videos entrevistas
+     </a>
+    </td>
   </tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td> </td>
+    <td> 19:38 min</td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td> </td>
+    <td> 9:02 min</td>
   <tr>
     <td>Resumen</td>
-    <td> 
+    <td> El entrevistado Italo Sobrado (21 años) destacó el registro rapido y accesible para los jovenes que quieran encontrar trabajos disponibles que no requieran cv ni tanta experiencia. Mencionó además que la información mostrada en el apartado de aplicación de trabajo resulta suficiente y necesaria, pero que para que esté mas completa necesitaría de reseñas por parte de los trabajadores para conocer mejor el trabajo y conocer al empleador desde el punto de vista de ellos. Por último mencionó que una opción de filtrar los lugares para  los trabajos disponibles o implementar inteligencia artifical en la parte de la búsqueda por mapa le ayudaria a elegir bajo mucho más rápido un trabajo, filtrando los trabajos disponibles cercanos.
 </td>
   </tr>
 </tbody>
