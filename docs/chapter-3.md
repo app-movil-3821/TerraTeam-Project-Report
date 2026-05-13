@@ -154,69 +154,225 @@ Para el desarrollo del Landing Page de ChambaYa, se realizaron bosquejos de alta
 ##### 3.1.4.1. Mobile Applications Wireframes
 En esta sección se presentarán los wireframes de la aplicación, los cuales son bosquejos de baja fidelidad sobre las funcionalidades principales de nuestra solución. Finalmente, se dividieron estos wireframes en ocho secciones.
 
-Sección registro e inicio de sesión
+**Sección registro e inicio de sesión**
 
-![Wireframe Mobile App - Registro e Inicio de Sesión](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-RegistroeIniciodeSesión.png)
+![Wireframe Mobile App - Registro e Inicio de Sesión](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-RegistroeIniciodeSesión.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando seis pantallas consecutivas. La primera pantalla muestra un formulario de inicio de sesión con campos para email y contraseña, junto con un botón de "Login" y un enlace para crear una cuenta. La segunda pantalla es el formulario de registro, que incluye campos para nombre completo, email, contraseña y número de teléfono, junto con un botón de "Sing Up". La tercera pantalla es la verificación de número de teléfono. La cuarta pantalla es el Login en caso de que ya se tenga una cuenta, te redirige a Iniciar Sesión. La quinta pantalla es personalizar tu perfil con descripción. Finalmente, la sexta pantalla sigues con la personalización de tus habilidades.
 
 ---
 
-Sección Aplicacion de trabajos
+**Sección Aplicacion de trabajos**
 
-![Wireframe Mobile App - Aplicación de Trabajos](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-AplicacionTrabajo.png)
+![Wireframe Mobile App - Aplicación de Trabajos](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-AplicacionTrabajo.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando cuatro pantallas consecutivas. La primera pantalla muestra la pantalla de inicio con un mapa y una barra de búsqueda en la parte superior también muestra una lista de trabajos disponibles. La segunda pantalla es el detalle del trabajo, que proporciona información más detallada sobre el trabajo seleccionado. La tercera pantalla es la aplicación al trabajo, donde el usuario puede postularse para el trabajo. Finalmente, la cuarta pantalla es la confirmación de aplicación, que muestra un mensaje de éxito después de postularse. 
 
 ---
 
-Sección Chat
+**Sección Chat**
 
-![Wireframe Mobile App - Chat](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-Chat.png)
+![Wireframe Mobile App - Chat](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-Chat.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera muestra la pantalla Home con un mapa y una barra de búsqueda en la parte superior, también muestra una lista de trabajos disponibles, al seleccionar "Imbox" en la barra de navegación te muestra la lista de chats. La segunda pantalla es la pantalla de chat, donde el usuario puede comunicarse con el contratante o chambeador para coordinar detalles del trabajo.
 
 ---
 
-Sección Perfil View
+**Sección Ver Perfil**
 
-![Wireframe Mobile App - Perfil View](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-ProfileView.png)
+![Wireframe Mobile App - Perfil View](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-ProfileView.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de Perfil, te dirige a dicha sección. La segunda pantalla es la vista de perfil del usuario, que incluye información personal, habilidades y experiencia laboral, además de la edición del perfil, donde el usuario puede actualizar su información personal, habilidades y experiencia laboral.
 
 ---
 
-Sección Gestión de Turnos
+**Sección Gestión de Turnos**
 
-![Wireframe Mobile App - Gestión de Turnos](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-MyShifts.png)
+![Wireframe Mobile App - Gestión de Turnos](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-MyShifts.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de "Turnos" en la barra de navegación, te dirige a dicha sección. La segunda pantalla es la vista de gestión de turnos, donde el usuario puede ver los turnos activos, pasados y futuros, además de la opción para cancelar un turno activo.
 
 ---
 
-Sección Notificaciones
+**Sección Notificaciones**
 
-![Wireframe Mobile App - Notificaciones](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-Notifications.png)
+![Wireframe Mobile App - Notificaciones](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-Notifications.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando dos pantallas consecutivas. La primera pantalla muestra la pantalla "Home" la cual al acceder al ícono de "Notificaciones" con la campanita, te dirige a dicha sección. La segunda pantalla es la vista de notificaciones, donde el usuario puede ver las notificaciones relacionadas con sus turnos, aplicaciones y mensajes.
 
 ---
 
-Sección Resumen de turno
+**Sección Resumen de turno**
 
-![Wireframe Mobile App - Resumen de Turno](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-SummaryShift.png)
+![Wireframe Mobile App - Resumen de Turno](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-SummaryShift.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando una pantalla. La pantalla muestra el resumen de un turno específico, incluyendo detalles como el tipo de trabajo, ubicación, horario, pago y estado del turno. Además, se incluyen opciones para calificar el servicio y un cajón de comentarios.
 
 ---
 
-Sección Ayuda
+**Sección Ayuda**
 
-![Wireframe Mobile App - Ayuda](/assets/img/Chapter-3/MobileApplicationWireframes/Wireframe-Help.png)
+![Wireframe Mobile App - Ayuda](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationWireframes/Wireframe-Help.png)
 
 Esta imagen presenta el flujo completo de usuario para el sistema ChambaYa, mostrando una pantalla. La pantalla es la vista de ayuda, donde el usuario puede seleccionar un tipo de problema presentado, una descripción, subir evidencia y puede acceder a preguntas frecuentes, contacto de soporte y guías de uso.
 
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+Un wireflow o flujo de pantalla es un diagrama donde se reúnen distintos wireframes realizados cuya finalidad es contar las metas del usuario con la aplicación y cómo las consiguen. Luego, los pasos para la creación de cada diagrama empiezan por la definición de un objetivo del usuario que desea cumplir. Luego, se define el flujo de tareas que se deben ser realizadas por el usuario en la aplicación para conseguir dicho objetivo. Y, finalmente, se traducen dichas tareas por pantallas y, también, se trazan decisiones en botones del wireframe.
+
+- **User Goal 1:** Usuario desea registrarse en la aplicación
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo:
+
+![Wireflow Mobile App - User Goal 1](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams//User-Goal1.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para registrar una cuenta en la aplicación que empieza en el momento en el que el usuario accede a la aplicación y continúa con el mismo usuario colocando inforamción requerida para crear una cuenta.
+
+![Wireflow Mobile App - User Goal 1 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Registro.png)
+
+
+- **User Goal 2:** Usuario desea iniciar sesión con su cuenta en la aplicación
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo:
+
+![Wireflow Mobile App - User Goal 2](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal2.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para iniciar sesión en la aplicación que empieza en el momento en el que el usuario accede a la aplicación y continúa con el mismo usuario colocando su email y contraseña para iniciar sesión.
+
+![Wireflow Mobile App - User Goal 2 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Inicio.png)
+
+- **User Goal 3:** Usuario desea postular a un turno disponible
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 3](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal3.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para postular a un turno disponible que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando un turno disponible, luego, accediendo al detalle del turno y, finalmente, postular al turno.
+
+![Wireflow Mobile App - User Goal 3 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-AplicaciónTrabajo.png)
+
+- **User Goal 4:** Usuario desea comunicarse con el contratante o chambeador para coordinar detalles del trabajo
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 4](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal4.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para comunicarse con el contratante o chambeador para coordinar detalles del trabajo que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Inbox" en la barra de navegación, luego, accediendo a la lista de chats y, finalmente, accediendo a un chat específico para comunicarse.
+
+![Wireflow Mobile App - User Goal 4 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Chat.png)
+
+
+- **User Goal 5:** Usuario desea modificar su perfil
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 5](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal5.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para modificar su perfil que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Perfil" en la barra de navegación, luego, accediendo a la pantalla de edición de perfil y, finalmente, guardando los cambios.
+
+![Wireflow Mobile App - User Goal 5 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-VerPerfil.png)
+
+- **User Goal 6:** Usuario desea gestionar sus turnos activos, pasados y futuros
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 6](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal6.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para gestionar sus turnos activos, pasados y futuros que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Turnos" en la barra de navegación, luego, accediendo a la pantalla de gestión de turnos y, finalmente, visualizando sus turnos activos, pasados y futuros.
+
+![Wireflow Mobile App - User Goal 6 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-MisTurnos.png)
+
+
+- **User Goal 7:** Usuario desea visualizar sus notificaciones relacionadas con sus turnos, aplicaciones y mensajes
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 7](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal7.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para visualizar sus notificaciones relacionadas con sus turnos, aplicaciones y mensajes que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Notificaciones" con la campanita en la barra de navegación, luego, accediendo a la pantalla de notificaciones y, finalmente, visualizando sus notificaciones.
+
+![Wireflow Mobile App - User Goal 7 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Notificaciones.png)
+
+- **User Goal 8:** Usuario desea visualizar el resumen de un turno
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 8](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal8.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para visualizar el resumen de un turno que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando un turno específico, luego, accediendo al detalle del turno y, finalmente, visualizando el resumen del turno.
+
+![Wireflow Mobile App - User Goal 8 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Resumen.png)
+
+- **User Goal 9:** Usuario desea acceder a la sección de ayuda para resolver un problema
+
+Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo
+
+![Wireflow Mobile App - User Goal 9](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal9.png)
+
+Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para acceder a la sección de ayuda para resolver un problema que empieza en el momento en el que el usuario accede a la pantalla de inicio y continúa con el mismo usuario seleccionando "Perfil" en la barra de navegación, luego, accediendo a la sección de ayuda y, finalmente, visualizando las opciones de ayuda disponibles.
+
+![Wireflow Mobile App - User Goal 9 - Wireflow](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/Wireflow-Ayuda.png)
+
 ##### 3.1.4.3. Mobile Applications Mock-ups
+En esta sección se presentarán los mockups de la aplicación móvil, los cuales son bosquejos de media o alta fidelidad sobre las funcionalidades principales de nuestra solución. Para el diseño de los mockups, se partió de los wireframes realizados previamente.
+
+**Sección autenticación**
+
+![Sección autenticación](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Autentificacion-Mockup.png)
+
+En esta sección se presentan los mockups de la autenticación, que incluyen las pantallas de inicio de sesión, registro, verificación de número de teléfono, personalización de perfil y habilidades. Estas pantallas están diseñadas con la paleta de colores y tipografía definida en las guías de estilo para mantener una apariencia visual consistente.
+
+**Sección aplicación de trabajos**
+
+![Sección Aplicación de trabajos](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Apply-Mockup.png)
+
+En esta sección se presentan los mockups de la aplicación de trabajos, que incluyen las pantallas de inicio con mapa y lista de trabajos disponibles, detalle del trabajo, aplicación al trabajo y confirmación de aplicación. Estas pantallas están diseñadas para ser intuitivas y fáciles de usar, con un enfoque en la claridad de la información y la facilidad de navegación.
+
+**Sección Chat**
+
+![Sección Chat](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Chat-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de chat, que incluyen las pantallas de lista de chats y pantalla de chat individual. Estas pantallas están diseñadas para facilitar la comunicación entre usuarios, con un diseño limpio y funcional que permite a los usuarios enviar mensajes y coordinar detalles del trabajo de manera eficiente.
+
+**Sección Ver Perfil**
+
+![Sección Ver Perfil](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/VerPerfil-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de perfil, que incluyen las pantallas de vista de perfil y edición de perfil. Estas pantallas están diseñadas para mostrar la información personal, habilidades y experiencia laboral del usuario de manera clara y organizada, con opciones para editar y actualizar esta información fácilmente.
+
+**Sección Gestión de Turnos**
+
+![Sección Gestión de Turnos](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Shifts-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de gestión de turnos, que incluyen las pantallas de vista de turnos activos, pasados y futuros. Estas pantallas están diseñadas para permitir a los usuarios gestionar sus turnos de manera eficiente, con opciones para cancelar turnos activos y visualizar detalles de cada turno.
+
+**Sección Notificaciones**
+
+![Sección Notificaciones](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Notification-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de notificaciones, que incluyen las pantallas de lista de notificaciones. Estas pantallas están diseñadas para mostrar las notificaciones relacionadas con los turnos, aplicaciones y mensajes del usuario de manera clara y organizada, permitiendo a los usuarios mantenerse informados sobre sus actividades en la aplicación.
+
+**Sección Resumen de turno**
+
+![Sección Resumen de turno](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Summary-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de resumen de turno, que incluyen las pantallas de resumen de un turno específico. Estas pantallas están diseñadas para mostrar los detalles del turno, como el tipo de trabajo, ubicación, horario, pago y estado del turno, con opciones para calificar el servicio y dejar comentarios.
+
+**Sección Ayuda**
+
+![Sección Ayuda](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsMock-ups/Help-Mockup.png)
+
+En esta sección se presentan los mockups de la sección de ayuda, que incluyen las pantallas de selección de tipo de problema, descripción del problema, subida de evidencia y acceso a preguntas frecuentes, contacto de soporte y guías de uso. Estas pantallas están diseñadas para facilitar a los usuarios la resolución de problemas y el acceso a recursos de ayuda de manera eficiente.
+
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
+Un user flow o trayectoria del usuario es un diagrama que consiste en mostrar el trayecto del usuario representado por un diagrama de flujo e indica el camino que debe seguir el usuario para cumplir con un objetivo en específico en la aplicación. Además, el user flow debe determinar estos pasos para completar una experiencia digital satisfactoria para el usuario.
+
+- **User Goal 1:** Usuario desea registrarse en la aplicación
+
+Happy Path: 
+
+En esta ruta esperada, el flujo concentra el proceso de registro de cuenta y configuración inicial en la aplicación. El usuario es recibido por la pantalla principal de bienvenida, elige registrarse y completa exitosamente toda la información solicitada, incluyendo la validación por SMS y la configuración de sus habilidades. Finalmente, al crearse la cuenta y el perfil, el usuario puede continuar con el uso de la aplicación para buscar turnos.
+
+![Goal 1 - Happy Path](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsUserFlowDiagrams/Goal1-HappyPath.png)
+
 ##### 3.1.4.5. Mobile Applications Prototyping
