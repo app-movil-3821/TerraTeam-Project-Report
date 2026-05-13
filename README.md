@@ -1,54 +1,109 @@
-# Universidad Peruana de Ciencias Aplicadas
 
 ![UPC Logo](assets/img/introduction/UPC.png)
 
-**Facultad de Ingeniería**
+# Universidad Peruana de Ciencias Aplicadas
+
 
 **Carrera de Ingeniería de Software**
 
 **Periodo:** 202610
 
+**Nombre del Curso:** Aplicaciones de Dispositivos Moviles 
+
 **NRC:** 3821
 
-**Nombre del profesor:** Jorge Luis Mayta Guillermo
+**Nombre del docente:** Jorge Luis Mayta Guillermo
 
-### "Informe de Trabajo Final"
+## "Informe de Trabajo Final"
 
 **Nombre del Startup:** TerraTeam
 
-**Nombre del Producto:** Chamba
+**Nombre del Producto:** ChambaYa
 
 **Integrantes:**
 
-| Código | Apellidos y Nombres |
-|--------|---------------------|
-| U202310949       | Bautista Rivera Jose Diego                    |
-|        |                     |
-|        |                     |
-|        |                     |
-|        |                     |
-|        |                     |
-|        |                     | 
+| Código     | Apellidos y Nombres           |
+|------------|-------------------------------|
+| u202310949 | Bautista Rivera Jose Diego    |
+| u202313458 | Taipe Sangama Jorge Francisco |
+| u202111041 | Cordova Valdivia Sebastian    |
+| u202221383 | Espinoza Chavez Moises        |
+| u202323319 | Janampa Gutierrez Jhoan D.    |
 
 ### Abril, 2026
 
 
-#  Project Report
-
----
 
 ##  Registro de Versiones del Informe
 
----
+| Version | Fecha    | Autor       | Descripcion        |
+|---------|----------|-------------|--------------------|
+| 1.0     | 23/04/25 | Jorge Taipe | Avance Entrega AV1 |
+| 2.0     | 13/05/26 | Jorge Taipe | Avance Entrega TB1 |
+
 
 ##  Project Report Collaboration Insights
 
----
+Link para acceder a la organización ChambaYA: https://github.com/app-movil-3821
+
+
+Repositorio del Project Report: https://github.com/app-movil-3821/TerraTeam-Project-Report
+
+Repositorio del proyecto de Kotlin: https://github.com/app-movil-3821/ChambaYa-Kotlin
+
+TB1 (Fecha de entrega): Reporte de la colaboración del proyecto
+
+
+Respecto del primer avance del informe del proyecto, cada miembro del equipo realizó un aporte en el
+desarrollo de las actividades para completar este informe. Algunas actividades incluyen reuniones
+colaborativas entre los 5 integrantes para llegar a un acuerdo mutuo sobre secciones como el diseño de Event
+Storming (flujos de matching e incidencias), identificación de Bounded Contexts (Diseño Estratégico y Táctico),
+diagrama de arquitectura C4, diagrama de clases, diagrama de base de datos, entre otros. A continuación, se
+describen resumidamente los aportes realizados por cada integrante:
+
+
+El integrante Jorge Taipeparticipó activamente en el proceso de Event Storming para la identificación y diseño
+de los Bounded Contexts (como el Application y Job Context). Además, se encargó del diseño de la
+arquitectura de software a nivel táctico usando Domain-Driven Design (DDD), definiendo las capas (Domain,
+Application, Infrastructure), y elaborando los diagramas a nivel de código (Clases y Base de Datos en
+PlantUML).
+
+
+El integrante Diego Bautista formó parte del proceso Lean UX al redactar el Problem Statement en el informe
+y los Hypotheses Statements. Además, realizó la descripción de los User Persona por cada segmento objetivo
+(Dueños de MYPEs y Jóvenes Estudiantes); la redacción de historias de usuario con criterios de aceptación; el
+diseño de mapas de impacto y ayudó en el proceso de diseño para el Event Storming.
+
+
+El integrante Sebastian Cordova realizó el Lean UX Canvas; analizó a la competencia directa/indirecta y
+describió estrategias. Además, ayudó a describir historias de usuario enfocadas en la urgencia de contratación.
+También, participó en las reuniones colaborativas para validar el Event Storming y el flujo de estados de las
+postulaciones.
+
+
+El integrante Jhoan Janampa se encargó del proceso de Needfinding para hallar las necesidades reales de
+nuestros segmentos objetivos respecto a los turnos de emergencia. Además, ayudó con la descripción de
+historias de usuario; formó parte de la reunión para diseñar la arquitectura del software (C4 Model) y definió
+las integraciones de infraestructura como Google Maps y Firebase.
+
+
+El integrante Moises ayudó en la toma de decisiones para la creación de las historias de usuario y flujos
+alternativos (Sad Paths). Además, formó parte del proceso de diseño de arquitectura del software,
+colaborando activamente en la revisión del diagrama de clases, los DTOs, y la estructura de las tablas del diagrama de base de datos relacional.
+
+![coommits.png](assets/img/chapter-1/coommits.png)
 
 ##  Contenido
 
 ### Tabla de Contenidos
-### Student Outcome *(ver Anexo A)*
+### Student Outcome
+| Criterio Especifico                                                   | Acciones Realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Comunica oralmente conefectividad a diferentes rangos de audiencia.   | **Jorge Taipe** <br/> <br/> **AV1:**<br/> <br/>  Participó activamente en el proceso de Event Storming para la identificación y diseño de los Bounded Contexts (como el Application y Job Context). Además, se encargó del diseño de la arquitectura de software a nivel táctico usando Domain-Driven Design (DDD), definiendo las capas(Domain, Application, Infrastructure), y elaborando los diagramas a nivel de código (Clases y Base de Datos en PlantUML). <br/> <br/> **Diego Bautista** <br/> <br/> **AV1:**<br/> <br/>  Formó parte del proceso Lean UX al redactar el Problem Statement en el informe y los Hypotheses Statements. Además, realizó la descripción de los User Persona por cada segmento objetivo (Dueños de MYPEs y Jóvenes Estudiantes); la redacción de historias de usuario  con criterios de aceptación; el diseño de mapas de impacto y ayudó en el proceso de diseño para el Event Storming.<br/> <br/>  **Jhoan Janampa** <br/> <br/> **AV1:**<br/> <br/>  Realizó el Lean UX Canvas; analizó a la competencia directa/indirecta y describió estrategias. Además, ayudó a describir historias de usuario enfocadas en la urgencia de contratación. También, participó en las reuniones colaborativas para validar el Event Storming y el flujo de estados de las postulaciones. Sebastian Cordova AV1: Se encargó del proceso de Needfinding para hallar las necesidades reales de nuestros segmentos objetivos respecto a los turnos de emergencia. Además, ayudó con la descripción de historias de usuario; formó parte de la reunión para diseñar la arquitectura del software (C4 Model) y definió las integraciones de infraestructura como Google Maps y Firebase.<br/> <br/>  **Moises Espinoza**  <br/> <br/> **AV1:** Ayudó en la toma de decisiones para la creación de las historias de usuario y flujos alternativos (Sad Paths). Además, formó parte del proceso de diseño de arquitectura del software, colaborando activamente en la revisión del diagrama de clases, los DTOs, y la estructura de las tablas del diagrama de base de datos relacional. <br/> <br/>  | Se concluye que la actualización constante en patrones de diseño y arquitecturas modernas es fundamental para construir un sistema escalable y resiliente. La adopción de estándares de la industria(como DDD y Clean Architecture) ha permitido aislar la complejidad del negocio de emparejamiento, demostrando que aplicar estos conceptos teóricos a la práctica mejora drásticamente la calidad técnica del entregable y eleva la competitividad del estudiante frente a los estándares actuales del mercado laboral.     |
+| Comunica por escrito con efectividad a diferentes rangos de audiencia |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Se concluye que el aprendizaje permanente es un pilar innegociable en la ingeniería de software. Las exigencias del proyecto demostraron que las tecnologías y metodologías de desarrollo están en constante evolución. Solo mediante la proactividad, la investigación continua y la disposición para adoptar nuevos paradigmas (como el modelado de Bounded Contexts), el profesional puede resolver problemas reales de negocio y ofrecer soluciones tecnológicas que sean innovadoras, seguras y perdurables en el tiempo. |
+|                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+
 ### Objetivos SMART
 
 ---
@@ -105,15 +160,58 @@
 ##### [2.5.3.3. Software Architecture Deployment Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2533-software-architecture-deployment-diagrams)
 
 ### [2.6. Tactical-Level Domain-Driven Design](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26-tactical-level-domain-driven-design)
-#### [2.6.x. Bounded Context: ](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26x-bounded-context)
-##### [2.6.x.1. Domain Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26x1-domain-layer)
-##### [2.6.x.2. Interface Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26x2-interface-layer)
-##### [2.6.x.3. Application Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26x3-application-layer)
-##### [2.6.x.4. Infrastructure Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26x4-infrastructure-layer)
-##### [2.6.x.5. Bounded Context Software Architecture Component Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26x5-bounded-context-software-architecture-component-level-diagrams)
-##### [2.6.x.6. Bounded Context Software Architecture Code Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26x6-bounded-context-software-architecture-code-level-diagrams)
-###### [2.6.x.6.1. Bounded Context Domain Layer Class Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26x61-bounded-context-domain-layer-class-diagrams)
-###### [2.6.x.6.2. Bounded Context Database Design Diagram](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26x62-bounded-context-database-design-diagram)
+
+#### [2.6.1. Bounded Context: IAM Context](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#261-bounded-context-iam-context)
+##### [2.6.1.1. Domain Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2611-domain-layer)
+##### [2.6.1.2. Interface Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2612-interface-layer)
+##### [2.6.1.3. Application Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2613-application-layer)
+##### [2.6.1.4. Infrastructure Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2614-infrastructure-layer)
+##### [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2615-bounded-context-software-architecture-component-level-diagrams)
+##### [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2616-bounded-context-software-architecture-code-level-diagrams)
+###### [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26161-bounded-context-domain-layer-class-diagrams)
+###### [2.6.1.6.2. Bounded Context Database Design Diagram](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26162-bounded-context-database-design-diagram)
+
+#### [2.6.2. Bounded Context: Application Context](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#262-bounded-context-application-context)
+##### [2.6.2.1. Domain Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2621-domain-layer)
+##### [2.6.2.2. Interface Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2622-interface-layer)
+##### [2.6.2.3. Application Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2623-application-layer)
+##### [2.6.2.4. Infrastructure Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2624-infrastructure-layer)
+##### [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2625-bounded-context-software-architecture-component-level-diagrams)
+##### [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2626-bounded-context-software-architecture-code-level-diagrams)
+###### [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26261-bounded-context-domain-layer-class-diagrams)
+###### [2.6.2.6.2. Bounded Context Database Design Diagram](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26262-bounded-context-database-design-diagram)
+
+#### [2.6.3. Bounded Context: Job Context](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#263-bounded-context-job-context)
+##### [2.6.3.1. Domain Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2631-domain-layer)
+##### [2.6.3.2. Interface Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2632-interface-layer)
+##### [2.6.3.3. Application Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2633-application-layer)
+##### [2.6.3.4. Infrastructure Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2634-infrastructure-layer)
+##### [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2635-bounded-context-software-architecture-component-level-diagrams)
+##### [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2636-bounded-context-software-architecture-code-level-diagrams)
+###### [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26361-bounded-context-domain-layer-class-diagrams)
+###### [2.6.3.6.2. Bounded Context Database Design Diagram](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26362-bounded-context-database-design-diagram)
+
+#### [2.6.4. Bounded Context: Communication Context](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#264-bounded-context-communication-context)
+##### [2.6.4.1. Domain Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2641-domain-layer)
+##### [2.6.4.2. Interface Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2642-interface-layer)
+##### [2.6.4.3. Application Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2643-application-layer)
+##### [2.6.4.4. Infrastructure Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2644-infrastructure-layer)
+##### [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2645-bounded-context-software-architecture-component-level-diagrams)
+##### [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2646-bounded-context-software-architecture-code-level-diagrams)
+###### [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26461-bounded-context-domain-layer-class-diagrams)
+###### [2.6.4.6.2. Bounded Context Database Design Diagram](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26462-bounded-context-database-design-diagram)
+
+#### [2.6.5. Bounded Context: Payment Context](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#265-bounded-context-payment-context)
+##### [2.6.5.1. Domain Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2651-domain-layer)
+##### [2.6.5.2. Interface Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2652-interface-layer)
+##### [2.6.5.3. Application Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2653-application-layer)
+##### [2.6.5.4. Infrastructure Layer](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2654-infrastructure-layer)
+##### [2.6.5.5. Bounded Context Software Architecture Component Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2655-bounded-context-software-architecture-component-level-diagrams)
+##### [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#2656-bounded-context-software-architecture-code-level-diagrams)
+###### [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26561-bounded-context-domain-layer-class-diagrams)
+###### [2.6.5.6.2. Bounded Context Database Design Diagram](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterII.md#26562-bounded-context-database-design-diagram)
+
+
 
 ---
 
