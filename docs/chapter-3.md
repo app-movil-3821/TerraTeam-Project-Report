@@ -412,3 +412,9 @@ Estas rutas alternas ocurren cuando el usuario intenta enviar una solicitud de s
 ![Goal 9 - Unhappy Path](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsUserFlowDiagrams/Goal9-UnhappyPath.png)
 
 ##### 3.1.4.5. Mobile Applications Prototyping
+
+En esta sección, se evidencian pruebas de uso del prototipo de la aplicación móvil. Además, se adjunta un video donde se usa el prototipo y las interacciones con el prototipo se basan en los User Flows descritos previamente.
+
+![Prototipo de la Aplicación Móvil](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/Prototyping/Prototying-Evidence.png)
+
+Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310949_upc_edu_pe/IQCqMxyLWYcJS5KotFc7yoapARlQUyF7V_El_QRwniG_rpA?e=HXuvdj&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
