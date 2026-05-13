@@ -18,7 +18,7 @@
 
 **Nombre del Startup:** TerraTeam
 
-**Nombre del Producto:** Chamba
+**Nombre del Producto:** ChambaYa
 
 **Integrantes:**
 
