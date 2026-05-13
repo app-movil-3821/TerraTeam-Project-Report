@@ -375,4 +375,11 @@ En esta ruta esperada, el flujo concentra el proceso de registro de cuenta y con
 
 ![Goal 1 - Happy Path](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsUserFlowDiagrams/Goal1-HappyPath.png)
 
+
+Unhappy Path:
+
+Estas rutas alternas toman en cuenta que el usuario ha colocado alguna información errónea que no pasó la verificación de seguridad, o que no completó uno o varios espacios requeridos para proceder con el registro y configuración.
+
+![Goal 1 - Unhappy Path](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsUserFlowDiagrams/Goal1-UnhappyPath.png)
+
 ##### 3.1.4.5. Mobile Applications Prototyping
