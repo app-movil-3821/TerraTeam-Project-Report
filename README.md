@@ -39,7 +39,7 @@
 | Version | Fecha    | Autor       | Descripcion        |
 |---------|----------|-------------|--------------------|
 | 1.0     | 23/04/25 | Jorge Taipe | Avance Entrega AV1 |
-| 2.0     |          |             |                    |
+| 2.0     | 13/05/26 | Jorge Taipe | Avance Entrega TB1 |
 
 
 ##  Project Report Collaboration Insights
@@ -48,6 +48,8 @@ Link para acceder a la organización ChambaYA: https://github.com/app-movil-3821
 
 
 Repositorio del Project Report: https://github.com/app-movil-3821/TerraTeam-Project-Report
+
+Repositorio del proyecto de Kotlin: https://github.com/app-movil-3821/ChambaYa-Kotlin
 
 TB1 (Fecha de entrega): Reporte de la colaboración del proyecto
 
