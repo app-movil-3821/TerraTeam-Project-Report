@@ -1220,8 +1220,7 @@ Personalización del perfil (descripción y experiencia).
 No están incluidas en esta versión de la evaluación las siguientes tareas:
 1. Pasarela de pagos y facturación electrónica.
 2. Sistema de referidos o bonos por cumplimiento.
-3. Verificación de antecedentes penales automatizada.
-4. Configuración avanzada de privacidad y datos.
+3. Configuración avanzada de privacidad y datos.
 
 
 
