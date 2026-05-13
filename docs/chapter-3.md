@@ -382,4 +382,20 @@ Estas rutas alternas toman en cuenta que el usuario ha colocado alguna informaci
 
 ![Goal 1 - Unhappy Path](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsUserFlowDiagrams/Goal1-UnhappyPath.png)
 
+
+- **User Goal 2:** Aplicación a un Turno
+
+Happy Path:
+
+En esta ruta esperada, el usuario ya autenticado explora la pantalla principal, encuentra un turno que se ajusta a sus preferencias y decide aplicar. Revisa los detalles del trabajo, la tarifa y la ubicación, y confirma su postulación obteniendo una respuesta exitosa por parte del sistema.
+
+![Goal 2 - Happy Path](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsUserFlowDiagrams/Goal2-HappyPath.png)
+
+Unhappy Path:
+
+Estas rutas alternas contemplan escenarios donde la aplicación al turno no puede concretarse, ya sea por problemas de conectividad, porque el turno caducó mientras el usuario leía los detalles, o porque el usuario no cumple con los requisitos del perfil.
+
+![Goal 2 - Unhappy Path](/assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsUserFlowDiagrams/Goal2-UnhappyPath.png)
+
+
 ##### 3.1.4.5. Mobile Applications Prototyping
