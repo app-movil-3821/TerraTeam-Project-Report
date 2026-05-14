@@ -91,7 +91,7 @@ El integrante Moises ayudó en la toma de decisiones para la creación de las hi
 alternativos (Sad Paths). Además, formó parte del proceso de diseño de arquitectura del software,
 colaborando activamente en la revisión del diagrama de clases, los DTOs, y la estructura de las tablas del diagrama de base de datos relacional.
 
-![coommits.png](assets/img/chapter-1/coommits.png)
+![coommits.png](assets/img/introduction/insights.png)
 
 
 
