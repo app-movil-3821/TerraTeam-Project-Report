@@ -1079,7 +1079,7 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
  
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="../assets/img/chapter-4/entrevista1.png" alt="Entrevista1"></td>
+    <td><div align="center"><img src="../assets/img/chapter-4/entrevista-validacion-1.png" alt="Entrevista1"></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -1127,7 +1127,7 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="../assets/img/chapter-4/entrevista2.png" alt="Entrevista2"></td>
+    <td><div align="center"><img src="../assets/img/chapter-4/entrevista-validacion-2.png" alt="Entrevista2"></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -1175,7 +1175,7 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="../assets/img/chapter-4/entrevista3.png" alt="Entrevista3"></td>
+    <td><div align="center"><img src="../assets/img/chapter-4/entrevista-validacion-3.png" alt="Entrevista3"></td>
   </tr>
   <tr>
     <td>Link</td>
