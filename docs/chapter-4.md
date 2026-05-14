@@ -1,3 +1,5 @@
+<div style="page-break-before: always;"></div>
+
 #### 4.1.4. Software Deployment Configuration
 
 En esta sección, se especifica la configuración realizada para el despliegue de los productos de software de ChambaYA. Se utilizó **GitHub Pages** para el Landing Page, **Railway** para el Backend API y **MongoDB Atlas** para la base de datos NoSQL.
