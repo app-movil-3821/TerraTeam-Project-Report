@@ -702,13 +702,13 @@ El Empathy Mapping ayuda a entender de manera más profunda a nuestro User Perso
 
 En esta primera imagen que se muestra a continuación, se visualiza el empathy map del primer user persona. En esta misma, se desea detallar lo que el usuario siente, dice, piensa y hace al momento de enfrentar la necesidad de cubrir un turno de manera urgente. Además, se identifican los dolores que experimenta al buscar personal de forma tradicional y las metas que busca cumplir al utilizar una solución digital eficiente.
 
-![Empathy Map Jimena Torres](../assets/img/Chapter-2/Needfinding/EmpathyMapping/EmpathyMap_JimenaTorres.png)
+<img src="../assets/img/Chapter-2/Needfinding/EmpathyMapping/EmpathyMap_JimenaTorres.png" style="width: 100%; max-height: 94vh; object-fit: contain; display: block; margin: 0 auto;">
 
 **User Persona 2:** Víctor Rivera (Estudiante Universitario)
 
 En esta segunda imagen que se muestra a continuación, se visualiza el empathy map del segundo user persona. En esta misma, se desea detallar lo que el usuario siente, dice, piensa y hace al momento de buscar oportunidades laborales temporales. Además, se identifican los dolores relacionados con la falta de claridad en los procesos de aplicación y las metas que busca cumplir al acceder a trabajos flexibles y bien remunerados a través de una plataforma digital.
 
-![Empathy Map Victor Rivera](../assets/img/Chapter-2/Needfinding/EmpathyMapping/EmpathyMap_VictorRivera.png)
+<img src="../assets/img/Chapter-2/Needfinding/EmpathyMapping/EmpathyMap_VictorRivera.png" style="width: 100%; max-height: 88vh; object-fit: contain; display: block; margin: 0 auto;">
 
 ### 2.3.5. Ubiquitous Language
 En el presente proyecto, orientado a optimizar la conexión entre micro y pequeñas empresas (MYPEs) y jóvenes que buscan oportunidades laborales temporales mediante una plataforma digital, se ha definido un lenguaje ubicuo que permite establecer una comprensión común entre todos los actores involucrados, incluyendo usuarios, desarrolladores y stakeholders.
