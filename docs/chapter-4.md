@@ -1254,9 +1254,9 @@ Severidad: 2
 
 Heurística violada: Usabilidad - Diseño estético y minimalista.
 
-Problema: Al interactuar con la pantalla, el usuario manifestó sentirse abrumado por la cantidad de elementos que aparecen de golpe al entrar al apartado. Indicó que la información no está categorizada, lo que dificulta una lectura rápida y genera confusión visual.
+Problema: Al interactuar con la pantalla, el usuario manifestó sentirse abrumado por la cantidad de elementos que aparecen de golpe al entrar al apartado de shifts. Indicó que la información no está tan categorizada, lo que dificulta una lectura rápida y genera confusión visual.
 
-Recomendación: Aplicar una mejor arquitectura de información separando el contenido en áreas o secciones claramente diferenciadas. Utilizar el principio de "progresividad" para no mostrar todo el contenido en una sola vista.
+Recomendación: Aplicar una mejor arquitectura de información separando el contenido en áreas o secciones diferenciadas. También, utilizar el principio de "progresividad" para no mostrar todo el contenido en una sola vista.
 
 ---
 
@@ -1267,7 +1267,7 @@ Severidad: 3
 
 Heurística violada: Usabilidad - Libertad y control del usuario.
 
-Problema: En el flujo evaluado, el usuario notó que no existe una flecha de retroceso ni una opción clara para "ir hacia atrás". Esto genera una sensación de encierro en la pantalla actual, obligando al usuario a reiniciar la app o usar botones externos del sistema que podrían romper el flujo.
+Problema: En el flujo evaluado, el usuario notó que no existe una flecha de retroceso ni una opción clara para "ir hacia atrás" en el apartado de shifts. Esto genera una sensación de encierro en la pantalla actual, obligando al usuario a reiniciar la app o usar botones externos del sistema que podrían romper el flujo.
 
 Recomendación: Incluir una flecha de retorno visible en la esquina superior izquierda (TopAppBar) que permita al usuario regresar a la pantalla anterior de forma intuitiva.
 
