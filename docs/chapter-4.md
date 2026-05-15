@@ -1208,16 +1208,14 @@ En esta sección se muestran los registros de las entrevistas de validación. Ca
 ChambaYa
 
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
-Registro de usuario nuevo basado en etiquetas de habilidades.
 
-Personalización del perfil (descripción y experiencia).
-
-1. Búsqueda de ofertas de trabajo mediante mapa con geolocalización.
-2. Postulación a un turno laboral de emergencia.
-3. Publicación de una vacante urgente (flujo del contratante).
-4. Uso del chat interno para coordinación.
-5. Visualización y gestión de turnos activos/pasados.
-6. Envío de reporte de problemas en la sección de ayuda.
+1. Registro de usuario nuevo basado en etiquetas de habilidades.
+2. Personalización del perfil (descripción y experiencia).
+3. Postulación a un turno laboral de emergencia.
+4. Publicación de una vacante urgente (flujo del contratante).
+5. Uso del chat interno para coordinación.
+6. Visualización y gestión de turnos activos/pasados.
+7. Envío de reporte de problemas en la sección de ayuda.
 
 No están incluidas en esta versión de la evaluación las siguientes tareas:
 1. Pasarela de pagos y facturación electrónica.
@@ -1241,7 +1239,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | # | Problema | Escala de severidad | Heurística/Principio violado(a) |
 |--|-------|-------------------|-------------------------------|
 | 1 | Sobrecarga de información y falta de jerarquía visual  | 2 | Usabilidad - Diseño estético y minimalista. |
-| 2 | Ausencia de controles de navegación de retorno (Back button) | 3 | Usabilidad - Libertad y control del usuario |
+| 2 | Inconsistencia en la navegación de retorno y salida del flujo | 3 | Usabilidad - Libertad y control del usuario |
 | 3 | Iconografía ambigua y falta de estándares en la barra de navegación  | 2 | Usabilidad - Consistencia y estándares. |
 
 
@@ -1256,20 +1254,25 @@ Heurística violada: Usabilidad - Diseño estético y minimalista.
 
 Problema: Al interactuar con la pantalla, el usuario manifestó sentirse abrumado por la cantidad de elementos que aparecen de golpe al entrar al apartado de shifts. Indicó que la información no está tan categorizada, lo que dificulta una lectura rápida y genera confusión visual.
 
-Recomendación: Aplicar una mejor arquitectura de información separando el contenido en áreas o secciones diferenciadas. También, utilizar el principio de "progresividad" para no mostrar todo el contenido en una sola vista.
+Recomendación: Aplicar una mejor arquitectura de información separando el contenido en áreas o secciones diferenciadas. También, utilizar el principio de "progresividad" para no mostrar todo el contenido en una sola vista. <br>
+
+![shifts-validation.png](../assets/img/chapter-4/shifts-validation.png)
 
 ---
 
 
-PROBLEMA 2: Ausencia de controles de navegación de retorno (Back button)
+PROBLEMA 2: Inconsistencia en la navegación de retorno y salida del flujo
 
-Severidad: 3
+Severidad: 2
 
 Heurística violada: Usabilidad - Libertad y control del usuario.
 
-Problema: En el flujo evaluado, el usuario notó que no existe una flecha de retroceso ni una opción clara para "ir hacia atrás" en el apartado de shifts. Esto genera una sensación de encierro en la pantalla actual, obligando al usuario a reiniciar la app o usar botones externos del sistema que podrían romper el flujo.
+Problema: Durante la interacción con el apartado de Shifts, el usuario manifestó confusión al intentar regresar a la vista previa de home. Aunque la aplicación cuenta con una barra de navegación inferior, el usuario buscó instintivamente una flecha de retorno en la parte superior. Al no encontrarla, reportó una sensación de "encierro" en el flujo actual, indicando que la barra inferior no fue percibida como una vía de escape inmediata en ese momento.
 
-Recomendación: Incluir una flecha de retorno visible en la esquina superior izquierda (TopAppBar) que permita al usuario regresar a la pantalla anterior de forma intuitiva.
+Recomendación: Si bien es una pantalla de nivel superior, se recomienda evaluar la implementación de una flecha de retorno para reforzar la sensación de control. Alternativamente, resaltar visualmente el icono activo en la barra inferior para que el usuario entienda dónde está y cómo navegar a otras secciones. <br>
+
+
+![shifts-validation.png](../assets/img/chapter-4/shifts-validation.png)
 
 ---
 
@@ -1281,4 +1284,6 @@ Heurística violada: Usabilidad - Consistencia y estándares.
 
 Problema: El usuario identificó correctamente los iconos de Home, Chat y Perfil, pero reportó que el icono de "Shifts" (Turnos) en la barra inferior es demasiado complejo y no se entiende por sí solo. Mencionó que el icono intenta abarcar demasiadas funciones, lo que genera incertidumbre sobre qué se encontrará al hacer clic.
 
-Recomendación: Rediseñar el icono de "Shifts" utilizando una metáfora visual más simple y estándar (como un calendario o reloj de turno). Alternativamente, separar las funciones en iconos más específicos para evitar la ambigüedad.
+Recomendación: Rediseñar el icono de "Shifts" utilizando una metáfora visual más simple y estándar (como un calendario o reloj de turno). Alternativamente, separar las funciones en iconos más específicos para evitar la ambigüedad. <br>
+
+![home-validation.png](../assets/img/chapter-4/home-validation.png)
