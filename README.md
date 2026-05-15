@@ -111,6 +111,58 @@ El curso contribuye al cumplimiento del **Student Outcome ABET:ABET – EAC - St
 
 ### Objetivos SMART
 
+
+**Bautista Rivera, Jose Diego — U20231949**
+
+**Objetivo SMART 1**
+
+Durante el desarrollo del proyecto “ChambaYa”, me propongo fortalecer mis habilidades en desarrollo de aplicaciones móviles participando activamente en la implementación de funcionalidades frontend y backend, logrando completar al menos el 90% de las tareas asignadas en los sprints antes de finalizar el ciclo académico. Esto me permitirá adquirir experiencia práctica en tecnologías móviles y mejorar mi preparación para el ámbito profesional del desarrollo de software.
+
+**Objetivo SMART 2**
+
+En el transcurso del proyecto “ChambaYa”, buscaré mejorar mis competencias en trabajo colaborativo y metodologías ágiles mediante la participación constante en reuniones, planificación y validación de entregables, cumpliendo con los objetivos establecidos en cada sprint y contribuyendo al desarrollo de una aplicación funcional orientada a oportunidades laborales. Con ello, desarrollaré capacidades de organización y gestión de proyectos aplicadas a entornos reales de la industria tecnológica.
+
+**Janampa Gutierrez Jhoan D. - u202323319**
+
+**Objetivo SMART 1**
+
+Fortalecer mis habilidades en desarrollo de aplicaciones móviles mediante la implementación de funcionalidades en Kotlin y Android Studio dentro del trabajo final del curso, participando activamente en el diseño, programación y prueba de módulos de la aplicación antes de la entrega final, con el fin de prepararme para futuros proyectos profesionales en desarrollo móvil.
+
+**Objetivo SMART 2**
+
+Desarrollar competencias profesionales de trabajo en equipo y gestión de proyectos de software utilizando herramientas como GitHub y metodologías ágiles durante la elaboración del trabajo final, realizando aportes constantes y documentando avances semanalmente para mejorar mi desempeño en entornos reales de desarrollo tecnológico.
+
+**Cordova Valdivia Sebastian - u202111041** 
+
+**Objetivo SMART 1**
+
+Consolidar mi perfil en ciberseguridad mediante la práctica continua en laboratorios, análisis de vulnerabilidades y fundamentos de monitoreo de incidentes, con el propósito de postular a roles iniciales relacionados con SOC o seguridad ofensiva al finalizar mi etapa universitaria.
+
+**Objetivo SMART 2**
+
+Fortalecer mis competencias en soporte TI mediante la resolución de incidencias, documentación técnica y manejo de herramientas de administración básica, con el objetivo de desempeñarme en áreas de soporte tecnológico o infraestructura durante mis primeras experiencias profesionales.
+
+**Taipe Sangama Jorge Francisco - u202313458**
+
+**Objetivo SMART 1**
+
+En el primer año tras graduarme, me propongo especializarme en Quality Assurance (QA), participando en proyectos de prueba de software, automatización de casos y documentación de resultados, logrando completar al menos dos proyectos con entregables funcionales que validen mi experiencia en control de calidad.
+
+**Objetivo SMART 2**
+
+En un horizonte de dos años, buscaré transicionar hacia un rol en DevOps, integrando prácticas de CI/CD, monitoreo de sistemas y despliegue automatizado, con el objetivo de consolidar un perfil orientado a infraestructura ágil y escalable dentro de equipos de desarrollo tecnológico.
+
+**Espinoza Chavez Moises - u202221383**
+
+**Objetivo SMART 1**
+
+En los primeros doce meses después de graduarse, se enfocará en desarrollo frontend, implementando interfaces responsivas y accesibles con frameworks modernos como React o Angular, asegurando la integración con APIs y servicios backend.
+
+**Objetivo SMART 2**
+
+Su meta es publicar al menos dos proyectos web con despliegue funcional y documentación técnica, fortaleciendo su portafolio para postular a posiciones iniciales en frontend y experiencia de usuario, consolidando así su perfil profesional en el área.
+
+
 ---
 ## Table of Contents
 
@@ -276,6 +328,10 @@ El curso contribuye al cumplimiento del **Student Outcome ABET:ABET – EAC - St
 ### [Conclusiones y recomendaciones](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#conclusiones-y-recomendaciones)
 ### [ Video App Validation](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#video-app-validation)
 ### [ Video About the Product](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#video-about-the-product)
+
+
+Video de Entrega TB1: https://upcedupe-my.sharepoint.com/personal/u202310949_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310949_upc_edu_pe%2FDocuments%2Fupc-pre-2026+01-1acc238-3821-TerraTeam-expo-tb1.mov&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&ga=1&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.6c9537f4-59ab-44ee-9c19-c8b001b24fe2&isDarkMode=true
+
 ### [ Video About the Team](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#video-about-the-team)
 
 ---
