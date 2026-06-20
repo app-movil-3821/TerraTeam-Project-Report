@@ -964,6 +964,7 @@ El proyecto se gestionó utilizando una organización en GitHub llamada **app-mo
 
 ---
 
+
 ### Landing Page
 
 - El integrante **Jorge Taipe** desarrolló e integró todas las secciones del Landing Page de ChambaYA, incluyendo Home, Services, How it Works, Pricing, About Us, Contact Us y Footer. Además, se encargó del despliegue del sitio web estático en GitHub Pages.
@@ -1018,6 +1019,17 @@ Finalmente, el equipo realizó una reflexión sobre el primer sprint, destacando
 Se identificaron áreas de mejora en la planificación de la integración entre la aplicación móvil y el backend, así como la necesidad de realizar pruebas más exhaustivas de los endpoints antes de cada entrega. El equipo valoró positivamente el uso de herramientas como **GitHub** para el control de versiones, **Railway** para el despliegue del backend, **MongoDB Atlas** para la base de datos y **GitHub Pages** para el Landing Page, lo que facilitó la colaboración y el seguimiento del progreso del proyecto.
 
 El equipo considera este avance como fundamental para la continuidad del proyecto, destacando la importancia de haber implementado exitosamente las pantallas principales de navegación de la app, los endpoints core del backend y el Landing Page completo. Se reconoce que aún quedan funcionalidades por implementar, pero se tiene confianza en que el proyecto ha sentado bases sólidas al cumplir con los objetivos establecidos para este sprint, demostrando capacidad efectiva de trabajo en equipo y gestión de diversas tecnologías.
+
+#### 4.2.2. Sprint `2`
+##### 4.2.2.1. Sprint Planning `2
+##### 4.2.2.2. Sprint Backlog `2`
+##### 4.2.2.3. Development Evidence for Sprint Review
+##### 4.2.2.4. Testing Suite Evidence for Sprint Review
+##### 4.2.2.5. Execution Evidence for Sprint Review
+##### 4.2.2.6. Services Documentation Evidence for Sprint Review
+##### 4.2.2.7. Software Deployment Evidence for Sprint Review
+##### 4.2.2.8. Team Collaboration Insights during Sprint 2
+
 
 ### 4.3. Validation Interviews
 #### 4.3.1. Diseño de Entrevistas
