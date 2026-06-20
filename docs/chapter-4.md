@@ -1021,8 +1021,77 @@ Se identificaron áreas de mejora en la planificación de la integración entre 
 El equipo considera este avance como fundamental para la continuidad del proyecto, destacando la importancia de haber implementado exitosamente las pantallas principales de navegación de la app, los endpoints core del backend y el Landing Page completo. Se reconoce que aún quedan funcionalidades por implementar, pero se tiene confianza en que el proyecto ha sentado bases sólidas al cumplir con los objetivos establecidos para este sprint, demostrando capacidad efectiva de trabajo en equipo y gestión de diversas tecnologías.
 
 #### 4.2.2. Sprint `2`
+
+En esta sección se explican los procesos para el desarrollo de la solución de software en el segundo sprint. Además, se incluyen secciones de planeamiento, desarrollo, prueba y despliegue de la aplicación móvil Android nativa, el backend API y en Flutter.
+
 ##### 4.2.2.1. Sprint Planning `2
+
+A continuación, se detalla la información sobre el planeamiento del segundo sprint. El objetivo de este sprint se enfoca en el despliegue de la aplicación móvil Android nativa, junto con las pantallas principales y funcionales de la aplicación, los endpoints backend API con un avance al 100%, y las primeras pantallas funcionales de la aplicacion móvil en Flutter.
+
+| Sprint #                   | Sprint 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+| Sprint planning Background | --                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 
+| Date                       | 2026/05/27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 
+| Time                       | 3:00 pm                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 
+| Location                   | Reunion en meet                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
+| Prepared By                | Taipe Sangama Jorge Francisco                                                                                                                                                                                                                                                                                                                                                                                                                                                                | 
+| Attendes                   | Taipe Sangama Jorge Francisco / Cordova Valdivia Sebastian / 	Janampa Gutierrez Jhoan D.  / Bautista, Jose Diego /  Espinoza Chavez Moises                                                                                                                                                                                                                                                                                                                                                   | 
+| Sprint Goal & User Stories |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
+| Sprint 1 Goal              | Nuestro enfoque está en desarrollar y desplegar la aplicación móvil Android nativa, avanzar en un 100% los endpoints del backend API y tener las primeras pantallas funcionales de la aplicacion móvil en Flutter. Creemos que esto entrega una base funcional y visible del producto a los stakeholders. Esto se confirmará cuando la aplicación móvil Android nativa esté desplegada, y el backend responda correctamente a todas las solicitudes HTTP.| 
+| Sprint 1 Velocity          | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 
+| Sums of Story Points       | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 
+
+
+**Aspect Liders and Colaborators**
+
+En esta sección se incluye la matriz de liderazgo y colaboración para este sprint. La letra "L" indica que el miembro es líder del aspecto y se encarga de avanzar y revisar el trabajo de los colaboradores. La letra "C" indica que el miembro es colaborador y se encarga de desarrollar las funcionalidades asignadas.
+
+| Team Member                    | GitHub Usernames  | App Android | Backend API | Reporte |
+|--------------------------------|------------------ |-------------|-------------|---------|
+| Cordova Valdivia Sebastian     | Sevas04           | C           | C           | C       |
+| Bautista Rivera Jose Diego     | Gogotes17         | L           |             | C       |
+| Janampa Gutierrez Jhoan D.     | orraiAKBDFSK      | C           |             | C       |
+| Taipe Sangama Jorge Francisco  | CamotinFurious    | L           |             | L       |
+| Espinoza Chavez Moises         | MoisesECh         | C           |             | C       |
+
+
 ##### 4.2.2.2. Sprint Backlog `2`
+
+El objetivo principal de este sprint es tener una versión funcional y desplegada del Landing Page, la navegación principal de la aplicación móvil Android con las pantallas core implementadas, y los endpoints principales del backend funcionando y documentados en Swagger.
+
+
+Proyecto en Enlace al tablero de Trello: [Link de TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)
+
+![Trello Sprint1.png](../assets/img/chapter-4/Trello%20Sprint1.png)
+
+
+A continuación, se presenta la tabla con las User Stories y tareas del Sprint 1:
+
+
+
+| Sprint 1     | Sprint Backlog1 |                  |        |                                                                      |                    |              |        |
+|--------------|-----------------|------------------|--------|----------------------------------------------------------------------|--------------------|--------------|--------|
+| User Stories |                 | Work-Item / Task | Title  | Description                                                          | Estimation (Hours) | Assigned to  | Status |
+| US01         |                 | T01              |  |                      | 4h                 |  | Done |
+|          |                 |               |  |                   |                  |  |  |
+|          |                 |               |  |  |                  | |  |
+|          |                 |               |  |           |                  | | |
+|          |                 |               |  |            |                  ||  |
+|          |                 |               |  |             |                  | |  |
+|          |                 |               |  |                 |                  | |  |
+|          |                 |               |  |              |                  |  |  |
+|          |                 |               |  |                      |                  |  |  |
+|          |                 |              |  |                   |                  |  |  |
+|          |                 |              |  |        |                  |  |  |
+|          |                 |              |  |                            |                  |  |  |
+|          |                 |              |  |          |                  ||  |
+|          |                 |              |  |     |                  ||  |
+|          |                 |              |  |         |                  |  |  |
+|          |                 |              |  |        |                  |  |  |
+|          |                 |              |  |              |                  |  |  |
+|          |                 |              |  |             |                  |  |  |
+
+
 ##### 4.2.2.3. Development Evidence for Sprint Review
 ##### 4.2.2.4. Testing Suite Evidence for Sprint Review
 ##### 4.2.2.5. Execution Evidence for Sprint Review
