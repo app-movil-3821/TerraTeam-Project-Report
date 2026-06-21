@@ -1219,7 +1219,7 @@ El objetivo principal de este sprint es tener una versión funcional y desplegad
 
 Proyecto en Enlace al tablero de Trello: [Link de TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)
 
-![Trello Sprint1.png](../assets/img/chapter-4/Trello%20Sprint1.png)
+![trello-sprint2.jpeg](../assets/img/chapter-4/trello-sprint2.jpeg)
 
 
 A continuación, se presenta la tabla con las User Stories y tareas del Sprint 1:
@@ -1229,24 +1229,21 @@ A continuación, se presenta la tabla con las User Stories y tareas del Sprint 1
 | Sprint 1     | Sprint Backlog1 |                  |        |                                                                      |                    |              |        |
 |--------------|-----------------|------------------|--------|----------------------------------------------------------------------|--------------------|--------------|--------|
 | User Stories |                 | Work-Item / Task | Title  | Description                                                          | Estimation (Hours) | Assigned to  | Status |
-| US01         |                 | T01              |  |                      | 4h                 |  | Done |
-|          |                 |               |  |                   |                  |  |  |
-|          |                 |               |  |  |                  | |  |
-|          |                 |               |  |           |                  | | |
-|          |                 |               |  |            |                  ||  |
-|          |                 |               |  |             |                  | |  |
-|          |                 |               |  |                 |                  | |  |
-|          |                 |               |  |              |                  |  |  |
-|          |                 |               |  |                      |                  |  |  |
-|          |                 |              |  |                   |                  |  |  |
-|          |                 |              |  |        |                  |  |  |
-|          |                 |              |  |                            |                  |  |  |
-|          |                 |              |  |          |                  ||  |
-|          |                 |              |  |     |                  ||  |
-|          |                 |              |  |         |                  |  |  |
-|          |                 |              |  |        |                  |  |  |
-|          |                 |              |  |              |                  |  |  |
-|          |                 |              |  |             |                  |  |  |
+| US07   |    | T01  |  | implementar la publicación de turnos del contratante    | 6h  | Jose Diego Bautista  | Done |
+| US07   |    | T02  |  | implementar las carpetas data, domain, logica de integracion con el backend para los turnos del trabajador    | 6h  | Jorge Taipe  | Done |
+| US011  |    |  T03 |  |  Implementar funcionalidad para la comunicacion mediante el chat interno  |  05   | Jose Diego Bautista  | Done |
+| US013  |    |  T04 |  |  Implementar la vista de los trabajos en el mapa   |  05   | Jose Diego Bautista  | Done |
+| US016  |    |  T05 |  |  Implementar la lista de trabajos disponibles para el chambeador   |   06  | Jorge Taipe | Done |
+| US016  |    |  T06 |  |  Implementar funcionalidad para la lista de trabajos disponibles   |   05 | Moisés Espinoza | Done |
+| US018  |    | T07|  |  implementar la vista del detalle del trabajo   |  06   | Sebastián Córdova |Done  |
+| US020  |    | T08  |   | implementar la pantalla de lista de postulantes    | 05 | Jhoan Janampa | Done |
+| US022  |    |  T09 |  | Implementar funcionalidad para rechazar a un postulante    | 04    | Jhoan Janampa |  Done|
+| US023  |    |  T010 |  |  Implementar la funcionalidad de cerrar un turno   |  05   |Jhoan Janampa  | Done |
+| US024  |    | T011 |  |   implementar funcionalidad para reabrir un turno cerrado  |  04   | Jose Diego Bautista | Done |
+| US026  |    | T012  |  |  implementar la vista del estado de postulaciones como chambeador   |  05   |  Jorge Taipe|  Done|
+| US029  |    | T013  |  |  implementar la vista para reportar un problema   |   06  | Sebastián Córdova |  Done|
+| AV201  |    | T014     | 04  | documentacion del reporte de sprint y videos de about the product  |   Moisés Espinoza  |  |Done  |
+| AV202  |    | T015     | 03 |  implementacion y despliegue con firebase  |  Jose Diego Bautista   |  |Done  |
 
 
 ##### 4.2.2.3. Development Evidence for Sprint Review
