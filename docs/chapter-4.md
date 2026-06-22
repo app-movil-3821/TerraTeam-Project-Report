@@ -1912,26 +1912,23 @@ El proyecto se gestionó utilizando una organización en GitHub llamada **app-mo
 
 - El integrante **Sebastián Córdova** lideró el desarrollo del backend, implementando los endpoints principales de la aplicación usando Java con Spring Boot y MongoDB. Desarrolló los controllers de usuarios (IAM Context), trabajos (Job Context), postulaciones (Enrollment) y reseñas (Reviews). Además, se encargó del despliegue del backend en **Railway** y la configuración de la base de datos en **MongoDB Atlas**. Juntamente con Jose Diego Bautista implementando también funcionalidades.
 - 
-A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para el backend. El gráfico refleja el aporte de cada integrante en el avance de la última versión del Backend API.
+A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para el backend. El gráfico refleja el aporte de cada integrante en el avance de la última versión del Backend API. Juntamente con los commits a lo largo del tiempo 
 
-![top-backend.png](../assets/img/chapter-4/top-backend.png)
 
-También, se adjunta el gráfico del avance por ramas en el repositorio del backend, donde cada rama representa una funcionalidad específica implementada durante el sprint, incluyendo los bounded contexts de IAM, Jobs, Enrollments y Reviews.
-
-![backend-network.png](../assets/img/chapter-4/backend-network.png)
+![backend-reporte.jpeg](../assets/img/chapter-4/backend-reporte.jpeg)
 
 
 ---
 
 ### Aplicación Móvil Android
 
-A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para la aplicación móvil Android. El gráfico refleja el aporte de cada integrante en el avance de la primera versión de la aplicación.
+A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para la aplicación móvil Android. El gráfico refleja el aporte de cada integrante en el avance de la última versión de la aplicación.
 
-![top-movil.png](../assets/img/chapter-4/top-movil.png)
+![reporte-kotlin.jpeg](../assets/img/chapter-4/reporte-kotlin.jpeg)
 
-También, se adjunta el gráfico del avance por ramas en el repositorio de la aplicación Android, donde cada rama representa las pantallas y funcionalidades implementadas durante el sprint.
+También, se adjunta el gráfico de la vista de commits a lo largo del tiempo de la aplicación Android, donde se puede observar en qué meses hubo mayor cantidad de commits y participación para las funcionalidades implementadas durante el sprint.
 
-![android-network.png](../assets/img/chapter-4/android-network.png)
+![time-kotlin.jpeg](../assets/img/chapter-4/time-kotlin.jpeg)
 
 ---
 
