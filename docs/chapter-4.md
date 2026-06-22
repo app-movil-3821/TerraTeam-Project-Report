@@ -1242,11 +1242,30 @@ A continuación, se presenta la tabla con las User Stories y tareas del Sprint 1
 | US024  |    | T011 |  |   implementar funcionalidad para reabrir un turno cerrado  |  04   | Jose Diego Bautista | Done |
 | US026  |    | T012  |  |  implementar la vista del estado de postulaciones como chambeador   |  05   |  Jorge Taipe|  Done|
 | US029  |    | T013  |  |  implementar la vista para reportar un problema   |   06  | Sebastián Córdova |  Done|
-| AV201  |    | T014     | 04  | documentacion del reporte de sprint y videos de about the product  |   Moisés Espinoza  |  |Done  |
-| AV202  |    | T015     | 03 |  implementacion y despliegue con firebase  |  Jose Diego Bautista   |  |Done  |
+| AV201  |    | T014     |  | documentacion del reporte de sprint y videos de about the product  | 04    |  Moisés Espinoza |Done  |
+| AV202  |    | T015     | |  implementacion y despliegue con firebase  |   03  | Jose Diego Bautista |Done  |
 
 
 ##### 4.2.2.3. Development Evidence for Sprint Review
+
+En esta sección se describen los principales avances de implementación realizados en este segundo sprint. Se destaca la implementacion completa del Backend API con Spring Boot y MongoDB, el desarrollo e implementacion de las pantallas de la aplicación móvil Android nativa con Kotlin y Jetpack Compose, y un avance de la creación del aplicativo movil con flutter.
+
+Cada miembro del equipo avanzó en las diferentes áreas del proyecto: en el Backend se implementaron todos los endpoints principales y necesarios usando Java y Spring Boot; en la aplicación Android se desarrollaron todas pantallas y la navegación usando Kotlin y Jetpack Compose.
+
+
+| Repository            | Branch          | Commit Id | Commit Message                                                           | Committed On |
+|-----------------------|-----------------|-----------|--------------------------------------------------------------------------|--------------|
+| ChambaYa-Kotlin   | develop | b8b15d2|  feat(maps): add Google Maps platform dependencies and secrets plugin | 2026/06/10   |
+| ChambaYa-Kotlin   | develop | 7726ef6 | ci: deploy automático a Firebase App Distribution en push a develop | 2026/06/18 |
+| ChambaYa-Kotlin   | develop | 2156a97 | feat: implement viewmodels for home, profile, shifts, messages, and notifications screens | 2026/06/09 |
+| ChambaYa-Kotlin   | develop | 7726ef6 | ci: deploy automático a Firebase App Distribution en push a develop | 2026/06/18 |
+
+| Backend-ChambaYa   |  develop           | 3a79f7e   |  docs: add mobile integration guide  | 2026/06/05   |
+| Backend-ChambaYa   |  develop           | e870108 |  fix: apply institutional email verification  | 2026/06/06   |
+| Backend-ChambaYa   |  develop           | 82ec302 |  feat(iam): endpoint cambiar contraseña PUT /users/{id}/password  | 2026/06/18   |
+
+
+
 ##### 4.2.2.4. Testing Suite Evidence for Sprint Review
 ##### 4.2.2.5. Execution Evidence for Sprint Review
 ##### 4.2.2.6. Services Documentation Evidence for Sprint Review
