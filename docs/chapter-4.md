@@ -1896,6 +1896,39 @@ GET /api/v1/reviews/user/ID_DEL_USUARIO/summary
   ![DeployVerification.jpeg](../assets/img/chapter-4/DeployVerification.jpeg)
 
 
+### Despliegue de la Aplicación Android
+
+- **Paso 1: Creación del repositorio para el despliegue de la aplicación**
+  
+  ![creacion-repositorio.jpeg](../assets/img/chapter-4/creacion-repositorio.jpeg)
+
+- **Paso 2: Creación del Release**
+  
+   ![creacion-release.jpeg](../assets/img/chapter-4/creacion-release.jpeg)
+
+
+   **Paso 3: Despliegue en proceso**
+  
+   ![proceso-despliegue.jpeg](../assets/img/chapter-4/proceso-despliegue.jpeg)
+
+
+     **Paso 4: Integracion en la landing page para descargar la aplicación**
+  
+   ![landingpage.jpeg](../assets/img/chapter-4/landingpage.jpeg)
+
+
+     **Paso 5: Genración del apk de la aplicación**
+  
+   ![generacion-apk.jpeg](../assets/img/chapter-4/generacion-apk.jpeg)
+  
+
+  
+
+
+
+
+
+
 
 ##### 4.2.2.8. Team Collaboration Insights during Sprint 2
 
