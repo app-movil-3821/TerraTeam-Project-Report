@@ -1267,6 +1267,19 @@ Cada miembro del equipo avanzó en las diferentes áreas del proyecto: en el Bac
 
 ##### 4.2.2.4. Testing Suite Evidence for Sprint Review
 
+En esta sección se presenta el conjunto de pruebas implementadas durante el Sprint 1 para los Web Services del backend de ChambaYA. Para este primer sprint, se configuró la estructura base de pruebas utilizando **JUnit 5** (JUnit Jupiter) junto con la anotación `@SpringBootTest`, la cual permite verificar que el contexto de la aplicación Spring Boot se carga correctamente.
+
+El archivo `BackendApplicationTests.java` fue generado como parte de la inicialización del proyecto en Spring Initializr y contiene el test de integración base `contextLoads()`, que verifica que todos los beans y configuraciones del contexto de la aplicación se inicializan sin errores. Este test fue ejecutado exitosamente, confirmando que la configuración del proyecto, la conexión con MongoDB Atlas y las dependencias declaradas en el `pom.xml` son correctas.
+
+Para los siguientes sprints, se tiene planificado ampliar la suite de pruebas con Unit Tests para los servicios de cada Bounded Context (IAM, Jobs, Enrollments, Reviews) y Acceptance Tests bajo el enfoque BDD con archivos `.feature` en lenguaje Gherkin.
+
+Repositorio de Testing: [Backend-ChambaYa](https://github.com/app-movil-3821/Backend-ChambaYa)
+
+| Repository | Branch | Commit Id | Commit Message | Committed On |
+|---|---|---|---|---|
+| Backend-ChambaYa | develop | 82ec302 | feat(iam): endpoint cambiar contraseña PUT /users/{id}/password | 2026/06/18 |
+
+
 ##### 4.2.2.5. Execution Evidence for Sprint Review
 
 En esta sección se presenta la evidencia de ejecución de los productos implementados en este segundo sprint. Se incluye el desarrollo de las pantallas principales de la aplicación Android, los endpoints completos del backend API desplegado en Railway, y algunas pantalla de flutter.
@@ -1297,7 +1310,7 @@ Pantalla de inicio de sesión donde el usuario ingresa su correo y contraseña p
 
 Pantalla de registro donde el nuevo usuario ingresa sus datos personales para crear una cuenta en ChambaYA, seleccionando si es chambeador o contratante.
 
-![registro.sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro.sprint2.png)
+![registro-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro.sprint2.png)
  
 ---
 
