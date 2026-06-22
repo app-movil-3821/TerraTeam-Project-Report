@@ -226,7 +226,7 @@ Un wireflow o flujo de pantalla es un diagrama donde se reúnen distintos wirefr
 
 Primero, se definen las tareas típicas que realizaría un usuario para completar este objetivo:
 
-![Wireflow Mobile App - User Goal 1](../assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams//User-Goal1.png)
+![Wireflow Mobile App - User Goal 1](../assets/img/Chapter-3/MobileApplicationsUXUIDesign/MobileApplicationsWireflowDiagrams/User-Goal1.png)
 
 Luego, se muestra el resultado de la traducción de acción a pantallas. A continuación, en este flujo se muestra el proceso para registrar una cuenta en la aplicación que empieza en el momento en el que el usuario accede a la aplicación y continúa con el mismo usuario colocando inforamción requerida para crear una cuenta.
 
