@@ -1259,7 +1259,6 @@ Cada miembro del equipo avanzó en las diferentes áreas del proyecto: en el Bac
 | ChambaYa-Kotlin   | develop | 7726ef6 | ci: deploy automático a Firebase App Distribution en push a develop | 2026/06/18 |
 | ChambaYa-Kotlin   | develop | 2156a97 | feat: implement viewmodels for home, profile, shifts, messages, and notifications screens | 2026/06/09 |
 | ChambaYa-Kotlin   | develop | 7726ef6 | ci: deploy automático a Firebase App Distribution en push a develop | 2026/06/18 |
-
 | Backend-ChambaYa   |  develop           | 3a79f7e   |  docs: add mobile integration guide  | 2026/06/05   |
 | Backend-ChambaYa   |  develop           | e870108 |  fix: apply institutional email verification  | 2026/06/06   |
 | Backend-ChambaYa   |  develop           | 82ec302 |  feat(iam): endpoint cambiar contraseña PUT /users/{id}/password  | 2026/06/18   |
@@ -1267,7 +1266,157 @@ Cada miembro del equipo avanzó en las diferentes áreas del proyecto: en el Bac
 
 
 ##### 4.2.2.4. Testing Suite Evidence for Sprint Review
+
 ##### 4.2.2.5. Execution Evidence for Sprint Review
+
+En esta sección se presenta la evidencia de ejecución de los productos implementados en este segundo sprint. Se incluye el desarrollo de las pantallas principales de la aplicación Android, los endpoints completos del backend API desplegado en Railway, y algunas pantalla de flutter.
+
+A continuación, se muestran las capturas de pantalla, que evidencian el progreso realizado en el sprint y sirven como comprobante del trabajo completado.
+
+### Aplicación Android
+
+La aplicación móvil nativa para Android fue desarrollada con Kotlin y Jetpack Compose. A continuación se presentan las pantallas implementadas durante este sprint, organizadas según el flujo de usuario.
+
+**Start (Splash Screen):**
+
+Pantalla inicial de la aplicación que muestra el logo de ChambaYA al abrir la app, antes de redirigir al usuario a la pantalla de login o registro.
+
+![Start.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Start.png)
+ 
+---
+
+**Login:**
+
+Pantalla de inicio de sesión donde el usuario ingresa su correo y contraseña para acceder a la plataforma. Incluye opción de registro para nuevos usuarios.
+
+![inicio-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/inicio-sprint2.png)
+ 
+---
+
+**Register:**
+
+Pantalla de registro donde el nuevo usuario ingresa sus datos personales para crear una cuenta en ChambaYA, seleccionando si es chambeador o contratante.
+
+![registro.sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro.sprint2.png)
+ 
+---
+
+**Skills:**
+
+Pantalla de configuración del perfil basado en habilidades. El chambeador selecciona mediante etiquetas (tags) las habilidades que puede ofrecer, eliminando la necesidad de un CV tradicional.
+
+![Skills.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Skills.png)
+ 
+---
+
+**Home Feed:**
+
+Pantalla principal del chambeador que muestra el listado de turnos disponibles cercanos a su ubicación, con información de pago, horario y distancia.
+
+![Home Feed.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Home%20Feed.png)
+ 
+---
+
+**Home Feed: (Contratante)**
+
+Pantalla principal del contratante que muestra los turnos que estan creados y disponiblesn, con información de pago, horario y distancia.
+
+![home-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/home-sprint2.png)
+ 
+---
+
+**Job Details:**
+
+Pantalla de detalle de un turno específico, mostrando la descripción completa del trabajo, ubicación en mapa, pago por hora y botón para aceptar el turno.
+
+![Job Details.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Job%20Details.png)
+ 
+---
+
+
+**Active Shift:**
+
+Pantalla que muestra el turno activo en progreso, con el tiempo transcurrido, información del negocio contratante y opciones para confirmar llegada o pedir ayuda.
+
+![Active Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Active%20Shift.png)
+ 
+---
+
+**Apply:**
+
+Pantalla de confirmación de postulación a un turno, donde el chambeador revisa los detalles finales antes de confirmar su aplicación al trabajo.
+
+![Apply.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Apply.png)
+ 
+---
+
+**Shift Summary:**
+
+Pantalla de resumen al finalizar un turno, mostrando las ganancias del día y el formulario de calificación para el contratante mediante el sistema de reputación bidireccional.
+
+![Shift Summary.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Shift%20Summary.png)
+ 
+---
+
+**My Shifts:**
+
+Pantalla con el historial de turnos del chambeador, mostrando los trabajos completados, pagos recibidos y el estado de cada turno.
+
+![My Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/My%20Shift.png)
+ 
+---
+
+
+**Jobs: (Contratante)**
+
+Pantalla que detalla los turnos creados, con informacion relevante, y con las opciones de cancelar el turno abierto y aceptar o rechazar a los postulantes.
+
+![jobs-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/jobs-sprint2.png)
+ 
+---
+
+**Post: (Contratante)**
+
+Pantalla que muestra los campos a rellenar para la creacion de un nuevo turno.
+
+![post-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/post-sprint2.png)
+ 
+---
+
+**Notificaciones: (Contratante)**
+
+Pantalla que detalla las notificaciones acerca las postulaciones de los chambeadores.
+
+![notifications-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/notifications-sprint2.png)
+ 
+---
+
+
+**Chat:**
+
+Pantalla del chat interno temporal entre el chambeador y el contratante, habilitado únicamente cuando el turno ha sido aceptado para coordinar los detalles del trabajo.
+
+![messages-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/messages-sprint2.png)
+![messages2-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/messages2-sprint2.png)
+ 
+---
+
+**Profile View: (Chambeador)**
+
+Pantalla de perfil del chambeador que muestra su reputación, habilidades registradas, historial de turnos completados y opciones de configuración de la cuenta.
+
+![Profile View.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Profile%20View.png)
+ 
+---
+
+**Profile View: (Contratante)**
+
+Pantalla de perfil del contratante donde se muestra un historial de los turnos creados, y opciones de configuración de la cuenta.
+
+![profile-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/profile-sprint2.png)
+ 
+---
+
 ##### 4.2.2.6. Services Documentation Evidence for Sprint Review
 ##### 4.2.2.7. Software Deployment Evidence for Sprint Review
 ##### 4.2.2.8. Team Collaboration Insights during Sprint 2
