@@ -1899,7 +1899,7 @@ GET /api/v1/reviews/user/ID_DEL_USUARIO/summary
 
 ##### 4.2.2.8. Team Collaboration Insights during Sprint 2
 
-En esta sección se detalla cómo se llevaron a cabo las actividades de implementación durante el segundo sprint, así como la participación de cada miembro del equipo. Para este sprint, el equipo se organizó en torno a los tres principales productos: Aplicación Móvil Android Nativa y el Backend API. Cada integrante asumió responsabilidades específicas en uno o más de estos componentes, trabajando mediante ramas individuales y siguiendo la estrategia GitFlow para la integración del código.
+En esta sección se detalla cómo se llevaron a cabo las actividades de implementación durante el segundo sprint, así como la participación de cada miembro del equipo. Para este sprint, el equipo se organizó en torno a los principales productos: Aplicación Móvil Android Nativa y el Backend API. Cada integrante asumió responsabilidades específicas en uno o más de estos componentes, trabajando mediante ramas individuales y siguiendo la estrategia GitFlow para la integración del código.
 
 El proyecto se gestionó utilizando una organización en GitHub llamada **app-movil-3821**, donde se crearon repositorios separados para cada producto. Esto permitió una mejor gestión del código y facilitó la colaboración entre los miembros del equipo.
 
@@ -1911,7 +1911,7 @@ El proyecto se gestionó utilizando una organización en GitHub llamada **app-mo
 ### Backend API
 
 - El integrante **Sebastián Córdova** lideró el desarrollo del backend, implementando los endpoints principales de la aplicación usando Java con Spring Boot y MongoDB. Desarrolló los controllers de usuarios (IAM Context), trabajos (Job Context), postulaciones (Enrollment) y reseñas (Reviews). Además, se encargó del despliegue del backend en **Railway** y la configuración de la base de datos en **MongoDB Atlas**. Juntamente con Jose Diego Bautista implementando también funcionalidades.
-- 
+
 A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para el backend. El gráfico refleja el aporte de cada integrante en el avance de la última versión del Backend API. Juntamente con los commits a lo largo del tiempo 
 
 
