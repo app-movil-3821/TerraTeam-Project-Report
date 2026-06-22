@@ -18,6 +18,20 @@ Como recomendaciones generales para la continuidad del proyecto, se sugiere: (1)
 
 ## Video About the Product
 
+El video "About the Product" presenta de manera clara y atractiva la propuesta de valor de ChambaYa, los problemas que resuelve y cómo funciona la solución para ambos segmentos objetivo.
+
+
+
+| Titulo del Video        | Foundly Product               |
+|-------------------------|-------------------------------|
+| Duracion                | 1 miunto                      |
+| Fecha de Grabacion      | 21/06/2026                    |
+| URL de Youtube          | https://youtu.be/WrObe5WUI10  |
+| URL de Microsoft Stream | https://shorturl.at/NwXQ7    |
+
+Screenshot del video "About the Product" :
+
+![aboutChamba.png](../assets/img/conclusiones/aboutChamba.png)
 ## Video About the Team
 
 El video "About the team" presenta de manera clara y concisa, la sinceridad de los integrantes en la participacion del proyecto.
