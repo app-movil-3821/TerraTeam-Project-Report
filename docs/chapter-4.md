@@ -1964,7 +1964,51 @@ También, se adjunta el gráfico de la vista de commits a lo largo del tiempo de
 ![time-kotlin.jpeg](../assets/img/chapter-4/time-kotlin.jpeg)
 
 ---
+#### 4.2.3. Sprint `3`
+En esta sección se explican los procesos para el desarrollo de la solución de software en el tercer sprint. Además, se incluyen secciones de planeamiento, desarrollo, prueba y despliegue de la aplicación móvil Android nativa, el backend AP y en Flutter.
 
+##### 4.2.3.1. Sprint Planning `3`
+
+
+A continuación, se detalla la información sobre el planeamiento del tercer sprint. El objetivo de este sprint se enfoca en el despliegue de la aplicación móvil Android nativa, junto con las pantallas y funcionalidades de la aplicación, los endpoints backend API con un avance al 100%, y las pantallas y funcionalidades de la aplicacion móvil en Flutter.
+
+| Sprint #                   | Sprint 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+| Sprint planning Background | --                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 
+| Date                       | 2026/06/22                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 
+| Time                       | 3:00 pm                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 
+| Location                   | Reunion en meet                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
+| Prepared By                | Taipe Sangama Jorge Francisco                                                                                                                                                                                                                                                                                                                                                                                                                                                                | 
+| Attendes                   | Taipe Sangama Jorge Francisco / Cordova Valdivia Sebastian / 	Janampa Gutierrez Jhoan D.  / Bautista, Jose Diego /  Espinoza Chavez Moises                                                                                                                                                                                                                                                                                                                                                   | 
+| Sprint Goal & User Stories |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
+| Sprint 3 Goal              | Nuestro enfoque está en desarrollar y desplegar la aplicación móvil Android nativa, avanzar en un 100% los endpoints del backend API y desplegar la aplicacion móvil en Flutter. Creemos que esto entrega una base funcional y visible del producto a los stakeholders. Esto se confirmará cuando la aplicación móvil Android nativa esté desplegada, también la aplicaoión móvil en Flutter y el backend responda correctamente a todas las solicitudes HTTP.| 
+| Sprint 3 Velocity          | 42                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 
+| Sums of Story Points       | 42                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | 
+
+
+**Aspect Liders and Colaborators**
+
+En esta sección se incluye la matriz de liderazgo y colaboración para este sprint. La letra "L" indica que el miembro es líder del aspecto y se encarga de avanzar y revisar el trabajo de los colaboradores. La letra "C" indica que el miembro es colaborador y se encarga de desarrollar las funcionalidades asignadas.
+
+| Team Member                    | GitHub Usernames  | App Android | Backend API | Reporte | App Flutter |
+|--------------------------------|------------------ |-------------|-------------|---------|-------------|
+| Cordova Valdivia Sebastian     | Sevas04           | C           | C           | C       |             | 
+| Bautista Rivera Jose Diego     | Gogotes17         | L           |             | C       |             |
+| Janampa Gutierrez Jhoan D.     | orraiAKBDFSK      | C           |             | C       |             |
+| Taipe Sangama Jorge Francisco  | CamotinFurious    | L           |             | L       |             |
+| Espinoza Chavez Moises         | MoisesECh         | C           |             | C       |             |
+
+
+
+
+##### 4.2.3.2. Sprint Backlog `3`
+
+##### 4.2.3.3. Development Evidence for Sprint Review
+##### 4.2.3.4. Testing Suite Evidence for Sprint Review
+##### 4.2.3.5. Execution Evidence for Sprint Review
+##### 4.2.3.6. Services Documentation Evidence for Sprint Review
+##### 4.2.3.7. Software Deployment Evidence for Sprint Review
+##### 4.2.3.8. Team Collaboration Insights during Sprint 3
 
 
 ### 4.3. Validation Interviews
