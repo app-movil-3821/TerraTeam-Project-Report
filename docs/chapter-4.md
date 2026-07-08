@@ -2008,7 +2008,7 @@ El objetivo principal de este sprint es tener la versión final, funcional y des
 
 Proyecto en Enlace al tablero de Trello: [Link de TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)
 
-![trello-sprint2.jpeg](../assets/img/chapter-4/trello-sprint-3.jpeg)
+![trello-sprint-3.png](../assets/img/chapter-4/trello-sprint-3.jpeg)
 
 
 A continuación, se presenta la tabla con las User Stories y tareas del Sprint 3:
@@ -2031,6 +2031,47 @@ A continuación, se presenta la tabla con las User Stories y tareas del Sprint 3
 
 
 ##### 4.2.3.3. Development Evidence for Sprint Review
+
+En esta sección se describen los principales avances de implementación realizados en este tercer sprint. Se destaca el desarrollo e implementacion de las pantallas y funcionalidades de la aplicación móvil Android nativa con Kotlin y Jetpack Compose, asi como el desarrollo completo de la aplicacion móvil en Flutter.
+
+Cada miembro del equipo avanzó en las diferentes áreas del proyecto: En la aplicación Android se desarrollaron todas pantallas y la navegación usando Kotlin y Jetpack Compose.
+
+
+| Repository            | Branch          | Commit Id | Commit Message                                                           | Committed On |
+|-----------------------|-----------------|-----------|--------------------------------------------------------------------------|--------------|
+| ChambaYa-Kotlin   | develop | 9789b27| feat(auth): Google Sign-In en Login y Registro | 2026/06/25   |
+| ChambaYa-Kotlin   | develop | e2e18a7| fix(maps): cambio de SHA-1 | 2026/06/25   |
+| ChambaYa-Kotlin   | develop | 1d5dab0| fix(ui): mejoras visuales y datos reales en billetera | 2026/06/25   |
+
+| ChambaYa-Mobile-MultiPlatform   | develop | ed3bc66 | feat(profile): connect profile and settings to backend API | 2026/06/21   |
+| ChambaYa-Mobile-MultiPlatform  | develop | 5ec461d| fix(api): update backend API URL for Auth, Job, and Profile services | 2026/06/22   |
+| ChambaYa-Mobile-MultiPlatform   | develop | c1726df| feat(messages): add message repository and service, integrate with dependency injection| 2026/06/25  |
+
+| ChambaYa-Mobile-MultiPlatform   | develop | f6f6e6e| feat(messages): implement conversation and message DTOs, service, and repository| 2026/06/25  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 6202e56| feat(messages): store currentUserId in MessagesViewModel during conversation loading| 2026/06/25  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 9c2936e| refactor(messages): improve logging and error handling in getConversations method| 2026/06/25  |
+
+| ChambaYa-Mobile-MultiPlatform   | develop | 8dd2242| feat: shifts module - worker & contractor views with enrollments| 2026/06/26  |
+
+| ChambaYa-Mobile-MultiPlatform   | develop | 6de1969| feat: add buildFinished hook to clean up problem reports and update .gitignore for android/build/| 2026/06/28  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 8494101| feat(shifts): add map picker with reverse geocoding for job creation| 2026/07/01  |
+
+
+
+| ChambaYa-Mobile-MultiPlatform   | develop | afc70b7| fix: correct string interpolation in MessageService for authorization and URL construction| 2026/07/02  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 31ce2bb| feat(auth): add role parameter to registration and update DI for RegisterViewModel| 2026/07/02  |
+
+| ChambaYa-Mobile-MultiPlatform   | develop | 52d9e64| feat(notifications): implement notification model, repository, and view model with state management| 2026/07/03  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 1a94fc9| feat(notifications): implement NotificationsPage with notification list and mark all as read functionality| 2026/07/03  |
+
+
+
+
+
+|
+
+
+
 ##### 4.2.3.4. Testing Suite Evidence for Sprint Review
 ##### 4.2.3.5. Execution Evidence for Sprint Review
 ##### 4.2.3.6. Services Documentation Evidence for Sprint Review
