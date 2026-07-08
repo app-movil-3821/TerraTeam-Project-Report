@@ -1992,16 +1992,43 @@ En esta sección se incluye la matriz de liderazgo y colaboración para este spr
 
 | Team Member                    | GitHub Usernames  | App Android | Backend API | Reporte | App Flutter |
 |--------------------------------|------------------ |-------------|-------------|---------|-------------|
-| Cordova Valdivia Sebastian     | Sevas04           | C           | C           | C       |             | 
+| Cordova Valdivia Sebastian     | Sevas04           | C           | C           | C       | C         | 
 | Bautista Rivera Jose Diego     | Gogotes17         | L           |             | C       |             |
-| Janampa Gutierrez Jhoan D.     | orraiAKBDFSK      | C           |             | C       |             |
-| Taipe Sangama Jorge Francisco  | CamotinFurious    | L           |             | L       |             |
+| Janampa Gutierrez Jhoan D.     | orraiAKBDFSK      | C           |             | C       | C         |
+| Taipe Sangama Jorge Francisco  | CamotinFurious    | L           |             | L       | L           |
 | Espinoza Chavez Moises         | MoisesECh         | C           |             | C       |             |
 
 
 
 
 ##### 4.2.3.2. Sprint Backlog `3`
+
+El objetivo principal de este sprint es tener la versión final, funcional y desplegada de la aplicación móvil Android con las pantallas implementadas, y también la versión final y desplegada de la aplicación móvil en Flutter.
+
+
+Proyecto en Enlace al tablero de Trello: [Link de TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)
+
+![trello-sprint2.jpeg](../assets/img/chapter-4/trello-sprint-3.jpeg)
+
+
+A continuación, se presenta la tabla con las User Stories y tareas del Sprint 3:
+
+
+
+| Sprint 3     | Sprint Backlog3 |                  |        |                                                                      |                    |              |        |
+|--------------|-----------------|------------------|--------|----------------------------------------------------------------------|--------------------|--------------|--------|
+| User Stories |                 | Work-Item / Task | Title  | Description                                                          | Estimation (Hours) | Assigned to  | Status |
+| US09   |    | T01  |  |     | 6h  |   | Done |
+| US11   |    | T02  |  |   (text)  | | (nombre)  | Done |
+| US12   |    | T03  |  |   (text)  | | (nombre)  | Done |
+| US13   |    | T04  |  |   implementar funcionalidad para los trabajos en el mapa| | Jhoan Janampa  | Done |
+| US25   |    | T05  |  |   (text)  | | (nombre)  | Done |
+| US27   |    | T06  |  |   (text)  | | (nombre)  | Done |
+| US29   |    | T07  |  |   (text)  | | (nombre)  | Done |
+| TF01  |    | T08     |  | documentacion del reporte de sprint  | 04    |  Moisés Espinoza |Done  |
+| TF02  |    | T09     | |  implementacion y despliegue de Flutter  |   03  | Jorge Taipe |Done  |
+| TF02  |    | T10     | |  actualización del backend api para flutter |   04  |  Jorge Taipe |Done  |
+
 
 ##### 4.2.3.3. Development Evidence for Sprint Review
 ##### 4.2.3.4. Testing Suite Evidence for Sprint Review
