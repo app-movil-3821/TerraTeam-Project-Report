@@ -2244,7 +2244,7 @@ Pantalla de inicio de sesión donde el usuario ingresa su correo y contraseña p
 
 Pantalla de registro donde el nuevo usuario ingresa sus datos personales para crear una cuenta en ChambaYA, seleccionando si es chambeador o contratante.
 
-![registro-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro-sprint2.png)
+![registro-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro-sprint-3.png)
  
 ---
 
@@ -2252,7 +2252,7 @@ Pantalla de registro donde el nuevo usuario ingresa sus datos personales para cr
 
 Pantalla de configuración del perfil basado en habilidades. El chambeador selecciona mediante etiquetas (tags) las habilidades que puede ofrecer, eliminando la necesidad de un CV tradicional.
 
-![Skills.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Skills.png)
+![skills-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/skills-sprint-3.png)
  
 ---
 
@@ -2282,6 +2282,13 @@ Pantalla que muestra la confirmación de la postulacion y también los detalles 
  
 ---
 
+**My Shifts: (Chambeador)**
+
+Pantalla con el historial de turnos del chambeador, mostrando los trabajos completados, pagos recibidos y el estado de cada turno.
+
+![turnos-flutter-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/turnos-flutter-sprint-3.png)
+ 
+---
 
 **My Shifts: (Contratante)**
 
@@ -2319,6 +2326,14 @@ Pantalla del chat interno temporal entre el chambeador y el contratante, habilit
  
 ---
 
+
+**Profile View: (Contratante)**
+
+Pantalla de perfil del contratante donde se muestra un historial de los turnos creados, y opciones de configuración de la cuenta.
+
+![perfil-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/perfil-sprint-3.png)
+ 
+---
 
 
 
