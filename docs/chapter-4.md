@@ -2264,6 +2264,384 @@ Controller que gestiona el sistema de calificaciones y reseñas mutuas entre cha
 
 
 ##### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación de los endpoints implementados en el backend de **ChambaYa** durante el Sprint Review. La evidencia permite identificar los servicios disponibles, el módulo al que pertenecen, el verbo HTTP utilizado, la sintaxis de consumo, los parámetros principales y el enlace de acceso a Swagger para su validación.
+
+A continuación, se muestra la tabla de endpoints desarrollados para los módulos **IAM**, **Jobs**, **Enrollments** y **Reputation**.
+
+| Módulo | Endpoint | Acción | Verbo HTTP | Sintaxis | Parámetros principales | Enlace a Swagger |
+|---|---|---|---|---|---|---|
+| IAM | `/api/v1/users` | Registrar un nuevo usuario en la plataforma | POST | `/api/v1/users` | Body: `name`, `email`, `password`, `role`, `skills`, `experience`, `district`, `phone` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| IAM | `/api/v1/users` | Obtener la lista de usuarios registrados | GET | `/api/v1/users` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| IAM | `/api/v1/users/{id}` | Obtener un usuario por su identificador | GET | `/api/v1/users/123` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| IAM | `/api/v1/users/by-email` | Obtener un usuario por correo electrónico | GET | `/api/v1/users/by-email?email=user@email.com` | `email` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| IAM | `/api/v1/users/{id}/profile` | Actualizar el perfil de un usuario | PUT | `/api/v1/users/123/profile` | `id`, Body: `photoUrl`, `skills`, `experience`, `district`, `phone`, `verified` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs` | Crear un nuevo trabajo o turno publicado por un contratante | POST | `/api/v1/jobs` | Body: `contractorId`, `title`, `description`, `category`, `requiredSkills`, `paymentAmount`, `latitude`, `longitude`, `address`, `district`, `scheduledStart`, `scheduledEnd` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs` | Obtener todos los trabajos registrados | GET | `/api/v1/jobs` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/{id}` | Obtener un trabajo por su identificador | GET | `/api/v1/jobs/123` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/contractor/{contractorId}` | Obtener los trabajos publicados por un contratante | GET | `/api/v1/jobs/contractor/123` | `contractorId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/published` | Obtener los trabajos publicados disponibles | GET | `/api/v1/jobs/published` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/nearby` | Obtener trabajos cercanos según coordenadas y radio | GET | `/api/v1/jobs/nearby?latitude=-12.1211&longitude=-77.0305&radiusKm=10` | `latitude`, `longitude`, `radiusKm` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/{id}/publish` | Cambiar el estado de un trabajo a publicado | PUT | `/api/v1/jobs/123/publish` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/{id}/close` | Cerrar un trabajo publicado | PUT | `/api/v1/jobs/123/close` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/{id}/reopen` | Reabrir un trabajo cerrado o cancelado | PUT | `/api/v1/jobs/123/reopen` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments` | Registrar la postulación de un chambeador a un trabajo | POST | `/api/v1/enrollments` | Body: `jobId`, `workerId`, `contractorId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments` | Obtener todas las postulaciones registradas | GET | `/api/v1/enrollments` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/{id}` | Obtener una postulación por su identificador | GET | `/api/v1/enrollments/123` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/job/{jobId}` | Obtener las postulaciones asociadas a un trabajo | GET | `/api/v1/enrollments/job/123` | `jobId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/worker/{workerId}` | Obtener las postulaciones realizadas por un chambeador | GET | `/api/v1/enrollments/worker/123` | `workerId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/contractor/{contractorId}` | Obtener las postulaciones asociadas a los trabajos de un contratante | GET | `/api/v1/enrollments/contractor/123` | `contractorId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/pending` | Obtener las postulaciones pendientes | GET | `/api/v1/enrollments/pending` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/{id}/accept` | Aceptar una postulación y actualizar el trabajo a estado `MATCHED` | PUT | `/api/v1/enrollments/123/accept` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/{id}/reject` | Rechazar una postulación | PUT | `/api/v1/enrollments/123/reject` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/{id}/cancel` | Cancelar una postulación realizada | PUT | `/api/v1/enrollments/123/cancel` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews` | Registrar una calificación o reseña entre usuarios | POST | `/api/v1/reviews` | Body: `jobId`, `reviewerId`, `reviewedUserId`, `rating`, `comment` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews` | Obtener todas las reseñas registradas | GET | `/api/v1/reviews` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/{id}` | Obtener una reseña por su identificador | GET | `/api/v1/reviews/123` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/job/{jobId}` | Obtener las reseñas asociadas a un trabajo | GET | `/api/v1/reviews/job/123` | `jobId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/reviewer/{reviewerId}` | Obtener las reseñas realizadas por un usuario | GET | `/api/v1/reviews/reviewer/123` | `reviewerId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/user/{userId}` | Obtener las reseñas recibidas por un usuario | GET | `/api/v1/reviews/user/123` | `userId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/user/{userId}/summary` | Obtener el promedio y total de reseñas de un usuario | GET | `/api/v1/reviews/user/123/summary` | `userId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+
+
+## Ejemplos Detallados
+
+### IAM
+
+#### 1. Registrar un nuevo usuario
+
+- **Endpoint:** `POST /api/v1/users`
+- **Descripción:** Registra un nuevo usuario en la plataforma ChambaYa. El usuario puede tener el rol de `CHAMBEADOR` o `CONTRATANTE`, según el tipo de cuenta creada.
+
+**Ruta**
+
+```http
+POST /api/v1/users
+```
+
+**Solicitud**
+
+```json
+{
+  "name": "Diego Salazar",
+  "email": "diego.salazar.worker@gmail.com",
+  "password": "123456",
+  "role": "CHAMBEADOR",
+  "skills": ["atención al cliente", "limpieza", "rapidez"],
+  "experience": "Apoyo en cafeterías y restaurantes",
+  "district": "Miraflores",
+  "phone": "911222333"
+}
+```
+
+**Respuesta 201 Created**
+
+```json
+{
+  "id": "69fb...",
+  "name": "Diego Salazar",
+  "email": "diego.salazar.worker@gmail.com",
+  "role": "CHAMBEADOR",
+  "profile": {
+    "photoUrl": null,
+    "skills": ["atención al cliente", "limpieza", "rapidez"],
+    "experience": "Apoyo en cafeterías y restaurantes",
+    "district": "Miraflores",
+    "phone": "911222333",
+    "verified": false
+  },
+  "createdAt": "2026-05-08T16:00:00",
+  "updatedAt": "2026-05-08T16:00:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El correo ya se encuentra registrado.
+- `400 Bad Request`: Faltan campos obligatorios o el formato del correo no es válido.
+
+---
+
+### Jobs
+
+#### 2. Crear un nuevo trabajo o turno
+
+- **Endpoint:** `POST /api/v1/jobs`
+- **Descripción:** Permite que un usuario con rol `CONTRATANTE` publique un nuevo trabajo temporal o turno corto. El backend valida que el `contractorId` pertenezca a un usuario existente con rol `CONTRATANTE`.
+
+**Ruta**
+
+```http
+POST /api/v1/jobs
+```
+
+**Solicitud**
+
+```json
+{
+  "contractorId": "ID_DEL_CONTRATANTE",
+  "title": "Apoyo para atención en cafetería",
+  "description": "Se necesita apoyo para atención de clientes y limpieza básica.",
+  "category": "Atención al cliente",
+  "requiredSkills": ["atención al cliente", "limpieza", "rapidez"],
+  "paymentAmount": 60,
+  "latitude": -12.1211,
+  "longitude": -77.0305,
+  "address": "Av. Larco 450",
+  "district": "Miraflores",
+  "scheduledStart": "2026-05-08T16:00:00",
+  "scheduledEnd": "2026-05-08T21:00:00"
+}
+```
+
+**Respuesta 201 Created**
+
+```json
+{
+  "id": "69fd...",
+  "contractorId": "ID_DEL_CONTRATANTE",
+  "title": "Apoyo para atención en cafetería",
+  "description": "Se necesita apoyo para atención de clientes y limpieza básica.",
+  "category": "Atención al cliente",
+  "requiredSkills": ["atención al cliente", "limpieza", "rapidez"],
+  "paymentAmount": 60,
+  "location": {
+    "latitude": -12.1211,
+    "longitude": -77.0305,
+    "address": "Av. Larco 450",
+    "district": "Miraflores"
+  },
+  "scheduledStart": "2026-05-08T16:00:00",
+  "scheduledEnd": "2026-05-08T21:00:00",
+  "status": "PUBLISHED",
+  "createdAt": "2026-05-08T16:10:00",
+  "updatedAt": "2026-05-08T16:10:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El usuario indicado no existe.
+- `400 Bad Request`: El usuario no tiene rol `CONTRATANTE`.
+- `400 Bad Request`: Faltan campos obligatorios del trabajo.
+
+---
+
+#### 3. Consultar trabajos cercanos para el mapa
+
+- **Endpoint:** `GET /api/v1/jobs/nearby`
+- **Descripción:** Devuelve los trabajos disponibles cercanos a una ubicación determinada. Este servicio permite que la aplicación móvil muestre trabajos en un mapa usando coordenadas geográficas.
+
+**Ruta**
+
+```http
+GET /api/v1/jobs/nearby?latitude=-12.1211&longitude=-77.0305&radiusKm=10
+```
+
+**Parámetros**
+
+```txt
+latitude: latitud actual del usuario
+longitude: longitud actual del usuario
+radiusKm: radio de búsqueda en kilómetros
+```
+
+**Respuesta 200 OK**
+
+```json
+[
+  {
+    "id": "69fd...",
+    "contractorId": "ID_DEL_CONTRATANTE",
+    "title": "Apoyo para atención en cafetería",
+    "description": "Se necesita apoyo para atención de clientes y limpieza básica.",
+    "category": "Atención al cliente",
+    "requiredSkills": ["atención al cliente", "limpieza", "rapidez"],
+    "paymentAmount": 60,
+    "location": {
+      "latitude": -12.1211,
+      "longitude": -77.0305,
+      "address": "Av. Larco 450",
+      "district": "Miraflores"
+    },
+    "scheduledStart": "2026-05-08T16:00:00",
+    "scheduledEnd": "2026-05-08T21:00:00",
+    "status": "PUBLISHED",
+    "createdAt": "2026-05-08T16:10:00",
+    "updatedAt": "2026-05-08T16:10:00"
+  }
+]
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El radio de búsqueda debe ser mayor a cero.
+- `200 OK`: Retorna una lista vacía si no existen trabajos cercanos disponibles.
+
+---
+
+### Enrollments
+
+#### 4. Registrar postulación a un trabajo
+
+- **Endpoint:** `POST /api/v1/enrollments`
+- **Descripción:** Permite que un chambeador postule a un trabajo publicado. El backend valida que el trabajo exista, que el usuario tenga rol `CHAMBEADOR`, que el contratante tenga rol `CONTRATANTE` y que el contratante sea dueño del trabajo.
+
+**Ruta**
+
+```http
+POST /api/v1/enrollments
+```
+
+**Solicitud**
+
+```json
+{
+  "jobId": "ID_DEL_JOB",
+  "workerId": "ID_DEL_CHAMBEADOR",
+  "contractorId": "ID_DEL_CONTRATANTE"
+}
+```
+
+**Respuesta 201 Created**
+
+```json
+{
+  "id": "69fe...",
+  "jobId": "ID_DEL_JOB",
+  "workerId": "ID_DEL_CHAMBEADOR",
+  "contractorId": "ID_DEL_CONTRATANTE",
+  "status": "PENDING",
+  "appliedAt": "2026-05-08T16:20:00",
+  "decidedAt": null,
+  "updatedAt": "2026-05-08T16:20:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El trabajo no existe.
+- `400 Bad Request`: El usuario no tiene rol `CHAMBEADOR`.
+- `400 Bad Request`: El contratante no tiene rol `CONTRATANTE`.
+- `400 Bad Request`: El contratante no es dueño del trabajo.
+- `400 Bad Request`: El chambeador ya postuló a ese trabajo.
+
+---
+
+#### 5. Aceptar una postulación
+
+- **Endpoint:** `PUT /api/v1/enrollments/{id}/accept`
+- **Descripción:** Permite que el contratante acepte una postulación. Al aceptar una postulación, esta cambia a estado `ACCEPTED`, el trabajo relacionado cambia a `MATCHED` y las demás postulaciones pendientes del mismo trabajo pasan a `REJECTED`.
+
+**Ruta**
+
+```http
+PUT /api/v1/enrollments/ID_DEL_ENROLLMENT/accept
+```
+
+**Respuesta 200 OK**
+
+```json
+{
+  "id": "ID_DEL_ENROLLMENT",
+  "jobId": "ID_DEL_JOB",
+  "workerId": "ID_DEL_CHAMBEADOR",
+  "contractorId": "ID_DEL_CONTRATANTE",
+  "status": "ACCEPTED",
+  "appliedAt": "2026-05-08T16:20:00",
+  "decidedAt": "2026-05-08T16:30:00",
+  "updatedAt": "2026-05-08T16:30:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: La postulación no existe.
+- `409 Conflict`: Solo las postulaciones pendientes pueden ser aceptadas.
+- `400 Bad Request`: El trabajo relacionado no existe.
+
+---
+
+### Reputation
+
+#### 6. Registrar una reseña
+
+- **Endpoint:** `POST /api/v1/reviews`
+- **Descripción:** Registra una calificación entre usuarios relacionada con un trabajo. El sistema valida que el trabajo exista, que los usuarios existan, que el usuario no se califique a sí mismo y que no exista una reseña duplicada para el mismo trabajo y usuarios.
+
+**Ruta**
+
+```http
+POST /api/v1/reviews
+```
+
+**Solicitud**
+
+```json
+{
+  "jobId": "ID_DEL_JOB",
+  "reviewerId": "ID_DEL_CONTRATANTE",
+  "reviewedUserId": "ID_DEL_CHAMBEADOR",
+  "rating": 5,
+  "comment": "Cumplió correctamente con el turno y tuvo buena actitud."
+}
+```
+
+**Respuesta 201 Created**
+
+```json
+{
+  "id": "69ff...",
+  "jobId": "ID_DEL_JOB",
+  "reviewerId": "ID_DEL_CONTRATANTE",
+  "reviewedUserId": "ID_DEL_CHAMBEADOR",
+  "rating": 5,
+  "comment": "Cumplió correctamente con el turno y tuvo buena actitud.",
+  "createdAt": "2026-05-08T16:40:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El trabajo no existe.
+- `400 Bad Request`: El usuario que califica no existe.
+- `400 Bad Request`: El usuario calificado no existe.
+- `400 Bad Request`: El usuario no puede calificarse a sí mismo.
+- `400 Bad Request`: La reseña ya existe para ese trabajo y usuarios.
+- `400 Bad Request`: La calificación debe estar entre 1 y 5.
+
+---
+
+#### 7. Consultar resumen de reputación
+
+- **Endpoint:** `GET /api/v1/reviews/user/{userId}/summary`
+- **Descripción:** Devuelve el promedio de calificaciones y la cantidad total de reseñas recibidas por un usuario.
+
+**Ruta**
+
+```http
+GET /api/v1/reviews/user/ID_DEL_USUARIO/summary
+```
+
+**Respuesta 200 OK**
+
+```json
+{
+  "userId": "ID_DEL_USUARIO",
+  "averageRating": 5.0,
+  "totalReviews": 1
+}
+```
+
+**Errores comunes**
+
+- `200 OK`: Si el usuario no tiene reseñas, retorna promedio `0.0` y total `0`.
+
+---
+
+
+
+
 ##### 4.2.3.7. Software Deployment Evidence for Sprint Review
 ##### 4.2.3.8. Team Collaboration Insights during Sprint 3
 
