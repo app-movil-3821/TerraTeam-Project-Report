@@ -2722,6 +2722,46 @@ GET /api/v1/reviews/user/ID_DEL_USUARIO/summary
 
 ##### 4.2.3.8. Team Collaboration Insights during Sprint 3
 
+En esta sección se detalla cómo se llevaron a cabo las actividades de implementación durante el tercer sprint, así como la participación de cada miembro del equipo. Para este sprint, el equipo se organizó en torno a los principales productos: Aplicación Móvil Android Nativa, el Backend API, y la Aplicacion Móvil en Flutter. Cada integrante asumió responsabilidades específicas en uno o más de estos componentes, trabajando mediante ramas individuales y siguiendo la estrategia GitFlow para la integración del código.
+
+El proyecto se gestionó utilizando una organización en GitHub llamada **app-movil-3821**, donde se crearon repositorios separados para cada producto. Esto permitió una mejor gestión del código y facilitó la colaboración entre los miembros del equipo.
+
+---
+
+
+### Backend API
+
+- El integrante **Sebastián Córdova** lideró el desarrollo del backend, implementando los endpoints principales de la aplicación usando Java con Spring Boot y MongoDB. Desarrolló los controllers de usuarios (IAM Context), trabajos (Job Context), postulaciones (Enrollment) y reseñas (Reviews). Además, se encargó del despliegue del backend en **Railway** y la configuración de la base de datos en **MongoDB Atlas**. Juntamente con Jose Diego Bautista implementando también funcionalidades.
+
+A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para el backend. El gráfico refleja el aporte de cada integrante en el avance de la última versión del Backend API. Juntamente con los commits a lo largo del tiempo 
+
+
+![backend-reporte.jpeg](../assets/img/chapter-4/backend-reporte.jpeg)
+
+
+---
+
+### Aplicación Móvil Android
+
+A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para la aplicación móvil Android. El gráfico refleja el aporte de cada integrante en el avance de la última versión de la aplicación.
+
+![kotlin-commits-sprint-3](../assets/img/chapter-4/kotlin-commits-sprint-3.png)
+
+
+También, se adjunta el gráfico de la vista de commits a lo largo del tiempo de la aplicación Android, donde se puede observar en qué meses hubo mayor cantidad de commits y participación para las funcionalidades implementadas durante el sprint.
+
+![kotlin-sprint-3.png](../assets/img/chapter-4/kotlin-sprint-3.png)
+
+---
+
+
+### Aplicación Móvil Flutter
+
+
+A continuación, se muestra el gráfico del historial de commits a lo largo del tiempo de la aplicación en Flutter. Estas métricas reflejan la distribución del esfuerzo del equipo de desarrollo para el despliegue de la última versión de la aplicación. Complementariamente, se presenta el desglose de la cantidad de commits realizados por los miembros del equipo durante este sprint.
+
+![flutter-commits-sprint-3](../assets/img/chapter-4/flutter-commits-sprint-3.png)
+
 
 ### 4.3. Validation Interviews
 #### 4.3.1. Diseño de Entrevistas
