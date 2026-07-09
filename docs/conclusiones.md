@@ -4,17 +4,46 @@
 
 ## Conclusiones y recomendaciones
 
-El desarrollo del proyecto ChambaYA permitió validar que el problema planteado inicialmente es real y relevante: tanto las entrevistas de Needfinding (Capítulo II) como las entrevistas de validación del prototipo (Capítulo IV) confirmaron que las MYPEs pierden tiempo y oportunidades de venta al cubrir turnos de emergencia mediante métodos informales (conocidos, WhatsApp, carteles), mientras que los jóvenes enfrentan barreras de acceso al mercado laboral por la exigencia de un CV o de experiencia previa. El 100% de los contratantes entrevistados manifestó dificultades de confianza y lentitud al buscar personal, y el 100% de los jóvenes entrevistados valoró la rapidez y flexibilidad como factores decisivos, lo que confirma la pertinencia del modelo de matching hiperlocal sin CV propuesto por la startup.
+### 1. Validación de Problem Statements y Supuestos
 
-En cuanto a la propuesta de solución, las hipótesis de Lean UX definidas en el Capítulo I se vieron parcialmente validadas durante las entrevistas de validación del prototipo en el Sprint 1. Los entrevistados destacaron positivamente el sistema de perfiles basado en habilidades (tags) en lugar de CV, la geolocalización para encontrar turnos cercanos, el chat interno para coordinar sin compartir datos personales y la "Insignia de Confianza" universitaria como mecanismo de seguridad para las MYPEs al contratar desconocidos. Esto respalda la dirección estratégica del producto y sugiere que, de cara a los siguientes sprints, se debe seguir reforzando estos diferenciadores frente a competidores generalistas como Computrabajo, Indeed o Time Jobs, identificados en el análisis competitivo del Capítulo II.
+El Problem Statement inicial identificó una desconexión estructural entre las MYPEs que necesitan personal temporal y los jóvenes que buscan ingresos flexibles. A lo largo del desarrollo de ChambaYa, esta problemática se confirmó como real y relevante. El supuesto de que las MYPEs estarían dispuestas a contratar jóvenes sin CV formal, siempre que existiera un filtro de confianza, fue validado mediante la implementación de la Insignia de Confianza universitaria basada en correo institucional (.edu.pe). Asimismo, el supuesto de que eliminar la fricción del CV aumentaría el registro de jóvenes se validó con el sistema de etiquetas de habilidades Tag-Based, que redujo significativamente la barrera de entrada al mercado laboral.
 
-A nivel de implementación, el equipo logró desplegar una primera versión funcional de los tres componentes del producto: el Landing Page en GitHub Pages, el Backend API en Railway con Java, Spring Boot y MongoDB Atlas, y las pantallas principales de la aplicación móvil nativa en Kotlin con Jetpack Compose. El diseño táctico bajo Domain-Driven Design, con bounded contexts diferenciados para IAM, Jobs, Enrollments/Application y Communication, permitió distribuir el trabajo entre los integrantes y mantener una arquitectura desacoplada que facilita la incorporación de nuevas funcionalidades en sprints futuros, como el Payment Context, que aún no fue implementado.
+### 2. Contrastación de Hipótesis
 
-Por otro lado, la evaluación heurística realizada sobre el prototipo (Capítulo IV) identificó tres problemas de usabilidad que deben atenderse antes de avanzar con nuevas funcionalidades: sobrecarga de información en la vista de turnos, falta de una vía de retorno clara en pantallas de nivel superior y una iconografía ambigua en la barra de navegación inferior (particularmente el ícono de "Shifts"). Se recomienda priorizar estas correcciones en el próximo sprint, ya que afectan directamente la libertad y el control del usuario, dos heurísticas de usabilidad fundamentales para la retención de ambos segmentos.
+- **Hipótesis 1 (Geolocalización):** El motor de geolocalización implementado en la app permite visualizar turnos cercanos en tiempo real. La funcionalidad fue desarrollada tanto en la versión Kotlin como Flutter, mostrando disponibilidad inmediata de turnos por zona. Su efectividad real dependerá de alcanzar masa crítica de usuarios en producción.
 
-Como recomendaciones generales para la continuidad del proyecto, se sugiere: (1) ampliar la suite de pruebas del backend más allá del test de contexto inicial, incorporando Unit Tests por bounded context y Acceptance Tests en Gherkin como se planificó en el Capítulo IV; (2) iniciar la medición de los Business y User Outcomes definidos en el Lean UX Canvas (tiempo de cobertura de turnos, tasa de recurrencia mensual, calificación promedio) una vez la aplicación esté en un entorno con usuarios reales; y (3) mantener la coordinación lograda entre los subequipos de Landing Page, Backend y Aplicación Móvil mediante GitFlow, ya que fue un factor clave para entregar un avance funcional e integrado en el primer sprint. En conjunto, el equipo demostró capacidad para validar un problema real, diseñar una solución coherente con DDD y Lean UX, e implementar un primer incremento de producto desplegado y verificado, sentando una base sólida para los sprints restantes del proyecto.
+- **Hipótesis 2 (Registro sin CV):** El perfil Tag-Based se implementó exitosamente, permitiendo a los jóvenes registrar habilidades de forma rápida sin necesidad de documentación formal. El onboarding simplificado reduce la fricción y el abandono durante el registro.
+
+- **Hipótesis 3 (Insignia de Confianza):** La verificación mediante correo institucional fue integrada en el backend y se muestra visualmente en el perfil del chambeador. Esta funcionalidad responde directamente a la desconfianza de las MYPEs hacia candidatos sin historial laboral formal.
+
+- **Hipótesis 4 (Sistema de Calificaciones):** Se diseñó la arquitectura del sistema de reputación bidireccional. Su validación real requiere usuarios activos completando turnos, por lo que constituye una métrica pendiente de medición en producción.
+
+### 3. Cumplimiento de Criterios de Éxito
+
+Se logró desplegar una solución multiplataforma funcional (Kotlin para Android y Flutter multiplataforma) conectada a un backend en producción desplegado en Railway. Las funcionalidades core fueron implementadas: publicación de turnos, postulación, aceptación/rechazo de chambeadores, geolocalización y gestión de perfil. Sin embargo, métricas como la tasa de aceptación en menos de 2 horas o la recurrencia del 30% de MYPEs requieren validación en un entorno real con usuarios activos, lo cual constituye el siguiente paso natural del proyecto.
+
+---
+
+## Recomendaciones
+
+- **Sistema de Notificaciones Push en Tiempo Real:** Durante el desarrollo se identificó que la inmediatez es el valor central de ChambaYa. Se recomienda implementar notificaciones push (Firebase Cloud Messaging) para alertar a los chambeadores cercanos en el momento exacto en que se publica un turno, reduciendo el tiempo de respuesta y acercándose a la meta del 60% de aceptaciones en menos de 2 horas.
+
+- **Implementación del Sistema de Calificaciones:** El módulo de reseñas bidireccionales es una funcionalidad crítica pendiente. Se recomienda priorizarlo en el siguiente sprint, ya que es el pilar que sostiene la confianza del ecosistema y la recurrencia de las MYPEs, ambas métricas de éxito definidas en los Business Outcomes.
+
+- **Chat Interno Temporal:** Se recomienda desarrollar el módulo de mensajería interna que se active únicamente cuando un turno es aceptado. Esto elimina la necesidad de compartir datos personales y profesionaliza la comunicación dentro de la plataforma, validando el supuesto de preferencia por coordinación interna sobre WhatsApp.
+
+- **Onboarding Mejorado con Tutorial Interactivo:** Las pruebas de desarrollo mostraron que ciertas funcionalidades como la selección de ubicación en mapa o la gestión de postulantes pueden resultar poco intuitivas para usuarios nuevos. Se recomienda agregar un flujo de onboarding guiado con tooltips y pantallas de bienvenida diferenciadas por rol (Chambeador vs Contratante).
+
+- **Módulo de Pagos y Billetera Digital:** La funcionalidad de Billetera está presente en la navegación pero pendiente de implementación. Se recomienda integrar una pasarela de pagos (como Culqi o Niubiz, orientadas al mercado peruano) para cerrar el ciclo económico dentro de la app, permitiendo que el chambeador reciba su pago el mismo día, que es uno de los User Outcomes principales definidos en el Lean UX.
 
 ## Video App Validation
+
+Video de validacion de producto: https://shorturl.at/Xhf2v
+
+## Video Team   
+
+Video Exposicion: https://short-url.cc/1tgKH
+
 
 ## Video About the Product
 
@@ -24,7 +53,7 @@ El video "About the Product" presenta de manera clara y atractiva la propuesta d
 
 | Titulo del Video        | Foundly Product               |
 |-------------------------|-------------------------------|
-| Duracion                | 1 miunto                      |
+| Duracion                | 1 minuto                      |
 | Fecha de Grabacion      | 21/06/2026                    |
 | URL de Youtube          | https://youtu.be/WrObe5WUI10  |
 | URL de Microsoft Stream | https://shorturl.at/NwXQ7    |
@@ -58,7 +87,7 @@ Para la definición de los términos del dominio (Chambeador, Contratante, Turno
 - Repositorio de la aplicación móvil (ChambaYa-Kotlin): https://github.com/app-movil-3821/ChambaYa-Kotlin
 - Repositorio del Backend API (Backend-ChambaYa): https://github.com/app-movil-3821/Backend-ChambaYa
 - Landing Page desplegado: https://app-movil-3821.github.io/LandingPageChambaYa/
-- Backend API desplegado / Swagger UI: https://backend-chambaya-production-b2e5.up.railway.app/swagger-ui/index.html
+- Backend API desplegado / Swagger UI: https://backend-chambaya-production-a24a.up.railway.app/swagger-ui/index.html
 - Tablero de Trello (Product Backlog): 
 ---
 
@@ -66,14 +95,129 @@ Para la definición de los términos del dominio (Chambeador, Contratante, Turno
 
 A continuación, se listan las fuentes citadas en el Capítulo I para sustentar la problemática y los antecedentes del proyecto:
 
-
-- Arcos Dorados. (2025). *Estudio sobre empleabilidad juvenil en Lima*.
-
-
-- ComexPerú. (2025). *Reporte MYPE: estructura empresarial, empleo e informalidad en el Perú*. Sociedad de Comercio Exterior del Perú.
-
-
-- Ministerio de la Producción [PRODUCE]. (2023). *Estadísticas de la micro y pequeña empresa: informalidad por segmento empresarial*.
-
-
-- Ministerio de la Producción [PRODUCE]. (2025). *Estadísticas de la MYPE: participación en el empleo y en el tejido empresarial del Perú*.
+<ul>
+  <li>
+    Adzic, G. (s.f.). <em>Impact Mapping</em>. 
+    Recuperado de <a href="https://www.impactmapping.org/">https://www.impactmapping.org/</a>
+  </li>
+  <li>
+    Angular. (s.f.). <em>Angular Coding Style Guide</em>. 
+    Recuperado de <a href="https://angular.io/guide/styleguide">https://angular.io/guide/styleguide</a>
+  </li>
+  <li>
+    Brandolini, A. (s.f.). <em>Introducing EventStorming</em>. 
+    Recuperado de <a href="https://www.eventstorming.com/">https://www.eventstorming.com/</a>
+  </li>
+  <li>
+    CareerFoundry. (s.f.). <em>What are User Flows in User Experience (UX) Design?</em>. 
+    Recuperado de <a href="https://careerfoundry.com/en/blog/ux-design/what-are-user-flows/">https://careerfoundry.com/en/blog/ux-design/what-are-user-flows/</a>
+  </li>
+  <li>
+    Cohn, M. (s.f.). <em>User Stories</em>. Mountain Goat Software. 
+    Recuperado de <a href="https://www.mountaingoatsoftware.com/agile/user-stories">https://www.mountaingoatsoftware.com/agile/user-stories</a>
+  </li>
+  <li>
+    Cone, M. (s.f.). <em>The Markdown Guide</em>. 
+    Recuperado de <a href="https://www.markdownguide.org/">https://www.markdownguide.org/</a>
+  </li>
+  <li>
+    Conventional Commits. (s.f.). <em>Conventional Commits</em>. 
+    Recuperado de <a href="https://www.conventionalcommits.org/">https://www.conventionalcommits.org/</a>
+  </li>
+  <li>
+    Cucumber. (s.f.). <em>Gherkin Reference</em>. 
+    Recuperado de <a href="https://cucumber.io/docs/gherkin/reference/">https://cucumber.io/docs/gherkin/reference/</a>
+  </li>
+  <li>
+    Driessen, V. (2010). <em>A successful Git branching model</em>. nvie.com. 
+    Recuperado de <a href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a>
+  </li>
+  <li>
+    DZone. (s.f.). <em>Acceptance Criteria in Scrum: Explanation, Examples, and Template</em>. 
+    Recuperado de <a href="https://dzone.com/articles/acceptance-criteria-in-software-explanation-exampl">https://dzone.com/articles/acceptance-criteria-in-software-explanation-exampl</a>
+  </li>
+  <li>
+    Evans, E. (2004). <em>Domain-Driven Design: Tackling Complexity in the Heart of Software</em>. Addison-Wesley Professional.
+    Recuperado de <a href="https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/">https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/</a>
+  </li>
+  <li>
+    Fowler, M. (2006). <em>Ubiquitous Language</em>. 
+    Recuperado de <a href="https://martinfowler.com/bliki/UbiquitousLanguage.html">https://martinfowler.com/bliki/UbiquitousLanguage.html</a>
+  </li>
+  <li>
+    Google. (s.f.). <em>Google HTML/CSS Style Guide</em>. 
+    Recuperado de <a href="https://google.github.io/styleguide/htmlcssguide.html">https://google.github.io/styleguide/htmlcssguide.html</a>
+  </li>
+  <li>
+    Google. (s.f.). <em>Google JavaScript Style Guide</em>. 
+    Recuperado de <a href="https://google.github.io/styleguide/jsguide.html">https://google.github.io/styleguide/jsguide.html</a>
+  </li>
+  <li>
+    Google. (s.f.). <em>Google TypeScript Style Guide</em>. 
+    Recuperado de <a href="https://google.github.io/styleguide/tsguide.html">https://google.github.io/styleguide/tsguide.html</a>
+  </li>
+  <li>
+    Google. (s.f.). <em>Google Java Style Guide</em>. 
+    Recuperado de <a href="https://google.github.io/styleguide/javaguide.html">https://google.github.io/styleguide/javaguide.html</a>
+  </li>
+  <li>
+    Gothelf, J., & Seiden, J. (2021). <em>Lean UX: Designing Great Products with Agile Teams</em> (3rd ed.). O'Reilly Media.
+    Recuperado de <a href="https://www.oreilly.com/library/view/lean-ux-2nd/9781491953594/">https://www.oreilly.com/library/view/lean-ux-2nd/9781491953594/</a>
+  </li>
+  <li>
+    HubSpot. (s.f.). <em>Full List of Meta Tags, Why They Matter for SEO & How to Write Them</em>. 
+    Recuperado de <a href="https://blog.hubspot.com/marketing/meta-tags">https://blog.hubspot.com/marketing/meta-tags</a>
+  </li>
+  <li>
+    IBM Design. (s.f.). <em>Empathy Map</em>. Enterprise Design Thinking. 
+    Recuperado de <a href="https://www.ibm.com/design/thinking/page/toolkit/activity/empathy-map">https://www.ibm.com/design/thinking/page/toolkit/activity/empathy-map</a>
+  </li>
+  <li>
+    IBM Design. (s.f.). <em>As-is Scenario Map</em>. Enterprise Design Thinking. 
+    Recuperado de <a href="https://www.ibm.com/design/thinking/page/toolkit/activity/as-is-scenario-map">https://www.ibm.com/design/thinking/page/toolkit/activity/as-is-scenario-map</a>
+  </li>
+  <li>
+    Martin, R. C. (2017). <em>Clean Architecture: A Craftsman's Guide to Software Structure and Design</em>. Prentice Hall.
+    Recuperado de <a href="https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/">https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/</a>
+  </li>
+  <li>
+    Mendel, J. (s.f.). <em>Seriously, what's your (startup's) problem?</em>. Medium. 
+    Recuperado de <a href="https://medium.com/@jakemendel/seriously-whats-your-startup-s-problem-b3a884c54ab4">https://medium.com/@jakemendel/seriously-whats-your-startup-s-problem-b3a884c54ab4</a>
+  </li>
+  <li>
+    Nielsen Norman Group. (1994). <em>10 Usability Heuristics for User Interface Design</em>. 
+    Recuperado de <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">https://www.nngroup.com/articles/ten-usability-heuristics/</a>
+  </li>
+  <li>
+    Nielsen Norman Group. (2016). <em>The Four Dimensions of Tone of Voice</em>. 
+    Recuperado de <a href="https://www.nngroup.com/articles/tone-of-voice-dimensions/">https://www.nngroup.com/articles/tone-of-voice-dimensions/</a>
+  </li>
+  <li>
+    Preston-Werner, T. (s.f.). <em>Semantic Versioning 2.0.0</em>. 
+    Recuperado de <a href="https://semver.org/">https://semver.org/</a>
+  </li>
+  <li>
+    Progressa Lean. (s.f.). <em>5W+2H - Técnica de análisis de problemas</em>. 
+    Recuperado de <a href="https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/">https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/</a>
+  </li>
+  <li>
+    Refactoring.Guru. (s.f.). <em>Design Patterns</em>. 
+    Recuperado de <a href="https://refactoring.guru/es/design-patterns">https://refactoring.guru/es/design-patterns</a>
+  </li>
+  <li>
+    Spring. (s.f.). <em>Spring Boot Reference Documentation</em>. 
+    Recuperado de <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/">https://docs.spring.io/spring-boot/docs/current/reference/html/</a>
+  </li>
+  <li>
+    UXPressia. (s.f.). <em>User vs. Buyer Persona: Differences and free template</em>. 
+    Recuperado de <a href="https://uxpressia.com/blog/user-persona-vs-buyer-persona-difference">https://uxpressia.com/blog/user-persona-vs-buyer-persona-difference</a>
+  </li>
+  <li>
+    Vernon, V. (2016). <em>Domain-Driven Design Distilled</em>. Addison-Wesley Professional.
+    Recuperado de <a href="https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/">https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/</a>
+  </li>
+  <li>
+    Vernon, V. (s.f.). <em>Domain-Driven Design Reference</em>. 
+    Recuperado de <a href="https://domainlanguage.com/ddd/reference/">https://domainlanguage.com/ddd/reference/</a>
+  </li>
+</ul>

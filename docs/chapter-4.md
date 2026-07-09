@@ -1310,7 +1310,7 @@ Pantalla de inicio de sesión donde el usuario ingresa su correo y contraseña p
 
 Pantalla de registro donde el nuevo usuario ingresa sus datos personales para crear una cuenta en ChambaYA, seleccionando si es chambeador o contratante.
 
-![registro-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro-sprint2.png)
+![registro-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro.sprint2.png)
  
 ---
 
@@ -1964,7 +1964,922 @@ También, se adjunta el gráfico de la vista de commits a lo largo del tiempo de
 ![time-kotlin.jpeg](../assets/img/chapter-4/time-kotlin.jpeg)
 
 ---
+#### 4.2.3. Sprint `3`
+En esta sección se explican los procesos para el desarrollo de la solución de software en el tercer sprint. Además, se incluyen secciones de planeamiento, desarrollo, prueba y despliegue de la aplicación móvil Android nativa, el backend AP y en Flutter.
 
+##### 4.2.3.1. Sprint Planning `3`
+
+
+A continuación, se detalla la información sobre el planeamiento del tercer sprint. El objetivo de este sprint se enfoca en el despliegue de la aplicación móvil Android nativa, junto con las pantallas y funcionalidades de la aplicación, los endpoints backend API con un avance al 100%, y las pantallas y funcionalidades de la aplicacion móvil en Flutter.
+
+| Sprint #                   | Sprint 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+| Sprint planning Background | --                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 
+| Date                       | 2026/06/22                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 
+| Time                       | 3:00 pm                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 
+| Location                   | Reunion en meet                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
+| Prepared By                | Taipe Sangama Jorge Francisco                                                                                                                                                                                                                                                                                                                                                                                                                                                                | 
+| Attendes                   | Taipe Sangama Jorge Francisco / Cordova Valdivia Sebastian / 	Janampa Gutierrez Jhoan D.  / Bautista, Jose Diego /  Espinoza Chavez Moises                                                                                                                                                                                                                                                                                                                                                   | 
+| Sprint Goal & User Stories |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
+| Sprint 3 Goal              | Nuestro enfoque está en desarrollar y desplegar la aplicación móvil Android nativa, avanzar en un 100% los endpoints del backend API y desplegar la aplicacion móvil en Flutter. Creemos que esto entrega una base funcional y visible del producto a los stakeholders. Esto se confirmará cuando la aplicación móvil Android nativa esté desplegada, también la aplicaoión móvil en Flutter y el backend responda correctamente a todas las solicitudes HTTP.| 
+| Sprint 3 Velocity          | 42                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 
+| Sums of Story Points       | 42                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | 
+
+
+**Aspect Liders and Colaborators**
+
+En esta sección se incluye la matriz de liderazgo y colaboración para este sprint. La letra "L" indica que el miembro es líder del aspecto y se encarga de avanzar y revisar el trabajo de los colaboradores. La letra "C" indica que el miembro es colaborador y se encarga de desarrollar las funcionalidades asignadas.
+
+| Team Member                    | GitHub Usernames  | App Android | Backend API | Reporte | App Flutter |
+|--------------------------------|------------------ |-------------|-------------|---------|-------------|
+| Cordova Valdivia Sebastian     | Sevas04           | C           | L           | C       | C         | 
+| Bautista Rivera Jose Diego     | Gogotes17         | L           |            | C       |             |
+| Janampa Gutierrez Jhoan D.     | orraiAKBDFSK      | C           |             | C       | C         |
+| Taipe Sangama Jorge Francisco  | CamotinFurious    | L           |             | L       | L           |
+| Espinoza Chavez Moises         | MoisesECh         | C           |             | C       |             |
+
+
+
+
+##### 4.2.3.2. Sprint Backlog `3`
+
+El objetivo principal de este sprint es tener la versión final, funcional y desplegada de la aplicación móvil Android con las pantallas implementadas, y también la versión final y desplegada de la aplicación móvil en Flutter.
+
+
+Proyecto en Enlace al tablero de Trello: [Link de TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)
+
+![trello-sprint-3.png](../assets/img/chapter-4/trello-sprint-3.png)
+
+
+A continuación, se presenta la tabla con las User Stories y tareas del Sprint 3:
+
+
+
+| Sprint 3     | Sprint Backlog3 |                  |        |                                                                      |                    |              |        |
+|--------------|-----------------|------------------|--------|----------------------------------------------------------------------|--------------------|--------------|--------|
+| User Stories |                 | Work-Item / Task | Title  | Description                                                          | Estimation (Hours) | Assigned to  | Status |
+| US01   |    | T01  |  |   mejoras en la funcionalidad de la autenticación y restablecimiento de contraseña | 6h  |  Jose Diego Bautista | Done |
+| US01   |    | T02  |  |   implementación y mejora de funcionalidad del perfil y sesión activa | 6h  |  Jose Diego Bautista | Done |
+| US02   |    | T03  |  |   implementación de funcionalidad en perfil y las validaciones  | 5h  |  Jorge Taipe | Done |
+| US03   |    | T04  |  |   implementación de la vista "Home" del chambeador  | 4h  | Sebastián Córdova | Done |
+| US09   |    | T05  |  |   implementación de Vistas y funciones como “Shifts” relacionadas a los perfiles de Chambeador y Contratante| 3h  | Jhoan Janampa | Done |
+| US11   |    | T06  |  |   implementación de registro y Mensajes y conexión entre segmentos | 5h | Jorge Taipe  | Done |
+| US13   |    | T07  |  |   implementación de funcionalidad para los trabajos en el mapa| 4h| Jhoan Janampa  | Done |
+| US13   |    | T08  |  |   correcciones en el mapa| 3h| Jose Diego Bautista | Done |
+| US13   |    | T09  |  |   mejoras en la funcionalidad de mapa de trabajos disponibles| 3h| Sebastián Córdova | Done |
+| US27   |    | T10  |  |   mejoras en la corrección de horarios y datos de trabajos | 3h| Sebastián Córdova  | Done |
+| US29   |    | T11  |  |  implementación de funcionalidad en el flujo de turno activo y pantalla de ayuda  |  4h | Sebastián Córdova  | Done |
+| TF01  |    | T12   |  |  implementación y documentación del reporte del sprint  | 06    |  Moisés Espinoza |Done  |
+| TF02  |    | T13   | |   implementación y despliegue de Flutter  |   03  | Jorge Taipe | Done  |
+| TF02  |    | T14    | |  actualización del backend api para flutter |   04  |  Jorge Taipe |Done  |
+
+
+##### 4.2.3.3. Development Evidence for Sprint Review
+
+En esta sección se describen los principales avances de implementación realizados en este tercer sprint. Se destaca el desarrollo e implementacion de las pantallas y funcionalidades de la aplicación móvil Android nativa con Kotlin y Jetpack Compose, asi como el desarrollo completo de la aplicacion móvil en Flutter.
+
+Cada miembro del equipo avanzó en las diferentes áreas del proyecto: En la aplicación Android se desarrollaron todas pantallas y la navegación usando Kotlin y Jetpack Compose.
+
+
+| Repository            | Branch          | Commit Id | Commit Message                                                           | Committed On |
+|-----------------------|-----------------|-----------|--------------------------------------------------------------------------|--------------|
+| ChambaYa-Kotlin   | develop | 9789b27| feat(auth): Google Sign-In en Login y Registro | 2026/06/25   |
+| ChambaYa-Kotlin   | develop | e2e18a7| fix(maps): cambio de SHA-1 | 2026/06/25   |
+| ChambaYa-Kotlin   | develop | 1d5dab0| fix(ui): mejoras visuales y datos reales en billetera | 2026/06/25   |
+| ChambaYa-Mobile-MultiPlatform   | develop | ed3bc66 | feat(profile): connect profile and settings to backend API | 2026/06/21   |
+| ChambaYa-Mobile-MultiPlatform  | develop | 5ec461d| fix(api): update backend API URL for Auth, Job, and Profile services | 2026/06/22   |
+| ChambaYa-Mobile-MultiPlatform   | develop | c1726df| feat(messages): add message repository and service, integrate with dependency injection| 2026/06/25  |
+| ChambaYa-Mobile-MultiPlatform   | develop | f6f6e6e| feat(messages): implement conversation and message DTOs, service, and repository| 2026/06/25  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 6202e56| feat(messages): store currentUserId in MessagesViewModel during conversation loading| 2026/06/25  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 9c2936e| refactor(messages): improve logging and error handling in getConversations method| 2026/06/25  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 8dd2242| feat: shifts module - worker & contractor views with enrollments| 2026/06/26  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 6de1969| feat: add buildFinished hook to clean up problem reports and update .gitignore for android/build/| 2026/06/28  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 8494101| feat(shifts): add map picker with reverse geocoding for job creation| 2026/07/01  |
+| ChambaYa-Mobile-MultiPlatform   | develop | afc70b7| fix: correct string interpolation in MessageService for authorization and URL construction| 2026/07/02 |
+| ChambaYa-Mobile-MultiPlatform   | develop | 31ce2bb| feat(auth): add role parameter to registration and update DI for RegisterViewModel| 2026/07/02  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 52d9e64| feat(notifications): implement notification model, repository, and view model with state management| 2026/07/03  |
+| ChambaYa-Mobile-MultiPlatform   | develop | 1a94fc9| feat(notifications): implement NotificationsPage with notification list and mark all as read functionality| 2026/07/03  |
+
+
+
+
+##### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+En esta sección se presenta el conjunto de pruebas implementadas durante el Sprint 1 para los Web Services del backend de ChambaYA. Para este primer sprint, se configuró la estructura base de pruebas utilizando **JUnit 5** (JUnit Jupiter) junto con la anotación `@SpringBootTest`, la cual permite verificar que el contexto de la aplicación Spring Boot se carga correctamente.
+
+El archivo `BackendApplicationTests.java` fue generado como parte de la inicialización del proyecto en Spring Initializr y contiene el test de integración base `contextLoads()`, que verifica que todos los beans y configuraciones del contexto de la aplicación se inicializan sin errores. Este test fue ejecutado exitosamente, confirmando que la configuración del proyecto, la conexión con MongoDB Atlas y las dependencias declaradas en el `pom.xml` son correctas.
+
+Para los siguientes sprints, se tiene planificado ampliar la suite de pruebas con Unit Tests para los servicios de cada Bounded Context (IAM, Jobs, Enrollments, Reviews) y Acceptance Tests bajo el enfoque BDD con archivos `.feature` en lenguaje Gherkin.
+
+Repositorio de Testing: [Backend-ChambaYa](https://github.com/app-movil-3821/Backend-ChambaYa)
+
+| Repository | Branch | Commit Id | Commit Message | Committed On |
+|---|---|---|---|---|
+| Backend-ChambaYa | develop | 82ec302 | feat(iam): endpoint cambiar contraseña PUT /users/{id}/password | 2026/06/18 |
+
+
+
+
+##### 4.2.3.5. Execution Evidence for Sprint Review
+
+En esta sección se presenta la evidencia de ejecución de los productos implementados en este tercer sprint. Se incluye el desarrollo de las pantallas de la aplicación Android, los endpoints completos del backend API desplegado en Railway, y el desarrollo completo de la aplicacion movil en flutter.
+
+A continuación, se muestran las capturas de pantalla, que evidencian el progreso realizado en el sprint y sirven como comprobante del trabajo completado.
+
+### Aplicación Android
+
+La aplicación móvil nativa para Android fue desarrollada con Kotlin y Jetpack Compose. A continuación se presentan las pantallas implementadas durante este sprint, organizadas según el flujo de usuario.
+
+**Start (Splash Screen):**
+
+Pantalla inicial de la aplicación que muestra el logo de ChambaYA al abrir la app, antes de redirigir al usuario a la pantalla de login o registro.
+
+![Start.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Start.png)
+ 
+---
+
+**Login:**
+
+Pantalla de inicio de sesión donde el usuario ingresa su correo y contraseña para acceder a la plataforma. Incluye opción de registro para nuevos usuarios.
+
+![inicio-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/inicio-sprint2.png)
+ 
+---
+
+**Register:**
+
+Pantalla de registro donde el nuevo usuario ingresa sus datos personales para crear una cuenta en ChambaYA, seleccionando si es chambeador o contratante.
+
+![registro-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro-sprint2.png)
+ 
+---
+
+**Skills:**
+
+Pantalla de configuración del perfil basado en habilidades. El chambeador selecciona mediante etiquetas (tags) las habilidades que puede ofrecer, eliminando la necesidad de un CV tradicional.
+
+![Skills.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Skills.png)
+ 
+---
+
+**Home Feed:**
+
+Pantalla principal del chambeador que muestra el listado de turnos disponibles cercanos a su ubicación, con información de pago, horario y distancia.
+
+![Home Feed.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Home%20Feed.png)
+ 
+---
+
+**Home Feed: (Contratante)**
+
+Pantalla principal del contratante que muestra los turnos que estan creados y disponiblesn, con información de pago, horario y distancia.
+
+![home-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/home-sprint2.png)
+ 
+---
+
+**Job Details:**
+
+Pantalla de detalle de un turno específico, mostrando la descripción completa del trabajo, ubicación en mapa, pago por hora y botón para aceptar el turno.
+
+![Job Details.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Job%20Details.png)
+ 
+---
+
+
+**Active Shift:**
+
+Pantalla que muestra el turno activo en progreso, con el tiempo transcurrido, información del negocio contratante y opciones para confirmar llegada o pedir ayuda.
+
+![Active Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Active%20Shift.png)
+ 
+---
+
+**Apply:**
+
+Pantalla de confirmación de postulación a un turno, donde el chambeador revisa los detalles finales antes de confirmar su aplicación al trabajo.
+
+![Apply.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Apply.png)
+ 
+---
+
+**Shift Summary:**
+
+Pantalla de resumen al finalizar un turno, mostrando las ganancias del día y el formulario de calificación para el contratante mediante el sistema de reputación bidireccional.
+
+![Shift Summary.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Shift%20Summary.png)
+ 
+---
+
+**My Shifts:**
+
+Pantalla con el historial de turnos del chambeador, mostrando los trabajos completados, pagos recibidos y el estado de cada turno.
+
+![My Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/My%20Shift.png)
+ 
+---
+
+
+**Jobs: (Contratante)**
+
+Pantalla que detalla los turnos creados, con informacion relevante, y con las opciones de cancelar el turno abierto y aceptar o rechazar a los postulantes.
+
+![jobs-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/jobs-sprint2.png)
+ 
+---
+
+**Post: (Contratante)**
+
+Pantalla que muestra los campos a rellenar para la creacion de un nuevo turno.
+
+![post-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/post-sprint2.png)
+ 
+---
+
+**Notificaciones: (Contratante)**
+
+Pantalla que detalla las notificaciones acerca las postulaciones de los chambeadores.
+
+![notifications-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/notifications-sprint2.png)
+ 
+---
+
+
+**Chat:**
+
+Pantalla del chat interno temporal entre el chambeador y el contratante, habilitado únicamente cuando el turno ha sido aceptado para coordinar los detalles del trabajo.
+
+![messages-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/messages-sprint2.png)
+![messages2-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/messages2-sprint2.png)
+ 
+---
+
+**Profile View: (Chambeador)**
+
+Pantalla de perfil del chambeador que muestra su reputación, habilidades registradas, historial de turnos completados y opciones de configuración de la cuenta.
+
+![Profile View.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Profile%20View.png)
+ 
+---
+
+**Profile View: (Contratante)**
+
+Pantalla de perfil del contratante donde se muestra un historial de los turnos creados, y opciones de configuración de la cuenta.
+
+![profile-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/profile-sprint2.png)
+ 
+---
+
+
+
+### Aplicación en Flutter
+
+A continuación se presentan todas las pantallas implementadas, organizadas según el flujo de usuario.
+
+**Login:**
+
+Pantalla de inicio de sesión donde el usuario ingresa su correo y contraseña para acceder a la plataforma.
+
+![inicio-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/inicio-sprint2.png)
+ 
+---
+
+**Register:**
+
+Pantalla de registro donde el nuevo usuario ingresa sus datos personales para crear una cuenta en ChambaYA, seleccionando si es chambeador o contratante.
+
+![registro-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro-sprint-3.png)
+ 
+---
+
+**Skills:**
+
+Pantalla de configuración del perfil basado en habilidades. El chambeador selecciona mediante etiquetas (tags) las habilidades que puede ofrecer, eliminando la necesidad de un CV tradicional.
+
+![skills-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/skills-sprint-3.png)
+ 
+---
+
+**Home Feed: (Contratante)**
+
+Pantalla principal del contratante que muestra los turnos que estan creados y disponiblesn, con información de pago, horario y distancia.
+
+![trabajos-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/trabajos-sprint-3.png)
+ 
+---
+
+
+**Job Details:**
+
+Pantalla de detalle de un turno específico, mostrando la descripción completa del trabajo, ubicación en mapa, pago por hora y botón para aceptar el turno.
+
+![detalle-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/detalle-sprint-3.png)
+ 
+---
+
+
+**Job Application:**
+
+Pantalla que muestra la confirmación de la postulacion y también los detalles del trabajo.
+
+![postulacion-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/postulacion-sprint-3.png)
+ 
+---
+
+**My Shifts: (Chambeador)**
+
+Pantalla con el historial de turnos del chambeador, mostrando los trabajos completados, pagos recibidos y el estado de cada turno.
+
+![turnos-flutter-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/turnos-flutter-sprint-3.png)
+ 
+---
+
+**My Shifts: (Contratante)**
+
+Pantalla que detalla los turnos creados, con informacion relevante, y con las opciones de cancelar el turno abierto y aceptar o rechazar a los postulantes.
+
+![shifts-contratante-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/shifts-contratante-sprint-3.png)
+
+
+---
+
+
+**Post: (Contratante)**
+
+Pantalla que muestra los campos a rellenar para la creacion de un nuevo turno.
+
+![publicacion-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/publicacion-sprint-3.png)
+ 
+---
+
+
+**Notificaciones: (Contratante)**
+
+Pantalla que detalla las notificaciones acerca las postulaciones de los chambeadores.
+
+![notifications-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/notifications-sprint-3.png)
+ 
+---
+
+
+**Chat:**
+
+Pantalla del chat interno temporal entre el chambeador y el contratante, habilitado únicamente cuando el turno ha sido aceptado para coordinar los detalles del trabajo.
+
+![mensajes-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/mensajes-sprint-3.png)
+ 
+---
+
+
+**Profile View: (Contratante)**
+
+Pantalla de perfil del contratante donde se muestra un historial de los turnos creados, y opciones de configuración de la cuenta.
+
+![perfil-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/perfil-sprint-3.png)
+ 
+---
+
+
+
+
+
+
+
+### Backend API
+
+Aplicación Backend desplegada: https://backend-chambaya-production-a24a.up.railway.app/swagger-ui/index.html
+El backend de ChambaYA fue desarrollado con Java y Spring Boot, desplegado en Railway con MongoDB Atlas como base de datos. A continuación se presentan los controllers implementados y documentados mediante Swagger UI.
+
+**User Controller:**
+
+Controller que gestiona el registro, autenticación y consulta de usuarios de la plataforma, tanto chambeadores como contratantes.
+
+![usercontrollerapi.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/usercontrollerapi.png)
+ 
+---
+
+**Job Controller:**
+
+Controller que gestiona la publicación, consulta y búsqueda de turnos disponibles, incluyendo el endpoint de trabajos cercanos por geolocalización.
+
+![jobcontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/jobcontroller.png)
+ 
+---
+
+**Enrollment Controller:**
+
+Controller que gestiona las postulaciones de los chambeadores a los turnos publicados, incluyendo la aceptación y rechazo de postulantes.
+
+![enrollmentscontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/enrollmentscontroller.png)
+ 
+---
+
+**Reviews Controller:**
+
+Controller que gestiona el sistema de calificaciones y reseñas mutuas entre chambeadores y contratantes al finalizar cada turno.
+
+![reviewcontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/reviewcontroller.png)
+
+
+
+##### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación de los endpoints implementados en el backend de **ChambaYa** durante el Sprint Review. La evidencia permite identificar los servicios disponibles, el módulo al que pertenecen, el verbo HTTP utilizado, la sintaxis de consumo, los parámetros principales y el enlace de acceso a Swagger para su validación.
+
+A continuación, se muestra la tabla de endpoints desarrollados para los módulos **IAM**, **Jobs**, **Enrollments** y **Reputation**.
+
+| Módulo | Endpoint | Acción | Verbo HTTP | Sintaxis | Parámetros principales | Enlace a Swagger |
+|---|---|---|---|---|---|---|
+| IAM | `/api/v1/users` | Registrar un nuevo usuario en la plataforma | POST | `/api/v1/users` | Body: `name`, `email`, `password`, `role`, `skills`, `experience`, `district`, `phone` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| IAM | `/api/v1/users` | Obtener la lista de usuarios registrados | GET | `/api/v1/users` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| IAM | `/api/v1/users/{id}` | Obtener un usuario por su identificador | GET | `/api/v1/users/123` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| IAM | `/api/v1/users/by-email` | Obtener un usuario por correo electrónico | GET | `/api/v1/users/by-email?email=user@email.com` | `email` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| IAM | `/api/v1/users/{id}/profile` | Actualizar el perfil de un usuario | PUT | `/api/v1/users/123/profile` | `id`, Body: `photoUrl`, `skills`, `experience`, `district`, `phone`, `verified` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs` | Crear un nuevo trabajo o turno publicado por un contratante | POST | `/api/v1/jobs` | Body: `contractorId`, `title`, `description`, `category`, `requiredSkills`, `paymentAmount`, `latitude`, `longitude`, `address`, `district`, `scheduledStart`, `scheduledEnd` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs` | Obtener todos los trabajos registrados | GET | `/api/v1/jobs` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/{id}` | Obtener un trabajo por su identificador | GET | `/api/v1/jobs/123` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/contractor/{contractorId}` | Obtener los trabajos publicados por un contratante | GET | `/api/v1/jobs/contractor/123` | `contractorId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/published` | Obtener los trabajos publicados disponibles | GET | `/api/v1/jobs/published` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/nearby` | Obtener trabajos cercanos según coordenadas y radio | GET | `/api/v1/jobs/nearby?latitude=-12.1211&longitude=-77.0305&radiusKm=10` | `latitude`, `longitude`, `radiusKm` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/{id}/publish` | Cambiar el estado de un trabajo a publicado | PUT | `/api/v1/jobs/123/publish` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/{id}/close` | Cerrar un trabajo publicado | PUT | `/api/v1/jobs/123/close` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Jobs | `/api/v1/jobs/{id}/reopen` | Reabrir un trabajo cerrado o cancelado | PUT | `/api/v1/jobs/123/reopen` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments` | Registrar la postulación de un chambeador a un trabajo | POST | `/api/v1/enrollments` | Body: `jobId`, `workerId`, `contractorId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments` | Obtener todas las postulaciones registradas | GET | `/api/v1/enrollments` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/{id}` | Obtener una postulación por su identificador | GET | `/api/v1/enrollments/123` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/job/{jobId}` | Obtener las postulaciones asociadas a un trabajo | GET | `/api/v1/enrollments/job/123` | `jobId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/worker/{workerId}` | Obtener las postulaciones realizadas por un chambeador | GET | `/api/v1/enrollments/worker/123` | `workerId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/contractor/{contractorId}` | Obtener las postulaciones asociadas a los trabajos de un contratante | GET | `/api/v1/enrollments/contractor/123` | `contractorId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/pending` | Obtener las postulaciones pendientes | GET | `/api/v1/enrollments/pending` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/{id}/accept` | Aceptar una postulación y actualizar el trabajo a estado `MATCHED` | PUT | `/api/v1/enrollments/123/accept` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/{id}/reject` | Rechazar una postulación | PUT | `/api/v1/enrollments/123/reject` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Enrollments | `/api/v1/enrollments/{id}/cancel` | Cancelar una postulación realizada | PUT | `/api/v1/enrollments/123/cancel` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews` | Registrar una calificación o reseña entre usuarios | POST | `/api/v1/reviews` | Body: `jobId`, `reviewerId`, `reviewedUserId`, `rating`, `comment` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews` | Obtener todas las reseñas registradas | GET | `/api/v1/reviews` | - | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/{id}` | Obtener una reseña por su identificador | GET | `/api/v1/reviews/123` | `id` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/job/{jobId}` | Obtener las reseñas asociadas a un trabajo | GET | `/api/v1/reviews/job/123` | `jobId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/reviewer/{reviewerId}` | Obtener las reseñas realizadas por un usuario | GET | `/api/v1/reviews/reviewer/123` | `reviewerId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/user/{userId}` | Obtener las reseñas recibidas por un usuario | GET | `/api/v1/reviews/user/123` | `userId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+| Reputation | `/api/v1/reviews/user/{userId}/summary` | Obtener el promedio y total de reseñas de un usuario | GET | `/api/v1/reviews/user/123/summary` | `userId` | https://backend-chambaya-production.up.railway.app/swagger-ui.html |
+
+
+## Ejemplos Detallados
+
+### IAM
+
+#### 1. Registrar un nuevo usuario
+
+- **Endpoint:** `POST /api/v1/users`
+- **Descripción:** Registra un nuevo usuario en la plataforma ChambaYa. El usuario puede tener el rol de `CHAMBEADOR` o `CONTRATANTE`, según el tipo de cuenta creada.
+
+**Ruta**
+
+```http
+POST /api/v1/users
+```
+
+**Solicitud**
+
+```json
+{
+  "name": "Diego Salazar",
+  "email": "diego.salazar.worker@gmail.com",
+  "password": "123456",
+  "role": "CHAMBEADOR",
+  "skills": ["atención al cliente", "limpieza", "rapidez"],
+  "experience": "Apoyo en cafeterías y restaurantes",
+  "district": "Miraflores",
+  "phone": "911222333"
+}
+```
+
+**Respuesta 201 Created**
+
+```json
+{
+  "id": "69fb...",
+  "name": "Diego Salazar",
+  "email": "diego.salazar.worker@gmail.com",
+  "role": "CHAMBEADOR",
+  "profile": {
+    "photoUrl": null,
+    "skills": ["atención al cliente", "limpieza", "rapidez"],
+    "experience": "Apoyo en cafeterías y restaurantes",
+    "district": "Miraflores",
+    "phone": "911222333",
+    "verified": false
+  },
+  "createdAt": "2026-05-08T16:00:00",
+  "updatedAt": "2026-05-08T16:00:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El correo ya se encuentra registrado.
+- `400 Bad Request`: Faltan campos obligatorios o el formato del correo no es válido.
+
+---
+
+### Jobs
+
+#### 2. Crear un nuevo trabajo o turno
+
+- **Endpoint:** `POST /api/v1/jobs`
+- **Descripción:** Permite que un usuario con rol `CONTRATANTE` publique un nuevo trabajo temporal o turno corto. El backend valida que el `contractorId` pertenezca a un usuario existente con rol `CONTRATANTE`.
+
+**Ruta**
+
+```http
+POST /api/v1/jobs
+```
+
+**Solicitud**
+
+```json
+{
+  "contractorId": "ID_DEL_CONTRATANTE",
+  "title": "Apoyo para atención en cafetería",
+  "description": "Se necesita apoyo para atención de clientes y limpieza básica.",
+  "category": "Atención al cliente",
+  "requiredSkills": ["atención al cliente", "limpieza", "rapidez"],
+  "paymentAmount": 60,
+  "latitude": -12.1211,
+  "longitude": -77.0305,
+  "address": "Av. Larco 450",
+  "district": "Miraflores",
+  "scheduledStart": "2026-05-08T16:00:00",
+  "scheduledEnd": "2026-05-08T21:00:00"
+}
+```
+
+**Respuesta 201 Created**
+
+```json
+{
+  "id": "69fd...",
+  "contractorId": "ID_DEL_CONTRATANTE",
+  "title": "Apoyo para atención en cafetería",
+  "description": "Se necesita apoyo para atención de clientes y limpieza básica.",
+  "category": "Atención al cliente",
+  "requiredSkills": ["atención al cliente", "limpieza", "rapidez"],
+  "paymentAmount": 60,
+  "location": {
+    "latitude": -12.1211,
+    "longitude": -77.0305,
+    "address": "Av. Larco 450",
+    "district": "Miraflores"
+  },
+  "scheduledStart": "2026-05-08T16:00:00",
+  "scheduledEnd": "2026-05-08T21:00:00",
+  "status": "PUBLISHED",
+  "createdAt": "2026-05-08T16:10:00",
+  "updatedAt": "2026-05-08T16:10:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El usuario indicado no existe.
+- `400 Bad Request`: El usuario no tiene rol `CONTRATANTE`.
+- `400 Bad Request`: Faltan campos obligatorios del trabajo.
+
+---
+
+#### 3. Consultar trabajos cercanos para el mapa
+
+- **Endpoint:** `GET /api/v1/jobs/nearby`
+- **Descripción:** Devuelve los trabajos disponibles cercanos a una ubicación determinada. Este servicio permite que la aplicación móvil muestre trabajos en un mapa usando coordenadas geográficas.
+
+**Ruta**
+
+```http
+GET /api/v1/jobs/nearby?latitude=-12.1211&longitude=-77.0305&radiusKm=10
+```
+
+**Parámetros**
+
+```txt
+latitude: latitud actual del usuario
+longitude: longitud actual del usuario
+radiusKm: radio de búsqueda en kilómetros
+```
+
+**Respuesta 200 OK**
+
+```json
+[
+  {
+    "id": "69fd...",
+    "contractorId": "ID_DEL_CONTRATANTE",
+    "title": "Apoyo para atención en cafetería",
+    "description": "Se necesita apoyo para atención de clientes y limpieza básica.",
+    "category": "Atención al cliente",
+    "requiredSkills": ["atención al cliente", "limpieza", "rapidez"],
+    "paymentAmount": 60,
+    "location": {
+      "latitude": -12.1211,
+      "longitude": -77.0305,
+      "address": "Av. Larco 450",
+      "district": "Miraflores"
+    },
+    "scheduledStart": "2026-05-08T16:00:00",
+    "scheduledEnd": "2026-05-08T21:00:00",
+    "status": "PUBLISHED",
+    "createdAt": "2026-05-08T16:10:00",
+    "updatedAt": "2026-05-08T16:10:00"
+  }
+]
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El radio de búsqueda debe ser mayor a cero.
+- `200 OK`: Retorna una lista vacía si no existen trabajos cercanos disponibles.
+
+---
+
+### Enrollments
+
+#### 4. Registrar postulación a un trabajo
+
+- **Endpoint:** `POST /api/v1/enrollments`
+- **Descripción:** Permite que un chambeador postule a un trabajo publicado. El backend valida que el trabajo exista, que el usuario tenga rol `CHAMBEADOR`, que el contratante tenga rol `CONTRATANTE` y que el contratante sea dueño del trabajo.
+
+**Ruta**
+
+```http
+POST /api/v1/enrollments
+```
+
+**Solicitud**
+
+```json
+{
+  "jobId": "ID_DEL_JOB",
+  "workerId": "ID_DEL_CHAMBEADOR",
+  "contractorId": "ID_DEL_CONTRATANTE"
+}
+```
+
+**Respuesta 201 Created**
+
+```json
+{
+  "id": "69fe...",
+  "jobId": "ID_DEL_JOB",
+  "workerId": "ID_DEL_CHAMBEADOR",
+  "contractorId": "ID_DEL_CONTRATANTE",
+  "status": "PENDING",
+  "appliedAt": "2026-05-08T16:20:00",
+  "decidedAt": null,
+  "updatedAt": "2026-05-08T16:20:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El trabajo no existe.
+- `400 Bad Request`: El usuario no tiene rol `CHAMBEADOR`.
+- `400 Bad Request`: El contratante no tiene rol `CONTRATANTE`.
+- `400 Bad Request`: El contratante no es dueño del trabajo.
+- `400 Bad Request`: El chambeador ya postuló a ese trabajo.
+
+---
+
+#### 5. Aceptar una postulación
+
+- **Endpoint:** `PUT /api/v1/enrollments/{id}/accept`
+- **Descripción:** Permite que el contratante acepte una postulación. Al aceptar una postulación, esta cambia a estado `ACCEPTED`, el trabajo relacionado cambia a `MATCHED` y las demás postulaciones pendientes del mismo trabajo pasan a `REJECTED`.
+
+**Ruta**
+
+```http
+PUT /api/v1/enrollments/ID_DEL_ENROLLMENT/accept
+```
+
+**Respuesta 200 OK**
+
+```json
+{
+  "id": "ID_DEL_ENROLLMENT",
+  "jobId": "ID_DEL_JOB",
+  "workerId": "ID_DEL_CHAMBEADOR",
+  "contractorId": "ID_DEL_CONTRATANTE",
+  "status": "ACCEPTED",
+  "appliedAt": "2026-05-08T16:20:00",
+  "decidedAt": "2026-05-08T16:30:00",
+  "updatedAt": "2026-05-08T16:30:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: La postulación no existe.
+- `409 Conflict`: Solo las postulaciones pendientes pueden ser aceptadas.
+- `400 Bad Request`: El trabajo relacionado no existe.
+
+---
+
+### Reputation
+
+#### 6. Registrar una reseña
+
+- **Endpoint:** `POST /api/v1/reviews`
+- **Descripción:** Registra una calificación entre usuarios relacionada con un trabajo. El sistema valida que el trabajo exista, que los usuarios existan, que el usuario no se califique a sí mismo y que no exista una reseña duplicada para el mismo trabajo y usuarios.
+
+**Ruta**
+
+```http
+POST /api/v1/reviews
+```
+
+**Solicitud**
+
+```json
+{
+  "jobId": "ID_DEL_JOB",
+  "reviewerId": "ID_DEL_CONTRATANTE",
+  "reviewedUserId": "ID_DEL_CHAMBEADOR",
+  "rating": 5,
+  "comment": "Cumplió correctamente con el turno y tuvo buena actitud."
+}
+```
+
+**Respuesta 201 Created**
+
+```json
+{
+  "id": "69ff...",
+  "jobId": "ID_DEL_JOB",
+  "reviewerId": "ID_DEL_CONTRATANTE",
+  "reviewedUserId": "ID_DEL_CHAMBEADOR",
+  "rating": 5,
+  "comment": "Cumplió correctamente con el turno y tuvo buena actitud.",
+  "createdAt": "2026-05-08T16:40:00"
+}
+```
+
+**Errores comunes**
+
+- `400 Bad Request`: El trabajo no existe.
+- `400 Bad Request`: El usuario que califica no existe.
+- `400 Bad Request`: El usuario calificado no existe.
+- `400 Bad Request`: El usuario no puede calificarse a sí mismo.
+- `400 Bad Request`: La reseña ya existe para ese trabajo y usuarios.
+- `400 Bad Request`: La calificación debe estar entre 1 y 5.
+
+---
+
+#### 7. Consultar resumen de reputación
+
+- **Endpoint:** `GET /api/v1/reviews/user/{userId}/summary`
+- **Descripción:** Devuelve el promedio de calificaciones y la cantidad total de reseñas recibidas por un usuario.
+
+**Ruta**
+
+```http
+GET /api/v1/reviews/user/ID_DEL_USUARIO/summary
+```
+
+**Respuesta 200 OK**
+
+```json
+{
+  "userId": "ID_DEL_USUARIO",
+  "averageRating": 5.0,
+  "totalReviews": 1
+}
+```
+
+**Errores comunes**
+
+- `200 OK`: Si el usuario no tiene reseñas, retorna promedio `0.0` y total `0`.
+
+---
+
+##### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+### Despliegue del Backend API (Railway)
+
+- **Paso 1: Creación del proyecto en Spring Initializr**
+
+  Como primer paso, se configuró el proyecto backend usando **Spring Initializr** con las siguientes especificaciones: lenguaje **Java 21**, Spring Boot **4.0.6**, empaquetado **JAR**, y las dependencias Spring Web, Spring Data MongoDB, Validation, Lombok, Spring Boot DevTools y Spring Security.
+
+  ![ProjectCreation.jpeg](../assets/img/chapter-4/ProjectCreation.jpeg)
+
+- **Paso 2: Creación del proyecto en Railway**
+
+  Como segundo paso, se accedió a la plataforma **Railway** y se creó un nuevo proyecto donde se desplegará el backend de ChambaYA.
+
+  ![SearchRepo.jpeg](../assets/img/chapter-4/SearchRepo.jpeg)
+
+- **Paso 3: Instalación y autorización de Railway App en GitHub**
+
+  Como tercer paso, se instaló y autorizó la **Railway App** en la organización de GitHub `app-movil-3821`, seleccionando únicamente el repositorio `Backend-ChambaYa` para el acceso controlado.
+
+  ![Install_ans_Auth.jpeg](../assets/img/chapter-4/Install%20ans%20Auth.jpeg)
+
+- **Paso 4: Selección del repositorio**
+
+  Como cuarto paso, se seleccionó el repositorio `app-movil-3821/Backend-ChambaYa` desde Railway para iniciar el proceso de despliegue automático.
+
+  ![SelectRepo.jpeg](../assets/img/chapter-4/SelectRepo.jpeg)
+
+- **Paso 5: Configuración de variables de entorno**
+
+  Como quinto paso, se configuró la variable de entorno `MONGODB_URI` en Railway con la cadena de conexión proporcionada por MongoDB Atlas, permitiendo que el backend se conecte correctamente a la base de datos en la nube.
+
+  ![AtlasConnection.jpeg](../assets/img/chapter-4/AtlasConnection.jpeg)
+
+- **Paso 6: Generación del dominio público**
+
+  Como sexto paso, desde la sección de configuración de Networking en Railway, se generó un dominio público para acceder al backend desplegado externamente.
+
+  ![DomainGeneration.jpeg](../assets/img/chapter-4/DomainGeneration.jpeg)
+
+- **Paso 7: Verificación del despliegue**
+
+  Como séptimo paso, se verificó que el backend se encuentra correctamente desplegado y en estado **Online** dentro de Railway, con conexión activa al repositorio en GitHub y despliegue automático configurado desde la rama `main`.
+
+  ![Conect.jpeg](../assets/img/chapter-4/Conect.jpeg)
+
+- **Paso 8: Verificación de los endpoints con Swagger**
+
+  Como paso final, se verificó el correcto funcionamiento de los endpoints del backend accediendo a la documentación **Swagger UI** generada automáticamente. Se confirmó que el endpoint `GET /api/v1/users` retorna correctamente los datos de los usuarios registrados en la base de datos con código de respuesta **200 OK**.
+
+  ![DeployVerification.jpeg](../assets/img/chapter-4/DeployVerification.jpeg)
+
+
+### Despliegue de la Aplicación Android
+
+- **Paso 1: Creación del repositorio para el despliegue de la aplicación**
+  
+  ![creacion-repositorio.jpeg](../assets/img/chapter-4/creacion-repositorio.jpeg)
+
+- **Paso 2: Creación del Release**
+  
+   ![creacion-release.jpeg](../assets/img/chapter-4/creacion-release.jpeg)
+
+
+   **Paso 3: Despliegue en proceso**
+  
+   ![proceso-despliegue.jpeg](../assets/img/chapter-4/proceso-despliegue.jpeg)
+
+
+     **Paso 4: Integracion en la landing page para descargar la aplicación**
+  
+   ![landingpage.jpeg](../assets/img/chapter-4/landingpage.jpeg)
+
+
+     **Paso 5: Genración del apk de la aplicación**
+  
+   ![generacion-apk.jpeg](../assets/img/chapter-4/generacion-apk.jpeg)
+  
+
+
+
+##### 4.2.3.8. Team Collaboration Insights during Sprint 3
+
+En esta sección se detalla cómo se llevaron a cabo las actividades de implementación durante el tercer sprint, así como la participación de cada miembro del equipo. Para este sprint, el equipo se organizó en torno a los principales productos: Aplicación Móvil Android Nativa, el Backend API, y la Aplicacion Móvil en Flutter. Cada integrante asumió responsabilidades específicas en uno o más de estos componentes, trabajando mediante ramas individuales y siguiendo la estrategia GitFlow para la integración del código.
+
+El proyecto se gestionó utilizando una organización en GitHub llamada **app-movil-3821**, donde se crearon repositorios separados para cada producto. Esto permitió una mejor gestión del código y facilitó la colaboración entre los miembros del equipo.
+
+---
+
+
+### Backend API
+
+- El integrante **Sebastián Córdova** lideró el desarrollo del backend, implementando los endpoints principales de la aplicación usando Java con Spring Boot y MongoDB. Desarrolló los controllers de usuarios (IAM Context), trabajos (Job Context), postulaciones (Enrollment) y reseñas (Reviews). Además, se encargó del despliegue del backend en **Railway** y la configuración de la base de datos en **MongoDB Atlas**. Juntamente con Jose Diego Bautista implementando también funcionalidades.
+
+A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para el backend. El gráfico refleja el aporte de cada integrante en el avance de la última versión del Backend API. Juntamente con los commits a lo largo del tiempo 
+
+
+![backend-reporte.jpeg](../assets/img/chapter-4/backend-reporte.jpeg)
+
+
+---
+
+### Aplicación Móvil Android
+
+A continuación, se muestra el gráfico que detalla la cantidad de commits realizados por cada miembro durante este sprint para la aplicación móvil Android. El gráfico refleja el aporte de cada integrante en el avance de la última versión de la aplicación.
+
+![kotlin-commits-sprint-3](../assets/img/chapter-4/kotlin-commits-sprint-3.png)
+
+
+También, se adjunta el gráfico de la vista de commits a lo largo del tiempo de la aplicación Android, donde se puede observar en qué meses hubo mayor cantidad de commits y participación para las funcionalidades implementadas durante el sprint.
+
+![kotlin-sprint-3.png](../assets/img/chapter-4/kotlin-sprint-3.png)
+
+---
+
+
+### Aplicación Móvil Flutter
+
+
+A continuación, se muestra el gráfico del historial de commits a lo largo del tiempo de la aplicación en Flutter. Estas métricas reflejan la distribución del esfuerzo del equipo de desarrollo para el despliegue de la última versión de la aplicación. Complementariamente, se presenta el desglose de la cantidad de commits realizados por los miembros del equipo durante este sprint.
+
+![flutter-commits-sprint-3](../assets/img/chapter-4/flutter-commits-sprint-3.png)
 
 
 ### 4.3. Validation Interviews
