@@ -53,7 +53,7 @@ El video "About the Product" presenta de manera clara y atractiva la propuesta d
 
 | Titulo del Video        | Foundly Product               |
 |-------------------------|-------------------------------|
-| Duracion                | 1 miunto                      |
+| Duracion                | 1 minuto                      |
 | Fecha de Grabacion      | 21/06/2026                    |
 | URL de Youtube          | https://youtu.be/WrObe5WUI10  |
 | URL de Microsoft Stream | https://shorturl.at/NwXQ7    |
