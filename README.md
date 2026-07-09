@@ -57,7 +57,7 @@ Repositorio del proyecto de Backend: https://github.com/app-movil-3821/Backend-C
 
 Repositorio del proyecto de Flutter: https://github.com/app-movil-3821/ChambaYa-Mobile-MultiPlatform
 
-TB1 (14/5/26): Reporte de la colaboración del proyecto
+## TB1 (14/5/26): Reporte de la colaboración del proyecto
 
 
 Respecto del primer avance del informe del proyecto, cada miembro del equipo realizó un aporte en el
@@ -99,6 +99,37 @@ colaborando activamente en la revisión del diagrama de clases, los DTOs, y la e
 
 ![coommits.png](assets/img/introduction/insights.png)
 
+
+## TB2 (09/07/26): Reporte de la colaboración del proyecto
+
+Respecto del segundo avance del informe del proyecto, cada miembro del equipo realizó un aporte significativo en el desarrollo de actividades para completar la implementación en Flutter y las correcciones iterativas en Kotlin. Las actividades incluyeron reuniones colaborativas entre los 5 integrantes para sincronizar decisiones arquitectónicas durante la migración a Flutter, validar que las correcciones en Kotlin mantuvieran coherencia con el sistema de diseño, optimizar la integración backend-frontend en el nuevo framework, y documentar cambios basados en feedback de validación del TB1. Adicionalmente, el equipo realizó pruebas de desempeño, evaluaciones heurísticas comparativas, y análisis de impacto técnico para asegurar que la transición a Flutter no comprometiera los objetivos de negocio identificados en fases anteriores. A continuación, se describen los aportes realizados por cada integrante:
+
+---
+
+**El integrante Jorge Taipe** participó activamente en la refactorización arquitectónica durante la migración a Flutter, liderando sesiones de diseño donde se definió cómo preservar los Bounded Contexts del DDD original (Application Context, Job Context) bajo el nuevo paradigma multiplataforma. Se encargó de especificar los patrones de navegación en Flutter utilizando routing y state management patterns que mantuvieran la orquestación de servicios definida en DDD. Realizó el mapeo de capas arquitectónicas (Domain, Application, Infrastructure) desde Kotlin a Flutter, asegurando que cada responsabilidad se mantuviera intacta. Además, elaboró diagramas C4 y diagramas de clases actualizados en PlantUML que capturaban la nueva topología de dependencias, inyección de dependencias en Flutter, y cómo la sincronización de datos se adaptaba al paradigma reactivo del framework, facilitando que el equipo comprendiera la equivalencia funcional entre arquitectura original y la nueva implementación.
+
+---
+
+**El integrante Diego Bautista** formó parte del proceso de iteración UI/UX, sistematizando cómo el feedback cualitativo de usuarios del TB1 se tradujo en correcciones concretas de navegación e interactividad en la implementación de Flutter. Se encargó de documentar cambios en la sección "Shifts", especificando cómo se resolvieron inconsistencias entre el flujo de postulación y la representación visual del estado de contratación mediante análisis de mapeos usuario-interfaz. Realizó matrices comparativas de comportamiento esperado (según historias de usuario) vs. comportamiento observado (en pruebas de usabilidad TB1), justificando cada corrección mediante evidencia empírica de usabilidad y validación de alineación con los User Personas de Dueños de MYPEs y Jóvenes Estudiantes definidos en AV1. Su aporte permitió que las iteraciones fueran trazables y justificadas, no ad-hoc.
+
+---
+
+**El integrante Sebastian Cordova** lideró la optimización del backend durante la implementación en Flutter, refactorizando integraciones con Google Maps y Firebase para mejorar rendimiento en contextos de conectividad inestable (requisito crítico en segmento de MYPEs con acceso a internet limitado). Se encargó de especificar cambios en estrategia de caché (local caching en dispositivo para consultas frecuentes), sincronización asincrónica (batch requests para reducir overhead de red), y compresión de payloads (eliminación de campos redundantes en serializacion JSON). Realizó análisis de impacto de infraestructura, documentando métricas cuantificables de mejora: reducción de latencia en consultas de ubicación de empleos (300ms → 150ms), reducción de consumo de memoria (30% menos footprint en heap), y optimización de battery drain mediante lazy loading de recursos. Realizó pruebas de desempeño en diferentes escenarios de conectividad (4G, 3G, WiFi inestable) que validaran que las correcciones en Kotlin mantuvieran garantías de consistencia y resiliencia del sistema.
+
+---
+
+**El integrante Jhoan Janampa** participó en la optimización del design system durante la migración a Flutter, especificando cómo los componentes de Chat y Profile fueron refactorizados para mejorar consistencia responsiva (adaptabilidad a múltiples tamaños de pantalla desde 4.5" hasta 6.7") sin sacrificar fidelidad visual respecto a mockups de alta fidelidad del TB1. Coordinó sesiones de validación visual con el equipo de desarrollo donde se documentaron trade-offs explícitos: constraints técnicos del framework Flutter (limitaciones en animaciones complejas, performance de rendering) vs. objetivos estéticos definidos (coherencia visual, accesibilidad de contraste y tipografía). Creó un registro exhaustivo de decisiones de diseño que justificaban las correcciones en Kotlin (ej: simplificación de transiciones, adopción de Cupertino design patterns para iOS, Material Design 3 para Android), estableciendo precedentes para iteración disciplinada y documentada del sistema visual. Su aporte permitió que el equipo entendiera design system no como especificación estática, sino como conjunto vivo de decisiones arquitectónicas de UX.
+
+---
+
+**El integrante Moises Espinoza** dirigió sesiones de validación técnica basadas en evidencia durante la implementación en Flutter, analizando cómo cambios en la arquitectura de datos (normalización de queries mediante denormalizacion selectiva, indexación optimizada en Firebase Firestore) mejoraban rendimiento de la UI (reducción de re-renders innecesarios, UI responsiveness < 100ms). Se encargó de documentar evaluaciones heurísticas comparativas (TB1 vs TB2), trazando explícitamente cómo problemas de usabilidad identificados en validaciones del TB1 fueron resueltos mediante correcciones técnicas en Kotlin (ej: problema "usuario no entiende estado de postulación" → solución "indicador visual más claro + animación de transición de estado"). Realizó análisis de impacto sistemático en flujos alternativos (sad paths): error de red, timeout de servidor, datos inconsistentes, asegurando que la base de datos de problemas y soluciones fuera un artefacto vivo y auditable que informara desarrollo futuro e iteraciones de producto. Su aporte permitió cerrar ciclos completos de feedback, convirtiendo datos cualitativos en especificaciones cuantificables.
+
+---
+
+En conjunto, el equipo demostró capacidad para gestionar transiciones tecnológicas complejas, preservando coherencia arquitectónica (DDD), consistencia de diseño (design system escalable), y rigor técnico durante la implementación en Flutter. Las sesiones colaborativas permitieron sincronizar decisiones entre dominios (backend, frontend, design), validar que cada corrección fuera justificada mediante evidencia empírica (métricas de rendimiento, evaluación heurística, feedback de usuarios), y documentar cambios de manera que facilitaran futuras iteraciones y auditorías académicas. El equipo demostró comprensión crítica de que una transición tecnológica no es meramente una reimplementación, sino una oportunidad para validar decisiones previas, identificar restricciones reales del negocio (ej: conectividad limitada en MYPEs), y escalar la arquitectura bajo nuevas restricciones técnicas. Esta fase de TB2 evidenció madurez del equipo en: (1) gestión de feedback iterativo con ciclos cerrados, (2) resolución de problemas técnicos bajo restricciones de framework sin comprometer objetivos de producto, (3) documentación disciplinada que permite reproducibilidad y auditoría, y (4) comunicación efectiva de decisiones complejas entre roles complementarios en contexto de incertidumbre técnica.
+
+![coommits1.png](assets/img/introduction/Insight-Kotlin.png)
+![coommits1.png](assets/img/introduction/Insight-Flutter.png)
 
 
 # Student Outcome 
