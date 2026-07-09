@@ -364,9 +364,6 @@ Su meta es publicar al menos dos proyectos web con despliegue funcional y docume
 ### [ Video App Validation](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#video-app-validation)
 ### [ Video About the Product](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#video-about-the-product)
 
-
-Video de Entrega TB1: https://upcedupe-my.sharepoint.com/personal/u202310949_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310949_upc_edu_pe%2FDocuments%2Fupc-pre-2026+01-1acc238-3821-TerraTeam-expo-tb1.mov&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&ga=1&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.6c9537f4-59ab-44ee-9c19-c8b001b24fe2&isDarkMode=true
-
 ### [ Video About the Team](https://github.com/app-movil-3821/TerraTeam-Project-Report/blob/main/docs/ChapterIV.md#video-about-the-team)
 
 ---
