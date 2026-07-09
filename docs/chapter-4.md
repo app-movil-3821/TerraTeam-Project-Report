@@ -2639,10 +2639,87 @@ GET /api/v1/reviews/user/ID_DEL_USUARIO/summary
 
 ---
 
-
-
-
 ##### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+### Despliegue del Backend API (Railway)
+
+- **Paso 1: Creación del proyecto en Spring Initializr**
+
+  Como primer paso, se configuró el proyecto backend usando **Spring Initializr** con las siguientes especificaciones: lenguaje **Java 21**, Spring Boot **4.0.6**, empaquetado **JAR**, y las dependencias Spring Web, Spring Data MongoDB, Validation, Lombok, Spring Boot DevTools y Spring Security.
+
+  ![ProjectCreation.jpeg](../assets/img/chapter-4/ProjectCreation.jpeg)
+
+- **Paso 2: Creación del proyecto en Railway**
+
+  Como segundo paso, se accedió a la plataforma **Railway** y se creó un nuevo proyecto donde se desplegará el backend de ChambaYA.
+
+  ![SearchRepo.jpeg](../assets/img/chapter-4/SearchRepo.jpeg)
+
+- **Paso 3: Instalación y autorización de Railway App en GitHub**
+
+  Como tercer paso, se instaló y autorizó la **Railway App** en la organización de GitHub `app-movil-3821`, seleccionando únicamente el repositorio `Backend-ChambaYa` para el acceso controlado.
+
+  ![Install_ans_Auth.jpeg](../assets/img/chapter-4/Install%20ans%20Auth.jpeg)
+
+- **Paso 4: Selección del repositorio**
+
+  Como cuarto paso, se seleccionó el repositorio `app-movil-3821/Backend-ChambaYa` desde Railway para iniciar el proceso de despliegue automático.
+
+  ![SelectRepo.jpeg](../assets/img/chapter-4/SelectRepo.jpeg)
+
+- **Paso 5: Configuración de variables de entorno**
+
+  Como quinto paso, se configuró la variable de entorno `MONGODB_URI` en Railway con la cadena de conexión proporcionada por MongoDB Atlas, permitiendo que el backend se conecte correctamente a la base de datos en la nube.
+
+  ![AtlasConnection.jpeg](../assets/img/chapter-4/AtlasConnection.jpeg)
+
+- **Paso 6: Generación del dominio público**
+
+  Como sexto paso, desde la sección de configuración de Networking en Railway, se generó un dominio público para acceder al backend desplegado externamente.
+
+  ![DomainGeneration.jpeg](../assets/img/chapter-4/DomainGeneration.jpeg)
+
+- **Paso 7: Verificación del despliegue**
+
+  Como séptimo paso, se verificó que el backend se encuentra correctamente desplegado y en estado **Online** dentro de Railway, con conexión activa al repositorio en GitHub y despliegue automático configurado desde la rama `main`.
+
+  ![Conect.jpeg](../assets/img/chapter-4/Conect.jpeg)
+
+- **Paso 8: Verificación de los endpoints con Swagger**
+
+  Como paso final, se verificó el correcto funcionamiento de los endpoints del backend accediendo a la documentación **Swagger UI** generada automáticamente. Se confirmó que el endpoint `GET /api/v1/users` retorna correctamente los datos de los usuarios registrados en la base de datos con código de respuesta **200 OK**.
+
+  ![DeployVerification.jpeg](../assets/img/chapter-4/DeployVerification.jpeg)
+
+
+### Despliegue de la Aplicación Android
+
+- **Paso 1: Creación del repositorio para el despliegue de la aplicación**
+  
+  ![creacion-repositorio.jpeg](../assets/img/chapter-4/creacion-repositorio.jpeg)
+
+- **Paso 2: Creación del Release**
+  
+   ![creacion-release.jpeg](../assets/img/chapter-4/creacion-release.jpeg)
+
+
+   **Paso 3: Despliegue en proceso**
+  
+   ![proceso-despliegue.jpeg](../assets/img/chapter-4/proceso-despliegue.jpeg)
+
+
+     **Paso 4: Integracion en la landing page para descargar la aplicación**
+  
+   ![landingpage.jpeg](../assets/img/chapter-4/landingpage.jpeg)
+
+
+     **Paso 5: Genración del apk de la aplicación**
+  
+   ![generacion-apk.jpeg](../assets/img/chapter-4/generacion-apk.jpeg)
+  
+
+
+
 ##### 4.2.3.8. Team Collaboration Insights during Sprint 3
 
 
