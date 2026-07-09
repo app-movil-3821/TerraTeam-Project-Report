@@ -2226,6 +2226,106 @@ Pantalla de perfil del contratante donde se muestra un historial de los turnos c
  
 ---
 
+
+
+### Aplicación en Flutter
+
+A continuación se presentan todas las pantallas implementadas, organizadas según el flujo de usuario.
+
+**Login:**
+
+Pantalla de inicio de sesión donde el usuario ingresa su correo y contraseña para acceder a la plataforma.
+
+![inicio-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/inicio-sprint2.png)
+ 
+---
+
+**Register:**
+
+Pantalla de registro donde el nuevo usuario ingresa sus datos personales para crear una cuenta en ChambaYA, seleccionando si es chambeador o contratante.
+
+![registro-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro-sprint2.png)
+ 
+---
+
+**Skills:**
+
+Pantalla de configuración del perfil basado en habilidades. El chambeador selecciona mediante etiquetas (tags) las habilidades que puede ofrecer, eliminando la necesidad de un CV tradicional.
+
+![Skills.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Skills.png)
+ 
+---
+
+**Home Feed: (Contratante)**
+
+Pantalla principal del contratante que muestra los turnos que estan creados y disponiblesn, con información de pago, horario y distancia.
+
+![trabajos-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/trabajos-sprint-3.png)
+ 
+---
+
+
+**Job Details:**
+
+Pantalla de detalle de un turno específico, mostrando la descripción completa del trabajo, ubicación en mapa, pago por hora y botón para aceptar el turno.
+
+![detalle-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/detalle-sprint-3.png)
+ 
+---
+
+
+**Job Application:**
+
+Pantalla que muestra la confirmación de la postulacion y también los detalles del trabajo.
+
+![postulacion-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/postulacion-sprint-3.png)
+ 
+---
+
+
+**My Shifts: (Contratante)**
+
+Pantalla que detalla los turnos creados, con informacion relevante, y con las opciones de cancelar el turno abierto y aceptar o rechazar a los postulantes.
+
+![shifts-contratante-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/shifts-contratante-sprint-3.png)
+
+
+---
+
+
+**Post: (Contratante)**
+
+Pantalla que muestra los campos a rellenar para la creacion de un nuevo turno.
+
+![publicacion-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/publicacion-sprint-3.png)
+ 
+---
+
+
+**Notificaciones: (Contratante)**
+
+Pantalla que detalla las notificaciones acerca las postulaciones de los chambeadores.
+
+![notifications-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/notifications-sprint-3.png)
+ 
+---
+
+
+**Chat:**
+
+Pantalla del chat interno temporal entre el chambeador y el contratante, habilitado únicamente cuando el turno ha sido aceptado para coordinar los detalles del trabajo.
+
+![mensajes-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/mensajes-sprint-3.png)
+ 
+---
+
+
+
+
+
+
+
+
 ### Backend API
 
 Aplicación Backend desplegada: https://backend-chambaya-production-a24a.up.railway.app/swagger-ui/index.html
