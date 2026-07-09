@@ -6174,7 +6174,7 @@ Para la definición de los términos del dominio (Chambeador, Contratante, Turno
 - Repositorio del Backend API (Backend-ChambaYa): https://github.com/app-movil-3821/Backend-ChambaYa
 - Landing Page desplegado: https://app-movil-3821.github.io/LandingPageChambaYa/
 - Backend API desplegado / Swagger UI: https://backend-chambaya-production-a24a.up.railway.app/swagger-ui/index.html
-- Tablero de Trello (Product Backlog): 
+- Tablero de Trello (Product Backlog): https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya
 ---
 
 # Bibliografía
