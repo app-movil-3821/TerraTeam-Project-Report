@@ -4849,12 +4849,12 @@ GET /api/v1/reviews/user/ID_DEL_USUARIO/summary
    ![proceso-despliegue.jpeg](../assets/img/chapter-4/proceso-despliegue.jpeg)
 
 
-     **Paso 4: Integracion en la landing page para descargar la aplicación**
+     **Paso 4: Integración en la landing page para descargar la aplicación**
   
    ![landingpage.jpeg](../assets/img/chapter-4/landingpage.jpeg)
 
 
-     **Paso 5: Genración del apk de la aplicación**
+     **Paso 5: Generación del apk de la aplicación**
   
    ![generacion-apk.jpeg](../assets/img/chapter-4/generacion-apk.jpeg)
   
@@ -5764,12 +5764,12 @@ GET /api/v1/reviews/user/ID_DEL_USUARIO/summary
    ![proceso-despliegue.jpeg](../assets/img/chapter-4/proceso-despliegue.jpeg)
 
 
-     **Paso 4: Integracion en la landing page para descargar la aplicación**
+     **Paso 4: Integración en la landing page para descargar la aplicación**
   
    ![landingpage.jpeg](../assets/img/chapter-4/landingpage.jpeg)
 
 
-     **Paso 5: Genración del apk de la aplicación**
+     **Paso 5: Generación del apk de la aplicación**
   
    ![generacion-apk.jpeg](../assets/img/chapter-4/generacion-apk.jpeg)
   
