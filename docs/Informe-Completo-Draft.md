@@ -1,5 +1,5 @@
 
-![UPC Logo](assets/img/introduction/UPC.png)
+![UPC Logo](../assets/img/introduction/UPC.png)
 
 # Universidad Peruana de Ciencias Aplicadas
 
@@ -97,7 +97,7 @@ El integrante Moises ayudó en la toma de decisiones para la creación de las hi
 alternativos (Sad Paths). Además, formó parte del proceso de diseño de arquitectura del software,
 colaborando activamente en la revisión del diagrama de clases, los DTOs, y la estructura de las tablas del diagrama de base de datos relacional.
 
-![coommits.png](assets/img/introduction/insights.png)
+![coommits.png](../assets/img/introduction/insights.png)
 
 
 ## TB2 (09/07/26): Reporte de la colaboración del proyecto
@@ -128,8 +128,8 @@ Respecto del segundo avance del informe del proyecto, cada miembro del equipo re
 
 En conjunto, el equipo demostró capacidad para gestionar transiciones tecnológicas complejas, preservando coherencia arquitectónica (DDD), consistencia de diseño (design system escalable), y rigor técnico durante la implementación en Flutter. Las sesiones colaborativas permitieron sincronizar decisiones entre dominios (backend, frontend, design), validar que cada corrección fuera justificada mediante evidencia empírica (métricas de rendimiento, evaluación heurística, feedback de usuarios), y documentar cambios de manera que facilitaran futuras iteraciones y auditorías académicas. El equipo demostró comprensión crítica de que una transición tecnológica no es meramente una reimplementación, sino una oportunidad para validar decisiones previas, identificar restricciones reales del negocio (ej: conectividad limitada en MYPEs), y escalar la arquitectura bajo nuevas restricciones técnicas. Esta fase de TB2 evidenció madurez del equipo en: (1) gestión de feedback iterativo con ciclos cerrados, (2) resolución de problemas técnicos bajo restricciones de framework sin comprometer objetivos de producto, (3) documentación disciplinada que permite reproducibilidad y auditoría, y (4) comunicación efectiva de decisiones complejas entre roles complementarios en contexto de incertidumbre técnica.
 
-![coommits1.png](assets/img/introduction/Insight-Kotlin.png)
-![coommits1.png](assets/img/introduction/Insight-Flutter.png)
+![coommits1.png](../assets/img/introduction/Insight-Kotlin.png)
+![coommits1.png](../assets/img/introduction/Insight-Flutter.png)
 
 
 # Student Outcome 
