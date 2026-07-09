@@ -2008,7 +2008,7 @@ El objetivo principal de este sprint es tener la versión final, funcional y des
 
 Proyecto en Enlace al tablero de Trello: [Link de TRELLO](https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya)
 
-![trello-sprint-3.png](../assets/img/chapter-4/trello-sprint-3.jpeg)
+![trello-sprint-3.png](../assets/img/chapter-4/trello-sprint-3.png)
 
 
 A continuación, se presenta la tabla con las User Stories y tareas del Sprint 3:
@@ -2042,38 +2042,227 @@ Cada miembro del equipo avanzó en las diferentes áreas del proyecto: En la apl
 | ChambaYa-Kotlin   | develop | 9789b27| feat(auth): Google Sign-In en Login y Registro | 2026/06/25   |
 | ChambaYa-Kotlin   | develop | e2e18a7| fix(maps): cambio de SHA-1 | 2026/06/25   |
 | ChambaYa-Kotlin   | develop | 1d5dab0| fix(ui): mejoras visuales y datos reales en billetera | 2026/06/25   |
-
 | ChambaYa-Mobile-MultiPlatform   | develop | ed3bc66 | feat(profile): connect profile and settings to backend API | 2026/06/21   |
 | ChambaYa-Mobile-MultiPlatform  | develop | 5ec461d| fix(api): update backend API URL for Auth, Job, and Profile services | 2026/06/22   |
 | ChambaYa-Mobile-MultiPlatform   | develop | c1726df| feat(messages): add message repository and service, integrate with dependency injection| 2026/06/25  |
-
 | ChambaYa-Mobile-MultiPlatform   | develop | f6f6e6e| feat(messages): implement conversation and message DTOs, service, and repository| 2026/06/25  |
 | ChambaYa-Mobile-MultiPlatform   | develop | 6202e56| feat(messages): store currentUserId in MessagesViewModel during conversation loading| 2026/06/25  |
 | ChambaYa-Mobile-MultiPlatform   | develop | 9c2936e| refactor(messages): improve logging and error handling in getConversations method| 2026/06/25  |
-
 | ChambaYa-Mobile-MultiPlatform   | develop | 8dd2242| feat: shifts module - worker & contractor views with enrollments| 2026/06/26  |
-
 | ChambaYa-Mobile-MultiPlatform   | develop | 6de1969| feat: add buildFinished hook to clean up problem reports and update .gitignore for android/build/| 2026/06/28  |
 | ChambaYa-Mobile-MultiPlatform   | develop | 8494101| feat(shifts): add map picker with reverse geocoding for job creation| 2026/07/01  |
-
-
-
-| ChambaYa-Mobile-MultiPlatform   | develop | afc70b7| fix: correct string interpolation in MessageService for authorization and URL construction| 2026/07/02  |
+| ChambaYa-Mobile-MultiPlatform   | develop | afc70b7| fix: correct string interpolation in MessageService for authorization and URL construction| 2026/07/02 |
 | ChambaYa-Mobile-MultiPlatform   | develop | 31ce2bb| feat(auth): add role parameter to registration and update DI for RegisterViewModel| 2026/07/02  |
-
 | ChambaYa-Mobile-MultiPlatform   | develop | 52d9e64| feat(notifications): implement notification model, repository, and view model with state management| 2026/07/03  |
 | ChambaYa-Mobile-MultiPlatform   | develop | 1a94fc9| feat(notifications): implement NotificationsPage with notification list and mark all as read functionality| 2026/07/03  |
 
 
 
 
-
-|
-
-
-
 ##### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+En esta sección se presenta el conjunto de pruebas implementadas durante el Sprint 1 para los Web Services del backend de ChambaYA. Para este primer sprint, se configuró la estructura base de pruebas utilizando **JUnit 5** (JUnit Jupiter) junto con la anotación `@SpringBootTest`, la cual permite verificar que el contexto de la aplicación Spring Boot se carga correctamente.
+
+El archivo `BackendApplicationTests.java` fue generado como parte de la inicialización del proyecto en Spring Initializr y contiene el test de integración base `contextLoads()`, que verifica que todos los beans y configuraciones del contexto de la aplicación se inicializan sin errores. Este test fue ejecutado exitosamente, confirmando que la configuración del proyecto, la conexión con MongoDB Atlas y las dependencias declaradas en el `pom.xml` son correctas.
+
+Para los siguientes sprints, se tiene planificado ampliar la suite de pruebas con Unit Tests para los servicios de cada Bounded Context (IAM, Jobs, Enrollments, Reviews) y Acceptance Tests bajo el enfoque BDD con archivos `.feature` en lenguaje Gherkin.
+
+Repositorio de Testing: [Backend-ChambaYa](https://github.com/app-movil-3821/Backend-ChambaYa)
+
+| Repository | Branch | Commit Id | Commit Message | Committed On |
+|---|---|---|---|---|
+| Backend-ChambaYa | develop | 82ec302 | feat(iam): endpoint cambiar contraseña PUT /users/{id}/password | 2026/06/18 |
+
+
+
+
 ##### 4.2.3.5. Execution Evidence for Sprint Review
+
+En esta sección se presenta la evidencia de ejecución de los productos implementados en este tercer sprint. Se incluye el desarrollo de las pantallas de la aplicación Android, los endpoints completos del backend API desplegado en Railway, y el desarrollo completo de la aplicacion movil en flutter.
+
+A continuación, se muestran las capturas de pantalla, que evidencian el progreso realizado en el sprint y sirven como comprobante del trabajo completado.
+
+### Aplicación Android
+
+La aplicación móvil nativa para Android fue desarrollada con Kotlin y Jetpack Compose. A continuación se presentan las pantallas implementadas durante este sprint, organizadas según el flujo de usuario.
+
+**Start (Splash Screen):**
+
+Pantalla inicial de la aplicación que muestra el logo de ChambaYA al abrir la app, antes de redirigir al usuario a la pantalla de login o registro.
+
+![Start.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Start.png)
+ 
+---
+
+**Login:**
+
+Pantalla de inicio de sesión donde el usuario ingresa su correo y contraseña para acceder a la plataforma. Incluye opción de registro para nuevos usuarios.
+
+![inicio-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/inicio-sprint2.png)
+ 
+---
+
+**Register:**
+
+Pantalla de registro donde el nuevo usuario ingresa sus datos personales para crear una cuenta en ChambaYA, seleccionando si es chambeador o contratante.
+
+![registro-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/registro-sprint2.png)
+ 
+---
+
+**Skills:**
+
+Pantalla de configuración del perfil basado en habilidades. El chambeador selecciona mediante etiquetas (tags) las habilidades que puede ofrecer, eliminando la necesidad de un CV tradicional.
+
+![Skills.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Skills.png)
+ 
+---
+
+**Home Feed:**
+
+Pantalla principal del chambeador que muestra el listado de turnos disponibles cercanos a su ubicación, con información de pago, horario y distancia.
+
+![Home Feed.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Home%20Feed.png)
+ 
+---
+
+**Home Feed: (Contratante)**
+
+Pantalla principal del contratante que muestra los turnos que estan creados y disponiblesn, con información de pago, horario y distancia.
+
+![home-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/home-sprint2.png)
+ 
+---
+
+**Job Details:**
+
+Pantalla de detalle de un turno específico, mostrando la descripción completa del trabajo, ubicación en mapa, pago por hora y botón para aceptar el turno.
+
+![Job Details.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Job%20Details.png)
+ 
+---
+
+
+**Active Shift:**
+
+Pantalla que muestra el turno activo en progreso, con el tiempo transcurrido, información del negocio contratante y opciones para confirmar llegada o pedir ayuda.
+
+![Active Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Active%20Shift.png)
+ 
+---
+
+**Apply:**
+
+Pantalla de confirmación de postulación a un turno, donde el chambeador revisa los detalles finales antes de confirmar su aplicación al trabajo.
+
+![Apply.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Apply.png)
+ 
+---
+
+**Shift Summary:**
+
+Pantalla de resumen al finalizar un turno, mostrando las ganancias del día y el formulario de calificación para el contratante mediante el sistema de reputación bidireccional.
+
+![Shift Summary.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Shift%20Summary.png)
+ 
+---
+
+**My Shifts:**
+
+Pantalla con el historial de turnos del chambeador, mostrando los trabajos completados, pagos recibidos y el estado de cada turno.
+
+![My Shift.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/My%20Shift.png)
+ 
+---
+
+
+**Jobs: (Contratante)**
+
+Pantalla que detalla los turnos creados, con informacion relevante, y con las opciones de cancelar el turno abierto y aceptar o rechazar a los postulantes.
+
+![jobs-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/jobs-sprint2.png)
+ 
+---
+
+**Post: (Contratante)**
+
+Pantalla que muestra los campos a rellenar para la creacion de un nuevo turno.
+
+![post-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/post-sprint2.png)
+ 
+---
+
+**Notificaciones: (Contratante)**
+
+Pantalla que detalla las notificaciones acerca las postulaciones de los chambeadores.
+
+![notifications-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/notifications-sprint2.png)
+ 
+---
+
+
+**Chat:**
+
+Pantalla del chat interno temporal entre el chambeador y el contratante, habilitado únicamente cuando el turno ha sido aceptado para coordinar los detalles del trabajo.
+
+![messages-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/messages-sprint2.png)
+![messages2-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/messages2-sprint2.png)
+ 
+---
+
+**Profile View: (Chambeador)**
+
+Pantalla de perfil del chambeador que muestra su reputación, habilidades registradas, historial de turnos completados y opciones de configuración de la cuenta.
+
+![Profile View.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/Profile%20View.png)
+ 
+---
+
+**Profile View: (Contratante)**
+
+Pantalla de perfil del contratante donde se muestra un historial de los turnos creados, y opciones de configuración de la cuenta.
+
+![profile-sprint2.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/profile-sprint2.png)
+ 
+---
+
+### Backend API
+
+Aplicación Backend desplegada: https://backend-chambaya-production-a24a.up.railway.app/swagger-ui/index.html
+El backend de ChambaYA fue desarrollado con Java y Spring Boot, desplegado en Railway con MongoDB Atlas como base de datos. A continuación se presentan los controllers implementados y documentados mediante Swagger UI.
+
+**User Controller:**
+
+Controller que gestiona el registro, autenticación y consulta de usuarios de la plataforma, tanto chambeadores como contratantes.
+
+![usercontrollerapi.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/usercontrollerapi.png)
+ 
+---
+
+**Job Controller:**
+
+Controller que gestiona la publicación, consulta y búsqueda de turnos disponibles, incluyendo el endpoint de trabajos cercanos por geolocalización.
+
+![jobcontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/jobcontroller.png)
+ 
+---
+
+**Enrollment Controller:**
+
+Controller que gestiona las postulaciones de los chambeadores a los turnos publicados, incluyendo la aceptación y rechazo de postulantes.
+
+![enrollmentscontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/enrollmentscontroller.png)
+ 
+---
+
+**Reviews Controller:**
+
+Controller que gestiona el sistema de calificaciones y reseñas mutuas entre chambeadores y contratantes al finalizar cada turno.
+
+![reviewcontroller.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/reviewcontroller.png)
+
+
+
 ##### 4.2.3.6. Services Documentation Evidence for Sprint Review
 ##### 4.2.3.7. Software Deployment Evidence for Sprint Review
 ##### 4.2.3.8. Team Collaboration Insights during Sprint 3
