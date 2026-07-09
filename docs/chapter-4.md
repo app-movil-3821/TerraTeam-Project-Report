@@ -2317,7 +2317,7 @@ Pantalla que muestra los campos a rellenar para la creacion de un nuevo turno.
 
 Pantalla que detalla las notificaciones acerca las postulaciones de los chambeadores.
 
-![notifications-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/notifications-sprint-3.png)
+![notificaciones-sprint-3.png](../assets/img/chapter-4/MobileApplicationsUXUIDesign/cap4documentation/notificaciones-sprint-3.png)
  
 ---
 
