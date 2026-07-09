@@ -1992,8 +1992,8 @@ En esta sección se incluye la matriz de liderazgo y colaboración para este spr
 
 | Team Member                    | GitHub Usernames  | App Android | Backend API | Reporte | App Flutter |
 |--------------------------------|------------------ |-------------|-------------|---------|-------------|
-| Cordova Valdivia Sebastian     | Sevas04           | C           | C           | C       | C         | 
-| Bautista Rivera Jose Diego     | Gogotes17         | L           |             | C       |             |
+| Cordova Valdivia Sebastian     | Sevas04           | C           | L           | C       | C         | 
+| Bautista Rivera Jose Diego     | Gogotes17         | L           |            | C       |             |
 | Janampa Gutierrez Jhoan D.     | orraiAKBDFSK      | C           |             | C       | C         |
 | Taipe Sangama Jorge Francisco  | CamotinFurious    | L           |             | L       | L           |
 | Espinoza Chavez Moises         | MoisesECh         | C           |             | C       |             |
@@ -2018,16 +2018,20 @@ A continuación, se presenta la tabla con las User Stories y tareas del Sprint 3
 | Sprint 3     | Sprint Backlog3 |                  |        |                                                                      |                    |              |        |
 |--------------|-----------------|------------------|--------|----------------------------------------------------------------------|--------------------|--------------|--------|
 | User Stories |                 | Work-Item / Task | Title  | Description                                                          | Estimation (Hours) | Assigned to  | Status |
-| US09   |    | T01  |  |     | 6h  |   | Done |
-| US11   |    | T02  |  |   (text)  | | (nombre)  | Done |
-| US12   |    | T03  |  |   (text)  | | (nombre)  | Done |
-| US13   |    | T04  |  |   implementar funcionalidad para los trabajos en el mapa| | Jhoan Janampa  | Done |
-| US25   |    | T05  |  |   (text)  | | (nombre)  | Done |
-| US27   |    | T06  |  |   (text)  | | (nombre)  | Done |
-| US29   |    | T07  |  |   (text)  | | (nombre)  | Done |
-| TF01  |    | T08     |  | documentacion del reporte de sprint  | 04    |  Moisés Espinoza |Done  |
-| TF02  |    | T09     | |  implementacion y despliegue de Flutter  |   03  | Jorge Taipe |Done  |
-| TF02  |    | T10     | |  actualización del backend api para flutter |   04  |  Jorge Taipe |Done  |
+| US01   |    | T01  |  |   mejoras en la funcionalidad de la autenticacion y restablecimiento de contraseña | 6h  |  Jose Diego Bautista | Done |
+| US01   |    | T02  |  |   implementacion y mejora de funcionalidad del perfil y sesion activa | 6h  |  Jose Diego Bautista | Done |
+| US02   |    | T03  |  |   implementacion de funcionalidad en perfil y las validaciones  | 5h  |  Jorge Taipe | Done |
+| US03   |    | T04  |  |   implementacion de la vista "Home" del chambeador  | 4h  | Sebastián Córdova | Done |
+| US09   |    | T05  |  |   implementación de Vistas y funciones como “Shifts” relacionadas a los perfiles de Chambeador y Contratante| 3h  | Jhoan Janampa | Done |
+| US11   |    | T06  |  |   implementacion de registro y Mensajes y conexión entre segmentos | 5h | Jorge Taipe  | Done |
+| US13   |    | T07  |  |   implementación de funcionalidad para los trabajos en el mapa| 4h| Jhoan Janampa  | Done |
+| US13   |    | T08  |  |   correcciones en el mapa| 3h| Jose Diego Bautista | Done |
+| US13   |    | T09  |  |   mejoras en la funcionalidad de mapa de trabajos disponibles| 3h| Sebastián Córdova | Done |
+| US27   |    | T10  |  |   mejoras en la corrección de horarios y datos de trabajos | 3h| Sebastián Córdova  | Done |
+| US29   |    | T11  |  |  implementacion de funcionalidad en el flujo de turno activo y pantalla de ayuda  |  4h | Sebastián Córdova  | Done |
+| TF01  |    | T12   |  |  implementación y documentacion del reporte de sprint  | 06    |  Moisés Espinoza |Done  |
+| TF02  |    | T13   | |   implementacion y despliegue de Flutter  |   03  | Jorge Taipe | Done  |
+| TF02  |    | T14    | |  actualización del backend api para flutter |   04  |  Jorge Taipe |Done  |
 
 
 ##### 4.2.3.3. Development Evidence for Sprint Review
