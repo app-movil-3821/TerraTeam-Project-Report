@@ -6128,8 +6128,9 @@ Video de validacion de producto: https://shorturl.at/Xhf2v
 
 ## Video Team   
 
-Video Exposicion: https://short-url.cc/1tgKH
+Video Exposicion TB1: https://short-url.cc/1tgKH
 
+Video Exposicion TB2: https://shorturl.at/8FKBD 
 
 ## Video About the Product
 
@@ -6175,6 +6176,7 @@ Para la definición de los términos del dominio (Chambeador, Contratante, Turno
 - Landing Page desplegado: https://app-movil-3821.github.io/LandingPageChambaYa/
 - Backend API desplegado / Swagger UI: https://backend-chambaya-production-a24a.up.railway.app/swagger-ui/index.html
 - Tablero de Trello (Product Backlog): https://trello.com/invite/b/69e581bada404d81ccde530d/ATTI42a1d93366631bcc58f2fbcf4f6b8734D6B33942/product-backlog-chambaya
+  
 ---
 
 # Bibliografía
